@@ -2,6 +2,8 @@
 ## Tasks
 * copy a file: `cp <old location> <new location>`
 * rename a file: `mv <oldname> <newname>`
+* shutdown: `poweroff`
+* restart: `reboot`
 
 ## Command glossary
 ### Filesystem
