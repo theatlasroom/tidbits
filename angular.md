@@ -4,6 +4,12 @@
 ## E2E Testing
 
 ## Directives
+### Built in
+* ng-class: dynamically set css classes
+`<elem ng-class="class: condition" />`
+`<elem class="ng-class: expression" />`
+
+### Custom
 [Sweet explanation at Sitepoint](http://www.sitepoint.com/practical-guide-angularjs-directives-part-two/)
 
 Directives are custom elements, or markers in the DOM that encapsulate and attach some custom behaviour. Directives allow to create new syntax in your markup.
@@ -50,3 +56,7 @@ Used to apply an DOM transformation before the link function, the compile functi
       template: '<h3>Hello World!!</h3>'
   };
 });`
+
+## Packages
+### Formly
+* Adding attrs to a form field:
