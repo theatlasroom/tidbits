@@ -1,4 +1,6 @@
 # Terminals
+General terminal related things + common applications
+
 ## Tasks
 * copy a file: `cp <old location> <new location>`
 * rename a file: `mv <oldname> <newname>`
@@ -22,3 +24,10 @@
 
 ## Bash
 * reload terminal `source ~/.bashrc` or just type `bash`
+
+## Zipped files
+- debian: install 7z or unzip
+- redhat:
+
+## Curl
+- L option - follow redirects
