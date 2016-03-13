@@ -35,3 +35,27 @@
 - 1/2 the sampling rate is called the *Nyquist rate*
 - *Aliasing* (or foldover) occurs when a frequency gets folded into the range below it ie sample rate 16000hz -> highest frequency = 8000hz -> a signal at 9000hz would be misrepresented as 7000hz
 - Frequencies above the Nyquist frequency end up as negative frequencies (the amount over ie 1000hz in the above example), which we are unable to perceive as a any different to the Nyquist frequency minus the negative part (8000-1000 = 7000hz).
+
+### Basics
+- MSP objects run much faster than MAX objects so they can accurately produce the 41000 samples needed per second, MAX objects run ~1000 times per second
+- MSP objects can be thought of as a description of an instrument, the sound you hear is a result of all the calcuations in the patch at the moment in time, a *signal network*
+- dac~, adc~, ezadc~, ezdac~ and adstatus are the only objects that can turn on or off the MSP audio network from within a patcher
+- use the *start message* with a loadmess object to begin the audio as soon as the patch opens
+- By default start stop messages flow to ALL open max patches, use the startwindow message to start processing only in the affected window
+- To control the level of a signal (amplitude) multiply each sample by a scaling factor, ie half the volume -> multiply by 0.5
+- *Zipper noise* occurs when there are sudden and drastic changes in amplitude which cause discontinuities in a signal
+- line~ and \*~ togethor can be used to create an *envelope*
+
+
+## MSP Objects
+- \*~: multiplies the signal in its left inlet by whatever comes into the right (signal, or number)
+  * supplying a signal in the right inlet lets us fade in / out a sound
+- cycle~: Wavetable oscillator, it reads through a list of 512 values at a specified rate, looping back to the beginning when it reaches the end, this simulates a repeating periodic waveform. You can supply your own values
+  * receives a frequency in its left inlet (Hz)
+- dac~: expects signals in the range -1.0 to 1.0 and converts them to sound, signals outside the range will cause distortion
+- gain~: a slider to control the output amplitude of a signal
+- line~: line segment generator, allows us to specify a duration for MAX to interpolate between our starting and our ending signals, number, or amplitude
+  * left inlet takes a target value and a time (ms)
+
+## Glossary
+* Portamento: gradual gliding from one signal to another
