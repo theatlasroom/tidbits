@@ -23,7 +23,7 @@
 
 > level in dB = 20 log10 (A/A0) - where A0 is the reference sound
 
-- If we conside the max possible ampltude as a reference to be = 1, then a sound with amplitude 0.5 has 1/2 the amplitude
+- If we consider the max possible ampltude as a reference to be = 1, then a sound with amplitude 0.5 has 1/2 the amplitude
 
 > 20 log 10 (0.5/1) = 20 (-0.3) = -6 dB
 
@@ -45,17 +45,48 @@
 - To control the level of a signal (amplitude) multiply each sample by a scaling factor, ie half the volume -> multiply by 0.5
 - *Zipper noise* occurs when there are sudden and drastic changes in amplitude which cause discontinuities in a signal
 - line~ and \*~ togethor can be used to create an *envelope*
+- We can send up to 64 pairs (value, time) of numbers to a line~, the line will interpolate between all the values, taking the amount of time specified to get there
+- Any time 2 signals are added to the same inlet, those signals are added togethor and their sum is used
+- Patch cords in MSP dictate the order of calculations to be made before the block of sample is passed onto the next stage
+- send and receive objects can be used to communicate remotely without patch cords
+  - send~ locations can be changed with a set message
+- Semi-colons can be used in message objects to transmit values to receive objects by their name
+- Two waves with different frequencies will only come into phase at a rate equal to the difference in their frequencies ie 1000Hz + 1002Hz = in phase 2 times per second
+- If you need to combine a fixed and a changing value in a MSP signal chain, you need an object that outputs a constant value as a signal
+- The sig~ object can be used to convert a number into a singal
 
+### Additive & Modular synthesis
 
 ## MSP Objects
 - \*~: multiplies the signal in its left inlet by whatever comes into the right (signal, or number)
   * supplying a signal in the right inlet lets us fade in / out a sound
+- Atodb: converts amplitude to dB, max amplitude = 1
+- buffer~: An object that stores a set of values, either loaded in or programmed that can be read later on
+  * pass a name as an argument to identify the buffer
+  * messages can be sent to load audio, resize or clear the memory
+  * replace or read are messages that can be sent along with the name of file you want to load. The buffer is sized to fit the audio
 - cycle~: Wavetable oscillator, it reads through a list of 512 values at a specified rate, looping back to the beginning when it reaches the end, this simulates a repeating periodic waveform. You can supply your own values
   * receives a frequency in its left inlet (Hz)
+  * passing a buffer name to the cycle will make it read values from the buffer. The cycle will default to use 512 samples.
+  * buffer_offset can be used to set the start point to read from the buffer
+  * buffer_sizeinsamps can be used to change the size of the wave table
+  * the right inlet takes a phase offset value in the range 0-1
 - dac~: expects signals in the range -1.0 to 1.0 and converts them to sound, signals outside the range will cause distortion
+- ezdac~: same as dac except it is hard wired to outputs 1 and 2
 - gain~: a slider to control the output amplitude of a signal
+- gate~: used to route an input signal that second inlet to one (or none) of the outlets
+  * takes a number to indicate the number of outputs
 - line~: line segment generator, allows us to specify a duration for MAX to interpolate between our starting and our ending signals, number, or amplitude
   * left inlet takes a target value and a time (ms)
+  * takes value/time pairs of numbers, value being the target and time how long
+  * send a '0,' as the first argument to immediately move to the first value/time pair (same as sending 'value=0 time=0')
+- loadbang: sends a bang to its out put when the patch is loadced, can be used to initialize variables when the patch is loaded
+- phasor~: a signal generator that outputs a ramp from 0 to 1 at a given frequency (sawtooth signal)
+- receive~:
+- send~:
+- sig~: convert a numerical message (int/float) to a signal
+- slider~: send out a value based on the position of the bar, the range of values can be set to constrain the numbers that are output
 
 ## Glossary
+* Beat (difference) frequency: the rate of the beats that occur between 2 waves of different frequencies coming in and out of phase 1000Hz + 1002Hz = beat frequency 2 Hz
 * Portamento: gradual gliding from one signal to another
