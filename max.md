@@ -57,7 +57,7 @@
 
 ### Additive & Modular synthesis
 
-## MSP Objects
+## MSP / Live Objects
 - \*~: multiplies the signal in its left inlet by whatever comes into the right (signal, or number)
   * supplying a signal in the right inlet lets us fade in / out a sound
 - Atodb: converts amplitude to dB, max amplitude = 1
@@ -82,6 +82,7 @@
   * send a '0,' as the first argument to immediately move to the first value/time pair (same as sending 'value=0 time=0')
 - loadbang: sends a bang to its out put when the patch is loadced, can be used to initialize variables when the patch is loaded
 - phasor~: a signal generator that outputs a ramp from 0 to 1 at a given frequency (sawtooth signal)
+- plugsync~: Gives information about the current host, including transport controls, tempo, time signature etc
 - receive~:
 - send~:
 - sig~: convert a numerical message (int/float) to a signal
