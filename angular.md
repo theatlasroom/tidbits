@@ -1,9 +1,20 @@
 # Angular
+## Overview
+### Scope and binding
+When you create a data binding in your view to a variable that is available on $scope, angular will create an internal 'watch'. Angular will watch the changes in the variable. Angular will compare the current value of with the last value returned from the watch to determine if it has been changed.
+
+* `$watch()`: creates a watch on a variable, takes:
+  - a value function (returns the value to be watched)
+  - a listener
+* `$digest()`: iterates through all watches in the scope object and its child scope objects and checks if any of the watched variables have changed. If a variable has changed, the relevant listener function is executed
+* `$apply()`: used to execute some code and then call $scope.$digest() after which updates all watches.
+
 ## Unit Testing
 
 ## E2E Testing
 
 ## Directives
+
 ### Built in
 * ng-class: dynamically set css classes
 `<elem ng-class="class: condition" />`
@@ -60,3 +71,27 @@ Used to apply an DOM transformation before the link function, the compile functi
 ## Packages
 ### Formly
 * Adding attrs to a form field:
+
+### UI Router
+[Stateful modals](http://www.sitepoint.com/creating-stateful-modals-angularjs-angular-ui-router/)
+
+Example opening a modal on state change using angular-strap
+Use this in the state config
+`onEnter: function($stateParams, $state, $modal) {
+    $log.log("onEnter");
+    $modal({
+        templateUrl: "js/partials/some-template.html",
+        resolve: {
+          // resolve deps needed in the controller
+        },
+        controller: function($scope) {
+          $scope.dismiss = function() { $scope.$dismiss(); };
+          $scope.save = function() { };
+          $state.go('home');                
+        }
+    });
+}`
+
+
+* To load a state within another view, make sure to specify the view `<div ui-view="modal" autoscroll="false"></div>`
+* When a state is activated, its templates are automatically inserted into the `ui-view` of its parent state's template. If it's a top-level state—which 'contacts' is because it has no parent state–then its parent template is index.html.
