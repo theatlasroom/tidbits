@@ -27,6 +27,29 @@
   - undefined value behaves as false in a boolean context and NaN in a numeric context
   - null behaves as 0 in a numeric context and false in boolean
 
+#### Control flow and error handling
+* Just about any object be thrown in JS, its best to throw one of the specifically created types for this
+  - ECMAScript exceptions
+  - DOMException and DOMError
+* You can specify an object when you throw an exception
+`// Create an object type UserException
+function UserException(message) {
+  this.message = message;
+  this.name = "UserException";
+}
+
+// Make the exception convert to a pretty string when used as a string
+// (e.g. by the error console)
+UserException.prototype.toString = function() {
+  return this.name + ': "' + this.message + '"';
+}
+
+// Create an instance of the object type and throw it
+throw new UserException("Value too high");`
+* Use the try / catch statement to execute a block and catch exceptions
+  - the finally block can be used to execute code that runs regardless of an exception being caught or not
+  - ErrorType(message) object can be used to throw an error and supply a message to be displayed
+
 #### Data types
 * there 7 data types defined in ECMAScript
 * the 6 primitive data types are
