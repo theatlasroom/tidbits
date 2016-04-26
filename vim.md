@@ -13,14 +13,21 @@ Vim is a modal editor, to use the editor you need to be in the correct mode
   - use hjkl to move around in visual mode
 * a - append mode
 * ctrl+ww - switch to another panel 
+* ctrl+w<hjkl> - move to split left, right ...etc
+* ctrl+w| - to expand a split
+* ctrl+w= - set the splits to an equal width
 
 ## Key commands
 From command mode
 * use the `hjkl` to move up down left and right
 * use `w` to move to the next word and `b` to move to the previous
 * `shift + v` - visual line mode
-* `w` - write the changes to the file
-* `x` - write the changes and exit
+* `o` - add a new line
+* `gg` - start of file
+* `G` - end of file
+* `0` - move to start of line
+* `$` - end of the line
+* `x` - remove char
 * `y` - yank (copy) text, its not copied to the clipboard though
 * `yy` - copy the line
 * `p` - paste
@@ -41,13 +48,37 @@ From command mode
 * :syntax on/off
 * :set number / :set nonumber
 * :e filename - opens a file for editing
+  - :e . - shows the current dir
 * :pwd - show the current working dir
 * :colorscheme - list all the available color schemes
 * :so % - source the current file (reload)
 * :u - undo
+* `:w` - write the changes to the file
+* `:x` - write the changes and exit
 * :tabedit / :tabclose - open and close a new tab
 * :nohlsearch - turn off search results highlighting
+* :sp / :vsp - horizontal / veritcal split
+* :ls - show all open buffers
+* :bp - previous buffer
+  - :b<1,2..> - move to buffer number ..
+* :sh - open a shell
 
 ## Keys
 * <cr> - carriage return (enter)
 * <Leader> - reference the default leader key (default is \)
+
+## vundle
+used to manage vim plugins
+config file stored at `~/.vim/plugins.vim`
+:PluginInstall - show all the installed plugins
+
+* CTRL+P - quickly switch files
+  - CtrlPBufTag - show the functions we have defiend
+  - CtrlPMRUFiles - show the most recently used files
+* NERDTree: tree viewer
+  - `NERDTreeToggle` - show / hide the nerdtree view
+* vim-vinegar: nice file browser
+  - `-` - opens up the current dir 
+  - `d` - create new dir
+  - `D` - delete dir
+  - `%` - new file
