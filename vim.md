@@ -3,16 +3,17 @@ I'm not really a vim user, seems a bit too complex for the sake of complex. But 
 
 ## General
 `.vimrc` file is used to store configurations. it is located in your home directory
+List of [special keys](http://vimdoc.sourceforge.net/htmldoc/intro.html#%3CNul%3E)
 
 ## Modes
 Vim is a modal editor, to use the editor you need to be in the correct mode
 * `CTRL+C`: command mode
-* Normal mode default mode used to navigate around the file 
+* Normal mode default mode used to navigate around the file
 * i - insert mode
 * v - visual mode, used to select blocks of text from a file, click `shift+v` to enter visual line mode
   - use hjkl to move around in visual mode
 * a - append mode
-* ctrl+ww - switch to another panel 
+* ctrl+ww - switch to another panel
 * ctrl+w<hjkl> - move to split left, right ...etc
 * ctrl+w| - to expand a split
 * ctrl+w= - set the splits to an equal width
@@ -77,8 +78,9 @@ config file stored at `~/.vim/plugins.vim`
   - CtrlPMRUFiles - show the most recently used files
 * NERDTree: tree viewer
   - `NERDTreeToggle` - show / hide the nerdtree view
+  - [cheatlist](https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/)
 * vim-vinegar: nice file browser
-  - `-` - opens up the current dir 
+  - `-` - opens up the current dir
   - `d` - create new dir
   - `D` - delete dir
   - `%` - new file
