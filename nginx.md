@@ -6,6 +6,8 @@ Start (ubuntu)
 Stop / Reload / reopen
 `nginx -s <command>`
 
+[Log files](https://www.nginx.com/resources/admin-guide/logging-and-monitoring/)
+
 ## Config
 * [Configuring express](http://blog.danyll.com/setting-up-express-with-nginx-and-pm2/)
 

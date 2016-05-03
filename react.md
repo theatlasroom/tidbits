@@ -11,6 +11,23 @@
   - attributes can be accessed using the `this.attr` syntax
 * Capitalise components because its best to think of them as a constructor
 * For a component that has a component within it, create a new folder. ie if the header has any components, create a header folder and put them in there
+* componentWillMount() fires the first time the component is rendered to the dom. Use it to add event listener
+  `TodoStore.on('change', () => {})`
+* use componentWillUnmount to avoid memory leaks, use it to unbind listeners
+ `getTodos(){
+  this.setState({
+    todos: TodoStore.getAll
+  });
+ }
+
+ componentWillMount(){
+  TodoStore.on("change", this.getTodos);
+ }
+
+ componentWillUnmount(){
+  TodoStore.removeListener("change", this.getTodos);
+ }`
+ - if you listen to any event, make sure to unmount it
 
 ## Data
 * Data is managed by state, props or context
@@ -72,12 +89,18 @@
     * Every child needs a unique key prop
 
 ## Flux
+### General
 * A pattern for building react frameworks
 * Components fire actions or listen to stores (collections/services of data)
   - update when a store updates
   - components listen stores for updates to information
     * components can query a store for data
   - actions pipe data to a dispatcher
+
+### Stores
+* Used to hold business logic
+* When a store changes, it should emit a change event
+  `this.emit('change')`
 * A store exports an object
   - import EventEmitter from 'events' (standard js)
   - Your store should extend the EventEmitter
@@ -89,6 +112,35 @@
   const todoStore = new TodoStore;
   export default todoStore;
   `
+* The store should only respond to the events that it cares about
+
+### Dispatcher
+* Used to notify our store of actions
+* Events should be in all caps "NEW_EVENT"
+* flux has a dispatcher which can be used
+  `import { Dispatcher } from "flux"`
+* register() - register a new register
+  - make sure to bind the store as this context
+  `dispatcher.regsiter(myStore.handleActions.bind(myStore))`
+* dispatch() - dispatch an action
+  `dispatch({type: 'MY_EVENT', ... params});`
+
+### Actions
+* Should be housed in a seperate file for each store
+  `export function createTodo(text){
+    dispatcher.dispatch({    
+      type: "CREATE_TODO",
+      text
+    });
+  }
+  `
+* The component then fires the necessary actions when a DOM Event occurs
+* For async actions, send out multiple events at different times
+  - ie: BEGIN_FETCH_TODOS, RECEIVED_TODOS, FETCH_ERRORS
+* the store should listen for the events and emit a change where needed
+
+## Redux
+
 
 ## Helpers
 * react-html-attrs - transpiles class attributes to be className
