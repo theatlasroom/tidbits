@@ -14,6 +14,27 @@ Importing / Requiring packages
 Use the require command to load globally available node modules
 `var fs = require('fs')`
 
+### NPM
+* create an npm account by running `npm adduser`
+* run `npm whoami` to see which account you are logged in as
+* npm helps you build projects, the `package.json` file specifies the details of your project
+  - `npm init --scope=<username>` can be used to create a new package file for your selected user
+  - `npm help json` - definitions for the fields
+* installing a dependency will download its files from the npm registry and unpack them into your *node_modules* dir
+  - `npm install <module>`  
+* `npm ls` - list all the modules installed
+* npm can be used as task runner, most modules and projects will have a test script that runs, by default npm has a failing test
+* `npm publish` can be used to publish the package to the registry
+* `npm version` - updates the package file and commits the change to git
+  - the registry wont allow you to publish changes unless you update the version number
+  - valid arguments include [ version number | major | minor | patch ] etc
+  - based on semantic versioning
+* dist-tags: each package has dist-tags entry which maps strings like latest to a version number
+  - can be used to manage changes to previous versions, such as security patches
+  - *latest* tag can never be removed, but you can point it to a different versionts
+* `npm outdated` lists the outdated dependencies 
+
+
 ### Command line arguments:
 You can access command-line arguments via the global process object. The  
 process object has an argv property which is an array containing the  
