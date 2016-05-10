@@ -65,7 +65,30 @@ blocks can be defined using the `{ }`
   - can access variables defined outside of the function
 * structs are used to create custom data types
 
-## Detailed overview
+##  Rust docs
+### Cargo
+Cargo is rust's build and package management system
+* builds your code
+* downloading dependencies
+* building dependencies
+* should come bundled with rust
+* expects your source code to be in a *./src* dir
+* outputs builds to *./target* dir
+* use [TOML](https://github.com/toml-lang/toml) config files to specify configurations for the project - *the file must be named Cargo.toml*
+* `cargo build` builds the project
+* `cargo run` builds and runs the project
+* `cargo build  --release` compiles the project with optimizations
+* the *Cargo.lock* file is created to track your dependencies
+* `cargo new` creates a new project, use the --bin flag for binaries, otherwise it defaults to a library
+
+### Notes
+* the [prelude](https://doc.rust-lang.org/std/prelude/) contains the default set of code that is imported into every program
+* Associated functions have the form `<Type>::function()` aka static method
+* `panic!` exits the program
+* `Result` types are used to encode error handling information
+  - the expect method checks the value of the response and will call `panic!` if it doesnt match
+
+## Rust by example
 ### Introduction
 * rust files have a .rs extension, the `rustc`  rust compiler can be used to generate a binary
 * Regular comments use `//`, multiline/block comments use `/* */`, Doc comments for the following item use `///` and `//!` generates library docs for the enclosing item
@@ -75,7 +98,6 @@ blocks can be defined using the `{ }`
   - use `{:>SOMEVALUE$}` to specify whitespace to pad the output with
   - `std::fmt::Debug` uses the `{:?}` marker to format text for debugging
   - `std::fmt::Display` uses `{}` marker to format text
-
 
 ## Notes
 * Anything with an exclamation mark at the end is a macro
