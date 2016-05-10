@@ -14,6 +14,39 @@
   - the DOM is standardized by W3C not ecma
   - Other apis include: XMLHttpRequest, CSS object model, WebWorkers, WebSockets, Canvas 2D
 
+## Scopes, chains, closures
+* lexical scoping - this is the scope that is created within a function
+    - **var** is used to define a variable lexically scoped
+* block scoping - the scope created within curly braced blocks
+    - **let** and **const** are used to define block scope variables
+* JS also has scopes global, with, catch and eval scopes
+* Scopes can be nested, both lexical and block scopes can contain a nested scope
+    - ie if nested in a function, function nested ina function etc
+* Each nested scope has access to the outer scopes variables, but not vice versa
+    - sibling nested scopes cannot access each others variables
+* **Scope chain** is a tree that maps the nesting of scopes within a function
+   ` (global)
+        ↑
+        |
+       foo()
+      var bar
+        ↑
+        |
+       zip()
+     var quux`
+* All JS runtimes must have a global scope object
+    - **window** for the browser
+    - **global** for node
+* When assigning a variable without using var, let or const, the variable is assumed to exist in an outer scope
+    - the runtime will search upwards through the scope tree to try and find the variable, if it can't then it will create it on the global scope object
+* **Shadowing** - redefining a variable in a inner scope, the inner scope can only access its own version of the variable
+* **closures** - an inner function accessing a variable in its outer scope is said to **close over** the variable
+* Most JS runtimes use the **mark and sweep** algorithim for garbage collection
+    - references to memory (variables, functions etc) are marked if they are still reachable from active code
+    - any unmarked reference is swept into the garbage and the memory is released
+    - in the memory timeline of chrome dev tools, GC appears as a sudden drop
+    - GC events block the main thread
+
 ### Syntax
 #### Grammar and types
 * case sensitive and uses the unicode character set
