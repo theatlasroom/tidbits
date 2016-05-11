@@ -14,6 +14,12 @@ Importing / Requiring packages
 Use the require command to load globally available node modules
 `var fs = require('fs')`
 
+### Bytes
+* **Buffer** isa global object that allows us to work with binary data
+  - most core apis (http, net, fs etc) will work with buffers
+
+
+
 ### NPM
 * create an npm account by running `npm adduser`
 * run `npm whoami` to see which account you are logged in as
@@ -85,11 +91,27 @@ The console standard output (process.stdout) is a stream
 Number() - convert to Number
 String() - to string
 
-### Buffers
+### [Buffers](http://nodejs.org/api/all.html#all_buffer) 
 Buffer objects are Node's way of efficiently representing arbitrary arrays  
 of data, whether it be ascii, binary or some other format. Buffer objects  
 can be converted to strings by simply calling the toString() method on  
 them. e.g. `var str = buf.toString()`.  
+
+values in a buffer can be get and set using offsets, similar to working with arrays
+
+IO streams like fs.createReadStream will emit incremental buffers 
+
+- a nodejs global object used to work with binary data
+  * implements the [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) API, an array of 8 bit unsigned integers
+  * the size of the buffer is allocated when it is created and cannot be resized
+- `Buffer.alloc(size)` - allocates a new buffer of *size* bytes, defaults to utf8 encoding
+- `Buffer.from(buffer|string)` - copies the contents of the buffer passed in, into a new buffer that is returned
+- `Buffer.toString(encoding)` - returns the string representation of the contents of the buffer, an encoding type can be specified, utf8, base64, binary, hex, ascii etc
+- `Buffer.concat(buffer)` - can be used to concatentate the contents of 2 buffers, can also take an array of buffers
+
+Node < 6
+* use the constructor form for creating buffers
+ `const buf = new Buffer('string')`
 
 ### Strings
 
@@ -102,7 +124,6 @@ In order to support the full spectrum of possible HTTP applications, Node.js's H
 
 - http.request: used to create a http request
 - http.get(opts, [callback]): used to create GET request, same as request but sets the method to get and calls req.end() automatically. The callback receives 'response' which is a node stream object that emits various events, 3 of the events are: data, error and end. Calling setEncoding on the response with "utf8" will return a string instead of a buffer
-
 
 #### [net]()
 All basic networking functions for the node core

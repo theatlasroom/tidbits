@@ -55,6 +55,7 @@ From command mode
 * :so % - source the current file (reload)
 * :u - undo
 * `:w` - write the changes to the file
+  - `:w filename` - save file with a new name
 * `:x` - write the changes and exit
 * :tabedit / :tabclose - open and close a new tab
 * :nohlsearch - turn off search results highlighting

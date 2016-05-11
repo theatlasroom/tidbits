@@ -102,7 +102,15 @@ throw new UserException("Value too high");`
   - Object Literal: list of 0 or more pairs of key/values enclosed in {}. Property names can be any string including the empty string
   - RegExp Literal
   - String Literal
+* `String.charCodeAt(index)` - returns the utf16 representation of the character at the index selected
 
+#### [Typed arrays](http://developer.mozilla.org/en-US/docs/Web/Javascript/Typed_arrays)
+Provide access to binary data, have been standardized across most browsers.
+There are various types such as **Uint8Array** (similar to nodejs buffers) and Int8Array (can store +ve and -ve integers)
+
+Typed arrays use [**ArrayBuffers**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) underneath to the raw bytes.
+To access their data, you need to create a typed array (a view) thorugh which to access the data.
+- the `.buffer` property returns the underlying arraybuffer used for the view
 
 #### Notes
 * *debugger* can be used to invoke any available debugger if one exists ie like setting a breakpoint
