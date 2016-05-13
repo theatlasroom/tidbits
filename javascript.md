@@ -124,6 +124,18 @@ To access their data, you need to create a typed array (a view) thorugh which to
 ## ES6
 
 ### Promises
+From ECMAScript 2015, promises have been standardised as part of the language. A promise is an object that defines a method
+called **then**. The promise object represents a value that may be available some time in the future.
+
+Promises have an internal state. A promise can be **fulfilled**, **rejected** or **pending**. A promise that is either fulfilled or 
+rejected is said to be **resolved**.
+
+Promises are created using `new Promise(callback(fulfill, reject))`, either fulfill or reject will be called to indicate the outcome.
+The fulfill function takes any values that he promise has yielded.
+
+The **then** property is a function that takes 2 callback parameters, **onFulfilled** and **onRejected**, the relevant callback for the 
+then function is called once the main callback has finished. The then function can be called multiple times.
+
 * use the .then().catch() form to catch any errors within promise chains
 * use Promise.all(promise1, promise2).then() - this will pass the results of both promises as an array to the then block
 * if you have promises dependent on previous results, nest with Promise.all
