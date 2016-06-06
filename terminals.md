@@ -26,6 +26,7 @@ General terminal related things + common applications
 * reload terminal `source ~/.bashrc` or just type `bash`
 
 ## Zipped files
+- tarball: tar -zcvf archive-name.tar.gz directory-name
 - debian: install 7z or unzip
 - redhat:
 

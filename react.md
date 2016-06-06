@@ -51,6 +51,13 @@
 * DOM events can be used as handlers, such as onChange, onClick, onBlur etc
   - When you bind a value, make sure to also setup a change listener so that you can update the value when a change is triggered
 
+### Proptypes
+`React.propTypes` contain a range of validators, to ensure the passed in data is valid
+`MyComponent.propTypes = {
+  name: React.PropTypes.string.isRequired,
+  id: React.PropTypes.number,
+}`
+
 ## Routing
 * [React Router](https://github.com/reactjs/react-router)
   - Render a router to your DOM
