@@ -120,6 +120,16 @@ To access their data, you need to create a typed array (a view) thorugh which to
 * Unicode escape sequences '\u00A9' => "©"
 * Regex literals /ab+c/g
 
+## Prototypes
+* The simplest way to create an object is by using the object literal syntax:
+  `var obj = { prop: value };`
+* the `__proto__` property can be used to create a new object from the prototype of an existing object, its available in ES6 onwards
+  `var robot = { kind: 'robot'}; var x = {}; x.__proto__ = robot; x.kind --> 'robot' `
+* To check if an object is the prototype of another use `obj.isPrototypeOf(obj)`
+* Properties can be added to the prototype of an object at any time. The chain lookup will find the new property.
+  - Objects delegate property lookups to their prototype
+  - a prototype can be shared between objects
+  - updates to a property only apply to the object not to the prototype
 
 ## ES6
 
