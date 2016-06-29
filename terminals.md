@@ -14,6 +14,9 @@ General terminal related things + common applications
 * chgrp: modify group
 * cp: copy file
 * mv: move / rename files and directories
+* mkdir: make a directory
+  - `-p`: make parent directories as needed
+  `mkdir -p parent/{child1, child2, child3}`
 
 ### Accounts
 * useradd: create a new user

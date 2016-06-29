@@ -42,6 +42,14 @@
 * align-self: allows you to change the alignment of the specific child
   - `flex-start`, `center`, `stretch` etc
 
+## Modules
+Allow us to interact with CSS definitions from inside javascript, a build script takes care of creating specific and unique names for each style and modifying the actual name in the style.
+
+[More info](http://glenmaddern.com/articles/css-modules)
+
+## PostCSS
+
+
 ## Resources
 * [MDN Flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 * [Good overview of the properties](https://www.youtube.com/watch?v=G7EIAgfkhmg)

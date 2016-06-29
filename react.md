@@ -94,6 +94,20 @@
   )
   `
     * Every child needs a unique key prop
+  - History attribute - specifies the style to use for the urls, use browserHistory for server style urls, and hashHistory for `#` style urls
+## contextTypes
+* mechanism for passing data around to components
+* the components below the root dont get access automatically to a context, they must specify the items they are interested in using the `contextTypes` object
+* not great for domain related modles, they couple your code to the domain
+* Some use cases include:
+  - current user model
+  - event bus
+  - flux data store
+  - session storage
+
+## Lifecycle methods
+* componentWillUpdate
+* shouldComponentUpdate
 
 ## Flux
 ### General
@@ -151,3 +165,13 @@
 
 ## Helpers
 * react-html-attrs - transpiles class attributes to be className
+
+## Plugins
+* `DefinePlugin()` - implements a regex that searches our source and replaces variables defiend in a key(name of variable)-value(name in the source code) object
+  - by convention surround the replaced variables with 2 underscores either side ie NODE_ENV => __NODE_ENV__
+
+## Basic setup
+* [SurviveJS setup](http://survivejs.com/webpack/advanced-techniques/configuring-react/)
+* react modules `npm install -S react react-dom babel-preset-react babel-preset-es2015 babel-loader babel-core react-router`
+* testing: `npm install -D enzyme mocha karma`
+* webpack: `npm install -D webpack-dev-server webpack react-hot-loader`

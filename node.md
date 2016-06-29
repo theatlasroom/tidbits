@@ -38,7 +38,9 @@ Use the require command to load globally available node modules
 * dist-tags: each package has dist-tags entry which maps strings like latest to a version number
   - can be used to manage changes to previous versions, such as security patches
   - *latest* tag can never be removed, but you can point it to a different versionts
-* `npm outdated` lists the outdated dependencies 
+* `npm outdated` lists the outdated dependencies
+* `-S`: save dependencies
+* `-D`: save dev dependencies
 
 
 ### Command line arguments:
@@ -91,7 +93,7 @@ The console standard output (process.stdout) is a stream
 Number() - convert to Number
 String() - to string
 
-### [Buffers](http://nodejs.org/api/all.html#all_buffer) 
+### [Buffers](http://nodejs.org/api/all.html#all_buffer)
 Buffer objects are Node's way of efficiently representing arbitrary arrays  
 of data, whether it be ascii, binary or some other format. Buffer objects  
 can be converted to strings by simply calling the toString() method on  
@@ -99,7 +101,7 @@ them. e.g. `var str = buf.toString()`.
 
 values in a buffer can be get and set using offsets, similar to working with arrays
 
-IO streams like fs.createReadStream will emit incremental buffers 
+IO streams like fs.createReadStream will emit incremental buffers
 
 - a nodejs global object used to work with binary data
   * implements the [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) API, an array of 8 bit unsigned integers
@@ -173,3 +175,4 @@ Similar to BL
 ## NPM Packages
 - strftime: unix style date formatting
 - through2-map: allows you to create a transform stream using only a single function that takes a chunk of data and returns a chunk of data. It's designed to work much like Array#map() but for streams
+- yargs: parse command line arguments and flags
