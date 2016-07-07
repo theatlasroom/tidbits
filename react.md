@@ -175,3 +175,9 @@
 * react modules `npm install -S react react-dom babel-preset-react babel-preset-es2015 babel-loader babel-core react-router`
 * testing: `npm install -D enzyme mocha karma`
 * webpack: `npm install -D webpack-dev-server webpack react-hot-loader`
+
+## Links
+* [MERN](http://mern.io/) - mongo, express, react, node
+* [Server side rendering + express](https://www.smashingmagazine.com/2016/03/server-side-rendering-react-node-express/#maintenance)
+* [React + node](http://blog.yld.io/2015/06/10/getting-started-with-react-and-node-js/)
+* [isomorphic js - react + node + flux](http://stefunk.github.io/2015/01/29/isormophic-javascript-blog-react-nodejs.html)

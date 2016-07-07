@@ -7,9 +7,14 @@ Module loader in the vein of require and browserify
 
 ## Dev server
 
+## Hot module replacement
+HMR exchanges, adds or removes moduleits while an application is running without a page reload
+
 ## loaders
 allow us to perform actions on our files
 * `babel-loader` - transform es2015 and jsx
+* preloaders are applied to the code before it gets transformed
+* when you have an array of loaders configured for a matching test, the loaders are executed from last to first
 
 ## Angular
 ### 1.x
