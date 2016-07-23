@@ -2,7 +2,7 @@
 ## Commands
 * mongod - start mongodb server daemon
 * mongo - connect to the mongodb
-* mongodump -d <database> -o <output-file> - export database to file
+* mongodump -d <database> -c <collection - optional> -o <output-file> - export database to file 
 * mongoimport - import file to database collection
 * mongorestore - restore db from dump
 

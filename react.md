@@ -36,6 +36,7 @@
   - State only should be used when a component has a internal value that only effects that component nothing else
   - when state changes on a component, the component is updated and re-rendered
   - change state using this.setState({});
+  - state should be used for a components internal values, a value that only effects that component
 * Props can be injected into any component component
   `<component property='somevalue' />`
   - props can be injected from an outer / parent component
@@ -98,7 +99,7 @@
 ## contextTypes
 * mechanism for passing data around to components
 * the components below the root dont get access automatically to a context, they must specify the items they are interested in using the `contextTypes` object
-* not great for domain related modles, they couple your code to the domain
+* not great for domain related models, they couple your code to the domain
 * Some use cases include:
   - current user model
   - event bus

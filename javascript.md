@@ -135,6 +135,51 @@ To access their data, you need to create a typed array (a view) thorugh which to
 * `Object.assign()`- copy the values of all enumerable own properties form one or more source objects to a target object. The function returns the target object.
   - this assigns properties as opposed to just copying them or defining new properties
 
+### let
+* creates a variable with a block level scope
+
+### const
+* creates constant variables, variables with a value that can not be re-declared
+* useful for defining required modules so they are not manipulated
+
+### Class, extend, super()
+* Cleaner syntax for creating object prototypes
+* extends allows for extension of a defined type
+* Use super in the constructor to call the parents constructor
+
+### Arrow functions (fat arrow)
+* shorthand syntax for function expressions
+* always anonymous
+* lexically binds 'this'
+* parenthesis are optional when there is only 1 argument
+* Basic syntax:
+  (param1, param2, paramN) => { statements }
+  (param1, param2, paramN) => expression // equivalent to:  => { return expression; }
+
+### Template strings
+* Use backticks to define multiline strings and template strings
+* let bear = `
+  Grizzly
+  Bears  
+  `
+* Allows a type of string interpolation
+  let bear = 'grizzly', says = 'growl';
+  console.log(`The ${bear} says ${says}`); // outputs: The grizzly says growl
+
+### Destructuring
+* Simpler syntax for defining and accessing object values
+* let bear = 'grizzly',says = 'growl';
+  let zoo = {bear, says}; // Object {bear: "grizzly", says: "growl"};
+* opposite operation
+  let {bear, says} = zoo; // pulls out the bear and says variables so we can use them seperately
+
+### Default parameters  
+* default params for a function, function bear(type='grizzly'){ ... }
+
+### Rest parameters
+* Allows variable number of parameters to be passed to a function
+* function bears(...types) { } -> bears('polar', 'grizzly', 'brown')  
+
 ### Promises
 From ECMAScript 2015, promises have been standardised as part of the language. A promise is an object that defines a method
 called **then**. The promise object represents a value that may be available some time in the future.
@@ -160,6 +205,10 @@ then function is called once the main callback has finished. The then function c
   })
   .catch(function(err){ /* ... */ });
 `
+
+### ES6 links
+* [ES6 Learning](https://github.com/ericdouglas/ES6-Learning) - comprehensive
+* [ES6 today](http://www.2ality.com/2014/08/es6-today.html)
 
 ## Links
 * [Anti Patterns](http://www.datchley.name/promise-patterns-anti-patterns/)

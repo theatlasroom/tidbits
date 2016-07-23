@@ -88,6 +88,48 @@
 - sig~: convert a numerical message (int/float) to a signal
 - slider~: send out a value based on the position of the bar, the range of values can be set to constrain the numbers that are output
 
+## General
+### MSP
+#### General
+* Lists of messages can be passed to an object and will automatically be mapped to the corresponding parameters
+* midiin - reads unformatted raw midi data
+* midiout - outputs raw unformatted midi data
+* number boxes can be set to display in midi format (shows the note played ie note 48 = midi C2)
+* midiinfo provides information about the current midi setup
+* toggle box used to switch parameters on / off
+* speedlim - limit the speed of messages being sent - can be used to regulate outputs etc
+
+#### Message specific
+* notein and noteout
+* accept midi input, but ignores all messages other than note messages
+* notein outputs 3 bits of information for each message
+	- pitch, velocity and midi channel
+	- noteoff is displayed as a note with vleocity 0
+* noteout expects 3 arguments
+* ctlin and ctlout are used for trasnmitting midi continuous controller messages
+	- messages from faders / knobs / rotary controls
+
+#### Midi
+* makenote - creates a pitch / velocity combination and generates a matching note-off message after a set duration
+	- automatically sends a note off message when note released
+* stripenote - connected to a notein, can be used to strip note off messages out
+	- use stripnote and flush to manually control when a noteoff message is sent
+* sustain - mimics the sustain pedal on a piano
+* midiparse - used to examine components of a raw midi stream
+	- decodes the incoming midid stream
+* midiformat - used to create a midi message
+	- generate a midi stream
+* xbendin - extended midi values like pitchbend
+	- pitch bend sent in 14bits - midiparse only tracks the first 7, so xbendin provides richer bend detail
+	- often produces too many values, use speedlim to limit it
+* seq - create streams of midi data in a sequence
+* 'tick' message -  message sent to advance the sequence clock
+	- used to change the speed of the sequence during playback
+	- can take lines and other objects as inputs
+	- ie diagonal line to ramp up the speed gradually
+* tempo object -
+	- takes 3 arguments: bpm speed, beat multiplier, beat division for a whole note
+
 ## Glossary
 * Beat (difference) frequency: the rate of the beats that occur between 2 waves of different frequencies coming in and out of phase 1000Hz + 1002Hz = beat frequency 2 Hz
 * Portamento: gradual gliding from one signal to another

@@ -3,6 +3,7 @@ General terminal related things + common applications
 
 ## Tasks
 * copy a file: `cp <old location> <new location>`
+* SCP copy from remote server `scp -r user@server:/some/directory /local/dir` (scp <orig> <dest>)
 * rename a file: `mv <oldname> <newname>`
 * shutdown: `poweroff`
 * restart: `reboot`
@@ -29,7 +30,7 @@ General terminal related things + common applications
 * reload terminal `source ~/.bashrc` or just type `bash`
 
 ## Zipped files
-- tarball: tar -zcvf archive-name.tar.gz directory-name
+- tarball: `tar -zcvf archive-name.tar.gz directory-name`
 - debian: install 7z or unzip
 - redhat:
 
