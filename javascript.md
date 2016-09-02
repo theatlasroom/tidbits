@@ -214,7 +214,38 @@ then function is called once the main callback has finished. The then function c
 * [Anti Patterns](http://www.datchley.name/promise-patterns-anti-patterns/)
 * [More antipatterns](http://taoofcode.net/promise-anti-patterns/)
 
-## Testing - Jasmine
+## Testing
+### Assertions
+The assert library provides assertions for node
+* Focus on testing whether something works or not, not always specific input / outputs
+* Use [TAP](https://testanything.org/) for outputting test information
+* For async code, we often want to check if a callback / promise was called not necessarily the result
+* If you need to mock lots of things, your modules are too big
+
+#### Functions
+[Full documentation](http://nodejs.org/api/assert.html)
+* `.ok(value, message)` - only tests for truthy values
+* `.equal(actual, expected, message)` - `==`
+* `.notEqual(actual, expected, message)` - `!=`
+* `.deepEqual(actual, expected, message)` - object comparison
+* `.notDeepEqual(actual, expected, message)` - object comparison
+* `.strictEqual(actual, expected, message)` - `===`
+* `.notStrictEqual(actual, expected, message)` - `!==`
+
+### Tape
+One module for testing that outputs TAP is tape (another one is tap, duh).
+It takes a description of what your are testing and a callback function, with a
+parameter t that works quite similar to assert. You use it to write your
+assertions. However it also has a function t.end(), that you call when you are
+done with your assertions.
+
+* [Tape module](https://github.com/substack/tape)
+* A superset of assert to produce TAP output
+* `.end()` - explicitly declare the end of a test
+* `.plan(n)` - Use the plan function to specify how many assertions should be run, after the last assertion `t.end` is automatically called
+* `.throws(fn)` - The function is expected to throw an error, if it doesnt throw an error then the test fails
+
+### Jasmine
 Keep your modules small
 Always throw / return errors when you need to and check for them in your tests
 - success, error, expected and unexpected data
