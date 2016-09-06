@@ -31,7 +31,7 @@ Basic terminologies and concepts
   * `clipping planes` - the `near` and `far` planes define the boundaries of a subset of the 3D space (view frustrum)
   * `view frustrum` - objects appearing in this area are the only ones actually rendered to the screen
 * `shaders` - a chunk of code that defiens how vertices, transforms, materials, lights and the camera all interact
-  * programs written in a high-level C-like language to get the pixels for a mesh onto the screen 
+  * programs written in a high-level C-like language to get the pixels for a mesh onto the screen
   * shaders are compiled into code that is usable by the GPU
   * WebGL requires a shader before anything can be rendered
   * a shader needs to be provided for each object that is rendered
@@ -47,14 +47,14 @@ To render a WebGL scene we need to:
   * Give boundaries to the context that you have retrieved, this is the viewport
   * Call the context's viewport() method
 4. Create one or more buffers containing the data to be rendered (such as vertices)
-5. Create one or more matrices to define the transformation from vertex buffers to the screen 
+5. Create one or more matrices to define the transformation from vertex buffers to the screen
 6. Create one or more shaders to implement the drawing algorithm we want
 7. Initialize the shaders with the parameters we want
 8. Draw
 
 ## Data types
 * `ArrayBuffer` - typed arrays for storing compact binary data, they can be accessed by javascript using normal array syntax
-* `Float32Array` - a type of ArrayBuffer 
+* `Float32Array` - a type of ArrayBuffer
 
 ## Primitives
 WebGL drawing is done with primitives, these primitives use arrays of data (buffers) which define the positions of the vertices to be drawn.
@@ -74,7 +74,20 @@ WebGL drawing is done with primitives, these primitives use arrays of data (buff
 * `.TRIANGLE_STRIPC`
 
 [//]: Might have to move these to seperate files?
-## GLSL
+## Threejs
+A library that abstracts the details of the WebGL API, representing the 3D scene as meshes, materials and lights
+* `renderer` - responsible for all drawing, it uses a WebGL context under the hood
+  * the renderer object should be constructed and added to the DOM
+  * `render` - takes a scene and a camera and renders to the screen
+  * `.domElement` - returns the dom mode for us to add to our page
+* `scene` - top level object that contains all the other graphical objects
+  * in Threejs objects exist in a parent-child hierarchy
+* `camera` - defines where we are viewing the scene from
+  * position.set(x,y,z) to move the camera
+* `meshes`
+  * `PlaneGeometry` - constructs a rectangle, taking width and height as parameters
+* `materials`
+  * `MeshBasicMaterial` - creates a simple material with the colour white
 
 [//]: Might have to move these to seperate files?
-## Threejs
+## GLSL
