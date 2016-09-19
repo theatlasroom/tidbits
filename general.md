@@ -34,3 +34,5 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
   - **Night off**
 * Sunday
   - Writing
+  - Creating instruments
+  - Editing recordings

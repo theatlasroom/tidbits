@@ -31,12 +31,16 @@ Basic terminologies and concepts
   * `clipping planes` - the `near` and `far` planes define the boundaries of a subset of the 3D space (view frustrum)
   * `view frustrum` - objects appearing in this area are the only ones actually rendered to the screen
 * `shaders` - a chunk of code that defiens how vertices, transforms, materials, lights and the camera all interact
+  * the shading process provides 3 dimensionality to our objects
   * programs written in a high-level C-like language to get the pixels for a mesh onto the screen
   * shaders are compiled into code that is usable by the GPU
   * WebGL requires a shader before anything can be rendered
   * a shader needs to be provided for each object that is rendered
   * `vertex shader` - transforms the coordinates of the object into 2D space
   * `fragment shader` - generate a final colour for each pixel in the transformed vertices, based on the color, texture, lighting and material inputs
+* `lights` - sources of light for our scene
+  * use the **.position** attribute of the light to set its location relative to the origin, direction is then inferred to point *into* the origin of the scene
+  * `directional` - illuminates objects from a specific direction, but over a infinite distance and doesnt have a particular location
 
 To render a WebGL scene we need to:
 1. Create a canvas
@@ -86,6 +90,7 @@ A library that abstracts the details of the WebGL API, representing the 3D scene
   * position.set(x,y,z) to move the camera
 * `meshes`
   * `PlaneGeometry` - constructs a rectangle, taking width and height as parameters
+  * `CubeGeometry` - create cubes
 * `materials`
   * `MeshBasicMaterial` - creates a simple material with the colour white
 
