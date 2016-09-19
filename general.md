@@ -1,6 +1,10 @@
 # General
 Just general notes hey
 
+## Awesome
+* [Awesome stock resources](https://github.com/neutraltone/awesome-stock-resources)
+
+## ??
 * Check dns: https://www.whatsmydns.net
 
 ## Events

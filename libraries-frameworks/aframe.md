@@ -15,21 +15,29 @@
 
  
 ## Entities
-* 
+* `<a-mixin>` - used to compose and reuse commonly-used sets of componnent properties
+  - should be defined within a `<a-assets>`
+  - `<a-scene>
+      <a-assets>
+        <a-mixin id="red" material="color: red"></a--mixin>
+      </a-assets>
+      <a-entity mixin="red cube"></a-entity>
+     </a-scene>`
+  - mixins are applied in the order they are defined, the last definition of a property will overwrite previous definitions
 
 ## Components
 * `Stats` - displays a UI with performance related metrics, applies only to the `<a-scene>` element
-  ** `<a-scene stats></a-scene>`
-  ** `fps`
-  ** `raf latency` - requestAnimationFrame
-  ** `Textures` - threejs textures
-  ** `Programs` - number GLSL shaders in the scene
-  ** `Geometries`
-  ** `Vertices`
-  ** `Faces`
-  ** `Calls` - number of draw calls on each frame
-  ** `Load time` - how long it took for the scene to start rendering in ms
-  ** `Entities` - number of A-frame entities
+  - `<a-scene stats></a-scene>`
+  - `fps`
+  - `raf latency` - requestAnimationFrame
+  - `Textures` - threejs textures
+  - `Programs` - number GLSL shaders in the scene
+  - `Geometries`
+  - `Vertices`
+  - `Faces`
+  - `Calls` - number of draw calls on each frame
+  - `Load time` - how long it took for the scene to start rendering in ms
+  - `Entities` - number of A-frame entities
 
 ## Tips
 * Make use of the asset management system to benefit from browser caching and preloading. Trying to fetch assets while rendering is slower than fetching all assets before rendering.
