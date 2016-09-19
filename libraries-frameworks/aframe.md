@@ -1,5 +1,4 @@
 # Aframe
-## General
 [A-Frame](https://aframe.io)
 - Open source frameowrk for 3d and VR content built on three.js
 - Built by MozVR team for prototyping WebVR content
@@ -13,8 +12,28 @@
   * `system`: provides global scope, services and management fo components
   * Lets us build complex entities with rich behaviour by plugging different reusable components into the sockets on the entity
 
- 
+## General
+* uses a right hand coordinate system (x right, y up, z out of the screen)
+* the basic distance unit is in meters
+* rotations are defiend in degrees
+* transformations (translation, rotation and scaling) are applied as components
+   - `<a-scene>
+        <a-box color="#6173F4" width="4" height="10" depth="2"
+               position="-10 2 5" rotation="0 0 45" scale="2 0.5 3"></a-box>
+      </a-scene>`
+* use the src attribute to apply a texture (image or video)
+  - it is best to cache the texture and block the scene from rendering until the texture has loaded.
+
 ## Entities
+* `<a-animation>` - animates an entity
+* `<a-assets>` - 
+  - useful for caching assets that are needed within the scene, ie images. 
+  - define the asset in the entity and give the asset an id, refer to the asset using the id selector `#asset`
+* `<a-camera>` - used to explicitly define a camera, if it is not there then the default camera is used
+* `<a-cursor>` - used to interact with entities
+* `<a-light>` - change how the scene is lit
+  - by default and ambient light and directional light will be added
+  - once we add our own lights, the default is removed
 * `<a-mixin>` - used to compose and reuse commonly-used sets of componnent properties
   - should be defined within a `<a-assets>`
   - `<a-scene>
@@ -24,6 +43,7 @@
       <a-entity mixin="red cube"></a-entity>
      </a-scene>`
   - mixins are applied in the order they are defined, the last definition of a property will overwrite previous definitions
+* `<a-sky>` - add a background to the scene, can be a color, video, image 360 degree assets etc 
 
 ## Components
 * `Stats` - displays a UI with performance related metrics, applies only to the `<a-scene>` element
