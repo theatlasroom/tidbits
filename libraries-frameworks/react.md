@@ -2,6 +2,7 @@
 * Focus on component based code
 * Requires webpack
 * Call super() in the component constructor
+* use [es6](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) - ignore everything else
 
 ## Components
 * Everything in react is a component
@@ -106,9 +107,37 @@
   - flux data store
   - session storage
 
-## Lifecycle methods
-* componentWillUpdate
-* shouldComponentUpdate
+## Component Spec + Lifecycle methods
+* `render()` - required method that should return a single child element
+  - returning `null` or `false` will not render anything
+  - this function should be **pure**
+* `getDefaultProps()` - invoked once and cached when the class is created
+  - values in the mapping will be set on `this.props` if the prop i snot specified by the parent component
+* `propTypes` - allows you to validate props being passed to your components
+  - can be validated by using the `React.PropTypes`
+* `statics` - the statics object allows you to define static methods that can be called on the component
+  - methods defined here do not have access to props or states, pass them in as args
+* `componentWillMount` - invoked on client and server before the initial rendering occurs
+* `componentDidMount` - invoked once on the client after the initial rendering
+  - you can access any refs to your children (to access underlying DOM)
+  - children's componentDidMount is executed before the parent
+  - good for AJAX request, settings timers, integrating other frameworks
+* `componentWillReceiveProps` - invoked when a component is receive new props, not called for initial render
+  - props have not changed yet at this point
+  - allows you to react to a prop transition before render is called by updating the state
+  - the `nextProps` are passed as and argument
+* `componentWillUpdate()` - invoked immediately before rendering when new props or state are being received
+  - you cannot update this.setState in here
+* `componentDidUpdate()` - invoked after the components updates are flushed to the DOM
+* `componentWillUnmount()` - invoked before a component is unmounted
+  - good place to undo what was done in `componentDidMount`
+* `shouldComponentUpdate()` - invoked before rendering when new props or state are being received
+  - you can force a component not to update by returning false here
+  - nextProps and nextState are passed as arguments
+* `constructor()`
+  - Setup your state object in the constructor, the value you assign to `this.state` will be used as the initial state - this replaces the `getInitialState` function
+  - Bind event handlers in the constructor
+    `this.tick = this.tick.bind(this)`
 
 ## Flux
 ### General
@@ -120,6 +149,7 @@
   - actions pipe data to a dispatcher
 
 ### Stores
+* Fat models, containing all the data and application logic for a domain
 * Used to hold business logic
 * When a store changes, it should emit a change event
   `this.emit('change')`
@@ -138,6 +168,7 @@
 
 ### Dispatcher
 * Used to notify our store of actions
+* Only knows there is a callback it has call if an event occurs
 * Events should be in all caps "NEW_EVENT"
 * flux has a dispatcher which can be used
   `import { Dispatcher } from "flux"`
@@ -148,6 +179,7 @@
   `dispatch({type: 'MY_EVENT', ... params});`
 
 ### Actions
+* The entry point to the system for anything that needs to enter with the system (User input, api interactions)
 * Should be housed in a seperate file for each store
   `export function createTodo(text){
     dispatcher.dispatch({    
@@ -160,6 +192,11 @@
 * For async actions, send out multiple events at different times
   - ie: BEGIN_FETCH_TODOS, RECEIVED_TODOS, FETCH_ERRORS
 * the store should listen for the events and emit a change where needed
+* `waitFor()` used to sequence updates and allow for the creation of a hierarchy of stores
+
+### Flux package - npm
+* [Flux](https://www.npmjs.com/package/flux)
+
 
 ## Redux
 
@@ -178,6 +215,7 @@
 * webpack: `npm install -D webpack-dev-server webpack react-hot-loader`
 
 ## Links
+* [*"Official"* react starter - facebook](http://github.com/facebookincubator/create-react-app)
 * [MERN](http://mern.io/) - mongo, express, react, node
 * [Server side rendering + express](https://www.smashingmagazine.com/2016/03/server-side-rendering-react-node-express/#maintenance)
 * [React + node](http://blog.yld.io/2015/06/10/getting-started-with-react-and-node-js/)

@@ -132,7 +132,7 @@ To access their data, you need to create a typed array (a view) thorugh which to
   - updates to a property only apply to the object not to the prototype
 
 ## ES6
-* `Object.assign()`- copy the values of all enumerable own properties form one or more source objects to a target object. The function returns the target object.
+* `Object.assign()`- copy the values of all enumerable own properties from one or more source objects to a target object. The function returns the target object.
   - this assigns properties as opposed to just copying them or defining new properties
 
 ### let
@@ -179,6 +179,16 @@ To access their data, you need to create a typed array (a view) thorugh which to
 ### Rest parameters
 * Allows variable number of parameters to be passed to a function
 * function bears(...types) { } -> bears('polar', 'grizzly', 'brown')  
+
+### Getters / Setters
+* `get` - binds and object property to a function that will be called when that property is looked up
+    `var obj = {
+        get latest(){ return .... }
+     }
+
+     console.log(obj.latest)`
+  - good for computed properties and encapsulating internal properties
+* `set` - binds an object property to a function to be called when there is an attempt to set that property
 
 ### Promises
 From ECMAScript 2015, promises have been standardised as part of the language. A promise is an object that defines a method

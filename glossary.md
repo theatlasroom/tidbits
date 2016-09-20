@@ -3,8 +3,14 @@
 ## Block scope
 Any variable defined within a block is only available within that block
 
+## CQRS
+...
+
 ## Function Scope
 Any variable defined in the function, is available to the whole function
+
+## Heisenbug
+[Wikipedia](https://en.wikipedia.org/wiki/Heisenbug)
 
 ## idempotent
 A type of operation that can be applied multiple times but still yields the same initial result. ie multiple put operations to a url should still result in only 1 resource existing
