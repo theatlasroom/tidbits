@@ -1,5 +1,5 @@
-# Terminals
-General terminal related things + common applications
+# Shells
+General shell related things + common applications, mostly bash / sh
 
 ## Tasks
 * copy a file: `cp <old location> <new location>`
