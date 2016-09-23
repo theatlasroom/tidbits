@@ -197,6 +197,10 @@
 ### Flux package - npm
 * [Flux](https://www.npmjs.com/package/flux)
 
+### Links
+* [React w/ Flux](http://reactkungfu.com/2015/07/react-with-flux-by-example-simple-todo-list-dissected/)
+* [scotch.io - flux](https://scotch.io/tutorials/build-a-react-flux-app-with-user-authentication)
+* [Flux pattern](https://tonyspiro.com/building-a-simple-react-application-using-the-flux-pattern)
 
 ## Redux
 

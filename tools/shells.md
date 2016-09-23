@@ -10,6 +10,7 @@ General shell related things + common applications, mostly bash / sh
 
 ## Command glossary
 ### Filesystem
+* source <file> - read and load the file in the current shell
 * chown: change <file>|<folder> owner
 * chmod: modify <file>|<folder> permissions
 * chgrp: modify group

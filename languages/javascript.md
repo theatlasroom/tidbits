@@ -274,3 +274,23 @@ doubles
 
 Code coverage
 - istanbul
+
+## Service workers
+Daemons that run in a seperate thread waiting for events
+They can control clients, ie windows, iframes etc
+collection of apis
+wakes up -> runs code -> goes back to sleep
+
+* events
+  - `install` - called when it is registered
+  - `activate`
+  - `fetch` - intervenes every network request so you inspect it
+  - `push`
+  - `sync`
+
+### Notes
+* Only run on https
+
+## Sockets
+### Socket.io
+*
