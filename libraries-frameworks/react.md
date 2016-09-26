@@ -194,6 +194,21 @@
 * the store should listen for the events and emit a change where needed
 * `waitFor()` used to sequence updates and allow for the creation of a hierarchy of stores
 
+### Flux utils
+Utility classes to help make flux easier.
+Comes with 4 basic classes that can be imported from `flux/utils`
+
+`Store` - cache data and expose public getters to provide access, they should respond to actions from the dispatcher and emit a change when their data changes
+  - `.constructor(dispatcher)`: construct the store and register an instance with the given dispatcher
+  - `.addListener(cb)`: adds a listener to the store to listen for the change event, a token is returned that can be used to remove the listener
+`ReduceStore` -
+  - `getInitialState`: constructs the initial state for this store
+  - `reduce(state, action)`: reduces the current state and and action to the new state of this store. all subclasses must implement this method.
+`MapStore` -
+`Container` - React components that control a view, primarily to gather information from stores and save it in their state, they should have no props or UI logic
+  - views should be controlled by a container, they contain UI and rendering logic and receive all information and callbacks as props
+
+
 ### Flux package - npm
 * [Flux](https://www.npmjs.com/package/flux)
 
