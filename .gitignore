@@ -1,1 +1,3 @@
-*.swp # ignore vi swap files
+# ignore vi swap files
+*.md.swp
+*.swp 
