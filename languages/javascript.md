@@ -134,6 +134,7 @@ To access their data, you need to create a typed array (a view) thorugh which to
 ## ES6
 * `Object.assign()`- copy the values of all enumerable own properties from one or more source objects to a target object. The function returns the target object.
   - this assigns properties as opposed to just copying them or defining new properties
+* `Object.is()` - checks if two values are the same value, not quite the same as `==` or `===`
 
 ### let
 * creates a variable with a block level scope
@@ -174,11 +175,19 @@ To access their data, you need to create a typed array (a view) thorugh which to
   let {bear, says} = zoo; // pulls out the bear and says variables so we can use them seperately
 
 ### Default parameters  
-* default params for a function, function bear(type='grizzly'){ ... }
+* default params for a function, `function bear(type='grizzly'){ ... }`
 
 ### Rest parameters
 * Allows variable number of parameters to be passed to a function
-* function bears(...types) { } -> bears('polar', 'grizzly', 'brown')  
+* `function bears(...types) { } -> bears('polar', 'grizzly', 'brown')  `
+* Returns an array of values
+* Must always be the last argument
+
+### Spread operator
+* Used to pass multiple arguments to a function
+* Can be applied to any iterable
+* Can be used as an alternative to `.apply`
+* same syntax as the rest operator `...iterable`
 
 ### Getters / Setters
 * `get` - binds and object property to a function that will be called when that property is looked up
@@ -216,9 +225,30 @@ then function is called once the main callback has finished. The then function c
   .catch(function(err){ /* ... */ });
 `
 
+### Iterators & Iterables
+* The Iterable protocol allows you to define the behaviour of objects when they are being iterated
+* An object can be made iterable by assigning to its @@iterator property, through the Symbol.iterator
+  `let foo = {
+    [Symbol.iterator]: () => ({
+      items: ['a','b','c'],
+      next: function next () {
+        return {
+          done: this.items.length === 0,
+          value: this.items.shift()
+        }
+      }
+    });
+  }`
+  - the iterator protocol defines how to get values out of an object
+  - the `next` method is required, and must return two properties:
+    * `done` - signals that the sequence has ended when true and false means there are more values to come
+    * `value` - the current item in the sequence
+* to iterate over the object, we can then use the `for...of` method
+
 ### ES6 links
 * [ES6 Learning](https://github.com/ericdouglas/ES6-Learning) - comprehensive
 * [ES6 today](http://www.2ality.com/2014/08/es6-today.html)
+* [ES6 Overview series](https://ponyfoo.com)
 
 ## Links
 * [Anti Patterns](http://www.datchley.name/promise-patterns-anti-patterns/)

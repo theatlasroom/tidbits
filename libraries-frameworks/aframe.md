@@ -25,12 +25,18 @@
   - it is best to cache the texture and block the scene from rendering until the texture has loaded.
 
 ## Entities
+Represented by the `<a-entity>` element, they are placeholder objects which we plug components in, to provide them with appearance, behaviour and functionality.
+Attached with the position, rotation and scale components
+Entities can be retrieved using DOM APIs
+`<a-entity>.components` - an object of components attached to the entity, gives access to all the entity components, their data methods and API
+
 * `<a-animation>` - animates an entity
 * `<a-assets>` -
   - useful for caching assets that are needed within the scene, ie images.
   - define the asset in the entity and give the asset an id, refer to the asset using the id selector `#asset`
 * `<a-camera>` - used to explicitly define a camera, if it is not there then the default camera is used
 * `<a-cursor>` - used to interact with entities
+* `<a-image>` - Load an image and display it on a 2d plane
 * `<a-light>` - change how the scene is lit
   - by default and ambient light and directional light will be added
   - once we add our own lights, the default is removed
@@ -44,8 +50,11 @@
      </a-scene>`
   - mixins are applied in the order they are defined, the last definition of a property will overwrite previous definitions
 * `<a-sky>` - add a background to the scene, can be a color, video, image 360 degree assets etc
+* `<a-video>` - displays a video on a flat plane as a texture,
 
 ## Components
+Reusable and modular chink of data, plugged into an entity to add behaviour, functionality, appearance etc
+All components have property types
 * `Stats` - displays a UI with performance related metrics, applies only to the `<a-scene>` element
   - `<a-scene stats></a-scene>`
   - `fps`

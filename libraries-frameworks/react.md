@@ -216,6 +216,7 @@ Comes with 4 basic classes that can be imported from `flux/utils`
 * [React w/ Flux](http://reactkungfu.com/2015/07/react-with-flux-by-example-simple-todo-list-dissected/)
 * [scotch.io - flux](https://scotch.io/tutorials/build-a-react-flux-app-with-user-authentication)
 * [Flux pattern](https://tonyspiro.com/building-a-simple-react-application-using-the-flux-pattern)
+* [SurviveJS - webpack / react](http://survivejs.com/webpack/advanced-techniques/configuring-react/)
 
 ## Redux
 
