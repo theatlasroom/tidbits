@@ -67,6 +67,15 @@ All components have property types
   - `Calls` - number of draw calls on each frame
   - `Load time` - how long it took for the scene to start rendering in ms
   - `Entities` - number of A-frame entities
+* `Material` - gives appearance to an entity, often paired with a geometry object which provides shape
+  - `depthTest` - whether depth testing is enabled when rendering the material
+  - `flatShading` - Use THREE.FlatShading rather than THREE.StandardShading
+  - `opacity` - extent of transparency, if the transparent property is not true then the material willbe opaque and opacity will only affect the colour
+  - `transparent` - whether material is transparent, transparent entities are rendered after non-transparent ones
+  - `shader` - which material to use, defaults to standard material, but can be a registered custom material
+  - `side` - which sides of the mesh to render, front, back or double
+   
+
 
 ## Tips
 * Make use of the asset management system to benefit from browser caching and preloading. Trying to fetch assets while rendering is slower than fetching all assets before rendering.
