@@ -74,7 +74,20 @@ All components have property types
   - `transparent` - whether material is transparent, transparent entities are rendered after non-transparent ones
   - `shader` - which material to use, defaults to standard material, but can be a registered custom material
   - `side` - which sides of the mesh to render, front, back or double
-   
+  - `materialtextureloaded` - event fired when the texture is loaded onto the material, or the first frame of video is playing
+  - `materialvideoended` - for video textures when the video has reached its not (might not work for loop)
+  - `standard material` - the default material, uses THREE.MeshStandardMaterial and has properties like `color`, `height`, `fog`, `metalness`, `repeat`, `roughness`, `width`, `src` (can be a url or selector for an img/video)
+
+## General
+* `registerShader` - register a custom shader
+  - takes a schema property, that defines uniforms and attributes the shader will use
+    - `color` - vec3 uniform type, automatically converts colors to vec3 format
+    - `number` - maps to GLSL float
+    - `time` - float uniform type, the material component will continuously update the shader with the global scene time
+    - `vec2, vec3, vec4` - maps to GLSL equivalents
+  - `this.materal` - provides access to the desired material
+  - `vertexShader, fragmentShader` - properties to specify custom shader programs as a string
+* 
 
 
 ## Tips
