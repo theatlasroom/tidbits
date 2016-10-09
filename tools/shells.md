@@ -29,6 +29,13 @@ General shell related things + common applications, mostly bash / sh
 
 ## Bash
 * reload terminal `source ~/.bashrc` or just type `bash`
+* list all files in a dir recursively
+  `for f in $(find ./folder -name '*.filetype');
+   do echo "Processing $(basename $f) file.."; done`
+* drop file extension
+  `file = 'some-file.filetype'
+   filename=${file%.*}
+  `
 
 ## Zipped files
 - tarball: `tar -zcvf archive-name.tar.gz directory-name`
