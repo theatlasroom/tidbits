@@ -78,6 +78,50 @@ All components have property types
   - `materialvideoended` - for video textures when the video has reached its not (might not work for loop)
   - `standard material` - the default material, uses THREE.MeshStandardMaterial and has properties like `color`, `height`, `fog`, `metalness`, `repeat`, `roughness`, `width`, `src` (can be a url or selector for an img/video)
 
+## System
+Provides global scope, services and management to classes of components, provides public apis for classes to components.
+Can be accessed through the scene element and can help components interface with the global scene
+ie - the camera system manages all entities with the camera component, controlling which is the active camerai
+- Register a system similar to a component using `AFRAME.registerSystem('name', {})`
+- contains a `schema` and `data` (data provided by the schema available across handlers and methods) property 
+- systems are accessed through the scene `document.querySelector('scene').systems[systemName]`
+
+## Scene
+The global root object, all entities are enclosed within the scene
+The scene inherits from the Entity class, including the ability to attach components and the behavior to wait for all of its child nodes (assets, entities) to load before rendering
+- setup canvas, renderer and render loop
+- sets up default camera and lights
+- set up webvr-polyfill, VREffect
+- Add UI to Enter VR that calls WebVR API
+
+Properties
+- `behaviors` - Array fo components with tick methods that will be run on every frame
+- `camera` - active Three.js camera
+- `canvas` - reference to the canvas elem
+- `isMoble` - in a mobile env or not
+- `renderer` - active THREE.WebGLRenderer
+- `renderStarted` - has it started rendering
+- `effect` - Renderer for VR created by passing active renderer into THREE.VREffect
+- `systems` - instantiated systems
+- `time` - global uptime of the scene in seconds
+- `loaded` - event fired when all nodes have loaded
+
+## Animations
+defined by attaching an `<a-animation>` element as a child of an entity to animate it, roughly based on the [web animations specs](https://www.w3.org/TR/web-animations/)
+
+Properties
+- `attribute` - the component to be animated, ie rotation, light.intensity
+- `begin` - name of the event to wait on before beginning animation
+- `delay` - delay or event name to wait on before starting the animation
+- `direction` - Direction of the animation
+- `dur` - duration of the animation
+- `easing` - easing function for the animation
+- `end` - event name to wait on before stopping animation
+- `fill` - determines effect of animation when not actively in play
+- `from` - starting value
+- `repeat` - number of times to repeat
+- `to` - end value
+
 ## General
 * `registerShader` - register a custom shader
   - takes a schema property, that defines uniforms and attributes the shader will use

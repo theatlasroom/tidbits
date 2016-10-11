@@ -220,7 +220,6 @@ Comes with 4 basic classes that can be imported from `flux/utils`
 
 ## Redux
 
-
 ## Helpers
 * react-html-attrs - transpiles class attributes to be className
 
@@ -233,6 +232,13 @@ Comes with 4 basic classes that can be imported from `flux/utils`
 * react modules `npm install -S react react-dom babel-preset-react babel-preset-es2015 babel-loader babel-core react-router`
 * testing: `npm install -D enzyme mocha karma`
 * webpack: `npm install -D webpack-dev-server webpack react-hot-loader`
+
+## Testing
+### Enzyme
+Wraps around react shallowrender to give a jquery like wrapper around the resulting tree
+We can assert on events and state transitions
+- mount: full dom rendering
+- render: html rendering
 
 ## Links
 * [*"Official"* react starter - facebook](http://github.com/facebookincubator/create-react-app)
