@@ -37,6 +37,10 @@ General shell related things + common applications, mostly bash / sh
    filename=${file%.*}
   `
 
+## zsh
+* `![command]` - shows the last command you typed using the command specified
+* `history` - shows a history of your commands
+
 ## Zipped files
 - tarball: `tar -zcvf archive-name.tar.gz directory-name`
 - debian: install 7z or unzip

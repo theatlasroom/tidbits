@@ -243,6 +243,7 @@ We can assert on events and state transitions
 ## Links
 * [*"Official"* react starter - facebook](http://github.com/facebookincubator/create-react-app)
 * [MERN](http://mern.io/) - mongo, express, react, node
+* [Communication between components without flux](http://andrewhfarmer.com/component-communication/)
 * [Server side rendering + express](https://www.smashingmagazine.com/2016/03/server-side-rendering-react-node-express/#maintenance)
 * [React + node](http://blog.yld.io/2015/06/10/getting-started-with-react-and-node-js/)
 * [isomorphic js - react + node + flux](http://stefunk.github.io/2015/01/29/isormophic-javascript-blog-react-nodejs.html)
