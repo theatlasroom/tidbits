@@ -17,8 +17,24 @@ Use the require command to load globally available node modules
 ### Bytes
 * **Buffer** isa global object that allows us to work with binary data
   - most core apis (http, net, fs etc) will work with buffers
+      
+### Yarn
+package manager that works across bower and npm, giving a flat dependency structure, it will install deps in parallel 
+developed to address some shortcomings of npm:
+- nested deps: npm nests dependencies leading to duplicates and long file paths
+- queued install: npm installs deps one after the other
+- single registry (npm) and offline installation
+- a single request failing ont cause an install to fail
+- install via `brew update && brew install yarn` or `npm install -g yarn`
+- after every install a `yarn.lock` file is updated to keep track of the exact packages in node_modules
 
-
+Commands:
+- `yarn init`: create a new package.json
+- `yarn add [package-name]`: add a new dependency
+  - `--dev`, `--peer`, `--optional` can be paased
+- `yarn upgrade [package-name]`: upgrade a package 
+- `yarn remove [package-name]`: remove a package 
+- `yarn self-update`: update yarn
 
 ### NPM
 * create an npm account by running `npm adduser`
