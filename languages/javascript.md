@@ -123,7 +123,7 @@ To access their data, you need to create a typed array (a view) thorugh which to
 ## Prototypes
 * The simplest way to create an object is by using the object literal syntax:
   `var obj = { prop: value };`
-* the `__proto__` property can be used to create a new object from the prototype of an existing object, its available in ES6 onwards
+* the **__proto__** property can be used to create a new object from the prototype of an existing object, its available in ES6 onwards
   `var robot = { kind: 'robot'}; var x = {}; x.__proto__ = robot; x.kind --> 'robot' `
 * To check if an object is the prototype of another use `obj.isPrototypeOf(obj)`
 * Properties can be added to the prototype of an object at any time. The chain lookup will find the new property.
@@ -159,10 +159,10 @@ To access their data, you need to create a typed array (a view) thorugh which to
 
 ### Template strings
 * Use backticks to define multiline strings and template strings
-* let bear = `
+* let bear = **
   Grizzly
   Bears  
-  `
+  **
 * Allows a type of string interpolation
   let bear = 'grizzly', says = 'growl';
   console.log(`The ${bear} says ${says}`); // outputs: The grizzly says growl
@@ -190,14 +190,14 @@ To access their data, you need to create a typed array (a view) thorugh which to
 * same syntax as the rest operator `...iterable`
 
 ### Getters / Setters
-* `get` - binds and object property to a function that will be called when that property is looked up
+* **get** - binds and object property to a function that will be called when that property is looked up
     `var obj = {
         get latest(){ return .... }
      }
 
      console.log(obj.latest)`
   - good for computed properties and encapsulating internal properties
-* `set` - binds an object property to a function to be called when there is an attempt to set that property
+* **set** - binds an object property to a function to be called when there is an attempt to set that property
 
 ### Promises
 From ECMAScript 2015, promises have been standardised as part of the language. A promise is an object that defines a method
@@ -240,9 +240,9 @@ then function is called once the main callback has finished. The then function c
     });
   }`
   - the iterator protocol defines how to get values out of an object
-  - the `next` method is required, and must return two properties:
-    * `done` - signals that the sequence has ended when true and false means there are more values to come
-    * `value` - the current item in the sequence
+  - the **next** method is required, and must return two properties:
+    * **done** - signals that the sequence has ended when true and false means there are more values to come
+    * **value** - the current item in the sequence
 * to iterate over the object, we can then use the `for...of` method
 
 ### ES6 links
@@ -312,11 +312,11 @@ collection of apis
 wakes up -> runs code -> goes back to sleep
 
 * events
-  - `install` - called when it is registered
-  - `activate`
-  - `fetch` - intervenes every network request so you inspect it
-  - `push`
-  - `sync`
+  - **install** - called when it is registered
+  - **activate**
+  - **fetch** - intervenes every network request so you inspect it
+  - **push**
+  - **sync**
 
 ### Notes
 * Only run on https

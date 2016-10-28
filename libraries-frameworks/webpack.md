@@ -12,7 +12,7 @@ HMR exchanges, adds or removes moduleits while an application is running without
 
 ## loaders
 allow us to perform actions on our files
-* `babel-loader` - transform es2015 and jsx
+* **babel-loader** - transform es2015 and jsx
 * preloaders are applied to the code before it gets transformed
 * when you have an array of loaders configured for a matching test, the loaders are executed from last to first
 
@@ -23,5 +23,5 @@ allow us to perform actions on our files
 
 ## Notes
 * [hjs-webpack](https://github.com/HenrikJoreteg/hjs-webpack) provides helpers and presets to set up your wepback config
-* don't include minified file dependencies, this will cause the `--optimize-minimize` to take forever to complete building.
+* don't include minified file dependencies, this will cause the **--optimize-minimize** to take forever to complete building.
 * [SurviveJS - webpack / react](http://survivejs.com/webpack/advanced-techniques/configuring-react/)

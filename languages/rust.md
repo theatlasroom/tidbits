@@ -8,9 +8,9 @@
 ## Quick overview
 Created by mozilla to be safe, practical and low level
 
-`rustc` is the rust compiler, it enforces safety and guarantees for your programs
+**rustc** is the rust compiler, it enforces safety and guarantees for your programs
 
-By default, all variables are `immutable`, mutable variables need to be defined using `mut`
+By default, all variables are **immutable**, mutable variables need to be defined using **mut**
 
 blocks can be defined using the `{ }`
 
@@ -24,7 +24,7 @@ blocks can be defined using the `{ }`
 
 ### Syntax overview
 * fn is used to define a function
-* use `let` to allocate space for a variable
+* use **let** to allocate space for a variable
   - can define multiple variables in one line ie `let (fname, lname) = ("Some", "Person");`
 * use '{}' for print formatting => `println!("I am {} years old", age);`
   - can use `{0}, {1}`... to select a specifc output variable
@@ -75,22 +75,22 @@ Cargo is rust's build and package management system
 * expects your source code to be in a *./src* dir
 * outputs builds to *./target* dir
 * use [TOML](https://github.com/toml-lang/toml) config files to specify configurations for the project - *the file must be named Cargo.toml*
-* `cargo build` builds the project
-* `cargo run` builds and runs the project
-* `cargo build  --release` compiles the project with optimizations
+* **cargo build** builds the project
+* **cargo run** builds and runs the project
+* **cargo build  --release** compiles the project with optimizations
 * the *Cargo.lock* file is created to track your dependencies
-* `cargo new` creates a new project, use the --bin flag for binaries, otherwise it defaults to a library
+* **cargo new** creates a new project, use the --bin flag for binaries, otherwise it defaults to a library
 
 ### Notes
 * the [prelude](https://doc.rust-lang.org/std/prelude/) contains the default set of code that is imported into every program
 * Associated functions have the form `<Type>::function()` aka static method
 * `panic!` exits the program
-* `Result` types are used to encode error handling information
+* **Result** types are used to encode error handling information
   - the expect method checks the value of the response and will call `panic!` if it doesnt match
 
 ## Rust by example
 ### Introduction
-* rust files have a .rs extension, the `rustc`  rust compiler can be used to generate a binary
+* rust files have a .rs extension, the **rustc**  rust compiler can be used to generate a binary
 * Regular comments use `//`, multiline/block comments use `/* */`, Doc comments for the following item use `///` and `//!` generates library docs for the enclosing item
 * `std::fmt` defines macros for printing
   - `format!`: write formatted text to String, `print!` same as format! but prints to the console and `println!` same as print! but adds a new line
@@ -105,5 +105,5 @@ Cargo is rust's build and package management system
 * `chars()` returns an iterator
 
 ## Glossary
-* traits: a collection of methods, defined for an unknown type `Self`, they can access other methods declared in the same trait and can be implemented for any data type.
+* traits: a collection of methods, defined for an unknown type **Self**, they can access other methods declared in the same trait and can be implemented for any data type.
 * macro: function calls that end with a `!`, these are expanded into source code and compiled with the program

@@ -72,7 +72,7 @@
   - Dictionary are like associative arrays (key value lookup)
     - .items() -> returns tuples of key value pairs in no particular order. A tuple is a immutable list, surrounded by `()`s
     - .keys() and .values() return arrays
-* booleans can have the values `True` or `False`
+* booleans can have the values **True** or **False**
 * `**` symbol for exponentiation
 * List comprehensions
   - evens_to_50 = [i for i in range(51) if i % 2 == 0] -> an array of items < from 0 to 50 that are even
@@ -149,8 +149,8 @@ LWOP
 
 # django
 - activate a virtualenv use: `source bin/activate`
-  - `mkvirtualenv` - create a new virtual env
-  - `workon` - switch to an existing virtual env
+  - **mkvirtualenv** - create a new virtual env
+  - **workon** - switch to an existing virtual env
 - you can create projects or apps
 - apps are modules that can be reused and perform a task
 - projects are collections of apps and configs for a website

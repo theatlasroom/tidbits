@@ -20,28 +20,28 @@ Vim is a modal editor, to use the editor you need to be in the correct mode
 
 ## Key commands
 From command mode
-* use the `hjkl` to move up down left and right
-* use `w` to move to the next word and `b` to move to the previous
+* use the **hjkl** to move up down left and right
+* use **w** to move to the next word and **b** to move to the previous
 * `shift + v` - visual line mode
-* `o` - add a new line
-* `gg` - start of file
-* `G` - end of file
-* `0` - move to start of line
+* **o** - add a new line
+* **gg** - start of file
+* **G** - end of file
+* **0** - move to start of line
 * `$` - end of the line
-* `x` - remove char
-* `y` - yank (copy) text, its not copied to the clipboard though
-* `yy` - copy the line
-* `p` - paste
-* `d` - cut/delete
-* `dd` - cut/delete a line
+* **x** - remove char
+* **y** - yank (copy) text, its not copied to the clipboard though
+* **yy** - copy the line
+* **p** - paste
+* **d** - cut/delete
+* **dd** - cut/delete a line
 * `shift+dd` - remove the line but leave the space
-* `cw` - replace a word and change to insert mode
-* `ew` - remove a word and stay in normal mode
-* `cit` - delete content within a context - ie html inner text
+* **cw** - replace a word and change to insert mode
+* **ew** - remove a word and stay in normal mode
+* **cit** - delete content within a context - ie html inner text
 * `ci+<character>`: context delete, ie `ci"` will delete the text in quote marks, `ci{` will delete text in braces
-* `bd` - buffer delete -> close file
+* **bd** - buffer delete -> close file
 * `/<search>` - search for the term we specify, use n to move to the next occurence in the file
-* `zz` - set the current line as the centre of the screen
+* **zz** - set the current line as the centre of the screen
 
 ## Other commands
 * :help option list - list all the options
@@ -78,10 +78,10 @@ config file stored at `~/.vim/plugins.vim`
   - CtrlPBufTag - show the functions we have defiend
   - CtrlPMRUFiles - show the most recently used files
 * NERDTree: tree viewer
-  - `NERDTreeToggle` - show / hide the nerdtree view
+  - **NERDTreeToggle** - show / hide the nerdtree view
   - [cheatlist](https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/)
 * vim-vinegar: nice file browser
-  - `-` - opens up the current dir
-  - `d` - create new dir
-  - `D` - delete dir
+  - **-** - opens up the current dir
+  - **d** - create new dir
+  - **D** - delete dir
   - `%` - new file

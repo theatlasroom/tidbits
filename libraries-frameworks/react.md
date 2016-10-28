@@ -99,7 +99,7 @@
   - History attribute - specifies the style to use for the urls, use browserHistory for server style urls, and hashHistory for `#` style urls
 ## contextTypes
 * mechanism for passing data around to components
-* the components below the root dont get access automatically to a context, they must specify the items they are interested in using the `contextTypes` object
+* the components below the root dont get access automatically to a context, they must specify the items they are interested in using the **contextTypes** object
 * not great for domain related models, they couple your code to the domain
 * Some use cases include:
   - current user model
@@ -109,33 +109,33 @@
 
 ## Component Spec + Lifecycle methods
 * `render()` - required method that should return a single child element
-  - returning `null` or `false` will not render anything
+  - returning **null** or **false** will not render anything
   - this function should be **pure**
 * `getDefaultProps()` - invoked once and cached when the class is created
   - values in the mapping will be set on `this.props` if the prop i snot specified by the parent component
-* `propTypes` - allows you to validate props being passed to your components
+* **propTypes** - allows you to validate props being passed to your components
   - can be validated by using the `React.PropTypes`
-* `statics` - the statics object allows you to define static methods that can be called on the component
+* **statics** - the statics object allows you to define static methods that can be called on the component
   - methods defined here do not have access to props or states, pass them in as args
-* `componentWillMount` - invoked on client and server before the initial rendering occurs
-* `componentDidMount` - invoked once on the client after the initial rendering
+* **componentWillMount** - invoked on client and server before the initial rendering occurs
+* **componentDidMount** - invoked once on the client after the initial rendering
   - you can access any refs to your children (to access underlying DOM)
   - children's componentDidMount is executed before the parent
   - good for AJAX request, settings timers, integrating other frameworks
-* `componentWillReceiveProps` - invoked when a component is receive new props, not called for initial render
+* **componentWillReceiveProps** - invoked when a component is receive new props, not called for initial render
   - props have not changed yet at this point
   - allows you to react to a prop transition before render is called by updating the state
-  - the `nextProps` are passed as and argument
+  - the **nextProps** are passed as and argument
 * `componentWillUpdate()` - invoked immediately before rendering when new props or state are being received
   - you cannot update this.setState in here
 * `componentDidUpdate()` - invoked after the components updates are flushed to the DOM
 * `componentWillUnmount()` - invoked before a component is unmounted
-  - good place to undo what was done in `componentDidMount`
+  - good place to undo what was done in **componentDidMount**
 * `shouldComponentUpdate()` - invoked before rendering when new props or state are being received
   - you can force a component not to update by returning false here
   - nextProps and nextState are passed as arguments
 * `constructor()`
-  - Setup your state object in the constructor, the value you assign to `this.state` will be used as the initial state - this replaces the `getInitialState` function
+  - Setup your state object in the constructor, the value you assign to `this.state` will be used as the initial state - this replaces the **getInitialState** function
   - Bind event handlers in the constructor
     `this.tick = this.tick.bind(this)`
 
@@ -198,14 +198,14 @@
 Utility classes to help make flux easier.
 Comes with 4 basic classes that can be imported from `flux/utils`
 
-`Store` - cache data and expose public getters to provide access, they should respond to actions from the dispatcher and emit a change when their data changes
+**Store** - cache data and expose public getters to provide access, they should respond to actions from the dispatcher and emit a change when their data changes
   - `.constructor(dispatcher)`: construct the store and register an instance with the given dispatcher
   - `.addListener(cb)`: adds a listener to the store to listen for the change event, a token is returned that can be used to remove the listener
-`ReduceStore` -
-  - `getInitialState`: constructs the initial state for this store
+**ReduceStore** -
+  - **getInitialState**: constructs the initial state for this store
   - `reduce(state, action)`: reduces the current state and and action to the new state of this store. all subclasses must implement this method.
-`MapStore` -
-`Container` - React components that control a view, primarily to gather information from stores and save it in their state, they should have no props or UI logic
+**MapStore** -
+**Container** - React components that control a view, primarily to gather information from stores and save it in their state, they should have no props or UI logic
   - views should be controlled by a container, they contain UI and rendering logic and receive all information and callbacks as props
 
 
@@ -229,9 +229,9 @@ Comes with 4 basic classes that can be imported from `flux/utils`
 
 ## Basic setup
 * [SurviveJS setup](http://survivejs.com/webpack/advanced-techniques/configuring-react/)
-* react modules `npm install -S react react-dom babel-preset-react babel-preset-es2015 babel-loader babel-core react-router`
-* testing: `npm install -D enzyme mocha karma`
-* webpack: `npm install -D webpack-dev-server webpack react-hot-loader`
+* react modules **npm install -S react react-dom babel-preset-react babel-preset-es2015 babel-loader babel-core react-router**
+* testing: **npm install -D enzyme mocha karma**
+* webpack: **npm install -D webpack-dev-server webpack react-hot-loader**
 
 ## Testing
 ### Enzyme

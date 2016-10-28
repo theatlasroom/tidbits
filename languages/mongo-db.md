@@ -11,9 +11,9 @@
 * dokku mongo:import - import db dump from tar (tar without the -z option)
 
 ## General
-* `use db` - switch to a database
+* **use db** - switch to a database
 * `show dbs|collections` - show database / collections
-* Shutdown mongo: `use admin` then `db.shutdownServer()`
+* Shutdown mongo: **use admin** then `db.shutdownServer()`
 
 ## Queries
 * db.collection.find()

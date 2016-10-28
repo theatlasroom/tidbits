@@ -25,38 +25,38 @@ developed to address some shortcomings of npm:
 - queued install: npm installs deps one after the other
 - single registry (npm) and offline installation
 - a single request failing ont cause an install to fail
-- install via `brew update && brew install yarn` or `npm install -g yarn`
+- install via `brew update && brew install yarn` or **npm install -g yarn**
 - after every install a `yarn.lock` file is updated to keep track of the exact packages in node_modules
 
 Commands:
-- `yarn init`: create a new package.json
+- **yarn init**: create a new package.json
 - `yarn add [package-name]`: add a new dependency
-  - `--dev`, `--peer`, `--optional` can be paased
+  - **--dev**, **--peer**, **--optional** can be paased
 - `yarn upgrade [package-name]`: upgrade a package 
 - `yarn remove [package-name]`: remove a package 
-- `yarn self-update`: update yarn
+- **yarn self-update** update yarn
 
 ### NPM
-* create an npm account by running `npm adduser`
-* run `npm whoami` to see which account you are logged in as
+* create an npm account by running **npm adduser**
+* run **npm whoami** to see which account you are logged in as
 * npm helps you build projects, the `package.json` file specifies the details of your project
   - `npm init --scope=<username>` can be used to create a new package file for your selected user
-  - `npm help json` - definitions for the fields
+  - **npm help json** - definitions for the fields
 * installing a dependency will download its files from the npm registry and unpack them into your *node_modules* dir
   - `npm install <module>`  
-* `npm ls` - list all the modules installed
+* **npm ls** - list all the modules installed
 * npm can be used as task runner, most modules and projects will have a test script that runs, by default npm has a failing test
-* `npm publish` can be used to publish the package to the registry
-* `npm version` - updates the package file and commits the change to git
+* **npm publish** can be used to publish the package to the registry
+* **npm version** - updates the package file and commits the change to git
   - the registry wont allow you to publish changes unless you update the version number
   - valid arguments include [ version number | major | minor | patch ] etc
   - based on semantic versioning
 * dist-tags: each package has dist-tags entry which maps strings like latest to a version number
   - can be used to manage changes to previous versions, such as security patches
   - *latest* tag can never be removed, but you can point it to a different versionts
-* `npm outdated` lists the outdated dependencies
-* `-S`: save dependencies
-* `-D`: save dev dependencies
+* **npm outdated** lists the outdated dependencies
+* **-S** save dependencies
+* **-D** save dev dependencies
 
 
 ### Command line arguments:
@@ -155,7 +155,7 @@ All basic networking functions for the node core
 
 ### I/O
 #### [fs]() - Filesystem module
-  - All synchronous operations end with `Sync`
+  - All synchronous operations end with **Sync**
   - fs.readFileSync - returns a buffer object with the full contents of the file. Passing 'utf8' as the second argument will return a string
   - fs.readFile - async form readFileSync
   - readdir - takes a pathname and a callback(err, files), returns an array of the filenames in the dir

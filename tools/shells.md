@@ -5,8 +5,8 @@ General shell related things + common applications, mostly bash / sh
 * copy a file: `cp <old location> <new location>`
 * SCP copy from remote server `scp -r user@server:/some/directory /local/dir` (scp <orig> <dest>)
 * rename a file: `mv <oldname> <newname>`
-* shutdown: `poweroff`
-* restart: `reboot`
+* shutdown: **poweroff**
+* restart: **reboot**
 
 ## Command glossary
 ### Filesystem
@@ -17,18 +17,18 @@ General shell related things + common applications, mostly bash / sh
 * cp: copy file
 * mv: move / rename files and directories
 * mkdir: make a directory
-  - `-p`: make parent directories as needed
+  - **-p** make parent directories as needed
   `mkdir -p parent/{child1, child2, child3}`
 
 ### Accounts
 * useradd: create a new user
-* usermod: modify a user, such as their groups. `-g` modifies primary group. `-a -G` modifies secondary
+* usermod: modify a user, such as their groups. **-g** modifies primary group. **-a -G** modifies secondary
 * useradd -g gr u : add user 'u' to group 'gr'
 * groupadd: create a new group
 * groups <user> : list all the groups for <user>
 
 ## Bash
-* reload terminal `source ~/.bashrc` or just type `bash`
+* reload terminal `source ~/.bashrc` or just type **bash**
 * list all files in a dir recursively
   `for f in $(find ./folder -name '*.filetype');
    do echo "Processing $(basename $f) file.."; done`
@@ -39,7 +39,7 @@ General shell related things + common applications, mostly bash / sh
 
 ## zsh
 * `![command]` - shows the last command you typed using the command specified
-* `history` - shows a history of your commands
+* **history** - shows a history of your commands
 
 ## Zipped files
 - tarball: `tar -zcvf archive-name.tar.gz directory-name`

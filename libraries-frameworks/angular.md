@@ -94,4 +94,4 @@ Use this in the state config
 
 
 * To load a state within another view, make sure to specify the view `<div ui-view="modal" autoscroll="false"></div>`
-* When a state is activated, its templates are automatically inserted into the `ui-view` of its parent state's template. If it's a top-level state—which 'contacts' is because it has no parent state–then its parent template is index.html.
+* When a state is activated, its templates are automatically inserted into the **ui-view** of its parent state's template. If it's a top-level state—which 'contacts' is because it has no parent state–then its parent template is index.html.
