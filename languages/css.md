@@ -7,7 +7,8 @@
 * The flexbox layout algorithm is direction-agnostic, it works well for pages but is best suited for components of the screen that change orientation, size and direction based on the user agent
 
 ### Usage
-
+* `display: flex` - designate a block level flex container
+* `display: inline-flex` - designate a inline level flex container
 
 ### Terminology
 * **Flex container**: the parent element in which flex items are contained, defined by using the **flex** or **inline-flex** values of the **display** property
@@ -29,12 +30,17 @@
   - the **min-height** and **min-width** properties default to 0
   - the **flex** property shorthands the **flex-grow**, **flex-shrink** and **flex-basis** properties
 
-### Summary
+### Summary / interesting
 * Still need to use autoprefixer at the moment
 * A layout mode providing for the arrangement of element son a page
 * Designed for layouts to be displayed at different sizes on different devices
 * One of the key features is the ability to alter the width and height of items to best fill the available space
 * it does not use floats and the margins collapse with margins of its contents
+* text directly contained in a flex container is automatically wrapped in an anonymouse flex-item
+* margins of adjacent flex items do not collapse
+* Flexbox alignment is **true centering**, items will stay centered even if they overflow the container, if you dont want this behaviour use auto margins for centering
+* use `break-after`, `break-before` and `break-inside` to control line breaks for a container, items or inside items
+
 
 ### Parent properties
 * flex is a display property that is used for the container
@@ -80,8 +86,8 @@ Allow us to interact with CSS definitions from inside javascript, a build script
 
 ## PostCSS
 
-
 ## Resources
 * [MDN Flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+* [MDN Flexbox for web applications](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_flexbox_to_lay_out_web_applications)
 * [Good overview of the properties](https://www.youtube.com/watch?v=G7EIAgfkhmg)
 * [CSS Tricks guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
