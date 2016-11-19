@@ -7,6 +7,7 @@ General shell related things + common applications, mostly bash / sh
 * rename a file: `mv <oldname> <newname>`
 * shutdown: **poweroff**
 * restart: **reboot**
+* view all running proceses `ps aux | less`
 
 ## Command glossary
 ### Filesystem
