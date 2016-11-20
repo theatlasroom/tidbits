@@ -17,9 +17,9 @@ Use the require command to load globally available node modules
 ### Bytes
 * **Buffer** isa global object that allows us to work with binary data
   - most core apis (http, net, fs etc) will work with buffers
-      
+
 ### Yarn
-package manager that works across bower and npm, giving a flat dependency structure, it will install deps in parallel 
+package manager that works across bower and npm, giving a flat dependency structure, it will install deps in parallel
 developed to address some shortcomings of npm:
 - nested deps: npm nests dependencies leading to duplicates and long file paths
 - queued install: npm installs deps one after the other
@@ -32,8 +32,8 @@ Commands:
 - **yarn init**: create a new package.json
 - `yarn add [package-name]`: add a new dependency
   - **--dev**, **--peer**, **--optional** can be paased
-- `yarn upgrade [package-name]`: upgrade a package 
-- `yarn remove [package-name]`: remove a package 
+- `yarn upgrade [package-name]`: upgrade a package
+- `yarn remove [package-name]`: remove a package
 - **yarn self-update** update yarn
 
 ### NPM
@@ -184,6 +184,47 @@ Similar to BL
 
 ### Formatting
 #### Dates
+
+### Child processes
+Provides the ability to spawn child processes via the `child_process` module
+By default, pipes are created for stdin, stdout and stderr between the parent process and the child.
+The asynchronous methods return a `ChildProcess` instances that implements the `EventEmitter` api.
+- **.spawn**: spawn a new child process asynchronously
+  * options:
+    - `cwd` - current working directory for the child process
+    - `env` - env key value pairs
+    - `argv0` - explicitly set the value of argv[0], defaults to `command`
+    - `stdio` - childs stdio configuration
+    - `detached` - prepare child to run independently of its parent process
+    - `uid` - user identity of the process
+    - `gid` - group identity of the process
+    - `shell` - the type of shell to spawn
+- **.spawnSync**: spawn a new child process synchronously, blocks the main event loop until the process exits or is terminated
+- **.exec(command, [options], callback)**: spawns a shell and runs a command within the shells, passing stdout and stderr to a callback on completion
+  * options:
+    - `cwd` - current working directory for the child process
+    - `env` - env key value pairs
+    - `encoding` - defaults to utf8
+    - `shell` - the type of shell to spawn
+    - `timeout`
+    - `maxBuffer` - max amount of data before the child is killed
+    - `killSignal` - defaults to SIGTERM
+    - `uid` - user identity of the process
+    - `gid` - group identity of the process
+  * callback
+    - `error`
+    - `stdout | stderr`
+
+- **.execFile**: similar to exec, but spawns the command directly without a shell
+- **.fork**: spawn a new Node.js process and invokes a specified module with IPC communication channel established between the parent and child
+  * options:
+    - `cwd` - current working directory for the child process
+    - `env` - env key value pairs
+    - `execPath` - Executable used to create the child process
+    - `execArgv` - string arguments passed to the executable
+    - `silent` - if true, stdin, stdout and stderr of the child will be piped to the parent, otherwise they will be inherited from the parent
+    - `uid` - user identity of the process
+    - `gid` - group identity of the process
 
 ### Admin
 * [pm2]() - Process monitoring
