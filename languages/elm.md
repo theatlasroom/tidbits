@@ -87,9 +87,49 @@ goodName "Tom"
   this returns a new record, internally elm will share all the data that isnt changed
 
 - Records in Elm are similar to objects in JavaScript, but there are some crucial differences. The major differences are that with records:
- * You cannot ask for a field that does not exist.
- * No field will ever be undefined or null.
- * You cannot create recursive records with a this or self keyword.
-* Elm encourages a strict separation of data and logic, and the ability to say this is primarily used to break this separation. This is a systemic problem in Object Oriented languages that Elm is purposely avoiding.
+  * You cannot ask for a field that does not exist.
+  * No field will ever be undefined or null.
+  * You cannot create recursive records with a this or self keyword.
+  * Elm encourages a strict separation of data and logic, and the ability to say this is primarily used to break this separation. This is a systemic problem in Object Oriented languages that Elm is purposely avoiding.
+  * Records also support structural typing which means records in Elm can be used in any situation as long as the necessary fields exist. This gives us flexibility without compromising reliability.  
 
- * Records also support structural typing which means records in Elm can be used in any situation as long as the necessary fields exist. This gives us flexibility without compromising reliability.  
+## Architecture
+### Pattern
+**Model** - the state of the application
+**Update** - a way to update your state
+**View** - a way to view your state as HTML
+
+Skeleton
+`import Html exposing (...)
+
+-- MODEL
+
+type alias Model = { ... }
+
+-- UPDATE
+
+type Msg = Reset | ...
+
+update : Msg -> Model -> Model s
+update msg model =
+  case msg of
+    Reset -> ...
+    ...
+
+-- VIEW
+
+view : Model -> Html Msg
+view model =
+  ...
+`
+
+### User input
+
+### Libraries
+- `Html` - full access to HTML5 as elm functions
+ * Html functions take 2 inputs, a list of attributes and a list of child nodes
+
+
+## Useful links
+* [Learn elm in y minutes](https://learnxinyminutes.com/docs/elm/)
+* [elm + electron](https://medium.com/@ezekeal/building-an-electron-app-with-elm-part-1-boilerplate-3416a730731f#.jb717cy6q)
