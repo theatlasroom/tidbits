@@ -45,6 +45,12 @@ General shell related things + common applications, mostly bash / sh
   `file = 'some-file.filetype'
    filename=${file%.*}
   `
+### Scripting
+**Variables**: declared by just type and expression `name = value`, accessed with the `$` operator
+**Arrays**: `arr[0] = value` or `arr=( value1 value2 value 3 )`
+**Control structures**:
+- `while [ <condition> ]; do <expressions> done`
+- `if [ <condition> ]; then <expressions> fi`
 
 ## zsh
 * `![command]` - shows the last command you typed using the command specified
@@ -57,3 +63,7 @@ General shell related things + common applications, mostly bash / sh
 
 ## Curl
 - L option - follow redirects
+
+## Notes
+- by default, ubuntu executes commands using the `sh` shell
+- `sh` does not support variables
