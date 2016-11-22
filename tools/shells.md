@@ -28,6 +28,14 @@ General shell related things + common applications, mostly bash / sh
 * groupadd: create a new group
 * groups <user> : list all the groups for <user>
 
+### Networks
+* **netstat**: network statistics
+  - `-a` - shows all sockets in use
+  - `-l` - shows only the sockets currently listening for incoming connections
+  - `-t` - shows the tcp sockets
+  - `-u` - shows udp sockets
+  - `-n` - numeric, shows the hosts and ports as numbers instead of resolving in dns and looking in /etc/services
+
 ## Bash
 * reload terminal `source ~/.bashrc` or just type **bash**
 * list all files in a dir recursively

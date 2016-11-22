@@ -365,7 +365,8 @@ Some routers have restrictions on who can connect to devices on the network. thi
 Tries to bypass the Symmetric NAT (routers only accepting connections from peers youve previously connected to) by opening a connection with a TURN server and relaying all information through that server. You would create a connection with a TURN server and tell all peers to send packets to the server which will then be forwarded to you.
 
 **SDP** - Session Description Protocol
-A standard for describing the multimedia content of the connection such as resolution, formats, codecs, encryption, etc. so that both peers can understand each other once the data is transferring. This is like the metadata describing the content and not the media content itself
+A standard for describing the multimedia content of the connection such as resolution, formats, codecs, encryption, etc. so that both peers can understand each other once the data is transferring. This is like the metadata describing the content and not the media content itself.
 
 ### Notes
 * [MDN Specs](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+* [PeerJS](http://peerjs.com/)
