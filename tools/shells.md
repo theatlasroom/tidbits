@@ -45,6 +45,8 @@ General shell related things + common applications, mostly bash / sh
   `file = 'some-file.filetype'
    filename=${file%.*}
   `
+* Optional parameters: `somecommand ${1-foo}`, use arg 1 otherwise use foo if arg 1 is unset or an empty string  
+
 ### Scripting
 **Variables**: declared by just type and expression `name = value`, accessed with the `$` operator
 **Arrays**: `arr[0] = value` or `arr=( value1 value2 value 3 )`

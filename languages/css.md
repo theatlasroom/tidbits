@@ -20,6 +20,7 @@
   - **justify-content** how flex items are laid out along the main the axis on the current line
   - **align-items** defines the default for how flex items are laid out along the cross axis on the the current line
   - **align-self** defines how a singel flex item is aligned on the cross axis
+  - **text-overflow** defines how overflowed text that is not displayed to the user is handled ie elluips
 * **Directions**: the **main start** / **main end** and **cross start** / **cross end** sides of the flex container describe the origin and terminus of the flow of flex items, they follow
   the main axis and cross axis of the flex container in the vector established by the writing mode (left-to-right, right-to-left etc.)
   - **order**: assigns elements to the ordinal groups to determine which element appears first

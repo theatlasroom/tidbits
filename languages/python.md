@@ -262,6 +262,7 @@ LWOP
 - sqlmigrate (app) (migration number): lets you preview the sql that will be generated from your migration
 - shell: play around with the free api + imports the django settings and environment vars
 - test 'suitename' - runs tests
+- createsuperuser -  create a super user account
 
 
 ## Notes

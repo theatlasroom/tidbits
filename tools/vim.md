@@ -65,6 +65,9 @@ From command mode
   - :b<1,2..> - move to buffer number ..
 * :sh - open a shell
 
+## Shortcuts
+* Swap 2 lines: `:<line number 1>mo<line number 2>`
+    
 ## Keys
 * <cr> - carriage return (enter)
 * <Leader> - reference the default leader key (default is \)
