@@ -17,3 +17,4 @@ Alphabetised of course.
 * [Heroku](https://digitalocean.com)
 * [Vultr](https://www.vultr.com/)
 * [Zeit](https://zeit.co/)
+* [api.ipify.org](api.ipify.org) - check ip address

@@ -40,3 +40,10 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
   - Writing
   - Creating instruments
   - Editing recordings
+
+## Raspberry pi
+* [rasbpi config](https://www.raspberrypi.org/documentation/configuration/raspi-config.md) - setup ssh, hostname, default user etc
+* [transmission torrents](https://pimylifeup.com/raspberry-pi-torrentbox/)
+  - [vpn config](http://askubuntu.com/questions/583679/transmission-daemon-over-openvpn)
+* Change hostname at `/etc/hostname` && `/etc/hosts`, type `hostname` to see current
+* [setup vpn on boot](https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=127361)
