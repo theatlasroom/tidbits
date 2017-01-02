@@ -1,6 +1,9 @@
 # Shells
 General shell related things + common applications, mostly bash / sh
 
+* `|` used to pipe output from the command on the left into the command on the right
+* `less` used to show less results from the output of a command
+
 ## Tasks
 * copy a file: `cp <old location> <new location>`
 * SCP copy from remote server `scp -r user@server:/some/directory /local/dir` (scp <orig> <dest>)

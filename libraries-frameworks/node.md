@@ -229,7 +229,45 @@ The asynchronous methods return a `ChildProcess` instances that implements the `
 ### Admin
 * [pm2]() - Process monitoring
 
+
+## Useful
+### Scraping
+#### [x-ray](https://www.npmjs.com/package/x-ray)
+- package used to scrape pages
+- xray(url, target, opts)(callback)
+  * `.write` - write to a file
+  * `.paginate(tag)` - paginate, using the tag specified
+  * `.limit(number)` - limit the number of results
+  * url (String) - url to target
+  * target (String) - DOM element to search for
+  * opts (Array) - array of objects to specify the data to be returned,
+    - ie [{img: '', src: '@src'}] would return the content of the image tags and the src attribute
+    - ie [{title: 'a.title', href: '@href'}] would return the a tags with class title, returning the tag and the href
+  * callback - used for post processing the results
+  * pagination
+
+#### [Nightmare](https://www.npmjs.com/package/nightmare)
+- A wrapper package around phantomjs
+- useful for scraping pages with javascript
+- new Nightmare()
+  * `.goto(url)` - specify the url
+  * `.evaluate(function(document){}, function(results){})` - takes 2 arguments, the first allows you to perform actions in the context of the document, the second gives you the results of the first
+    ie `.evaluate(() => return document.querySelector('.temperature').innerText, (temperature) => return temperature)`
+  * `.run()` - execute
+  * `.type(selector, value)` - enter the value into the field on the page
+  * `.click(selector)` - click on an element
+  * `.wait(selector|time in ms)` - wait for a condition before proceeding, or until the time specified
+
+
+
+
 ## NPM Packages
 - strftime: unix style date formatting
 - through2-map: allows you to create a transform stream using only a single function that takes a chunk of data and returns a chunk of data. It's designed to work much like Array#map() but for streams
 - yargs: parse command line arguments and flags
+- download: downloads a file
+  * `download(url, destination, opts)`
+  * returns a promise
+  * can be piped to a stream
+  * `extract` option used to try and decompress a file, using [decompress](https://github.com/kevva/decompress/)
+- x-ray: web scraper

@@ -219,6 +219,59 @@ Comes with 4 basic classes that can be imported from `flux/utils`
 * [SurviveJS - webpack / react](http://survivejs.com/webpack/advanced-techniques/configuring-react/)
 
 ## Redux
+### General
+* A predictable state container for JS apps, providing:
+  - a place to store application state (all the data of your application)
+  - a mechanism to dispatch actions to modifiers of your applications state (reducers)
+  - a mechanism to subscribe to state updates
+* the redux instance is called a store and can be created:
+  `import { createStore } from 'redux'
+   const store = createStore(function(){})
+   store.dispatch({type: SOME_ACTION })
+   // or using an action creator
+   someActionCreator = (val) => {type; 'SOME_ACTION', value: val}
+   store.dispatch(someActionCreator('some_value'))`
+  - `.createStore(reducerFunction)` expects a function that will reduce your state
+  - `.combineReducers({ someSliceOfState: reducer ...})` combines different reducers, it takes a hash and returns a function, the function manages only one part of the total application state
+  - `.getState()` returns the current state of the application
+  - `.applyMiddleware(middlewares...) => function` lets reduce know of the middleware we will be using
+    * the resulting function should be used with createStore to apply the middleware to the stores dispatch
+  - `.subscribe(function(){...})` registers a callback to the state changes for the store
+
+* [React redux](https://github.com/rackt/react-redux) simplifies binding redux to a react context
+
+
+* Action creators -> Action -> Dispatcher -> Store -> Events -> Views
+* **Action creators**: pure JS functions used to create an action
+  `const action = () => {type: 'ACTION', ...}`
+  - Action creators may also return a function
+* **Actions**: The action is a JS object that contains a *type* property, which can be used for handling the action. Any additional data can also be passed along with the action
+  - actions can inform us that something has happenend or that data needs to be updated
+* **Dispatching**: sends the action to the parts of the application it applies to
+  - handlers register with the dispatch function to be notified when an action is dispatched
+  - Redux dispatches a *INIT* action to initialize the state of the application, the state initializes to `undefined`
+    * using ES6 default params we can define a reducer with a default state `reducer(state={}, action)`
+  - when an action is dispatched, each registered reducer is called with the state and the action
+  - when dispatching asynchronous actions, return a function instead and pass the dispatch function into the action so it can call dispatch when it has completed execution
+    * use middleware to ensure the function executes correctly
+* **Reducers**: A subscriber to actions
+  - *stateless* stores that receive the state each time they are called
+  - a function that receives the current state of your application + an action, and returns a modified (reduced) state
+    * Reducer(state, action) -> newState
+  - when a reducer is called it receives 2 parameters `(state, action)`
+  - reducers are passed to redux.createStore as action handlers  
+  - there are no limits on the number of reducers we might have
+* **Middleware**: functions that execute between parts of the application execution
+  - Use middleware to help with dispatching async actions
+  - `const someMiddleware = ({ dispatch, getState }) => {
+      return function(next){
+        return function(action){
+          // middleware specific code here
+        }
+      }
+    }`
+  - [thunk middleware](https://github.com/gaearon/redux-thunk) is used for building async actions
+
 
 ## Helpers
 * react-html-attrs - transpiles class attributes to be className
@@ -247,3 +300,8 @@ We can assert on events and state transitions
 * [Server side rendering + express](https://www.smashingmagazine.com/2016/03/server-side-rendering-react-node-express/#maintenance)
 * [React + node](http://blog.yld.io/2015/06/10/getting-started-with-react-and-node-js/)
 * [isomorphic js - react + node + flux](http://stefunk.github.io/2015/01/29/isormophic-javascript-blog-react-nodejs.html)
+* [Redux tutorial](https://github.com/happypoulp/redux-tutorial.git)
+* [Redux dev tools](https://github.com/gaearon/redux-devtools)
+* [Redux thunk middleware](https://github.com/gaearon/redux-thunk)
+* [React redux](https://github.com/rackt/react-redux)
+* [Redux offline docs](https://github.com/paulkogel/redux-offline-docs)

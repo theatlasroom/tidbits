@@ -150,6 +150,7 @@ LWOP
 # django
 - activate a virtualenv use: `source bin/activate`
   - **mkvirtualenv** - create a new virtual env
+    * `-p` to specify the python executable to use 
   - **workon** - switch to an existing virtual env
 - you can create projects or apps
 - apps are modules that can be reused and perform a task
