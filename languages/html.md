@@ -55,17 +55,40 @@ audio and video elements trigger various events along the way.
   // draw commands
   context.fill(...); // or context.stroke(...)
   ```
+* gradients can be created to fill a path with a range of colours
+  ```
+  let gradient =  context.createLinearGradient(100, 100, 200, 200);
+  gradient.addColorStop(0, "red");
+  gradient.addColorStop(0.5, "green");
+  gradient.addColorStop(1, "blue");
+  context.fillStyle = gradient;
+  context.fillRect(0, 100, 100, 100);
+  ```
 
 ### Methods
 * `.closePath()` - automatically close a path
-* `.fill(...)`
-* `.stroke(...)`
+* `.fill()` - draw a fill for the shape
+* `.stroke()` - draw a strokes for the shape
+* `.strokeStyle` - sets the colour for the strokes, takes rgb, rgba, hex, css colour values
+* `.fillStyle` - sets the fill colour, takes rgb, rgba, hex, css colour values | can be set to **gradient** for a gradient
+* `.lineWidth` - set the width of the stroke
+* `.lineCap` - sets the shape of the endpoint of a path, but not corners that join other lines, can be: but | round | square
+* `.lineJoin` - shape the point where 2 lines join can be: miter | round | bevel
 * `.moveTo(x, y)` - moves the virtual cursor, for drawing on the screen
 * `.lineTo(x, y)` - draws a line between the previous point (such as moveTo) and the specified x,y point
 * `.rect(x,y,width,height)` - draw a rectangle
 * `.fillRect(x,y,width,height)` - draws a rectangle at the parameters with the width / height specified and a fill colour
 * `.strokeRect(x,y,width,height)` - draw a rectangle with a stroke outline
 * `.clearRect(x,y,width,height)` - erase any content in the rectangle
-
+* `.quadraticCurveTo(cx, cy, x, y)` - draws a curve from the current point to the target point, the control point (cx, cy) is used to control the curvature
+* `.bezierCurveTo(cx1, cy1, cx2, cy2, x, y)` - draws a curve using 2 control points
+* `.arc(x,y,radius,startAngle,endAngle,antiClockwise)` - draw a circle or segments of a circle,
+  - x,y specify the centre point of the circle
+  - radius is the radius of the circle
+  - startAngle / endAngle specify how far the arc should go around the circumference, ie 0 -> pi would draw a semicircle
+  - antiClockwise defaults to false, so the circle will be drawn clockwise by default
+* `.createLinearGradient(x1, y1, x2, y2)` - sets up a linear gradient
+* `.createRadialGradient(x1, y1, radius1, x2, y2, radius2)` - sets a radial gradient
+* `.addColorStop(position, color)` - adds a colour to the gradient, position specifies where this colour will start (value between 0 and 1)
 
 ### Events
