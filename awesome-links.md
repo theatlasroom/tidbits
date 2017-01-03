@@ -21,3 +21,6 @@ Alphabetised of course.
 * [Vultr](https://www.vultr.com/)
 * [Zeit](https://zeit.co/)
 * [api.ipify.org](api.ipify.org) - check ip address
+
+## APIs
+* [gyfcat](https://developers.gfycat.com/api)
