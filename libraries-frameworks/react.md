@@ -54,11 +54,22 @@
   - When you bind a value, make sure to also setup a change listener so that you can update the value when a change is triggered
 
 ### Proptypes
+
 `React.propTypes` contain a range of validators, to ensure the passed in data is valid
 `MyComponent.propTypes = {
   name: React.PropTypes.string.isRequired,
   id: React.PropTypes.number,
 }`
+
+* validators are: `React.PropTypes.array`, `..bool`, `..func`, `..object`, `..number`, `..string`, `..symbol`
+  - `..node` - anything that can be rendered
+  - `..element` - react element
+  - `..arrayOf(type)` - array containing elements of the type specified
+  - `..instanceOf` - uses JS instanceOf operator
+  - `..oneOf(enum_of_types)` - specify an enum of types that are supported
+  - `..oneOfType([types])` - array of types that the object could be
+  - `..objectOf(type)` - object of a specific type
+  - `..shape({ prop1, prop2... })` - an object taking a specific shape
 
 ## Routing
 * [React Router](https://github.com/reactjs/react-router)

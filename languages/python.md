@@ -34,6 +34,7 @@
 * divmod returns a tuple containing the quotient and remainder divmod(177, 10) -> (17, 7  )
 * pow(a,b) -> calculate a to the power of b. pow(a,b,m) -> a to the power of b, mod m
 * sorted(iterable) -> takes any iterable and sorts it
+* isintance(<variable>, <instance-to-check>) -> check if the variable is an instance of the the object we specified
 
 ## Magic variables
 * `*args` and `**kwargs`
@@ -139,8 +140,10 @@
   - this will automatically close the file at the end of the <blockquote></blockquote>
 * check the .closed member to see if the file is closed or not
 
+## Regex
+
 ## Decorators
-* Declared before function with the @ symbole
+* Declared before function with the @ symbol
   - @api_view
 
 ## Notes

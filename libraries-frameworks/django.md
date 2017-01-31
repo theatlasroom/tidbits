@@ -22,6 +22,8 @@
   - Model.objects.filter(field=value) -> return objs that match the query set
   - Model.objects.exclude(field=value) -> opposite to filter
   - Model.objects.get()
+  - .values() allows you to specify the fields to be returned from the QuerySet
+  - .values_list() returns values as a list obj
 - Field lookups
   - used to make sql where queries
   - field__lookuptype=value
@@ -32,6 +34,31 @@
   - startswith, endswith, istartswith, iendswith
   - works on joins
     - Blog.objects.filter(entry__headline__contains='Lennon') -> select * from Blog join entry on headline contains 'Lennon'
+
+### QuerySets
+- Model.objects.create(<params>): create a new instance of a model, optionally takes a list of parameters that map to attributes of the model
+- .get_or_create(params): get or create the object if it doesnt exist
+- Model.save(): save an object
+- ...get(params): gets an object that matches the params
+
+### Managers
+- used to handle some of the logic behind the model
+- Interface for database query operations
+- At least 1 exists for every model
+- By default a manager with the name **objects** is added to every model call
+  * to rename, define a class attribute on that model ie people = models.Manager()
+- Base QuerySet returns all objects in the system
+- You can attach as many managers as you want to a model
+  * good way to define custom filters
+
+### Adding methods to a manager
+- [more info](https://docs.djangoproject.com/en/1.8/topics/db/managers/#adding-extra-manager-methods)
+- 'Table level functions' can be added as extra Manager methods
+- Model methods can be used to add 'row level functions' ie functions on a specific row
+
+## Commands
+- used to run commands to manager our application
+
 
 ## Views
 - generic views are used to handle reused logic
@@ -45,27 +72,24 @@
 - decorators can be used to limit access based on request method
   - uses django.views.decorators.http.require_http_methods
   - before the view method, write `@require_http_methods(["GET", "POST"])`
+- function views are simply functions that return a http response
+- class views
 
+## Django admin
+- admin.py defines the models available able in the admin interface
+- import the model you would like to use then register it using `admin.site.register(MODEL_NAME)`
 
 ## Tests
 - Client - used to simulate a user interacting with the code from the level of a view
 
-## Managers
-- Interface for database query operations
-- At least 1 exists for every model
-- By default a manager with the name **objects** is added to every model call
-  * to rename, define a class attribute on that model ie people = models.Manager()
-- Base QuerySet returns all objects in the system
-- You can attach as many managers as you want to a model
-  * good way to define custom filters
-### Adding methods to a manager
-- [more info](https://docs.djangoproject.com/en/1.8/topics/db/managers/#adding-extra-manager-methods)
-- 'Table level functions' can be added as extra Manager methods
-- Model methods can be used to add 'row level functions' ie functions on a specific row
-
-
 ## settings.py
 - all apps need to be added to the INSTALLED_APPS setting
+- `ALLOWED_HOSTS` specifies the hosts to use to access the application
+- 'TEMPLATES.DIRS' specifies the locations to check for template files
+  * outer directories will be searched first before app dirs
+
+## Shortcuts
+- `get_object_or_404(class, filter)` - filters a class for a specific object and will return a 404 error if it doesnt exist
 
 ## URLs
 ### General
@@ -97,6 +121,9 @@
   - includes a url field, using HyperlinkedIdentityField
   - HyperlinkedRelatedField instead of PrimaryKeyRelatedField
 
+## django-hosts
+- used to manage subdomains for your application
+
 ### APIS / Request / Response / status
 - Request
   - an object that extends HttpRequests and provides more flexibility
@@ -105,10 +132,14 @@
   - a type of TemplateResponse that takes unrendered content and uses content negotiation to determine the correct content type to return to the client
   - return Response(data) - renders to clients requested content type
 - Status: provides friendlier status codes such as HTTP_400_BAD_REQUEST
+- function based views handle all methods, the method use is available from the `request.method` paramater
+- class based views require you to write methods for each request method that is supported
 - 2 options for writing API views
   - The @api_view decorator for working with function based views.
   - The APIView class for working with class based views.
   - The wrappers also provide behaviour such as returning 405 Method Not Allowed responses when appropriate, and handling any ParseError exception that occurs when accessing request.data with malformed input.
+
+## SPAs
 
 ## manage.py
 - runserver: runs the python server on the port specified (or default)
