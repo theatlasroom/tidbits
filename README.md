@@ -5,11 +5,9 @@ Why? because its so damn annoying when you have to solve the same problem / look
 
 Inspired by the amazing [yoshuawuyts](https://github.com/yoshuawuyts/knowledge)
 
-## Make sure to check these out
-* [yoshuawuyts/knowledge](https://github.com/yoshuawuyts/knowledge)
-* [joshwnj/knowledge](https://github.com/joshwnj/knowledge)
-* [sotayamashita/knowledge](https://github.com/sotayamashita/knowledge)
-* [sotojuan/knowledge](https://github.com/sotojuan/knowledge)
+## Other lists
+
+See [meta-knowledge](https://github.com/RichardLitt/meta-knowledge) for other lists by people who also record stuff on GitHub.
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
