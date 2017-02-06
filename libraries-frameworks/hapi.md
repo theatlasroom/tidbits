@@ -58,6 +58,7 @@ Application framework for nodejs
 - joi: object schema validation, used to validate request and response objects based on schemas
 - hapi-swagger: interface to Swagger
 - hapi-raven: Sentry logging, using the [raven package](https://www.npmjs.com/package/raven) for node
+- hapi-auth-cookie
 
 ## Links
 * [Official docs](https://hapijs.com/)

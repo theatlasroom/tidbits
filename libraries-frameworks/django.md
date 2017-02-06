@@ -105,6 +105,7 @@
   - In Python code: Using the django.core.urlresolvers.reverse() function.
   - In higher level code related to handling of URLs of Django model instances: The get_absolute_url() method.
   - named urls must be used to be able to do this
+  - `django.core.urlresolvers` can be used to resolve urls
 
 ### urls.py
 - url takes 4 arguments
