@@ -65,8 +65,7 @@ blocks can be defined using the `{ }`
   - can access variables defined outside of the function
 * structs are used to create custom data types
 
-##  Rust docs
-### Cargo
+## Cargo
 Cargo is rust's build and package management system
 * builds your code
 * downloading dependencies
@@ -80,6 +79,52 @@ Cargo is rust's build and package management system
 * **cargo build  --release** compiles the project with optimizations
 * the *Cargo.lock* file is created to track your dependencies
 * **cargo new** creates a new project, use the --bin flag for binaries, otherwise it defaults to a library
+
+## Syntax
+### variables
+* `let` is used to bind some value to a name
+* the left hand side of a let statement is a **pattern**, not a variable name
+* rust is *statically typed*, types a specified and checked at compile time, rust also supports *type inference*
+* types can be specified with a colon `let x: i32 = 5; // create a binding *x* of type 32bit signed integer, and value 5`
+  - *i* - signed integers
+  - *u* - unsigned integers
+  - sizes can be specified as 8, 16, 32 and 64 bit
+* bindings are *immutable* by default and will throw a compiler error
+* *mut* can be used to make a *mutable* binding ie `let mut x = 5; x = 10;`
+* bindings are required to be initialized before they can be used, or they will throw a compiler error
+* bindings have a scope constrained to the block they were defined in
+* *shadowing* - allows rebinding a name to a value of a different type, or change the mutability of a binding
+
+### functions
+* every program has a main function
+* functions have the syntax `fn function_name(arguments) -> return_type { expressions ... }`
+* arguments are seperated by a comma
+* argument types must be specified
+* the last line of a function is its return value
+* *return* can be used for an early return from the function
+  - it is poor style to use return at the end of a function, instead omit the last semi-colon
+* *diverging functions* are functions that do not return a value
+* variable bindings can point to functions `let f: fn(i32) -> i32;`
+
+## std - Standard library
+### std::fmt
+* utilities for formatting and printing Strings
+* `format!` - macro for runtime formatting of arguments into strings
+  - the `{}` curly braces specify a placeholder that can be substituted for a argument, by default arguments are passed as comma separated values after the string
+  - the `{n}` syntax specifies to use argument at index `n` in this position
+  - a compile time error is throw if a format string doesnt use all its arguments
+  - this macro supports named parameters `format!("Hello {name}", name="Jon"); // prints "Hello Jon"`
+  - a type can be specified by supplying it within the curly braces
+    * no type => `Display`
+    * ? => `Debug`
+    * o => octal
+    * x => LowerHex
+    * X => UpperHex
+    * p => pointer
+    * b => Binary
+    * e => LowerExp
+    * E => UpperExp
+
 
 ### Notes
 * the [prelude](https://doc.rust-lang.org/std/prelude/) contains the default set of code that is imported into every program
