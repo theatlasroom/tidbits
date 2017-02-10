@@ -147,6 +147,52 @@ Cargo is rust's build and package management system
   - used to comment containing items
 * use the `rustdoc` tool to generate HTML documentation from doc comments and run the code examples
 
+### If / Loops
+* If syntax `if <expression> { ... } else if <expression> {} else { ... }`
+  - if is an expression
+  - if will return the value of the last expression from the branch that is chosen
+* conditional binding `let y = if x == 5 { 10 } else { 15 }`
+* rust provides 3 kinds of iterative acitivies, loop, while and for
+* `loop`: infinite loop
+  - a way to loop indefinetly until a terminating statement is reached
+  - `loop { println!("Keep on keeping on"); }`
+* `while`: loop until a condition is met
+   - `while <expression> { ... }`
+* `for`: used to loop a specific number of times
+  - `for <variable> in <expression> { ... }`
+  - the <expression> must be an item that can be converted into an iterator
+  - the iterator returns a series of element, one for each iteration of the loop
+  - the value of the current iteration is bound to <variable>, which is valid in the loop body
+  - rust does not have c-style for
+  - `<expression>.enumerate()` keeps track of the current index
+    * `for (index, value) in (5..10).enumerate() { ... }`
+* `break;`: break a looping structure early  
+* `continue;`: break the current iteration and move onto the next one
+* nested loops can be given labels
+  `'outer': for x in 0..10 {
+      'inner': for y in 0..10 {
+        if x % 2 == 0 { continue 'outer'; }
+        if y % 2 == 0 { continue 'inner'; }
+      }
+  }`
+
+### Vectors
+* dynamic array allocated on the heap, implemented as `Vec<T>`
+* `let v = vec![1,2,3,4,5]; // v: Vec<i32>`
+* `let v = vec![0; 10]; // vector of ten zeros`
+* the size of type T must be known at compile time
+  - if you wont know the size, use a Box
+* an item from the vector can be retrieved via its index
+  - index must be a `usize`
+  - `v[3]; // returns the 4th element in the vector`
+* accessing an index that doesnt exist will result in a `panic`
+* use `.get(index)` or `.get_mut(index)` to access an index without panic-ing
+  - returns `None` when given an invalid index
+* you can iterate over a vector with a `for`
+  - `for i in &v { ... } // iterate over a reference to v`
+  - `for i in &mut v { ... } // iterate over a mutable reference to v`
+  - `for i in v { ... } // take ownership`
+  - if you take ownership, you cannot use the vector again
 
 ## std - Standard library
 ### std::fmt
@@ -167,6 +213,19 @@ Cargo is rust's build and package management system
     * e => LowerExp
     * E => UpperExp
 
+### std::iter
+* IntoIterator
+  - a trait used to define how a type will be converted to an iterator
+  - allows your type to work with rust's for loop syntax
+  - `impl IntoIterator for <collection> { ... }`
+
+### std::vec
+A contiguous growable array with heap allocated contents
+vectors have O(1) indexing, push and pop
+* vecs are a *LIFO* stack (last in first out)
+* `let v: Vec<i32> = Vec::new();` or `let v: Vec<i32> = vec![];`
+* `.push(item)`: push values onto the end
+* `.pop()`: return the last element in the vector
 
 ### Notes
 * the [prelude](https://doc.rust-lang.org/std/prelude/) contains the default set of code that is imported into every program
