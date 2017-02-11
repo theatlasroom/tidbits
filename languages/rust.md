@@ -194,6 +194,74 @@ Cargo is rust's build and package management system
   - `for i in v { ... } // take ownership`
   - if you take ownership, you cannot use the vector again
 
+### Ownership
+* variable bindings have *ownership* of what they are bound to, so when they go out of scope, rust will free their bound resources
+* rust ensures there is **exactly one** binding to any given resource
+* `error use of moved value` - occurs when we try to access a old binding on a resource that has been assigned to another binding
+  - `let v = vec![1,2,3];
+    let v2 = v;
+    // we can no longer access v
+    // the resource v was bound to has 'moved'`
+* the `Copy` trait will copy the contents of a binding when we assign a new binding to it, but will allow us to still use the original binding
+  - this trait means that the binding does not get moved
+  - all primitives implement this trait
+
+### Borrowing
+* Borrowing allows us to use a binding in another scope, but keep control of the binding after the scope is removed
+* by using a reference, we allow the new scope to borrow the binding
+* a scope that borrows a binding does not deallocate the binding when it goes out of scope
+* `let v1 = vec![1,2,3];
+  let v2 = vec![4,5,6];
+
+  fn foo(v1: &Vec<i32>, v2: &Vec<i32>) -> i32 {
+      v1[0] + v2[0]
+  }
+
+  foo(&v1, &v2);
+  // we can still use v1/v2 after this
+  `
+* borrows are immutable by default and will need to be specified as mutable
+* `let mut x = 5;
+  {
+    let y = &mut x;
+    *y += 1;
+  }
+  println!("{}", x);`
+    - the `*` allows us to access the contents of the mutable reference `y`
+* any borrow must last for a scope no greater than that of the ownership
+* you can only have one of the following occurences:
+  - **one or more** references (&T) to a resource
+  - **exactly** one mutable reference (&mut T)
+
+### Lifetimes
+* solve problems with borrowing references someone else owns
+* `'<var>` is used to control the lifetime of a binding
+  - `fn skip_prefix<'a, 'b>(line: &'a str, prefix: &'b str) -> &'a str { .. }`
+  - the function above specifies 2 lifetimes 'a and 'b
+  - each reference in the function signature is associated with one of the lifetimes
+  - the reference line, uses lifetime 'a which is part of the return type, so the compiler knows not to deallocate line at the end of the function call
+  - str can be safely deallocated as its lifetime does not extend past the scope of the function
+* lifetimes can usually be omitted except for when the compiler explicitly requires them in complex situations
+* lifetimes are a type of generic
+* `&'a mut i32` - a mutable reference to a binding with a lifetime 'a
+* multiple references can use the same lifetime
+* `'static` defines a lifetime for the whole program
+
+### Mutability
+* everything is immutable by default
+* `mut` allows us to define a binding as mutable
+  - this means you can change what the binding points to
+  - `let mut x = 7;
+    x = 10;`
+* `&mut` allows us to define a mutable reference
+  - `let mut x = 5;
+    let y = &mut x;`
+* exterior mutable - types that can be mutated outside of themselves ie by cloning the data
+* interior mutable - types that can return mutable references to their data
+* the mutability of struct is in its binding
+  - they do not allow mutability at the field level
+
+
 ## std - Standard library
 ### std::fmt
 * utilities for formatting and printing Strings
@@ -227,6 +295,40 @@ vectors have O(1) indexing, push and pop
 * `.push(item)`: push values onto the end
 * `.pop()`: return the last element in the vector
 
+### std::env
+* `args` - returns the arguments passed into the program
+
+### std::fs
+Filesystem io
+#### Structs
+* `DirBuilder` - used to create directories
+* `DirEntry` - entries returned from the ReadDir iterator
+* `File` - reference to an open file on the Filesystem
+* `FileType` - represents a tpye of file, with accessors for each file type
+* `Metadata` - metadata about a fiel
+* `OpenOptions` - options and flags to configure how a file is opened
+* `Permissions` - Representation of the various permissions on a file
+* `ReadDir` - Iterator over the entries in a directory
+
+#### Functions
+* `canonicalize` - returns the canonical form a of a path
+* `copy` - copy the contents of one file, including the permission bits
+* `create_dir` - create a new empty directory
+* `create_dir_all` - recursively create a directory and all its components
+* `hard_link` - create a new hard link on the filesystem
+* `metadata` - given a path, query the filesystem to get information about a file, directory etc
+* `read_dir` - returns an iterator over the entries in a dir
+* `read_link` - read a symbolic link and return the file it points to
+* `remove_dir` - remove an existing, empty dir
+* `remove_dir_all` - recursively remove an existing, empty dir
+* `rename` - rename a file or dir
+* `set_permissions` - changes the permissions found on a file or a directory
+* `symlink_metadata` - query metadata about a file, without following the symlinks
+
+### std::io
+#### Structs
+* `Stdin` -
+
 ### Notes
 * the [prelude](https://doc.rust-lang.org/std/prelude/) contains the default set of code that is imported into every program
 * Associated functions have the form `<Type>::function()` aka static method
@@ -253,3 +355,6 @@ vectors have O(1) indexing, push and pop
 ## Glossary
 * traits: a collection of methods, defined for an unknown type **Self**, they can access other methods declared in the same trait and can be implemented for any data type.
 * macro: function calls that end with a `!`, these are expanded into source code and compiled with the program
+
+## General Notes
+* [Rust + node](https://blog.risingstack.com/how-to-use-rust-with-node-when-performance-matters/)
