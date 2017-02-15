@@ -311,6 +311,165 @@ foo(&v1, &v2);
 * the *unit struct* is an empty struct
   - useful when you need to create a structure to implement a trait, but dont need to worry about storing data
 
+### Enums
+* represents data that is one of several possible variants, each of which may have data associated with it
+* syntax is similar to structs, enums can be
+  - unit enums (no data)
+  - enums with named data
+  - enums with unmaed data (similar to tuple structs)
+* unlike structs, an enum is a single type
+* a value of the enum can match any of the variants
+* use `<enum-name>::<variant-name>` to access a variant of the enum
+  - each variant is scoped to the enum they are part of
+* an enum constructor can be used like a function
+```
+enum Message {
+  Move(x: i32, y: i32),
+  Write(string),
+}
+
+let m = Message::Write("Hello, world".to_string());
+```
+
+### Match
+* used to replace complicated `if/else` groups
+* useful when you have more than 2 possible options in place of an if/else or with complex conditions
+```
+let dice_roll = 50;
+match dice_roll {
+  1 => println!("Rolled a 1"),
+  2 => println!("Rolled a 2"),
+  3 => println!("Rolled a 3"),
+  4 => println!("Rolled a 4"),
+  5 => println!("Rolled a 5"),
+  6 => println!("Rolled a 6"),
+  _ => println!("That is not a valid dice roll m8"),
+}
+```
+* match is an implementation of pattern matching
+* match enforces `exhaustiveness checking` to ensure we check all possible values for the type we are using
+  - the `_` underscore will catch any value we have not defined an expression for
+* match is an expression so we can use `let number = match x { ... }` to bind the result of a match
+* we can also match on enums
+```
+enum Meal {
+  Breakfast,
+  Lunch { location: String, time: i64 },
+  Dinner(location: String, time: i64, address: String),
+  Snack(String),
+}
+
+fn  eat_breakfast(){ ... };
+fn  eat_lunch(location: String){ ... };
+fn  eat_dinner(){ ... };
+fn  eat_snack(snack_type: String){ ... };
+
+fn pick_a_meal(meal: Meal){
+  match meal {
+     Meal::Breakfast => eat_breakfast(),
+     Meal::Lunch { location: some_location, time: some_time } => eat_lunch(),
+     Meal::Dinner(some_location, some_time, some_address) => eat_dinner(),
+     Meal::Snack(some_snack) => eat_snack(),
+  }
+}
+```
+
+### Patterns
+* patterns are used in variable bindings, match expressions and other areas
+* patterns can have a side effect of shadowing (a variable in a inner scope having the same name as one in an outer scope), this will cause the variable in the inner scope to overwrite the value of the same variable in the outer scope
+* `|` can be used to match multiple patterns
+```
+let x = 1;
+match x {
+  1 | 2 => println!("one or two"),
+  _ =< println!("anything else"),
+}
+```
+* compound data types like structs, tuples and enums can be *destructured* inside a pattern
+```
+struct Point { x: i32, y: i32 };
+let origin = Point { x: 0, y: 0 };
+match origin {
+  Point { x, y } => println!("{},{}", x, y),
+}
+```
+* the `:` symbol can be used to change the name of a value
+```
+match origin {
+  Point { x: x1, y: y1 } => println!("{},{}", x1, y1),
+}
+```
+* the `..` symbol will allow us to ignore values we dont need
+```
+match origin {
+  Point { x, .. } => println!("{},{}", x), // ignore the y binding
+}
+```
+
+* the `_` underscore and be used to ignore the type and value of a pattern
+```
+// For Result<T, E>
+match something {
+  Ok(value) => println!("{} is our value", value),
+  Err(_) => println!("we have an error"),
+}
+```
+  - you can also ignore parts of any type of structure
+```
+fn coordinate() -> (i32, i32, i32) { ... } // returns a tuple with 3 values
+let (x, _, z) = coordinate()
+```
+    * in this case, the value never gets bound, so it does not *move*
+* the `..` can also be used to ignore multiple values
+```
+enum OptionalTuple {
+  Value(i32, i32, i32),  
+  Missing,
+}
+
+let x = OptionalTuple::Value(1,2,3);
+match x {
+  OptionalTuple::Value(..) => println!("We got a tuple"),
+  _ => println!("No luck"),
+}
+```
+* `ref` and `ref mut` can be used to create a reference for us in the pattern
+```
+let mut x = 5;
+match x {
+  ref mut mr => println!("mutable reference to {}", mr),
+}
+```
+* you can match a range of values with `...`
+  - mostly used with integers and chars
+````
+match number {
+  1 ... 5 => println!("one - five")
+  ...
+}
+
+match letter {
+  'a' ... 'j' => println!("a - j"),
+  'k' ... 'z' => println!("k - z"),
+  ...
+}
+````
+
+* `@` can be used to bind values to names
+```
+match x {
+  e @ 1 ... 5 => println!("got a range element {}", e),
+  ...
+}
+```
+* `guards` can be used to add conditions to matchs
+```
+match x {
+  OptionalInt::Value(i) if i > 5 => println!("Bigger than 5")
+  ...
+}
+```
+
 ## std - Standard library
 ### std::fmt
 * utilities for formatting and printing Strings
