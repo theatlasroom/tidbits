@@ -261,6 +261,30 @@ Cargo is rust's build and package management system
 * the mutability of struct is in its binding
   - they do not allow mutability at the field level
 
+### Structs
+* used to create complex data types
+* `struct <MyStructName> { field: type,... }`
+* to use a struct we can create an instance of it, passing a list of key value pairs to set the fields
+  - `let s = MyStructName { field: value, ... }`
+  - instances are immutable by default, but can be bound with `mut`, this will allow us to mutate fields in the struct
+* fields can be accessed using `.` dot notation
+  - fields can be mutable pointers
+  - `struct PointRef<'a> { x: &'a mut i32, y: &'a mut i32 }`
+* `..` can be used to copy values from a similar struct
+  - `struct Point3d { x: i32, y: i32, z: i32 };
+    let mut point = Point3d { x:0, y:0, z:0 };
+    point = Point3d { y:1, ..point }; // the x and z values will be copied into this new point`
+* tuple structs are defined with a name but no fields, just a tuple
+  - `struct Color(i32, i32, i32);`
+  - members can be accessed with a destructuring pattern, or by index
+    `let col = Color(0,0,0);
+    let Color(red, _, blue) = col;
+    let green = col.1;`
+* the *newtype pattern* defines a tuple struct with a single value
+  - `struct Inches(i32)`
+  - the new type is distinct from its contained value
+* the *unit struct* is an empty struct
+  - useful when you need to create a structure to implement a trait, but dont need to worry about storing data
 
 ## std - Standard library
 ### std::fmt
