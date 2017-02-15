@@ -3,6 +3,9 @@ I really just needed a place to dump links / urls to things that are useful and/
 
 Alphabetised of course.
 
+## Programming
+* [15 sorting algorithms in 6 mins](https://www.youtube.com/watch?v=kPRA0W1kECg)
+
 ## Lulz
 * [gif dj](http://gif.dj)
 * [gifsound](https://gifsound.com)

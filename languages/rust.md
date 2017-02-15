@@ -25,7 +25,10 @@ blocks can be defined using the `{ }`
 ### Syntax overview
 * fn is used to define a function
 * use **let** to allocate space for a variable
-  - can define multiple variables in one line ie `let (fname, lname) = ("Some", "Person");`
+  - can define multiple variables in one line ie
+```
+let (fname, lname) = ("Some", "Person");
+```
 * use '{}' for print formatting => `println!("I am {} years old", age);`
   - can use `{0}, {1}`... to select a specifc output variable
   - `{:.2}` => 2 decimal places
@@ -33,35 +36,40 @@ blocks can be defined using the `{ }`
   - named arguments can be used `println!("{ten:>ws$}", ten=10, ws=5);`
 * range: <num>..<num>
 * loop:
-  `loop {
-    if (x < 10){
-      println!("{}", x);
-      x += 1;
-
-      continue;
-    }
-    else {
-      break;
-    }
-    x++;
+```
+loop {
+  if (x < 10){
+    println!("{}", x);
+    x += 1;
     continue;
-  }`
+  }
+  else {
+    break;
+  }
+  x++;
+  continue;
+}
+```
   - loops can be named
     `'outer: loop { }`
 * while: `while<condition>{}`
 * for: `for<condition>{}`
 * match: similar to a switch statement in other languages
-  `match text {
-      Some(x) => println!("{}", x),
-      Some(y) => println!("{}", y),
-      None => break,
-  }`
+```
+match text {
+    Some(x) => println!("{}", x),
+    Some(y) => println!("{}", y),
+    None => break,
+}
+```
 * vectors: variable sized arrays `let v = vec![1,2,3,4,5];`
   - supports push and pop operations
 * tuples: fixed length key value pairs `let t = ("age", 40);`
   - you can define the types supported `let ts: (&str, &i32) = ("age", 10);`
 * closures: blocks of code that can accept paramters and can also be passed to other functions
-  - `let sum_nums = |x: i32, y: i32| x + y; println!("7 + 8 = {}", sum_nums(7,8))`
+```
+let sum_nums = |x: i32, y: i32| x + y; println!("7 + 8 = {}", sum_nums(7,8))
+```
   - can access variables defined outside of the function
 * structs are used to create custom data types
 
@@ -125,15 +133,19 @@ Cargo is rust's build and package management system
   - each element can be initialized to the same value `let a = [0; 20];`
   - `.len()` returns the number of elements in the array
   - Slices can be used to extract a subset from a referenced array
-    `let a = [0,1,2,3,4]; // define an array
-     let middle = &a[1..4]; // slice the values 1,2,3 from the array a`
+```
+let a = [0,1,2,3,4]; // define an array
+let middle = &a[1..4]; // slice the values 1,2,3 from the array a
+```
   - `str` is the primitive string
 * Tuples - ordered list of fixed sized `let x = (1, "hello"); // tuple  i32, &str`
   - one tuple can be assigned into another if they have the same contained types and length
   - fields of a tuple can be destructured `let (x,y,z) = (1,2,3);`
   - fields can also be accessed with an index
-    `let tuple = (1,2,3);
-     let x = tuple.0;`
+```
+let tuple = (1,2,3);
+let x = tuple.0;
+```
 * functions have a type, it specifies what can be returned
   - `fn simple(x: i32) -> i32 { x }`
   - `fn complex(x: i32) -> (i32, i32) { (10, 10) }`
@@ -169,12 +181,14 @@ Cargo is rust's build and package management system
 * `break;`: break a looping structure early  
 * `continue;`: break the current iteration and move onto the next one
 * nested loops can be given labels
-  `'outer': for x in 0..10 {
-      'inner': for y in 0..10 {
-        if x % 2 == 0 { continue 'outer'; }
-        if y % 2 == 0 { continue 'inner'; }
-      }
-  }`
+```
+'outer': for x in 0..10 {
+    'inner': for y in 0..10 {
+      if x % 2 == 0 { continue 'outer'; }
+      if y % 2 == 0 { continue 'inner'; }
+    }
+}
+```
 
 ### Vectors
 * dynamic array allocated on the heap, implemented as `Vec<T>`
@@ -198,10 +212,12 @@ Cargo is rust's build and package management system
 * variable bindings have *ownership* of what they are bound to, so when they go out of scope, rust will free their bound resources
 * rust ensures there is **exactly one** binding to any given resource
 * `error use of moved value` - occurs when we try to access a old binding on a resource that has been assigned to another binding
-  - `let v = vec![1,2,3];
-    let v2 = v;
-    // we can no longer access v
-    // the resource v was bound to has 'moved'`
+```
+let v = vec![1,2,3];
+let v2 = v;
+// we can no longer access v
+// the resource v was bound to has 'moved'
+  ```
 * the `Copy` trait will copy the contents of a binding when we assign a new binding to it, but will allow us to still use the original binding
   - this trait means that the binding does not get moved
   - all primitives implement this trait
@@ -210,23 +226,26 @@ Cargo is rust's build and package management system
 * Borrowing allows us to use a binding in another scope, but keep control of the binding after the scope is removed
 * by using a reference, we allow the new scope to borrow the binding
 * a scope that borrows a binding does not deallocate the binding when it goes out of scope
-* `let v1 = vec![1,2,3];
-  let v2 = vec![4,5,6];
+```
+let v1 = vec![1,2,3];
+let v2 = vec![4,5,6];
 
-  fn foo(v1: &Vec<i32>, v2: &Vec<i32>) -> i32 {
-      v1[0] + v2[0]
-  }
+fn foo(v1: &Vec<i32>, v2: &Vec<i32>) -> i32 {
+  v1[0] + v2[0]
+}
 
-  foo(&v1, &v2);
-  // we can still use v1/v2 after this
-  `
+foo(&v1, &v2);
+// we can still use v1/v2 after this
+```
 * borrows are immutable by default and will need to be specified as mutable
-* `let mut x = 5;
+  ```
+  let mut x = 5;
   {
     let y = &mut x;
     *y += 1;
   }
-  println!("{}", x);`
+  println!("{}", x);
+  ```
     - the `*` allows us to access the contents of the mutable reference `y`
 * any borrow must last for a scope no greater than that of the ownership
 * you can only have one of the following occurences:
@@ -251,11 +270,15 @@ Cargo is rust's build and package management system
 * everything is immutable by default
 * `mut` allows us to define a binding as mutable
   - this means you can change what the binding points to
-  - `let mut x = 7;
-    x = 10;`
+   ```
+   let mut x = 7;
+   x = 10;
+   ```
 * `&mut` allows us to define a mutable reference
-  - `let mut x = 5;
-    let y = &mut x;`
+  ```
+  let mut x = 5;
+  let y = &mut x;
+  ```
 * exterior mutable - types that can be mutated outside of themselves ie by cloning the data
 * interior mutable - types that can return mutable references to their data
 * the mutability of struct is in its binding
@@ -277,9 +300,11 @@ Cargo is rust's build and package management system
 * tuple structs are defined with a name but no fields, just a tuple
   - `struct Color(i32, i32, i32);`
   - members can be accessed with a destructuring pattern, or by index
-    `let col = Color(0,0,0);
+    ```
+    let col = Color(0,0,0);
     let Color(red, _, blue) = col;
-    let green = col.1;`
+    let green = col.1;
+    ```
 * the *newtype pattern* defines a tuple struct with a single value
   - `struct Inches(i32)`
   - the new type is distinct from its contained value
