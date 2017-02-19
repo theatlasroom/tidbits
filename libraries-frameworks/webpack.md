@@ -5,6 +5,16 @@ Module loader in the vein of require and browserify
 * resolves the order of loading modules
 * use module: [loaders:{}] to set babel transpiler config
 
+## 2.0
+### Caching
+* webpack allows the use of output placeholders to substitute information generated during the build
+  - `[name]`: file / asset name
+  - `[hash]`: a unique hash generated for each webpack build
+  - `[chunkhash]`: a hash generated for a single file, if the file has not changed, this hash will remain the same
+* use `[chunkhash]` to enable long-term caching of static resources
+  - a manifest json file is produced to map a resource to its cached output file
+  - the manifest file can be inlined into the page
+
 ## Dev server
 
 ## Hot module replacement

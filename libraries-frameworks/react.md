@@ -243,6 +243,7 @@ Comes with 4 basic classes that can be imported from `flux/utils`
    someActionCreator = (val) => {type; 'SOME_ACTION', value: val}
    store.dispatch(someActionCreator('some_value'))`
   - `.createStore(reducerFunction)` expects a function that will reduce your state
+    * createStore takes a 2nd parameter to specify the default state to be loaded
   - `.combineReducers({ someSliceOfState: reducer ...})` combines different reducers, it takes a hash and returns a function, the function manages only one part of the total application state
   - `.getState()` returns the current state of the application
   - `.applyMiddleware(middlewares...) => function` lets reduce know of the middleware we will be using
@@ -250,8 +251,6 @@ Comes with 4 basic classes that can be imported from `flux/utils`
   - `.subscribe(function(){...})` registers a callback to the state changes for the store
 
 * [React redux](https://github.com/rackt/react-redux) simplifies binding redux to a react context
-
-
 * Action creators -> Action -> Dispatcher -> Store -> Events -> Views
 * **Action creators**: pure JS functions used to create an action
   `const action = () => {type: 'ACTION', ...}`
