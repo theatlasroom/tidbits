@@ -470,6 +470,67 @@ match x {
 }
 ```
 
+### Method syntax
+* rust provides a mechanism to use *method call syntax*, allowing us to chain function calls
+```
+foo.bar().baz()
+```
+* the *impl* keyword allows us to define methods
+* the first parameter of a method can be `self`, `&self` or `&mut self`
+* we should default to `&self` so that we only borrow self, and dont take ownership or create a mutable reference if we do not need to
+
+```
+struct Circle {
+    x: f64,
+    y: f64,
+    radius: f64,
+}
+
+impl Circle {
+    fn area(&self) {
+       println!("taking self by reference!");
+    }
+
+    fn radius(&mut self) {
+       println!("taking self by mutable reference!");
+    }
+
+    fn circumference(self) {
+       println!("taking ownership of self!");
+    }
+}
+```
+* if our return type matches the type of self, we can chain the methods
+* *Associated functions* can be defined for a type, but do not take self as an arguement. Analogous to static class methods in that they dont require an instance of the type.
+
+* Rust doesnt have method overloading, named arguments or variable arguments, so we can use the *builder pattern* instead to construct instances of a type
+
+### Strings
+* in rust a string is a sequence of unicode scalar values, encoded as a stream of UTF-8 bytes
+  - all strings are guaranteed to a be a valid encoding of UTF8 sequeces
+  - strings are not NUL terminated (\0) and can contain NUL bytes
+* there are 2 types of strings:
+  - `&str` string slices, an immutable fixed size string that is a reference to a sequence of UTF8 bytes
+    * a string literal is a slice that is statically allocated
+    * any function that accepts string slices can accept a string literal
+    * str is an unsized type
+  - `String` a heap allocated string, they can be created by converting from a slice using the `to_string` method
+    * only a &str can be concatenated onto a String
+    * `push_str()` can be used to concatenate a string
+    * Strings will coerece into a slice with a &
+* Strings do not support indexing
+  - `.chars().nth(index)` can be used to get a result similar to an index
+* Strings can be sliced with slicing syntax, the indexes are byte offsets not characters (a character can be composed of multiple bytes)
+
+```
+let name = "bob loblaw"; // &'static str
+let mut lawyer = name.to_string();
+let mut prefix = "Dr.".to_string();
+let first = &name[0..4];
+
+let final_name = prefix + &lawyer; // use &str when concatenating to Strings
+```
+
 ## std - Standard library
 ### std::fmt
 * utilities for formatting and printing Strings
