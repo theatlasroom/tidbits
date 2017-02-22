@@ -531,6 +531,51 @@ let first = &name[0..4];
 let final_name = prefix + &lawyer; // use &str when concatenating to Strings
 ```
 
+### Generics
+* generics allow us to define a function or data type that can accept multiple types of arguments
+  - generics are types or functions that have multiple forms over a given parameter
+```
+// T indicates we have a generic type
+enum Option<T> {
+  Some(T),
+  None,
+}
+
+let x: Option<i32> = Some(5); // T has the value i32
+let y: Option<f64> = Some(5.5); // T has the value f64
+
+fn takes_anything<T>(x: T) { ... } // this function is generic over type T
+```
+* generics can be generic over multiple types
+  - by convention, the first type we define should be T
+  - multiple arguments in a function can take the same type
+  - multiple arguments can also take different types
+```
+enum Result<T, E> {
+  Ok(T),
+  Err(E),
+}
+```
+* Structs can use generic types
+  - to implement a generic struct, declare the type parameter after the *impl*
+```
+// generic struct
+struct Point<T> {
+  x: T,
+  y: T,
+}
+
+// generic impl
+impl<T> Point<T> {
+  fn swap(&mut self) {
+    std::mem::swap(&mut self.x, &mut self.y);
+  }
+}
+
+let i = Point {x: 0, y: 0};
+let f = Point {x: 0.0, y: 0.0};
+```
+
 ## std - Standard library
 ### std::fmt
 * utilities for formatting and printing Strings
