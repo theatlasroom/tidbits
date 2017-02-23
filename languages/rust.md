@@ -576,6 +576,137 @@ let i = Point {x: 0, y: 0};
 let f = Point {x: 0.0, y: 0.0};
 ```
 
+### Traits
+* traits inform the rust compiler about functionality a type must provide
+  - traits are an implementation of a method for a particular type
+  - `Self` (uppercase) can be used in a type annotation to refer to an instance of the type implementing the trait passed as a parameter
+  - this means we can define a parameter that binds to an instance of the type implemented
+  - traits can be implemented for any type, including primitives
+```
+struct Circle {
+  x: f64, y: f64, radius: f64
+}
+
+// trait definition
+trait HasArea {
+  fn area(&self) -> f64;
+  fn is_larger(&self, &Self) -> bool;
+}
+
+impl HasArea for Circle {
+  // trait implementation for the 'Circle' type
+  fn area(&self) -> f64 {
+    std::f64::consts::PI * (self.radius * self.radius);
+  }
+
+  // implementation using Self as a type annotation
+  fn is_larger(&self, other: &Self) -> bool {
+    self.area() > other.area();
+  }
+}
+```
+* traits provide a way to make promises about a type's behaviour
+  - generic functions can use this to restrict (bound) they types they accept
+```
+// only accept types that implement the HasArea trait
+fn print_area<T: HasArea>(shape: T) {
+  println!("This shape has an area of {}", shape.area());
+}
+```
+* generic structs can also specify trait bounds, the bound should be appended to the type parameters
+  - multiple bounds can be specified with a `+`
+```
+struct Rectangle<T> {
+  x: T, y: T, width: T, height: T,
+}
+
+// this implementation will only support types that implement the core::cmp::PartialEq trait
+impl<T: PartialEq> Rectangle<T> { ... }
+
+impl<T: Clone + Debug> Rectangle<T> { ... }
+
+```
+* if a trait isnt defined in your scope, then it does not apply
+* either the trait, or the type you're implementing it for  must be defined in the same create as the *impl* you write
+* generic functions with a trait bound are statically dispatched
+* the `where` clause can be used to simplify multiple trait bound declarations
+  - it can also be used to declare bounds for a type (not only type parameters)
+```
+use std::fmt::Debug;
+fn bar<T, K>(x: T, y: K)
+  where T: Clone,
+        K: Clone + Debug { ... }
+
+// the where clause used to apply a bound on the i32
+// i32 must implement ConvertTo
+fn inverse<T>(x: i32) -> T
+  where i32: ConvertTo<T> {
+
+  }
+```
+* a default method can be added to a trait definition
+* traits can require inheritance of higher traits
+  - implementors must implement parent traits as well
+```
+trait Foo {
+  fn foo(&self);
+}
+
+trait FooBar: Foo {
+  fn foobar(&self);
+}
+
+struct Baz;
+
+impl Foo for Baz {
+  fn foo(&self){ ... };
+}
+
+impl FooBar for Baz {
+  fn foobar(&self){ ... };
+}
+```
+* certain traits can be automatically derived
+  - use `#[derive(Debug)]`
+  - Clone, Copy, Debug, Default, Eq, Hash, Ord, PartialEq, PartialOrd
+* `Drop`:  a trait used to execute code when a value goes out of scope
+  - values are dropped in the opposite order they were defined
+  - useful for cleaning up resources used
+```
+struct HasDrop;
+impl Drop for HasDrop {
+  fn drop(&mut self) { ... }
+}
+```
+
+### if / while let
+* `if let` can be used to combine an if and let
+```
+// assume we have an Option<T>
+// do something if its Some<T>
+// do nothing if its None
+
+match option {
+  Some(x) => { foo(x) },
+  None => {},
+}
+
+// OR we can also do
+
+if let Some(x) = option {
+  foo(x);
+} else {
+  ....
+}
+```
+* `while let` allows to loop as long as a value matches a certain pattern
+```
+let mut v = vec![1,3,5,7,11];
+while let Some(x) = v.pop() {
+  println!("{}", x)
+}
+```
+
 ## std - Standard library
 ### std::fmt
 * utilities for formatting and printing Strings

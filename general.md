@@ -41,6 +41,12 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
   - Creating instruments
   - Editing recordings
 
+## Protocol buffers
+* platform / language agnostic structure for serialized data
+
+### links
+* [protocol buffers](https://developers.google.com/protocol-buffers/)
+
 ## Raspberry pi
 * [rasbpi config](https://www.raspberrypi.org/documentation/configuration/raspi-config.md) - setup ssh, hostname, default user etc
 * [transmission torrents](https://pimylifeup.com/raspberry-pi-torrentbox/)
