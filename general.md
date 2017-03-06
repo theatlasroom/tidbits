@@ -55,4 +55,4 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
 * [setup vpn on boot](https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=127361)
 
 ## OSX
-* Add ssh key to keychain `ssh-add -K <ssh-key>`
+* [Add ssh key to keychain](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent) `ssh-add -K <ssh-key>`
