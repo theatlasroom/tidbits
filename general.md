@@ -1,6 +1,8 @@
 # General
 Just general notes hey
 
+* [Change default screenshot location (OSX)](http://www.idownloadblog.com/2014/06/15/how-to-change-where-screenshots-are-saved-on-mac/)
+
 ## Awesome
 * [Awesome stock resources](https://github.com/neutraltone/awesome-stock-resources)
 
@@ -56,3 +58,8 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
 
 ## OSX
 * [Add ssh key to keychain](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent) `ssh-add -K <ssh-key>`
+
+## Postgres
+### Timestamps
+* convert a timestamp to a different timnezone using `at time zone 'TIMEZONE_NAME'` where s timezone name is in the form 'Europe/London'
+* [timestamps](http://stackoverflow.com/questions/5876218/difference-between-timestamps-with-without-time-zone-in-postgresql)

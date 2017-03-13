@@ -282,7 +282,6 @@ Comes with 4 basic classes that can be imported from `flux/utils`
     }`
   - [thunk middleware](https://github.com/gaearon/redux-thunk) is used for building async actions
 
-
 ## Helpers
 * react-html-attrs - transpiles class attributes to be className
 
@@ -295,6 +294,9 @@ Comes with 4 basic classes that can be imported from `flux/utils`
 * react modules **npm install -S react react-dom babel-preset-react babel-preset-es2015 babel-loader babel-core react-router**
 * testing: **npm install -D enzyme mocha karma**
 * webpack: **npm install -D webpack-dev-server webpack react-hot-loader**
+
+## Links
+* [react-redux crud app](http://www.thegreatcodeadventure.com/building-a-simple-crud-app-with-react-redux-part-1/#table-of-contents)
 
 ## Testing
 ### Enzyme
