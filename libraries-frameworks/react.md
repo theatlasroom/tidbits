@@ -297,6 +297,8 @@ Comes with 4 basic classes that can be imported from `flux/utils`
 
 ## Links
 * [react-redux crud app](http://www.thegreatcodeadventure.com/building-a-simple-crud-app-with-react-redux-part-1/#table-of-contents)
+* [auth flow](https://auth0.com/blog/secure-your-react-and-redux-app-with-jwt-authentication/)
+* [Sharing state between reducers](https://invalidpatent.wordpress.com/2016/02/18/sharing-state-between-redux-reducers/)
 
 ## Testing
 ### Enzyme
