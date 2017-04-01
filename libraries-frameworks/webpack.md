@@ -26,6 +26,10 @@ allow us to perform actions on our files
 * preloaders are applied to the code before it gets transformed
 * when you have an array of loaders configured for a matching test, the loaders are executed from last to first
 
+## Plugins
+* `DefinePlugin()` - implements a regex that searches our source and replaces variables defined in a key(name of variable)-value(name in the source code) object
+  - by convention surround the replaced variables with 2 underscores either side ie NODE_ENV => __NODE_ENV__
+
 ## Angular
 ### 1.x
 * need to make changes since webpack uses commonJS modules

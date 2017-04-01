@@ -7,7 +7,7 @@ routing graph.
 Audio nodes are linked into chains and simple webs by their inputs and outputs, the typically start with a source. Sources are arrays of samples from either
 computations or recordings. Destination inputs are used to output sound to speakers or headphones.
 
-Typical workflow with web audio woul be:
+Typical workflow with web audio would be:
 1. Create an audio context
 2. Inside the context, create sources such as <audio>, oscillators or streams
 3. Create effect nodes, such as reverb, biquad filter, panner, compressor
@@ -104,7 +104,7 @@ Web applications can select midi input /output devices on the client and send / 
   - A map like interface whose value si a MIDIInput instance and key is it's ID
   - this is used to represent all the currently available MIDI input ports
 * `MIDIOutputMap`
-  - Same as the MIDIInputMap, but for MIDIOutput instances 
+  - Same as the MIDIInputMap, but for MIDIOutput instances
 * `MIDIAccess`
   - Provides methods to list MIDI input / output devices and obtain access to an individual device
   - **onstatechange** event: called when a new port is connected or an existing port changes the state attribute
@@ -130,4 +130,3 @@ Web applications can select midi input /output devices on the client and send / 
 * [HTML5 Rocks tutorial](https://www.html5rocks.com/en/tutorials/webaudio/intro/)
 * [Web audio UIs](https://www.youtube.com/watch?v=tSThM9Aw8ps)
 * [Web Midi API](https://webaudio.github.io/web-midi-api/#midiaccess-interface)
-
