@@ -8,6 +8,7 @@
 - apps are modules that can be reused and perform a task
 - projects are collections of apps and configs for a website
 - settings.py
+- `setvirtualenvproject` sets the current directory as the location of the env
 
 ## Setup
 `pip install Django==(version)` - check the django website for the latest version
@@ -58,6 +59,12 @@
 
 ## Commands
 - used to run commands to manager our application
+- [Creating custom commands](https://docs.djangoproject.com/en/1.10/howto/custom-management-commands/)
+- within your app, create a module for `management/commands`
+  * each file in the directory will be a command
+  * each command file should declare a class called `Command` that extends `BaseCommand`
+  * make sure to use `self.stdout` and `self.stderr` to output to the console instead of directly accessing stdout and stderr
+  * `help` static member is used to declare additional information about the command
 
 
 ## Views
