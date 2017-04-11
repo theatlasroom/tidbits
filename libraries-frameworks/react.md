@@ -280,14 +280,14 @@ Comes with 4 basic classes that can be imported from `flux/utils`
         }
       }
     }`
-  - [thunk middleware](https://github.com/gaearon/redux-thunk) is used for building async actions
+- [thunk middleware](https://github.com/gaearon/redux-thunk) is used for building async actions
+  * allows us to use json objects with a key of `type` for our action creators + other optional keys for the payload to update state
+  * we can also create action creators that can make async requests and invoke `dispatch`
+  * without thunk dispatch is only available on the store instance
+- ducks?  
 
 ## Helpers
 * react-html-attrs - transpiles class attributes to be className
-
-## Plugins
-* `DefinePlugin()` - implements a regex that searches our source and replaces variables defiend in a key(name of variable)-value(name in the source code) object
-  - by convention surround the replaced variables with 2 underscores either side ie NODE_ENV => __NODE_ENV__
 
 ## Basic setup
 * [SurviveJS setup](http://survivejs.com/webpack/advanced-techniques/configuring-react/)
