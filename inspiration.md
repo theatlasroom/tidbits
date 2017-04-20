@@ -1,7 +1,7 @@
 # Inspiration
 I visit a lot of galleries and museums so i thought id start noting down all the bits of inspiration ive found along the way.
 
-## Artists
+## Visual
 ### Matthew bird
 He is known for his unsolicited projects notably Alphaomega Apartment where he developed his material technique of the ‘elaborative ready-made’ and theatrically transformed a tiny rental apartment unbeknown to the owners. Since the completion of this project he formed his architectural atelier Studiobird and has produced a range of architectural new build, interior design, installation art, performance and scenographic projects that individually and as a compilation advance a nontraditional and experimental model of architectural practice.
 Studiobird project outcomes and associate practice methodologies fuel Bird’s teaching and research.
@@ -20,3 +20,19 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 
 ### John Vickery
 [Wiki](https://en.wikipedia.org/wiki/John_Vickery_(artist))
+
+## Sound
+### Design
+### Exploration / Experimentation
+### Production / Aesthetic
+
+## Moving image
+### Directors
+
+### Movies / TV
+* [2001: A space odyssey]
+* [Bladerunner]
+* [Drive]
+* [Ghost in the shell (anime)]
+* [Under the skin]
+* [Victoria]
