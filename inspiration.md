@@ -36,3 +36,11 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 * [Ghost in the shell (anime)]
 * [Under the skin]
 * [Victoria]
+
+## AV
+* [Mouse on the keys](https://www.youtube.com/watch?v=UjpOhR_Q9xw)
+* [Mouse on the Keys - Earache live](https://www.youtube.com/watch?v=f8oqhlT37VY)
+
+## Performance
+* [Mouse on the keys - "RaumKranKheit" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=YEaXNVlZgVg)
+* [Mouse on the keys - "Completed nihilism"& "Spectres de mouse" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=sFoetd0sD6Y)

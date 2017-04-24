@@ -2,6 +2,7 @@
 Just general notes hey
 
 * [Change default screenshot location (OSX)](http://www.idownloadblog.com/2014/06/15/how-to-change-where-screenshots-are-saved-on-mac/)
+* [Creating a service on debian](https://www.axllent.org/docs/view/nodejs-service-with-systemd/)
 
 ## Awesome
 * [Awesome stock resources](https://github.com/neutraltone/awesome-stock-resources)

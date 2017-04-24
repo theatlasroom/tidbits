@@ -3,6 +3,10 @@ I really just needed a place to dump links / urls to things that are useful and/
 
 Alphabetised of course.
 
+## Life
+* [Hausa online](https://hausaonline.wordpress.com/help/)
+* [Omniglot - Hausa](http://www.omniglot.com/writing/hausa.htm)
+
 ## Programming
 * [15 sorting algorithms in 6 mins](https://www.youtube.com/watch?v=kPRA0W1kECg)
 
