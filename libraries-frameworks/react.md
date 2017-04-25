@@ -150,6 +150,31 @@
   - Bind event handlers in the constructor
     `this.tick = this.tick.bind(this)`
 
+## Higher order components
+Used to share common functionality or information between components, HoC's take a component and return a new component.
+
+`const HOC = (InnerComponent) => class extends React.Component {
+  render(){
+    return (<InnerComponent />)
+  }
+}`
+* by default props arent magically passed down, just spread `this.props` to the inner component
+  - state should also be spread as props
+* refs: refs are not passed into the HoC, instead specify the ref callback function as a prop to the inner component
+`const HOC = (InnerComponent) => class extends React.Component {
+  render(){
+    return (<InnerComponent innerRef={(el) => this.el = el}/>)
+  }
+}
+...
+const InnerComponent = () =>
+  <div>
+    <HTMLElement ref={this.props.innerRef} />
+  </div>
+
+`
+* [React docs - HoC](https://facebook.github.io/react/docs/higher-order-components.html)
+
 ## Flux
 ### General
 * A pattern for building react frameworks
