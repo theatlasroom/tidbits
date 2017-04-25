@@ -34,7 +34,7 @@ let (fname, lname) = ("Some", "Person");
   - `{:.2}` => 2 decimal places
   - `{:b}` - binary, `{:x}` - hexadecimal, `{:o}` - octal
   - named arguments can be used `println!("{ten:>ws$}", ten=10, ws=5);`
-* range: <num>..<num>
+* range: `<num>..<num>`
 * loop:
 ```
 loop {
@@ -51,7 +51,7 @@ loop {
 }
 ```
   - loops can be named
-    `'outer: loop { }`
+    `'outer: loop { ... break 'outer }`
 * while: `while<condition>{}`
 * for: `for<condition>{}`
 * match: similar to a switch statement in other languages
@@ -97,12 +97,12 @@ Cargo is rust's build and package management system
 ### variables
 * `let` is used to bind some value to a name
 * the left hand side of a let statement is a **pattern**, not a variable name
-* rust is *statically typed*, types a specified and checked at compile time, rust also supports *type inference*
+* rust is *statically typed*, types are specified and checked at compile time, rust also supports *type inference*
 * types can be specified with a colon `let x: i32 = 5; // create a binding *x* of type 32bit signed integer, and value 5`
   - *i* - signed integers
   - *u* - unsigned integers
   - sizes can be specified as 8, 16, 32 and 64 bit
-* bindings are *immutable* by default and will throw a compiler error
+* bindings are *immutable* by default and will throw a compiler error if you try to mutate them
 * *mut* can be used to make a *mutable* binding ie `let mut x = 5; x = 10;`
 * bindings are required to be initialized before they can be used, or they will throw a compiler error
 * bindings have a scope constrained to the block they were defined in
@@ -172,10 +172,10 @@ let x = tuple.0;
    - `while <expression> { ... }`
 * `for`: used to loop a specific number of times
   - `for <variable> in <expression> { ... }`
-  - the <expression> must be an item that can be converted into an iterator
+  - the `<expression>` must be an item that can be converted into an iterator
   - the iterator returns a series of element, one for each iteration of the loop
   - the value of the current iteration is bound to <variable>, which is valid in the loop body
-  - rust does not have c-style for
+  - rust does not have c-style for loops
   - `<expression>.enumerate()` keeps track of the current index
     * `for (index, value) in (5..10).enumerate() { ... }`
 * `break;`: break a looping structure early  
@@ -316,7 +316,7 @@ foo(&v1, &v2);
 * syntax is similar to structs, enums can be
   - unit enums (no data)
   - enums with named data
-  - enums with unmaed data (similar to tuple structs)
+  - enums with unamed data (similar to tuple structs)
 * unlike structs, an enum is a single type
 * a value of the enum can match any of the variants
 * use `<enum-name>::<variant-name>` to access a variant of the enum
@@ -330,6 +330,7 @@ enum Message {
 
 let m = Message::Write("Hello, world".to_string());
 ```
+* article on benefits of [enums](http://smallcultfollowing.com/babysteps/blog/2015/05/05/where-rusts-enum-shines/)
 
 ### Match
 * used to replace complicated `if/else` groups
@@ -382,7 +383,7 @@ fn pick_a_meal(meal: Meal){
 let x = 1;
 match x {
   1 | 2 => println!("one or two"),
-  _ =< println!("anything else"),
+  _ => println!("anything else"),
 }
 ```
 * compound data types like structs, tuples and enums can be *destructured* inside a pattern
@@ -406,7 +407,7 @@ match origin {
 }
 ```
 
-* the `_` underscore and be used to ignore the type and value of a pattern
+* the `_` underscore can be used to ignore the type and value of a pattern
 ```
 // For Result<T, E>
 match something {
@@ -419,7 +420,7 @@ match something {
 fn coordinate() -> (i32, i32, i32) { ... } // returns a tuple with 3 values
 let (x, _, z) = coordinate()
 ```
-    * in this case, the value never gets bound, so it does not *move*
+  - in this case, the value never gets bound, so it does not *move*
 * the `..` can also be used to ignore multiple values
 ```
 enum OptionalTuple {
