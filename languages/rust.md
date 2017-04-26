@@ -782,6 +782,21 @@ Filesystem io
 * **Result** types are used to encode error handling information
   - the expect method checks the value of the response and will call `panic!` if it doesnt match
 
+## Crates
+### Rand
+#### Modules
+* `distributions` - Sampling from random distributions
+* `isaac` - ISAAC random number generator
+* `os` - interface to OS generated random numbers
+
+#### Functions
+* `random` - Generates a random value using the thread-local random local generator
+* `sample` - Randomly sample up to **amount** elements from a finite iterator. The order of elements in the sample is not random.
+
+#### Traits
+* `Rng` - Random number generator
+
+
 ## Rust by example
 ### Introduction
 * rust files have a .rs extension, the **rustc**  rust compiler can be used to generate a binary
