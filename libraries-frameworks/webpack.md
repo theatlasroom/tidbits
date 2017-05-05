@@ -39,3 +39,5 @@ allow us to perform actions on our files
 * [hjs-webpack](https://github.com/HenrikJoreteg/hjs-webpack) provides helpers and presets to set up your wepback config
 * don't include minified file dependencies, this will cause the **--optimize-minimize** to take forever to complete building.
 * [SurviveJS - webpack / react](http://survivejs.com/webpack/advanced-techniques/configuring-react/)
+* [Webpack - the confusing parts](https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9)
+* [HMR](https://medium.com/@rajaraodv/webpacks-hmr-react-hot-loader-the-missing-manual-232336dc0d96)

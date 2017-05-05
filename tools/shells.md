@@ -11,6 +11,7 @@ General shell related things + common applications, mostly bash / sh
 * shutdown: **poweroff**
 * restart: **reboot**
 * view all running proceses `ps aux | less`
+* view process running on a port `lsof -i :<port>`
 
 ## Command glossary
 ### Filesystem

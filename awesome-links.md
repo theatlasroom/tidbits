@@ -6,6 +6,8 @@ Alphabetised of course.
 ## Life
 * [Hausa online](https://hausaonline.wordpress.com/help/)
 * [Omniglot - Hausa](http://www.omniglot.com/writing/hausa.htm)
+* [A history of Eggon](http://www.rogerblench.info/Language/Niger-Congo/BC/Plateau/South/Eggon%20%20Dictionary.pdf)
+* [Ritual warfare and colonial conquest of the eggon](http://afsaap.org.au/assets/1983_Dorward-D-C.pdf)
 
 ## Programming
 * [15 sorting algorithms in 6 mins](https://www.youtube.com/watch?v=kPRA0W1kECg)
