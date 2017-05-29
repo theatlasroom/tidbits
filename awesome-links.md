@@ -15,8 +15,11 @@ Alphabetised of course.
 ## Lulz
 * [gif dj](http://gif.dj)
 * [gifsound](https://gifsound.com)
+* [Cult of the party parrot](http://cultofthepartyparrot.com/)
+* [DBZ Memes](http://decentme.me/tag/dragon-ball-z/)
 
 ## /b/
+* [List of dragon ball z characters](https://en.wikipedia.org/wiki/List_of_Dragon_Ball_characters)
 * [10minutemail](https://10minutemail.net/)
 * [Burnerapp](https://www.burnerapp.com/)
 * [Hushed](https://hushed.com/)
@@ -30,6 +33,7 @@ Alphabetised of course.
 * [Vultr](https://www.vultr.com/)
 * [Zeit](https://zeit.co/)
 * [api.ipify.org](api.ipify.org) - check ip address
+* [cipherli.st](https://cipherli.st/) - Strong Ciphers for Apache, nginx and Lighttpd
 
 ## APIs
 * [gyfcat](https://developers.gfycat.com/api)
