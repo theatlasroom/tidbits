@@ -7,7 +7,14 @@
 	- containers can share a single kernel
 	- the executable and dependencies do not need to be installed on the host machine
 	- CI/CD can push updates to a single part of a distributed application
-* Service: defines how a container behaves in production
+* Service: defines how a container behaves in production, a service is a part of an application
+	- A service runs one image, scaling the service changes the number of container instances running that piece of software
+	- docker-compose files can be used to scale a service
+* Applications join togethor multiple machines into a 'dockerized' cluseter called a swarm
+	- a swarm is a group of machines running docker that have been joined into a cluster
+	- machines in a cluster (physical or virtual) are called nodes
+	- swarm managers are the only machines that can execute commands, or add new workers
+	- workers are machines that provide capacity
 * Stack: defines interactions of all the services
 * Dockerfile: A portable image defining dependencies
 
@@ -27,7 +34,14 @@
 - `docker kill <container-id>` - forced shutdown of the container
 - `docker rm <container-id>` - remove the container specified from this machine
 	* `docker rm $(docker ps -a -q)` - remove all containers
--
+- `docker stack ls` - list all running applications on this docker host
+- `docker stack deploy -c <docker-compose-config> <appname>`
+- `docker stack ps <appname>` - show all processes for a stack
+- `docker stack rm <appname>` - remove the stack we created
+- `docker swarm init` - initialise a swarm, sets the machine as the swarm manager
+- `docker swarm join` - join the swarm as a worker
+- `docker-machine` - helps manage VMs
+- `docker-machine ssh` - allows a swarm manager to send commands to a worker
 
 ## Dockerfile commands
 * `FROM` - define the base image we are building from, needs to be the first line of your Dockerfile, images are found on dockerhub.
