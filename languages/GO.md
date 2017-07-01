@@ -2,22 +2,35 @@
 * [Go spec](https://golang.org/ref/spec)
 
 ## General
+* Go code is all kept in a workspace
+  - A workspace contains repos
+  - Each repo contains one or more packages
+  - Each package contains one or more .go files
+  - At its root, a workspace contains 3 folders
+    - `src`: go source files
+    - `pkg`: package objects
+    - `bin`: executable commands
+* `go env GOPATH` outputs the current go path
 * Every go program is made up of packages
-  * By convention, the package name is the same as the last element of th eimport path -> math/rand files that being with package rand
-  * when importing a package you can only refer to its exported names. Unexported names are private
+  - By convention, the package name is the same as the last element of the import path -> math/rand files that being with package rand
+  - when importing a package you can only refer to its exported names. Unexported names are private
 * Programs start running in package `main`
 * everything is pass by value (by default)
 * must explicitly pass by reference ("&")
 * public / private variables are declared by uppercase(first) / lowercase
-  * a name that starts with an uppercase will be exported
+  - a name that starts with an uppercase will be exported
 * go routines - threads
 * channels - communication and synchronisation between threads
 * High level memory safe, garbage collected statically typed
-* no classes or type inheritaance
+* no classes or type inheritance
   - ad hoc type relationships via interfaces
   - any type that implements all the methods of an interface, automatically implements the interface
-  -
 
+## Tools
+`go build` - build an executable
+`go test` - run tests for a package
+`go run` - run a go program
+`go get` - locate and install a dependency
 
 ## Syntax
 ### General
@@ -28,9 +41,9 @@
   * it can include initializers, if so the type can be omitted
     `var i, j int = 1, 2`
     `var c, python, java = true, false, "no!"`
-* `:=` can be used as a shorthand to declare a variable, type can be omitted
+* Within a func, `:=` can be used as a shorthand to declare a variable
   - `x := 3`
-  - we can also omit var
+  - in this style we can omit the type and var
   - a variable can only be declared once in a scope
 * Types
   - bool
@@ -46,7 +59,7 @@
   - 0 for numeric types
   - false for boolean
   - "" for strings
-* Constants are declared using the const keyword
+* Constants are declared using the `const` keyword
   - untyped constants are high precision
   - untyped constant will take the type needed by its context
 * all integer types will over/underflow if you exceed their bounds
@@ -92,16 +105,70 @@
   - you can use shorthand statements in the condition `if v := math.Pow(x, n); v < lim {}`
   - variables declared in the statement, are available within the if and the else blocks
 * Switch statement:
-  - case bodys break automatically unless it ends with a fallthrough statement
+  - case body's break automatically unless they end with a `fallthrough` statement
+  - default handles the default case
+  - Switch can be used without a condition, this defaults to true, this can be useful for long if/then/else chains
+  - ```
+  t := time.Now()
+
+  switch {
+  case t.Hour() < 12:
+    ...
+  case t.Hour() < 17:
+    ...
+  default:
+    ...
+  }
+  ```
+
 * Defer - defers the execution of a function until the surrounding function returns
+  - useful for functions that perform cleanup
   - pushed onto a LIFO stack
   - [defer](https://blog.golang.org/defer-panic-and-recover)
+  - there are 3 rules that determine the behaviour of a defer
+    * **A deferred function's arguments are evaluated when the defer statement is evaluated**
+    * **Deferred function calls are a executed in LIFO after the surrounding function returns**
+    * **Deferred functions may read and assign to the returning functions named return values**
+      - this can be useful for modifying the error return value of a function
+  - `recover` is used within deferred functions to "catch" errors
 
 ### Pointers
+* Pointers hold the memory address of a value
+* `var p *int` - p is a pointer to a int value, its zero value is `nil`
+  * `*p` provides access to the pointer for read / write
+* `&` generates a pointer to a variable, `p = &i`
+
+### Structs
+* a collection of fields
+  - ```
+  type Vertex struct {
+    X int
+    Y int
+  }
+  ```
+* struct fields are accessed via the `.` operator
+* a struct literal lets createa struct by listing the values of the fields
+  - `v = Vertex{X: 1} // Y defaults to Y:0`
+  - not all fields are required and order does not matter
+
+### Arrays
+* `var a [10]int` - a is an array of 10 integers
+* arrays length are part of their type, so arrays can not be resized
+* a `slice` is a dynamically sized, flexible view into the elements of an array
+ - `[m:n]` extracts a slice from m until n, both are optional, m defaults to 0, n defaults to the length of the slice
+ - slices are references to an array
+ - slices dont store any data, they just describe a section of an underlying array
+ - slice literals can be used to build an array create a slice to it
+    * slice literals have no length
+    * `[]bool{true, true, false}`
+
 
 ## Packages
 ### fmt
 Format output
+
+### testing
+Test framework
 
 ### time
 time related functions
