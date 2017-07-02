@@ -141,6 +141,14 @@ default:
   ...
 }
 ```
+* a type switch can be used to switch based on the type of a value
+```
+switch v := i.(type) {
+case T: ...
+case S: ...
+default: ...
+}
+```
 
 * Defer - defers the execution of a function until the surrounding function returns
   - useful for functions that perform cleanup
@@ -240,9 +248,47 @@ func (f MyFloat) Abs(float64) { ... }
   - **value receivers** (non-pointer) receive a copy of the value
 * for large structs methods avoid having to copy the struct multiple times, method also allow modification the receiver points to
 
+### Interfaces
+* a set of method signatures
+* a value of type interface, can hold any value that implements the set of methods
+  - they can be thought of as a tuple of a value and a concrete type `(value, type)`
+  - the concrete value can be nil
+  - a nil interface has no value or concrete type, so causes a runtime error, as there is no type to indicate which concrete method to call
+* interfaces are implemented implicitly
+* `interface{}` is the empty interface
+  - used to handle values of an unknown type such as `fmt.Print`
+* type assertions provide access to the concrete value in an interface
+  - `t := i.(T) // given interface i` - assert that i holds the concrete type T, assign T to the variable t
+  - if it doenst a panic will occur
+  - `t, ok := i.(T)` can be used to test whether an interface value holds a specific type
+
+### Errors
+* Error states are expressed with `error` values
+  - `error` is a built in type interface
+```
+type error interface {
+  Error() string
+}
+```
+* errors can be handled by checking whether the error equals nil
+
+### IO
+* `io.Readers` interface represents a read stream of data
+  - the interface has a read method `func (T) Read(b []byte) (n int, err error)`
+  - read populates the given byte slice with data and returns the number of bytes populated and an error value
+  - an `io.EOF` error is returned when the stream ends
+
+### Images
+* from package image, `type Image interface {}` defines an interface for images, with the methods
+  - `ColorModel() color.Model`
+  - `Bounds() Rectangle // note: this is a (image.Rectangle)`
+  - `At(x, y int) color.Color`
+
 ## Packages
 ### fmt
 Format output
+* **Stringer interface** - a type that can describe itself as a string
+  - requires the `String() string` method to be implemented
 
 ### testing
 Test framework
