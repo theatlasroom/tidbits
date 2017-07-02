@@ -158,6 +158,9 @@ default:
 * `var p *int` - p is a pointer to a int value, its zero value is `nil`
   * `*p` provides access to the pointer for read / write
 * `&` generates a pointer to a variable, `p = &i`
+* functions with a pointer argument must take a pointer
+* methods with pointer receivers can take either a value or a pointer
+  - go will automatically infer (&v) when you invoke a method that requires a pointer receiver
 
 ### Structs
 * a collection of fields
@@ -218,6 +221,24 @@ var m = map[string]Vertex{
 ```
 * `delete(m, key)` - deletes the element at key `key` from map `m`
 * `elem, ok = m[key]` - check if a key exists
+
+### Methods
+* a function defined on a type T, with a **receiver argument**
+  - the receiver denotes the type the method applies to
+  - the receiver appears between the func keyword and the method name
+  - `func (v Vertex) Abs() float64 { ... }` - Abs method for type Vertex, return a float64
+  - methods are functions
+* methods can be defined on non-struct types
+```
+type MyFloat float64
+func (f MyFloat) Abs(float64) { ... }
+```
+  - you can only declare a method with a receiver whose type is defined in the same package as the method
+  - you can not declare a method with a receiver whose type is defined in another package including built ins like int
+* you can declare a method with a **pointer receiver**
+  - pointer receivers can modify the value the receiver points to
+  - **value receivers** (non-pointer) receive a copy of the value
+* for large structs methods avoid having to copy the struct multiple times, method also allow modification the receiver points to
 
 ## Packages
 ### fmt
