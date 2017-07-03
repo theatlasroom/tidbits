@@ -30,7 +30,7 @@
 * `go build` - build an executable
 * `go test` - run tests for a package
 * `go run` - run a go program
-* `go get` - locate and install a
+* `go get` - locate and install a package
 * `go tool fix` - updates programs that use old apis and rewrites them to use newer ones
 * `go fmt` - automatic formatting of your code
 
@@ -160,6 +160,9 @@ default: ...
     * **Deferred functions may read and assign to the returning functions named return values**
       - this can be useful for modifying the error return value of a function
   - `recover` is used within deferred functions to "catch" errors
+    * recover must be called directly in a deferred call
+    * for the recover to execute it must be deferred before the panic occurs
+    * by default a the function enclosing recover will return *0* we can use **implicit** return to set the value returned by a recover
 
 ### Pointers
 * Pointers hold the memory address of a value
@@ -283,6 +286,49 @@ type error interface {
   - `ColorModel() color.Model`
   - `Bounds() Rectangle // note: this is a (image.Rectangle)`
   - `At(x, y int) color.Color`
+
+### Concurrency
+* **goroutines** are threads managed by the go runtime
+* `go f(..)` evaluates the parameters in the current goroutine, but executes the function in a new goroutine
+* goroutines run in the same address space, so access to memory needs synchronisation
+* **channels** are a typed conduit for sending and receiving values
+  - they use the `<-` operator
+  - they are created using make `ch := make(chan int)`
+  - sends and receives will block until the other side is ready
+```
+ch <- v // send v to channel ch
+v := <-ch // receive data from ch and assign the value to v
+```
+  - channels can be buffered, via a second argument to make `ch := make(chan int, 100)`
+  - sends will block when the buffer is *full*
+  - receives will block when the buffer is *empty*
+  - a sender can close the channel to indicate no more values be sent
+  - receivers take a second parameter `ok` to indicate if the channel is still open `v, ok := <-ch`
+  - `for i := range c` will receive values until the channel is closed
+    * only **senders** should close a channel
+    * close is only required when there are no more values coming
+  - `select` lets a goroutine wait on multiple operations
+    * the `default` case can be used to try a send or receive without blocking
+```
+func f(c, quit chan int) {
+  select {
+    case c <- x:
+      ...
+    case <- quit:
+      ...
+    default:
+      ...
+    }
+  }
+}
+```
+  - single direction channels can be created (receive/send only)
+```
+b := make(chan int)
+var r chan<- int = b // receive only channel
+var s <-chan int = b // send only channel
+```
+  - `for <var> := range <channel> {}` is a short way to read from a channel until it closes
 
 ## Packages
 ### fmt
