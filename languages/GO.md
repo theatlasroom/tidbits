@@ -29,7 +29,7 @@
 ## Tools
 * `go build` - build an executable
 * `go test` - run tests for a package
-* `go run` - run a go program
+* `go run` - build and run a go program
 * `go get` - locate and install a package
 * `go tool fix` - updates programs that use old apis and rewrites them to use newer ones
 * `go fmt` - automatic formatting of your code
@@ -182,7 +182,7 @@ type Vertex struct {
 }
 ```
 * struct fields are accessed via the `.` operator
-* a struct literal lets createa struct by listing the values of the fields
+* a struct literal lets you create a struct by listing the values of the fields
   - `v = Vertex{X: 1} // Y defaults to Y:0`
   - not all fields are required and order does not matter
 

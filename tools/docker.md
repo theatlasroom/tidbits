@@ -17,6 +17,12 @@
 	- workers are machines that provide capacity
 * Stack: defines interactions of all the services
 * Dockerfile: A portable image defining dependencies
+* Networks can be created to manage communication between containers
+	- networks isolate your containers
+	- by default, containers are created in the **bridge** network
+	- a bridge network is limited to a single host running docker engine
+	- an **overlay** network can contain multiple hosts
+	- a container can be attached to as many networks as you like
 
 ## Docker Commands
 - `docker ps` - list active processes
@@ -51,5 +57,14 @@
 * `ENV` - define environemnt variables
 * `CMD` - execute a command
 
+## Docker compose
+* Specifies tasks that occur both for building images and also running containers
+	- it will trigger builds for our images
+	- it will populate runtime data such as envvars and volumes
+
 ## Links
 * [dockerize node apps](https://buddy.works/guides/how-dockerize-node-application)
+* [Docker compose for node](https://blog.codeship.com/using-docker-compose-for-nodejs-development/)
+* [Automated nginx reverse proxy](http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/)
+* [Set up docker on your VPS](http://blog.ssdnodes.com/blog/tutorial-getting-started-with-docker-on-your-vps)
+* [Docker nginx reverse proxy](http://blog.ssdnodes.com/blog/tutorial-using-docker-and-nginx-to-host-multiple-websites)

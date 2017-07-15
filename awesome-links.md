@@ -11,6 +11,7 @@ Alphabetised of course.
 
 ## Programming
 * [15 sorting algorithms in 6 mins](https://www.youtube.com/watch?v=kPRA0W1kECg)
+* Networking terminology [pt 1](https://www.digitalocean.com/community/tutorials/an-introduction-to-networking-terminology-interfaces-and-protocols) | [pt 2](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)
 
 ## Lulz
 * [gif dj](http://gif.dj)
@@ -21,6 +22,7 @@ Alphabetised of course.
 ## /b/
 * [List of dragon ball z characters](https://en.wikipedia.org/wiki/List_of_Dragon_Ball_characters)
 * [10minutemail](https://10minutemail.net/)
+* [Protonmail](https://protonmail.com)
 * [Burnerapp](https://www.burnerapp.com/)
 * [Hushed](https://hushed.com/)
 
@@ -34,6 +36,7 @@ Alphabetised of course.
 * [Zeit](https://zeit.co/)
 * [api.ipify.org](api.ipify.org) - check ip address
 * [cipherli.st](https://cipherli.st/) - Strong Ciphers for Apache, nginx and Lighttpd
+* [domainhacks.me](https://www.domainhack.me/) - interesting domain names
 
 ## APIs
 * [gyfcat](https://developers.gfycat.com/api)
