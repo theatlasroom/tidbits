@@ -25,6 +25,7 @@ Alphabetised of course.
 * [Protonmail](https://protonmail.com)
 * [Burnerapp](https://www.burnerapp.com/)
 * [Hushed](https://hushed.com/)
+* [httpie](https://httpie.org/#installation)
 
 ## AV / Digital Art / Cool
 * [Zach Liebermen daily sketches](https://medium.com/@zachlieberman/daily-sketches-2016-28586d8f008e#.exrkbubkj:)
@@ -37,6 +38,8 @@ Alphabetised of course.
 * [api.ipify.org](api.ipify.org) - check ip address
 * [cipherli.st](https://cipherli.st/) - Strong Ciphers for Apache, nginx and Lighttpd
 * [domainhacks.me](https://www.domainhack.me/) - interesting domain names
+* [park.io](https://park.io/)
+* [njal.la](https://njal.la/) - private domain registration
 
 ## APIs
 * [gyfcat](https://developers.gfycat.com/api)
