@@ -280,6 +280,8 @@ type error interface {
   - the interface has a read method `func (T) Read(b []byte) (n int, err error)`
   - read populates the given byte slice with data and returns the number of bytes populated and an error value
   - an `io.EOF` error is returned when the stream ends
+* `os.Open`: open a file in readonly mode
+* `os.OpenFile`: open a file and specify which mode to open it in, ie `O_RDWR` - read / write, `O_RDONLY` - readonly, `O_APPEND` - append
 
 ### Images
 * from package image, `type Image interface {}` defines an interface for images, with the methods
@@ -372,3 +374,4 @@ Math libray
 * [Go web api example](https://github.com/caarlos0/go-web-api-example)
 * [Go tooling workshop](https://github.com/campoy/go-tooling-workshop)
 * [Go libs](https://golanglibs.com/)
+* [Go by example](https://gobyexample.com/)

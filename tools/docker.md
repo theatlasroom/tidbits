@@ -58,9 +58,25 @@
 * `CMD` - execute a command
 
 ## Docker compose
-* Specifies tasks that occur both for building images and also running containers
-	- it will trigger builds for our images
-	- it will populate runtime data such as envvars and volumes
+* A tool to define and run multi container docker applications
+* The compose files is used to configure your applications services
+*
+### Compose file
+* a YAML (.yml) file defining services, networks and volumes
+* a service definition contains configuration which is applied to each container started for that service
+	- options specified in the Dockerfile (ie `CMD`, `EXPOSE`, `VOLUME`) are respected
+	- Use bash like variable syntax for environment variables ie ${VARIABLE}
+* Commands
+	- `build`
+		* build time configuration options, can be a path, or a dockerfile
+		* the `image` field is used to label the built image
+		* `context` can be a path to a directory containing a Dockerfile or url to a git repository
+		* Build arguments are env variables only accessible during the build process
+			- the arguments are then specified under the build key, with an optional value
+			- omitted values will be populated based on the environment compose is running in
+	- `deploy`
+	- `depends_on`
+	- `networks`
 
 ## Links
 * [dockerize node apps](https://buddy.works/guides/how-dockerize-node-application)

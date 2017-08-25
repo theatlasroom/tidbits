@@ -54,3 +54,8 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 ## Performance
 * [Mouse on the keys - "RaumKranKheit" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=YEaXNVlZgVg)
 * [Mouse on the keys - "Completed nihilism"& "Spectres de mouse" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=sFoetd0sD6Y)
+
+## Content
+### magazines
+* [archive.org](https://archive.org/details/magazine_rack)
+* [magzus](http://magzus.com/brand/popular_science/)
