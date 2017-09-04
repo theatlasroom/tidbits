@@ -3,6 +3,7 @@ Just general notes hey
 
 * [Change default screenshot location (OSX)](http://www.idownloadblog.com/2014/06/15/how-to-change-where-screenshots-are-saved-on-mac/)
 * [Creating a service on debian](https://www.axllent.org/docs/view/nodejs-service-with-systemd/)
+* [Combine git submodules into parent module](http://x3ro.de/2013/09/01/Integrating-a-submodule-into-the-parent-repository.html)
 
 ## Awesome
 * [Awesome stock resources](https://github.com/neutraltone/awesome-stock-resources)
