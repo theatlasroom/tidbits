@@ -79,8 +79,11 @@
 	- `networks`
 
 ## Links
+* [Docker compose + node examples](https://github.com/b00giZm/docker-compose-nodejs-examples)
 * [dockerize node apps](https://buddy.works/guides/how-dockerize-node-application)
 * [Docker compose for node](https://blog.codeship.com/using-docker-compose-for-nodejs-development/)
 * [Automated nginx reverse proxy](http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/)
 * [Set up docker on your VPS](http://blog.ssdnodes.com/blog/tutorial-getting-started-with-docker-on-your-vps)
 * [Docker nginx reverse proxy](http://blog.ssdnodes.com/blog/tutorial-using-docker-and-nginx-to-host-multiple-websites)
+* [From dev to prod with nodejs + docker](https://sloppy.io/from-dev-to-prod-with-nodejs-and-hackathon-starter-using-docker-compose-part-1/)
+*

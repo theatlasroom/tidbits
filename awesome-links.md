@@ -12,6 +12,7 @@ Alphabetised of course.
 ## Programming
 * [15 sorting algorithms in 6 mins](https://www.youtube.com/watch?v=kPRA0W1kECg)
 * Networking terminology [pt 1](https://www.digitalocean.com/community/tutorials/an-introduction-to-networking-terminology-interfaces-and-protocols) | [pt 2](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)
+* [Bithacks - bitwise operations](http://graphics.stanford.edu/~seander/bithacks.html) | [Bitwizardry](http://www.jjj.de/bitwizardry/bitwizardrypage.html)
 
 ## Lulz
 * [gif dj](http://gif.dj)
