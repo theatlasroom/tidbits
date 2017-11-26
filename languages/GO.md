@@ -371,3 +371,4 @@ Math libray
 * [Gobs of data](https://blog.golang.org/gobs-of-data)
 * [Go web api example](https://github.com/caarlos0/go-web-api-example)
 * [Go tooling workshop](https://github.com/campoy/go-tooling-workshop)
+* https://research.swtch.com/
