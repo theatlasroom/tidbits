@@ -253,6 +253,7 @@ then function is called once the main callback has finished. The then function c
 ## Links
 * [Anti Patterns](http://www.datchley.name/promise-patterns-anti-patterns/)
 * [More antipatterns](http://taoofcode.net/promise-anti-patterns/)
+* [You don't need lodash / underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)
 
 ## Testing
 ### Assertions
@@ -366,6 +367,50 @@ Tries to bypass the Symmetric NAT (routers only accepting connections from peers
 
 **SDP** - Session Description Protocol
 A standard for describing the multimedia content of the connection such as resolution, formats, codecs, encryption, etc. so that both peers can understand each other once the data is transferring. This is like the metadata describing the content and not the media content itself.
+
+## Flow
+### General
+* static type checker
+* uses *static type annotations* to cehck code fr errors
+* flow can infer most JS types
+* `flow init` initialize project with flow
+* `flow` run the flow background process
+	- `status` is the default flag for the flow command
+* `flow stop` stop the flow process
+* annotating a js file to use flow
+```
+// @flow
+```
+* `refinement`: 
+
+### Types
+* JS types can be specified by the primitive as a literal value ie "string", 32, true or as a constructed object ie new Boolean(false), new String("string"), new Number(32)
+* flow types can be literal or wrapper objects
+```
+function literalTypes(x: number, y: string){ ... }
+function objectTypes(x: Number, y: String){ ... }
+```
+* flow supports `null` and `void` (undefined)
+* Maybe types can be the specified type, null or void
+```
+function (x: ?number) { ... } // optional parameter x
+```
+* optional object properties
+	- optional object properties can NOT be `null`
+```
+{ property?: string } // `property` can exist or be void
+```
+* optional function parameters can exist with the type specified or be void
+```
+function optionalParams(param?: string){ ... }
+```
+* Mixed types describe values that can be one of set types
+	- type `mixed` can be used to specify 'any' type
+```
+function stringify(value: string | number) { ... } // value can be a string OR a number
+```
+
+### Type system
 
 ### Notes
 * [MDN Specs](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
