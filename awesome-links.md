@@ -23,6 +23,7 @@ Alphabetised of course.
 ## /b/
 * [List of dragon ball z characters](https://en.wikipedia.org/wiki/List_of_Dragon_Ball_characters)
 * [10minutemail](https://10minutemail.net/)
+* [dispostable](http://dispostable.com/)
 * [Protonmail](https://protonmail.com)
 * [Burnerapp](https://www.burnerapp.com/)
 * [Hushed](https://hushed.com/)
