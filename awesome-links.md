@@ -42,6 +42,7 @@ Alphabetised of course.
 * [domainhacks.me](https://www.domainhack.me/) - interesting domain names
 * [park.io](https://park.io/)
 * [njal.la](https://njal.la/) - private domain registration
+* [zeit domain search](https://zeit.co/domains)
 
 ## APIs
 * [gyfcat](https://developers.gfycat.com/api)
