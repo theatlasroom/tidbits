@@ -134,15 +134,119 @@ type immutablePerson = {
   age: int
 };
 
-
 let baby: mutablePerson = { name: "Lol", age: 5 };
 baby.age = baby.age + 1;
 
 let adult: immutablePerson = { name: "YEAH", age: 18 };
 ```
+* *Variant* expresses variations
+```
+type myVariant =
+  | Yes
+  | No
+  | PrettyMuch;
+
+let areYouCrushingIt = Yes;
+
+let message =
+  switch (areYouCrushingIt) {
+  | No => "No worries. Keep going!"
+  | Yes => "Great!"
+  | PrettyMuch => "Nice!"
+  };
+
+/* Yes, No, PrettyMuch are `constructors` */
+```
+  - constructors of a variant need to be capitalized
+    * they can hold extra data `... | Instagram(string | Facebook(string, int);`
+  - switch expressions can be used to enumerate each possible case of a variant
+  - like records, they require an explicit definition
+  - ``option(`a)`` comes from the standard library and returns ``None | Some(`a)``
+* *List* homogenous, immutable singly linked list
+```
+let myList: list(int) = [1,2,3];
+let newList = [0, ...myList];
+```
+  - use the `...` spread operator to prepend lists
+  - use *List.concat* to combine multiple lists
+  - use *List.nth* to access arbitrary items
+* *Array* similar to lists, but mutable, arrays map to `Js.Array`
+```
+let myArr: array(string) = [|"One", "Two", "Three"|]
+```
+* types can be parametized, similar to how *generics* are used
+```
+type someFunc('a) = ('a,'a,'a);
+```
+* types can be mutually recursive
+```
+type student = {taughtBy: teacher}
+and teacher = {students: list(student)};
+```
+
+### Functions
+* declared with a parenthesised arrow and return expression `() =>`
+* functions can automatically be curried
+```
+let add = (x, y, z) => x + y + z;
+add(1,2,3); /* returns 6 */
+ ```
+* every function takes an argument, the unit argument `()` is used when we have nothing to pass into the function
+* labels can be used to specify which arguments you are passing to a function
+  - labelled arguments can be passed in any order
+  - optional arguments automatically get wrapped in an *option* type, ensuring they can return None or Some(type)
+    * a trailing unit parameter `()` is required
+  - optional arguments can be forwarded to another function without checking if it is None or Some
+  - optional arguments can have a default value `...~color="red",`
+```
+let add = (~x, ~y) => { ... } /* labelled arguments */
+add(~x=5, ~y=10);
+
+/* aliased, labelled arguments */
+let sub = (~xCoord as x, ~yCoord as y ) => x - y
+sub(~xCoord=10, ~yCoord=5);
+
+/* optional labelled arguments */
+let div = (~x, ~y=?, ()) => {
+  switch (y){
+    | None => x / 1
+    | Some(divisor) => x / divisor
+  }
+};
+div(~x=10);
+div(~x=10,~y=2);
+
+/* forward the optional radius argument without checking if it is there */
+let result = drawCircle(~color, ~radius=?payloadRadius, ());
+ ```
+* the `rec` keyword is used to specify a recursive function
+  - mutually recursive functions are joined with the `and` keyword
+```
+/* single recursive function */
+let rec neverEndingStory = () => neverEndingStory();
+
+/* mutually recursive functions */
+let rec callSecond = () => callFirst()
+and callFirst = () => callSecond();
+```
+### Control structures
+* `if / else` are expressions, they evaluate to the body of the match
+  - ternary's can also be used in place
+* omitting the final `else` implicitly adds a unit expression `else { () };`
+
+```
+let res = if (something) { returnSomething() } else { returnSomethingElse() }
+
+if (something) {
+  doSomething
+}; /* implicit else { () }; */
+
+```
 
 ## Links
 * [Playground](https://reasonml.github.io/try.html)
 * [Cheatsheet](https://reasonml.github.io/docs/en/syntax-cheatsheet.html)
+* [ReasonML: functions](http://2ality.com/2017/12/functions-reasonml.html) - deep look at ReasonML functions
 * [ReasonML documentation](https://reasonml.github.io)
-* [Redex - package index](https://redex.github.io/)
+* [Redex - package index](https://redex.github.io
+* [React + reason](https://itnext.io/a-journey-to-reason-c408a87a54de)
