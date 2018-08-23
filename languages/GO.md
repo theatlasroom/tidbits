@@ -356,6 +356,12 @@ Math libray
 
 * cmplx: complex numbers
 
+### http
+* `http.HandleFunc(resource, func (w http.ResponseWriter, r *http.Request) {})` | `http.Handle(requestHandler)` - handles any request sent to the specified resource
+* `http.ListenAndServe(addr string, handler)` - listen on the address specified start serving
+* `http.Handler(http.HandlerFunc)` - a type used to handle http requests, implements `http.ServeHTTP`
+* `http.HandlerFunc(fn)` - an adapter to use ordinary functions as http handlers
+
 
 ## Glossary
 * import - import go packages. By convention use the factored style `import ("fmt" "math" ...)`

@@ -65,3 +65,10 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
 ### Timestamps
 * convert a timestamp to a different timnezone using `at time zone 'TIMEZONE_NAME'` where s timezone name is in the form 'Europe/London'
 * [timestamps](http://stackoverflow.com/questions/5876218/difference-between-timestamps-with-without-time-zone-in-postgresql)
+
+### PSQL
+* connect: `psql -U <username>`
+* Commands
+  - `\l` - list databases
+  - `\c` -
+  - `\d` -
