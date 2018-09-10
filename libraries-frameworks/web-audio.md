@@ -186,6 +186,31 @@ part.loop = 3
 part.loopEnd = '1m'
 ```
 
+Instruments can be defined using json settings, by default all instruments are monophonic
+
+
+```
+// define a custom synth
+const fmSynth = {
+  oscillator: {
+    type: 'fmsquare',
+    modulationType: 'sawtooth',
+    modulationIndex: 3,
+    harmonicity: 3.4
+  },
+  envelope: {
+    attack: 0.001,
+    decay: 0.1,
+    sustain: 0.1,
+    release: 0.1,
+  }
+}
+
+const customFmSynth = new Tone.Synth(fmSynth).toMaster();
+```
+
+Polyphonic instruments can be created by passing the instrument constructor to `Tone.PolySynth`
+
 ### API
 * `Time(t)`: convert tempo based time `t` to seconds, ie '1n'
 * `Transport`: timeline used to schedule events, the timeline is seekable, restartable and editable
@@ -198,6 +223,7 @@ part.loopEnd = '1m'
   - `scheduleRepeat()`: loop an event relative to the transport's position
 * `Loop()`: create a looped callback that can be scheduled along the transport
 * `Part()`: schedule an array of events along the tranpsort
+* `PolySynth()`: create a multi voice synth, manages multiple instances of an instrument and the voice allocations
 * `triggerAttackRelease`: calls triggerAttack then triggerRelease
   - takes 3 arguments (note, duration, schedule)
   - note: the frequency to sound, can be either a number, or a pitch octave notation note 'D#2'
