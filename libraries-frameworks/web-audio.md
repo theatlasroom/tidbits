@@ -147,7 +147,7 @@ Tone.Time('8t') // 8th triplet note
 Tone.Time('4n') + Tone.Time('2n')
 ```
 
-Tranport can be used to schedule events in the future along a timeline
+Transport can be used to schedule events in the future along a timeline
 ```
 function playSound(){ ... }
 
@@ -211,3 +211,4 @@ part.loopEnd = '1m'
 * [HTML5 Rocks tutorial](https://www.html5rocks.com/en/tutorials/webaudio/intro/)
 * [Web audio UIs](https://www.youtube.com/watch?v=tSThM9Aw8ps)
 * [Web Midi API](https://webaudio.github.io/web-midi-api/#midiaccess-interface)
+* [glitch - tiny tone.js playpen](https://psychedelic-collision.glitch.me/)

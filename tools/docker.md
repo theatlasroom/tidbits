@@ -29,6 +29,10 @@
 	* `-a` - all containers, even the ones not running
 - `docker build` - your docker file
 	* `-t <name>` - tag the built image with a name
+- `docker exec <container_name> <command>` - execute a command in your container
+	* analogous to `docker-compose exec <container_name> <command>`
+	* `-i` - keep STDIN open even if not attached
+	* `-t` - allocate a pseudo TTY
 - `docker images` - list all our built images
 	* `-a` - all images
 - `docker run <image>` - run the app specified by name
@@ -48,6 +52,7 @@
 - `docker swarm join` - join the swarm as a worker
 - `docker-machine` - helps manage VMs
 - `docker-machine ssh` - allows a swarm manager to send commands to a worker
+- `docker system prune` - nuke all containers
 
 ## Dockerfile commands
 * `FROM` - define the base image we are building from, needs to be the first line of your Dockerfile, images are found on dockerhub.
@@ -77,6 +82,20 @@
 	- `deploy`
 	- `depends_on`
 	- `networks`
+
+## Secrets
+A secret is data that should not be transmitted or stored unencrypted.
+Secrets are encrypted during transit and at rest and can be limited to only the containers tha require them.
+ie.
+- usernames / passwords
+- TLS certs
+- SSH keys
+- names of internal services, databases etc
+- any generic data up to 500kb 
+
+A secret can only be accessed by services that have been granted access and only while they are running.
+
+
 
 ## Links
 * [Docker compose + node examples](https://github.com/b00giZm/docker-compose-nodejs-examples)
