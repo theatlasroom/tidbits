@@ -124,6 +124,87 @@ Web applications can select midi input /output devices on the client and send / 
 * `MIDIMessageEvent`
   - passed to the midimessage handler when MIDI messages are received.
 
+## ToneJS
+A framework for creating music using abstractions on top of webaudio. Providing scheduling, synths, effects and other abstractions.
+
+```
+// create a synth and connect it to the output
+var synth = new Tone.Synth().toMaster()
+```
+
+Tone js uses the audiocontext time as its reference clock
+```
+// get the current time from the audiocontext
+Tone.now()
+```
+
+Tempo based timings can be created and used in any method that takes `time` as an argument
+```
+Tone.Time('1m') // one measure
+Tone.Time('4n') // quarter note
+Tone.Time('8t') // 8th triplet note
+
+Tone.Time('4n') + Tone.Time('2n')
+```
+
+Tranport can be used to schedule events in the future along a timeline
+```
+function playSound(){ ... }
+
+// set the tempo
+Tone.Transport.bpm.value = 120;
+
+Tone.Transport.schedule(playSound, 0)
+Tone.Transport.scheduleRepeat(playSound, 1)
+
+var tune = new Tone.Loop(function(time){
+  synth.triggerAttackRelease("C1", "8n", time)
+}, '4n')
+
+tune.start(0).stop('2n')
+```
+
+Parts can be used to schedule an array of events along the transport
+```
+
+var schedule = [
+  {time: 0, note: 'C4', duration: '4n'},
+  {time: '4n + 8n', note: 'E4', duration: '8n'},
+  {time: '2n', note: 'G4', duration: '16n'},
+  {time: '2n', note: 'B4', duration: '4n'},
+]
+
+var part = new Tone.Part(function(time, event){
+  synth.triggerAttackRelease(event.note, event.duration, time);
+
+}, schedule)
+
+part.start(0)
+
+// loop 3 times
+part.loop = 3
+part.loopEnd = '1m'
+```
+
+### API
+* `Time(t)`: convert tempo based time `t` to seconds, ie '1n'
+* `Transport`: timeline used to schedule events, the timeline is seekable, restartable and editable
+  - `bpm`: tempo
+  - `loopEnd`: the length of the loop
+  - `loop`: set the transport to loop
+  - `.start()`: start the transport
+  - `.stop()`: stop the transport
+  - `schedule()`: schedule an event relative to the transport's position, returns a precise audiocontext time for the scheduled event
+  - `scheduleRepeat()`: loop an event relative to the transport's position
+* `Loop()`: create a looped callback that can be scheduled along the transport
+* `Part()`: schedule an array of events along the tranpsort
+* `triggerAttackRelease`: calls triggerAttack then triggerRelease
+  - takes 3 arguments (note, duration, schedule)
+  - note: the frequency to sound, can be either a number, or a pitch octave notation note 'D#2'
+  - duration: seconds, or a tempo relative value ie '8n'
+  - schedule: when the note should play, this is optional and can be a time in the future or it will sound immediately
+  - `triggerAttack`: trigger when the amplitude is rising ie key down / note on
+  - `triggerRelease`: trigger when the amplitude is falling ie key up / note off
 
 ## Links
 * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
