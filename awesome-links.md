@@ -10,6 +10,7 @@ Alphabetised of course.
 * [Ritual warfare and colonial conquest of the eggon](http://afsaap.org.au/assets/1983_Dorward-D-C.pdf)
 
 ## Programming
+* [Free programming ebooks](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md)
 * [15 sorting algorithms in 6 mins](https://www.youtube.com/watch?v=kPRA0W1kECg)
 * Networking terminology [pt 1](https://www.digitalocean.com/community/tutorials/an-introduction-to-networking-terminology-interfaces-and-protocols) | [pt 2](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)
 * [Bithacks - bitwise operations](http://graphics.stanford.edu/~seander/bithacks.html) | [Bitwizardry](http://www.jjj.de/bitwizardry/bitwizardrypage.html)
@@ -28,6 +29,7 @@ Alphabetised of course.
 * [Burnerapp](https://www.burnerapp.com/)
 * [Hushed](https://hushed.com/)
 * [httpie](https://httpie.org/#installation)
+* [Punks dead](https://mega.nz/#F!3wsFkKIa!m0LgHEaX5HuEViOT3XVj5g!O4kE1aYa)
 
 ## AV / Digital Art / Cool
 * [Zach Liebermen daily sketches](https://medium.com/@zachlieberman/daily-sketches-2016-28586d8f008e#.exrkbubkj:)
