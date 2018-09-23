@@ -49,11 +49,21 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 * [Mouse on the keys](https://www.youtube.com/watch?v=UjpOhR_Q9xw)
 * [Mouse on the Keys - Earache live](https://www.youtube.com/watch?v=f8oqhlT37VY)
 * [Marcus Fischer / Taylor Deupree - twine](https://vimeo.com/141666937)
+* [My Disco - Turn](https://vimeo.com/35336545)
+* [The (International) Noise Conspiracy - Smash it up](https://www.youtube.com/watch?v=FyjmCg_VMU0)
+* [Converge - Concubine / Fault & Fracture](https://www.youtube.com/watch?v=kZIcTqYTjFY)
+* [Ben Frost - Threshold of faith](https://www.youtube.com/watch?v=Z1_sSbXoDH0)
+* [Jamie xx - Gosh](https://www.youtube.com/watch?v=hTGJfRPLe08)
+* [Plebeian Grandstand - Eros Culture](https://www.youtube.com/watch?v=opbmzhbLIT4)
 
 ## Performance
 * [Mouse on the keys - "RaumKranKheit" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=YEaXNVlZgVg)
 * [Mouse on the keys - "Completed nihilism"& "Spectres de mouse" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=sFoetd0sD6Y)
 * [Fourtet - live boiler room London](https://www.youtube.com/watch?v=Ca6pjR2TLns)
+* [HEALTH - We are water](https://www.youtube.com/watch?v=tiO4Tvba800)
+* [Blanck Mass - Live boiler room](https://www.youtube.com/watch?v=1xqCHLXuDuA)
+* [Nils Frahm - All Melody / #2](https://www.youtube.com/watch?v=NW87dBPjHuU)
+* [Portishead - Live New York](https://www.youtube.com/watch?v=ZFwnlCudeC0)
 
 ## Content
 ### magazines
