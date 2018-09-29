@@ -243,10 +243,93 @@ if (something) {
 
 ```
 
+## ReasonReact
+react bindings for reasonml
+
+### General
+* Doesnt require classes, records are used to create components with the `make` function, field such as `render`, `initialState` and `didMount` can be overidden for the component
+  - `ReasonReact.statelessComponent`
+  - `ReasonReact.reducerComponent` (stateful)
+  - `ReasonReact.null` returns a null value
+  - `ReasonReact.string` converts a string to a `reactElement`
+  - `ReasonReact.array` converts an array to a reactElement
+  - `render` - returns a `ReasonReact.reactElement`, `<div />`, `<Component />` etc
+```
+let component = ReasonReact.statelessComponent('Test')
+...
+let make = (~name, _children) => {
+  ...component, /* spread defaults into the function */
+  render: _self => <div> {ReasonReact.string(name)}</div>
+}
+```
+* Rendering / calling a component without JSX
+```
+ReasonReact.element(Test.make(~name="Some name", [||]))
+```
+* Props are just labelled arguments to make, they follow normal rules of reason arguments, except the last prop must be `children`
+  - optional props can be set using `=?` ie `<Foo name="Reason" age=?ageFromProps />`
+* `self`
+   - equivalent to JS `this`
+   - a record that contains `state`, `handle` and `send` and is passed to lifecycle events and render
+* `ReactDOMRe.createElement` compiles to `React.createElement`
+  - use `ReasonReact.createDomElement` if you need an escape hatch
+
+### Events
+* `self.send` - update state in a callback
+* Callback without state update
+```
+/* call the function pass in via props */
+
+let component = ...
+let make = (~name, ~onClick, _children) => {
+  ...component,
+  render: (self) => <button onClick=onClick />
+}
+
+/* intercept value before calling callback */
+
+let component = ...
+let make = (~name, ~onClick, _children) => {
+  let click = (event) => onClick(name);
+  {    
+    ...component,
+    render: (self) => <button onClick=onClick />
+  }
+}
+```
+* Callback with state
+  - wrap the callback with `self.handle`
+  - pass the whole `self` record if you are forwarding to a handler
+```
+let component = ...
+let make = (~name, ~onClick, _children) => {
+  let click = (event, self) => {
+    onClick(event);
+    Js.log(self.state);
+  };
+  {
+    ...component,
+    initialState: ...
+    render: (self) => <button onClick={self.handle(click)}
+  }
+}
+```
+* Callback with state with multiple arguments
+```
+/* handle expects to wrap a function that only takes 1 argument */
+
+let handleSubmitEscapeHatch = (username, password, event) =>
+  self.handle(
+    (tupleOfThreeItems, self) => doSomething(tupleOfThreeItems, self),
+    (username, password, event),
+  );
+```
+
 ## Links
 * [Playground](https://reasonml.github.io/try.html)
 * [Cheatsheet](https://reasonml.github.io/docs/en/syntax-cheatsheet.html)
 * [ReasonML: functions](http://2ality.com/2017/12/functions-reasonml.html) - deep look at ReasonML functions
 * [ReasonML documentation](https://reasonml.github.io)
-* [Redex - package index](https://redex.github.io
+* [Redex - package index](https://redex.github.io)
 * [React + reason](https://itnext.io/a-journey-to-reason-c408a87a54de)
+* [ReasonReact](https://reasonml.github.io/reason-react)
