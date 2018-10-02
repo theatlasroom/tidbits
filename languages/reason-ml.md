@@ -243,6 +243,43 @@ if (something) {
 
 ```
 
+## Interop
+* Bucklescript interoperation with JS, useful for binding JS libraries into the reasonml / ocaml world.
+* Gives the ability to declare a FFI from reasonml to JS
+* Uses the same syntax that OCaml uses for C bindings
+
+### Operators
+General operators
+```
+[@bs.new] /* create a new instance of an object */
+[@bs.val] /* define a variable or function */
+[@bs.send] /* call a method on an object */
+[@bs.obj] /* Create a JS object from labelled args */
+[@bs.splice] /* call a function with a variable number of the same type of argument */
+```
+
+Raw javascript dumped straight into reason 
+```
+[%%raw "var a = 5"] 
+```
+Saving a raw js expression into a reason variable (generally not type safe)
+```
+let add = [%raw {| 
+ function(b){ ... }
+|}];
+```
+Annotated raw expression, better for type safety
+```
+let add: ((int, int) => int) = [%raw {| function(a,b){ ... } |}];
+```
+Mapping a value
+```
+[@bs.val] external sqrt : float => float = "Math.sqrt";
+
+/* using the function */
+let four = sqrt(2.0);
+```
+
 ## ReasonReact
 react bindings for reasonml
 
@@ -333,3 +370,5 @@ let handleSubmitEscapeHatch = (username, password, event) =>
 * [Redex - package index](https://redex.github.io)
 * [React + reason](https://itnext.io/a-journey-to-reason-c408a87a54de)
 * [ReasonReact](https://reasonml.github.io/reason-react)
+* [Component styling api](https://medium.com/@tahini/building-a-reasonml-component-styling-api-part-1-837177655a5c)
+* [David Gomes - expoloring interop](https://www.youtube.com/watch?v=-C-mv_Mc1mQ)
