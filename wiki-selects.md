@@ -7,7 +7,11 @@ Some of my favourite wikipedia pages
 
 ## Language
 * [Ajami script](https://en.wikipedia.org/wiki/Ajami_script)
+* [Bijlmermeer](https://en.wikipedia.org/wiki/Bijlmermeer)
+* [Conurbation](https://en.wikipedia.org/wiki/Conurbation)
+* [Dialect continuum](https://en.wikipedia.org/wiki/Dialect_continuum)
 * [Eggon](https://en.wikipedia.org/wiki/Eggon_language)
 * [International phonetic alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet)
 * [Language families](https://en.wikipedia.org/wiki/Language_family)
 * [Language isolates](https://en.wikipedia.org/wiki/Language_isolate)
+* [Mutual intelligibility](https://en.wikipedia.org/wiki/Mutual_intelligibility)
