@@ -243,6 +243,19 @@ if (something) {
 
 ```
 
+### Modules
+Modules can be passed to functions (not all functions), they can only be passed to _functors_
+
+Functors:
+* Functors use the *module* keyword instead of *let*
+* Take a module as an argument and return another module
+* map from one module to another
+* require annotating arguments
+* their name must start with a capital
+
+
+* Helpful - [reasonml-functors](http://2ality.com/2018/01/functors-reasonml.html)
+
 ## Interop
 * Bucklescript interoperation with JS, useful for binding JS libraries into the reasonml / ocaml world.
 * Gives the ability to declare a FFI from reasonml to JS
@@ -254,17 +267,18 @@ General operators
 [@bs.new] /* create a new instance of an object */
 [@bs.val] /* define a variable or function */
 [@bs.send] /* call a method on an object */
+[@bs.send.pipe] /* place the main argument a the end of the function call, allowing the use of |> */
 [@bs.obj] /* Create a JS object from labelled args */
 [@bs.splice] /* call a function with a variable number of the same type of argument */
 ```
 
-Raw javascript dumped straight into reason 
+Raw javascript dumped straight into reason
 ```
-[%%raw "var a = 5"] 
+[%%raw "var a = 5"]
 ```
 Saving a raw js expression into a reason variable (generally not type safe)
 ```
-let add = [%raw {| 
+let add = [%raw {|
  function(b){ ... }
 |}];
 ```
@@ -362,6 +376,9 @@ let handleSubmitEscapeHatch = (username, password, event) =>
   );
 ```
 
+## Libraries
+* [Arg](https://reasonml.github.io/api/Arg.html) - CLI command parsing
+
 ## Links
 * [Playground](https://reasonml.github.io/try.html)
 * [Cheatsheet](https://reasonml.github.io/docs/en/syntax-cheatsheet.html)
@@ -372,3 +389,4 @@ let handleSubmitEscapeHatch = (username, password, event) =>
 * [ReasonReact](https://reasonml.github.io/reason-react)
 * [Component styling api](https://medium.com/@tahini/building-a-reasonml-component-styling-api-part-1-837177655a5c)
 * [David Gomes - expoloring interop](https://www.youtube.com/watch?v=-C-mv_Mc1mQ)
+* [Reasonconf videos](https://www.youtube.com/channel/UCtFP_Hn5nIbZY4Xi47qfHhw/playlists)
