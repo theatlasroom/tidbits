@@ -42,6 +42,8 @@ From command mode
 * **bd** - buffer delete -> close file
 * `/<search>` - search for the term we specify, use n to move to the next occurence in the file
 * **zz** - set the current line as the centre of the screen
+* **m** - move line
+* **ddp** - swap 2 lines
 
 ## Other commands
 * :help option list - list all the options
@@ -67,7 +69,13 @@ From command mode
 
 ## Shortcuts
 * Swap 2 lines: `:<line number 1>mo<line number 2>`
-    
+* move line:    
+```
+:m 1 - move current line to position after line 1
+:m $ - move current line to bottom
+:m 0 - move current line to top 
+```
+
 ## Keys
 * <cr> - carriage return (enter)
 * <Leader> - reference the default leader key (default is \)
