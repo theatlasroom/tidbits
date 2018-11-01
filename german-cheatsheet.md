@@ -13,6 +13,7 @@
 | sie | she |
 | wir | we |
 | uns | us |
+| Sie sind, Wir sind, du bist, Ihr seid, Ich bin | they are, we are, you are, you are (formal), i am |
 
 ## Case
 
@@ -39,7 +40,7 @@
 | die Zeitung | newspaper |
 | die Milch | milk |
 | der Apfel | apple |
-| der Kafffee | coffee |
+| der Kaffee | coffee |
 
 ## General words / phrases
 | Phrase | Translation |
