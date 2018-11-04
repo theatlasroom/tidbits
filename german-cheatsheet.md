@@ -14,6 +14,12 @@
 | wir | we |
 | uns | us |
 | Sie sind, Wir sind, du bist, Ihr seid, Ich bin | they are, we are, you are, you are (formal), i am |
+| Ich trinke | I drink | 
+| Du trinkst | you drink | 
+| Er/sie/es trinkt | he/she/it drinks |
+| Wir trinken | we drink |
+| Ihr trinkt | you (plural) drink |
+| Sie trinken | they (or the formal "you") drink |
 
 ## Case
 
@@ -31,6 +37,10 @@
 
 ## Counting
 | eins zwei drei vier fünf sechs sieben acht neun zehn | one two three four five six seven eight night ten |
+
+## Verbs
+| Word | Translation |
+| --- | --- |
 
 ## Nouns
 | German | English |
