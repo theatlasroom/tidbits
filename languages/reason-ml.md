@@ -184,6 +184,54 @@ type student = {taughtBy: teacher}
 and teacher = {students: list(student)};
 ```
 
+### Pattern matching
+The *switch* expression allows us to match against the shape of some data 
+We can match against many data types
+The *_* character will match any possible unmatched value, if omitted and you dont cover all values a compiler error will be thrown
+```
+let data = GoodResult("Product shipped!");
+let message =
+  switch (data) {
+  | GoodResult(theMessage) => "Success! " ++ theMessage
+  | BadResult(errorCode) => "Something's wrong. The error code is: " ++ string_of_int(errorCode)
+  };
+
+/* Match a string */
+let matchString = 
+	switch (string) {
+	| "Some string" => "do something"
+	| "Another string" => "do something else"
+	| ""
+	}
+
+/* match with union */
+let reply =
+  switch (message) {
+  | "Reason's pretty cool" => "Yep"
+  | "good night" => "See ya!"
+  | "hello" | "hi" | "heya" | "hey" => "hello to you too!"
+  | _ => "Nice to meet you!"
+  };
+
+/* match a list */
+let matchList = 
+	switch (list){
+	| [] => "do something with the empty list"
+	| [head, ...tail] => "list has data"
+	}
+```
+* avoid nesting of pattern match statements
+* *when* clauses can be used to add conditions to a match
+```
+let message =
+  switch (data) {
+  | GoodResult(theMessage) => ...
+  | BadResult(errorCode) when isServerError(errorCode) => ...
+  | BadResult(errorCode) => ... /* otherwise */
+  | NoResult => ...
+  };:u
+```
+
 ### Functions
 * declared with a parenthesised arrow and return expression `() =>`
 * functions can automatically be curried
