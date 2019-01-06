@@ -24,6 +24,9 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 ### Holly Herndon
 [RBMA Tokyo 2014 Lecture](https://www.youtube.com/watch?v=_XmHQkFo_co)
 
+### Misc
+* [Fahrelnissa Zeid](https://en.wikipedia.org/wiki/Princess_Fahrelnissa_Zeid)
+
 ## Sound
 ### Design
 ### Exploration / Experimentation
@@ -37,6 +40,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 * [Bladerunner](http://www.imdb.com/title/tt0083658)
 * [Drive](http://www.imdb.com/title/tt0780504/)
 * [Enemy](http://www.imdb.com/title/tt2316411/)
+* [Enter the void](https://www.imdb.com/title/tt1191111/)
 * [Ghost in the shell (anime)](http://www.imdb.com/title/tt0113568/)
 * [Logans Run](http://www.imdb.com/title/tt007o4812/)
 * [Mulholland Dr](http://www.imdb.com/title/tt0166924/)

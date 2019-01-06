@@ -34,6 +34,8 @@
 | Hallo, guten Morgen, guten Abend, guten Nachtmittag, guten Tag | Hello, good morning, good evening, good afternoon, good day |
 | Tschüss, Auf Wiedersehen | Bye, Goodbye | 
 | bis bald, bis später, bis morgen | see you soon, see you later, see you tomorrow |  
+| Hallo, Ich heiße <name> | Hello, I am called <name> |
+| Ich komme aus <country> | I come from <country> |
 
 ## Counting
 | Deutsch | Englisch |
@@ -77,6 +79,9 @@
 
 
 ## Nouns
+* Definite articles - specific things using 'the': Der (masculine), Die (feminine), Das (neuter)
+* Indefinite articles - nonspecific things / groups of things using 'a', 'an', 'some': Ein (masculine, neuter), Eine (feminine)
+
 ### Masculine
 | German | English |
 | --- | --- | 
@@ -105,6 +110,10 @@
 | Phrase | Translation |
 | --- | --- |
 | und | and |
+| Sprechen sie Deutsch? / Sprichst du Deutsch? | Do you speak german |
+| Ich spiele gerne Gitarre | I like to play guitar |
+| Ich bin ein Softwareentwickler | I am a software engineer |
+| Wie viel kostet es | How much does it cost? |
 
 ## Prepositions
 | German | English |
