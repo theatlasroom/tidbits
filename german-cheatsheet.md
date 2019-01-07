@@ -77,6 +77,24 @@
 | sich unterhalten / reden, reden, redete | talk, talking, talked |
 | trinke, trinken, trinkt, getrunken | drink, drinking, is drinking, drank |
 
+### Conjugations
+* Altering a verb to indicate the person, gender, tense, number or aspect of a sentence
+* Stem: the unchanged part of a verb after conjugation, ie: _lern_ in lernen, lerne, lernt
+* Regular verbs: conjugated according to regular patterns, verbs ending with _en_, _el_, _er_ or _ten_ 
+
+| Present tense stem | Conjugations |
+| --- | --- |
+| Lern*en* (to learn) | ich lern*e*, du lern*st*, er/sie/es lern*t*, wir lern*en*, ihr lern*t* Sie/sie lern*en* |
+| Handel*n* (to negotiate) | ich handl*e*/handel*e*, du handel*st*, er/sie/es handel*t*, wir handel*n*, ihr handel*t*, Sie/sie handel*n* |
+| Arbei*ten* (to work) | ich arbeit*e*, du arbeit*est*, er/sie/es arbeit*et*, wir arbeit*en*, ihr arbeit*et*, Sie/sie arbeit*en*
+
+* Irregular verbs: change their stem when conjugated ie _sein_, _haben_, _werden_
+
+| Present tense stem | Conjugations |
+| --- | --- |
+| Sein (to be) | ich *bin*, du *bist*, er/sie/es ist, wir *sind*, ihr *seid*, Sie/sie *sind* |
+| Haben (to have) | ich *habe*, du *hast*, er/sie/es *hat*, wir *haben*, ihr *habt*, Sie/sie *haben* |
+| Werden (to become, shall, will) | ich *werde*, du *wirst*, er/sie/es *wird*, wir *werden*, ihr *werdet*, Sie/sie *werden* |
 
 ## Nouns
 * Definite articles - specific things using 'the': Der (masculine), Die (feminine), Das (neuter)
