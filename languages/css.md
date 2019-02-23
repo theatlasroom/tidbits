@@ -87,9 +87,135 @@ Allow us to interact with CSS definitions from inside javascript, a build script
 
 ## PostCSS
 
+## CSS Grid
+* 2d system designed to handle columns and rows
+* Rules are applied to a parent (Grid container) and children (Grid items)
+* Works well in conjunction with flexbox which is largely based around 1 dimensional layouts
+* Basic process
+  - Define container with `display: grid`
+  - Set the column and row sizes with `grid-template-column` and `grid-template-rows`
+  - Add children with `grid-column` and `grid-row`
+* The source order of the grid items does not matter
+### Terms
+* **Grid container**: Direct parent of all the grid items
+* **Grid item**: Direct descendants of the grid container
+* **Grid line**: The dividing line that makes up the structure of the grid
+  - **Column grid lines**: Vertical lines
+  - **Row grid lines**: Horizontal lines
+* **Grid track**: Space between two adjacent grid lines, eg. the columns and rows of the grid 
+* **Grid cell**: The space between two adjacent row and two adjacent column grid lines, a single square of the grid 
+* **Grid area**: Total space surrounded by four grid lines
+* **fr**: fraction of the free space, unit of measure
+* **repeat()**: function used to repeat segments of grid template
+* **minmax(minValue, maxValue)**: function to specify size bounds for a property
+* **auto-fill**: create as many tracks as fit into the grid without causing it to overflow 
+ - `grid-template-columns: repeat(auto-fill, 100px);`
+* **auto-fit**: same as auto-fill, except it will only create as many tracks as needed and will collapse any empty repeated tracks
+ - `grid-template-columns: repeat(auto-fit, 100px);`
+* **Explicit grids**: Manually defined number of lines and tracks using grid-template\* rules
+* **Implicit grids**: When a grid item is placed outside of the explicit grid or there are more items than cells in the grid the grid container will automatically generate additional tracks. `grid-auto*` rules can be used to control the size of implicit tracks.
+
+### Properties
+#### Grid container
+* **display**: defines the element as a grid container, creates a new grid formatting context for its content
+ - values: grid, inline-grid
+* **grid-template-(columns|rows)**: Defines the colums and rows of the grid with a space separated list of values.
+```
+.container {
+  grid-template-columns: <track-size> <line-name> <track-size> <line-name>... 
+}
+
+.container-with-named-tracks {
+  // left edge is named first, then a 40px cell, line2, 50px cell and then the last line
+  grid-template-columns: [first] 40px [line2] 50px [last]; 
+  // First line has 2 labels, then a 100px high row, then then another line with 2 labels
+  grid-template-rows: [top-row row1] 100px [bottom-row row2];
+}
+
+.container-with-repeated-sections {
+  grid-template-columns: repeat(3, 20px [col-start]);
+}
+```
+ - track size: the size of each track (column or row) of the grid, the `fr` unit can be used to set the track to a fraction of the free space available, this is calculated after any non-flexible items
+ - line name: optional name for the given track-size, if omitted, tracks are given positive and negative numbers. If multiple lines share the same name, they can be referenced by their line name and count. Negative number start from the last line and work backwards
+* **grid-template-areas**: Defines a grid template by referecing the names of the grid areas which are specified with the `grid-area` property.
+ - Each row of the declaration needs to have the same numbe r of cells
+ - In this way, you're only naming areas, not lines
+ - Repeating the name of a grid area will span the content across the cells
+ - A period signifies an empty cell
+ - The syntax specifies the layout of the area
+```
+ 
+.item-a { grid-area: header; }
+.item-b { grid-area: main; }
+.item-c { grid-area: sidebar; }
+.item-d { grid-area: footer; }
+
+.container {
+ // visually define the grid areas
+ display: grid;
+ grid-template-columns: repeat(4, 50px);
+ grid-template-rows: auto;
+ grid-template-areas: 
+  "header header header header"
+  "main main . sidebar"
+  "footer footer footer footer";
+}
+```
+* **grid-template**: Shorthand for setting grid-template-(rows|columns|areas) in one
+ - value: `none` resets all three properties
+ - syntax: none | <grid-template-rows> / <grid-template-columns>
+* **grid-(column|row)-gap**: Specifies the size of the grid lines, gutters between columns and rows
+ - `grid-gap` can be used as a shorthand for both column and row settings
+* **justify-items**: aligns grid items _inline_ along the row axis
+ - takes similar values as the flexbox property
+* **align-items**: Aligns grid items along the column axis, applies to all grid items inside the container
+* **place-items**: sets both _align-items_ and _justify-items_
+ - values: <align-items> / <justify-items>
+* **grid-auto-(columns|rows)**: Specifies the size of any auto generated grid tracks aka _implicit tracks_
+* **grid-auto-flow**: Specifies the placement of grid items that aren't explicitly placed on the grid
+ - row: fill in each row in turn, adding new rows when needed
+ - column: fill in each column in turn adding new columns when needed
+ - dense: fill n holes earlier in the grid
+* **grid**: Shorthand for specifiying a range of properties at once
+
+#### Grid items
+* **grid-(column|row)-(start|end)**: Determine a grid items location with in the grid by referring to specific grid lines
+ - grid-column-start / grid-row-start is the line where the item begins
+ - grid-column-end / grid-row-end is where the item ends
+ - values: number|name|span <number>|span <name>|auto
+* **grid-(column|row)**: Shorthand for grid-(column|row)-(start|end)
+ - values: start-line/end-line | start-line/span <value>
+* **grid-area**: Gives an item a name so that it can be referenced by a template created with the `grid-template-areas` property, it can also be used as an even shorter shorthand for `grid-(column|row)` 
+ - values: name|row-start/column-start/row-end/column-end
+* **(justify|align)-self**: Aligns a grid item inside a cell along the block or row axis
+* **place-self**: Shorthand to specify both justify and align self
+
+#### Alignment values
+* **justify-items|align-items|place-items**
+ - start|end: align to be flush with the start|end edge of their cell
+ - center: align items in the center of the cell
+ - stretch: fill the whole width or height of the cell 
+* **justify-content|align-content|place-content**
+ - start|center|end: aligns the grid to be flush with the start|end|center of the grid container
+ - stretch: resize the grid items to allow the grid to fill the full width of the grid container
+ - space-around: places an even amont of space between each grid item with half-size spaces on the far ends
+ - space-between: places an even amount of space between each grid item wi th no space at the far ends
+ - space-evenly: places an even amount of space betwene each grid item including the far ends
+
+
+### Element properties
+| Element | Properties |
+| --- | --- |
+| Grid Container | display, grid-template-(columns|rows|areas||), grid-(column|row||)-gap, (justify|align|place)-items, (justify|align|place)-content, grid-auto-(columns|rows|flow), grid |
+| Grid Items | grid-(row|column)-(start|end), grid-(column|row|area), (justify|align|place)-self |
+
 ## Resources
 * [MDN Flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 * [MDN Flexbox for web applications](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_flexbox_to_lay_out_web_applications)
 * [Good overview of the properties](https://www.youtube.com/watch?v=G7EIAgfkhmg)
 * [CSS Tricks guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Scalable CSS](http://mrmrs.io/writing/2016/03/24/scalable-css/)
+* [CSS-Tricks: A complete guide to grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [MDN: CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* [Jen simmons - grid basics](https://www.youtube.com/watch?v=FEnRpy9Xfes)
