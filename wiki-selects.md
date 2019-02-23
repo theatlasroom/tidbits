@@ -7,6 +7,7 @@ Some of my favourite wikipedia pages
 
 ## Language
 * [Ajami script](https://en.wikipedia.org/wiki/Ajami_script)
+* [Click consonant](https://en.wikipedia.org/wiki/Click_consonant)
 * [Dialect continuum](https://en.wikipedia.org/wiki/Dialect_continuum)
 * [Eggon](https://en.wikipedia.org/wiki/Eggon_language)
 * [International phonetic alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet)
