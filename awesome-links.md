@@ -14,6 +14,7 @@ Alphabetised of course.
 * [15 sorting algorithms in 6 mins](https://www.youtube.com/watch?v=kPRA0W1kECg)
 * Networking terminology [pt 1](https://www.digitalocean.com/community/tutorials/an-introduction-to-networking-terminology-interfaces-and-protocols) | [pt 2](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)
 * [Bithacks - bitwise operations](http://graphics.stanford.edu/~seander/bithacks.html) | [Bitwizardry](http://www.jjj.de/bitwizardry/bitwizardrypage.html)
+* [x86 virtualization in js](https://github.com/copy/v86/)
 
 ## Lulz
 * [gif dj](http://gif.dj)
@@ -30,9 +31,13 @@ Alphabetised of course.
 * [Hushed](https://hushed.com/)
 * [httpie](https://httpie.org/#installation)
 * [Punks dead](https://mega.nz/#F!3wsFkKIa!m0LgHEaX5HuEViOT3XVj5g!O4kE1aYa)
+* [Lakka](http://www.lakka.tv)
 
 ## AV / Digital Art / Cool
 * [Zach Liebermen daily sketches](https://medium.com/@zachlieberman/daily-sketches-2016-28586d8f008e#.exrkbubkj:)
+* [Hundred rabbits](https://hundredrabbits.itch.io)
+* [Disquiet junto](https://disquiet.com/)
+* [Naviar haiku](http://www.naviarrecords.com/about/naviar-haiku/)
 
 ## Webhosting / infrastructure etc
 * [Digital Ocean](https://digitalocean.com)
@@ -48,3 +53,5 @@ Alphabetised of course.
 
 ## APIs
 * [gyfcat](https://developers.gfycat.com/api)
+* [swapi star wars api](https://swapi.co/)
+
