@@ -15,6 +15,21 @@
   - `break` is used to exit a loop
   - `next` can be used to skip the current value in a loop or for
 - blocks can be defined using `do` and `end` or `{}`
+- Hashes can be defined in two ways: 
+```ruby
+# Hash literal notation
+hash_literal = {
+ "this" => "this",
+ "is" => "is",
+ "a" => "a",
+ "hash" => "hash",
+}
+
+# Hash new
+my_hash = Hash.new
+my_hash["this"] = "this"
+my_hash["is"] = "is"
+```
 
 ## Syntax
 
@@ -96,6 +111,33 @@ def evens(n)
     print i
   end
 end
+
+
+my_2d_array = [
+	['x','-',-''],
+	['x','o',-''],
+	['x','o',-''],  
+]
+
+sweet_hash = {
+	"a" => "is a",
+	"b" => "bbbb",
+	"c" => "c me",
+}
+
+sweet_hash.each{ |k, v| puts "#{k}: #{v}" }
+hash_with_default = Hash.new("this is the default / empty value")
+
+bad_hash = {
+ "b" => 2,
+ "d" => 4,
+ "a" => 1,
+ "c" => 3
+}
+
+bad_hash.sort_by { |k,v| k }          # [["a", 1], ["b", 2], ... ]
+bad_hash.sort_by { |k,v| k }.reverse  # [["d", 4], ["c", 3], ... ]
+
 ```
 
 ## stdlib
