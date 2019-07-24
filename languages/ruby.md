@@ -16,6 +16,14 @@
   - `next` can be used to skip the current value in a loop or for
 - blocks can be defined using `do` and `end` or `{}`
 - Hashes can be defined in two ways: 
+- Arguements are when calling a method, parameters are in the definition
+  - Parantheses are mostly optional
+  - `Splat` arguments are preceeded by a _*_, used for methods that can receive multiple arguments
+- _Blocks_ are similar to anonymous functions
+  - can be passed to methods as parameters
+  - useful for defining a method at the point it is called
+- `<=>` combined comparision operator takes 2 parameters and returns -1, 0, 1 with the same logic used in `.sort`
+
 ```ruby
 # Hash literal notation
 hash_literal = {
@@ -138,6 +146,43 @@ bad_hash = {
 bad_hash.sort_by { |k,v| k }          # [["a", 1], ["b", 2], ... ]
 bad_hash.sort_by { |k,v| k }.reverse  # [["d", 4], ["c", 3], ... ]
 
+def is_prime(n)
+  false unless n.is_a? Integer
+    is_prime = true
+    for i in 2..n 
+      if i % 2 == 0
+        is_prime = false 
+      end
+    end
+	end
+  is_prime
+end
+
+def greet(greeting, *leute)
+  puts "#{greeting} "
+  leute.each do |human|
+    puts "#{human}"
+  end
+end
+
+# combined comparison operator
+"a" <=> "b" # returns -1
+"b" <=> "a" # returns 1
+"b" <=> "b" # returns 0
+
+# custom sorting block
+nums = [0, 9, 3, 5, 2, 6, 4, 1, 7, 8]
+nums.sort!{ |a, b| a <=> b } # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+nums.sort!{ |a, b| b <=> a } # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+def alphabetize(arr, rev=false)
+	rev ? arr.sort!.reverse! : arr.sort!
+end
+
+numbers = [4,5,1,3,2]
+
+puts alphabetize numbers      # [1,2,3,4,5]
+puts alphabetize numbers,true # [5,4,3,2,1]
 ```
 
 ## stdlib
@@ -148,10 +193,16 @@ bad_hash.sort_by { |k,v| k }.reverse  # [["d", 4], ["c", 3], ... ]
 - `gets` retrieves user input, it will automatically add a new line at the end
 - `gsub` global substitution method for replacing using regex
 - `include?` check for an occurence of the argument within the caller
+- `is_a?` checks the type of the argument
 - `length` output the length of the string
 - `print` outputs the arguments to the stdout, it can take a variable number of arguments
 - `puts` outputs the arguments to the stdout and adds a blank line, takes a single argument
 - `.reverse` reverse contents of some data
+- `.sort` used to sort collections
+  - blocks passed into sort need to return 1, 0 or -1
+  - -1 = first parameter is before the second
+  - 0 = parameters are equal
+  - 1 = first parameter after the second
 - `.split` converts a string into an array based on a delimiter
 - `.times` takes a block and will execute it n times
 - `.upcase | .downcase` change the casing of a string
