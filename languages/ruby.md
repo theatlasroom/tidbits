@@ -1,5 +1,4 @@
 # Ruby
-
 ## General
 
 - High level, _interpreted_, _oo_
@@ -23,6 +22,13 @@
   - can be passed to methods as parameters
   - useful for defining a method at the point it is called
 - `<=>` combined comparision operator takes 2 parameters and returns -1, 0, 1 with the same logic used in `.sort`
+- `false` and `nil` are the only non-true values
+  - `false`: !true
+  - `nil`: nothing
+- `:symbols` can be used as keys for hashes
+  - Only 1 copy of any particular symbol exists at any time
+  - They can be used as hash keys or for referencing method names
+  - Immutable and perform better than strings as keys
 
 ```ruby
 # Hash literal notation
@@ -183,29 +189,66 @@ numbers = [4,5,1,3,2]
 
 puts alphabetize numbers      # [1,2,3,4,5]
 puts alphabetize numbers,true # [5,4,3,2,1]
+
+# Only 1 copy of a symbol can exist at a time
+puts "string".object_id
+puts "string".object_id
+
+puts :symbol.object_id
+puts :symbol.object_id
+
+# Hash symbols can be defined in 2 ways
+# Old way
+movies = {
+ :top_gun => "****",
+ :vertigo => "*****"
+}
+
+# New way
+movies = {
+ top_gun: "****",
+ vertigo: "*****"
+}
+
+case something
+  when "value"
+   block
+  when "other value"
+   block
+  else
+   block
+end
 ```
 
 ## stdlib
-
+### Methods
 - `capitalize` capitalize the first letter of a string
 - `chomp(str)` remove a trailing instance of _str_, if no argument is given it removes a single traliling new line _\n_
 - `chop` removes the last char in a string or leaves an empty string unmodified
+- `delete(!)` remove a key from a hash
+- `each` iterate over key value pairs, takes a block
+  - `each_key` iterate over keys only
+  - `each_value` iterate over values only
 - `gets` retrieves user input, it will automatically add a new line at the end
 - `gsub` global substitution method for replacing using regex
 - `include?` check for an occurence of the argument within the caller
 - `is_a?` checks the type of the argument
 - `length` output the length of the string
+- `object_id` returns the internal id of an object, used to keep track of objects
 - `print` outputs the arguments to the stdout, it can take a variable number of arguments
 - `puts` outputs the arguments to the stdout and adds a blank line, takes a single argument
-- `.reverse` reverse contents of some data
-- `.sort` used to sort collections
+- `reverse` reverse contents of some data
+- `select` takes block returning items from the hash that meet the criteria, used for filter
+- `sort` used to sort collections
   - blocks passed into sort need to return 1, 0 or -1
   - -1 = first parameter is before the second
   - 0 = parameters are equal
   - 1 = first parameter after the second
-- `.split` converts a string into an array based on a delimiter
-- `.times` takes a block and will execute it n times
-- `.upcase | .downcase` change the casing of a string
+- `split` converts a string into an array based on a delimiter
+- `times` takes a block and will execute it n times
+- `to_<>`: convert between data types s => string, sym => symbol
+  - intern => convert to symbol
+- `upcase | downcase` change the casing of a string
 
 ## Useful Links
 
