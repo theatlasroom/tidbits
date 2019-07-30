@@ -4,6 +4,7 @@
 - High level, _interpreted_, _oo_
 - Developed by Yukihiro Matsumoto (Matz)
 - Everything is an object
+  - Methods have implicit return, returing the last evaluated expression in a method body 
 - local variables should lowercase with `snake_casing`
 - `method!` methods mutate their caller
 - `method?` methods return true / false
@@ -29,6 +30,8 @@
   - Only 1 copy of any particular symbol exists at any time
   - They can be used as hash keys or for referencing method names
   - Immutable and perform better than strings as keys
+- `||=` conditional assignment, assigns a variable only if it doenst already have a value
+- `<<` concatenates the right hand value to the left hand object
 
 ```ruby
 # Hash literal notation
@@ -218,6 +221,27 @@ case something
   else
    block
 end
+
+# Ruby fu
+<expression> if <condition>
+<expression> unless <condition>
+<condition> ? <true expression> : <false expression>
+case <expression> when <value> then <expression> else <expression> end
+
+my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_array.each { |x| puts x if x.even? }
+
+## print values from 10 - 20
+10.upto(20) { |num| print num }
+"a".upto("j") { |char| print char }
+
+## check if an object can respond to a method
+[1,2,3].respond_to?(:push) # returns true since you can push to an array
+[1,2,3].respond_to?(:to_sym) # false, cant convert an array to a symbol
+
+[1,2,3] << 4 # [1,2,3,4]
+"Hello" << " " << "World" # "Hello World"
+"I am " << age.to_s << " years old" # need to use .to_s on non-string values
 ```
 
 ## stdlib
@@ -237,6 +261,7 @@ end
 - `object_id` returns the internal id of an object, used to keep track of objects
 - `print` outputs the arguments to the stdout, it can take a variable number of arguments
 - `puts` outputs the arguments to the stdout and adds a blank line, takes a single argument
+- `respond_to?` check if an object can respond to a method
 - `reverse` reverse contents of some data
 - `select` takes block returning items from the hash that meet the criteria, used for filter
 - `sort` used to sort collections
@@ -249,6 +274,7 @@ end
 - `to_<>`: convert between data types s => string, sym => symbol
   - intern => convert to symbol
 - `upcase | downcase` change the casing of a string
+- `upto | downto` used to print out a specific range of values
 
 ## Useful Links
 
