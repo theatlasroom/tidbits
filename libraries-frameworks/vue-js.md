@@ -6,6 +6,10 @@
 
 - Allows for testing components in isolation by providing tools for _mounting_, _mocking_ and _asserting_ outputs
 - Mounted components are returend inside a wrapper
+- `nextTick()` - Vue batches DOM updates and applies them async, call `Vue.nextTick` to wait until vue has finished performing the DOM update after we trigger a state change
+  - vue test utils appplies updates schronously, so no need to nextTick wait for updates after triggering events
+  - Callbacks and promises still require waiting for nextTick
+  - nextTick uses promises, so errors thrown inside it might get swallowed
 
 #### Mounting
 
@@ -81,7 +85,7 @@ console.log(wrapper.emittedByOrder())
 - `.text()` - returns the text contents of a DOM node or element
 - `.trigger(options)` - trigger an event on the wrapper, the options passed in are added to the Event
 
-#### Examples
+#### Cheatsheet
 
 ```javascript
 // Assertions
@@ -121,6 +125,21 @@ textInput.setValue("some value");
 // Set option of a select box
 const options = wrapper.find("select").findAll("option");
 options.at(1).setSelected();
+
+// Wait on nextTick for async behaviour
+it('something' => done {
+...
+  return Vue.nextTick().then(function() {
+    expect(true).toBe(false)
+  })
+...
+...
+  Vue.nextTick(() => {
+    expect(true).toBe(false)
+    done()
+  })
+...
+})
 ```
 
 ## i18n - Internationalization
@@ -128,10 +147,11 @@ options.at(1).setSelected();
 ## AST
 
 - [AST Playground for vue](https://ast.js.org/#/plays/1)
-- [vue-eslint-parser](https://github.com/mysticatea/vue-eslint-parser) - parser for the <template> section of .vue files
+- [vue-eslint-parser](https://github.com/mysticatea/vue-eslint-parser) - parser for the `<template>` section of .vue files
 
 ## Useful links
 
-- [Testing guide](https://vue-test-utils.vuejs.org/guides/#getting-started)
 - [Renderless components](https://adamwathan.me/renderless-components-in-vuejs/)
 - [VueJS RFCs](https://github.com/vuejs/rfcs)
+- [Component tests - Matt O'Connell](https://www.youtube.com/watch?v=OIpfWTThrK8)
+- [Testing guide](https://vue-test-utils.vuejs.org/guides/#getting-started)
