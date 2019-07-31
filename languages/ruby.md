@@ -11,28 +11,7 @@
 - ranges are defined by `...` or `..`
   - `..`: inclusive
   - `...`: exclusive
-- `loop` can be used to repeatedly execute a block
-  - `break` is used to exit a loop
-  - `next` can be used to skip the current value in a loop or for
-- blocks can be defined using `do` and `end` or `{}`
 - Hashes can be defined in two ways: 
-- Arguements are when calling a method, parameters are in the definition
-  - Parantheses are mostly optional
-  - `Splat` arguments are preceeded by a _*_, used for methods that can receive multiple arguments
-- _Blocks_ are similar to anonymous functions
-  - can be passed to methods as parameters
-  - useful for defining a method at the point it is called
-- `<=>` combined comparision operator takes 2 parameters and returns -1, 0, 1 with the same logic used in `.sort`
-- `false` and `nil` are the only non-true values
-  - `false`: !true
-  - `nil`: nothing
-- `:symbols` can be used as keys for hashes
-  - Only 1 copy of any particular symbol exists at any time
-  - They can be used as hash keys or for referencing method names
-  - Immutable and perform better than strings as keys
-- `||=` conditional assignment, assigns a variable only if it doenst already have a value
-- `<<` concatenates the right hand value to the left hand object
-
 ```ruby
 # Hash literal notation
 hash_literal = {
@@ -47,6 +26,62 @@ my_hash = Hash.new
 my_hash["this"] = "this"
 my_hash["is"] = "is"
 ```
+- Arguements are when calling a method, parameters are in the definition
+  - Parentheses are mostly optional
+  - `Splat` arguments are preceeded by a _*_, used for methods that can receive multiple arguments
+- _Blocks_: a section of code that can be excuted, similar to anonymous functions
+  - blocks are not objects
+  - blocks can be stored in variables
+  - can be passed to methods as parameters
+  - useful for defining a method at the point it is called
+  - `loop` can be used to repeatedly execute a block
+    - `break` is used to exit a loop
+    - `next` can be used to skip the current value in a loop or for
+  - blocks can be defined using `do` and `end` or `{}`
+  - methods that accept blocks can `yield` control to the block at a specified point
+```ruby
+def block_test
+  print "1"
+  print "2"
+  yield
+  puts "4"
+end
+
+block_test { print "LOL" }
+=> 12LOL4
+
+# parameters can be passed
+def hello(what)
+  print "Hello"
+  yield(what)
+  print "!!!!!"
+end
+  
+hello("World") { |n| print "-YIELDED-"}
+=> Hello-YIELDED-!!!!! 
+```
+
+- _Lambdas_: anonymous functions
+ - Very similar to procs
+ - A lambda checks the number of args passed to it, a proc does not
+ - when a lambda returns, it returns control to the calling method
+- _Proc_: named blocks
+ - blocks that can be stored in variables and their implementation reused
+ - declared with `my_proc = Proc.new <block>`
+ - `&` converts a proc to a block when calling it, ie `&my_proc`
+ - can also be called with `.call`
+ - assigns nil to any missing arguments when it is called
+ - symbols can be converted to procs `&:to_s`
+- `<=>` combined comparision operator takes 2 parameters and returns -1, 0, 1 with the same logic used in `.sort`
+- `false` and `nil` are the only non-true values
+  - `false`: !true
+  - `nil`: nothing
+- `:symbols` can be used as keys for hashes
+  - Only 1 copy of any particular symbol exists at any time
+  - They can be used as hash keys or for referencing method names
+  - Immutable and perform better than strings as keys
+- `||=` conditional assignment, assigns a variable only if it doenst already have a value
+- `<<` concatenates the right hand value to the left hand object
 
 ## Syntax
 
@@ -242,6 +277,18 @@ my_array.each { |x| puts x if x.even? }
 [1,2,3] << 4 # [1,2,3,4]
 "Hello" << " " << "World" # "Hello World"
 "I am " << age.to_s << " years old" # need to use .to_s on non-string values
+
+# procs
+cool = Proc.new { |who| puts "Hello #{who}" }
+cool.call("World")
+
+# convert a symbol to a proc
+strings = ["1", "2", "3"]
+nums = strings.map(&:to_i)
+# ==> [1, 2, 3]
+
+# lambdas
+lambda { puts "Hello!" }
 ```
 
 ## stdlib
@@ -249,6 +296,7 @@ my_array.each { |x| puts x if x.even? }
 - `capitalize` capitalize the first letter of a string
 - `chomp(str)` remove a trailing instance of _str_, if no argument is given it removes a single traliling new line _\n_
 - `chop` removes the last char in a string or leaves an empty string unmodified
+- `collect` alias for map
 - `delete(!)` remove a key from a hash
 - `each` iterate over key value pairs, takes a block
   - `each_key` iterate over keys only
