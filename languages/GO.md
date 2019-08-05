@@ -330,6 +330,8 @@ var s <-chan int = b // send only channel
 ```
   - `for <var> := range <channel> {}` is a short way to read from a channel until it closes
 
+## NLP
+
 ## Packages
 ### fmt
 Format output
@@ -377,4 +379,6 @@ Math libray
 * [Gobs of data](https://blog.golang.org/gobs-of-data)
 * [Go web api example](https://github.com/caarlos0/go-web-api-example)
 * [Go tooling workshop](https://github.com/campoy/go-tooling-workshop)
+* [exercism - Learning tracks](https://exercism.io/tracks/go/learning)
+  - [exercism - resources](https://exercism.io/tracks/go/resources)
 * https://research.swtch.com/

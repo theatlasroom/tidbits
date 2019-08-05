@@ -26,7 +26,7 @@ my_hash = Hash.new
 my_hash["this"] = "this"
 my_hash["is"] = "is"
 ```
-- Arguements are when calling a method, parameters are in the definition
+- Arguments are when calling a method, parameters are in the definition
   - Parentheses are mostly optional
   - `Splat` arguments are preceeded by a _*_, used for methods that can receive multiple arguments
 - _Blocks_: a section of code that can be excuted, similar to anonymous functions
@@ -82,6 +82,15 @@ hello("World") { |n| print "-YIELDED-"}
   - Immutable and perform better than strings as keys
 - `||=` conditional assignment, assigns a variable only if it doenst already have a value
 - `<<` concatenates the right hand value to the left hand object
+- Classes are defined with the `class` keyword
+  - `initialize` functions are used as constructors
+  - `@instance_variable` is an instance variable
+  - `@@class_variable` available to all instances of a class
+  - `$global_variable` 
+  - `.new` is used to create instances of a class
+  - `super` is used to call into the parent class
+  - classes only support single inheritance
+  - class methods are prefixed with the class name
 
 ## Syntax
 
@@ -289,6 +298,33 @@ nums = strings.map(&:to_i)
 
 # lambdas
 lambda { puts "Hello!" }
+
+# OO
+class Synth
+  $song_title = "Cool synth song" 
+  @@oscillators = 0
+
+  def initialize(type, frequency)
+    @type = type
+    @frequency = frequency 
+  end
+
+  def stringify
+    puts "We have #{@@oscillators} voices for song #{$song_title}"
+  end
+  
+  def Synth.voices
+    @@oscillators
+  end
+end
+
+class Triangle < Synth 
+  def initialize(freq)
+    super("Triangle", freq)
+    @@oscillators += 1
+  end
+
+end
 ```
 
 ## stdlib
