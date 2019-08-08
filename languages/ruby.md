@@ -110,7 +110,7 @@ puts 2 ** 6 - 22
 puts 142 % 50
 
 # reversii
-arr = ["a", "b", "c"]
+arr = ["a", "b", "c"] 
 print arr, arr.reverse.reverse
 arr.each do |item|
   puts "Arr contains #{item}"
