@@ -267,6 +267,19 @@ I love travelling, visiting new places and generally just being in new locations
   - London
 - Nigeria
 
+### Activities
+
+### Food / Drink
+* Masa
+* Hiroshima-yaki
+* Gari
+* Kunu(n), Kunu(n)-gyada
+* Best of the Wurst
+* Zweibelrostbraten
+* smørrebrød
+
+#### Beer
+
 ### Regional travel (australia)
 
 #### Country towns
