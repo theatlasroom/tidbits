@@ -91,6 +91,20 @@ hello("World") { |n| print "-YIELDED-"}
   - `super` is used to call into the parent class
   - classes only support single inheritance
   - class methods are prefixed with the class name
+  - `receivers` are objects that methods can be called on
+    - private methods can not be called by an explicit receiver
+    - public methods give an interface into the private implementation
+  - `attr_reader` and `attr_writer` can be used to define readable / writable class attributes
+    - `method=` methods are a convention for methods that set a value
+  - `attr_accessor` is a shortcut for both reader and writer
+- Modules are similar to classes but can not be subclassed or have instances created
+  - Constants can be defined within modules
+  - Variables do not make sense in a modules
+  - `::` the scope resolution operator resolves the scope of method call
+  - modules can be brought into scope using `require`
+  - modules can be used to mixin behaviour to classes
+  - `include` mixes methods at the instance level
+  - `extend` mixes methods at the class level
 
 ## Syntax
 
@@ -323,8 +337,73 @@ class Triangle < Synth
     super("Triangle", freq)
     @@oscillators += 1
   end
-
 end
+
+# Private and public methods
+class Cool 
+  public
+  def this_is_public
+  end
+
+  def so_is_this
+  end
+  
+  private
+  def this_is_private
+  end
+
+  def this_is_also_private
+  end
+end
+
+# use attr_reader and attr_writer for writable attributes
+class Sup
+
+  attr_writer :name
+  attr_reader :name
+  attr_accessor :job
+
+  def initialize(name, job)
+    @name = name
+    @job = job
+  end
+end
+
+# Circle module
+module Circle
+
+  PI = 3.141592653589793
+  
+  def Circle.area(radius)
+    PI * radius**2
+  end
+  
+  def Circle.circumference(radius)
+    2 * PI * radius
+  end
+end
+
+require 'date'
+include 'math'
+
+# methods from required modules need Module.
+puts Date.today
+
+# methods from included modules do not
+puts PI
+
+# Extend applies at the class level
+module TimeNow
+  def now
+    puts "#{Time.new.hour}:#{Time.new.min}"
+  end
+end
+
+class ThePresent
+  extend TimeNow
+end
+
+ThePresent.now
 ```
 
 ## stdlib
