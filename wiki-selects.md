@@ -23,6 +23,7 @@ Some of my favourite wikipedia pages
 
 - [Bijlmermeer](https://en.wikipedia.org/wiki/Bijlmermeer)
 - [Conurbation](https://en.wikipedia.org/wiki/Conurbation)
+- [Olaudah Equiano](https://en.wikipedia.org/wiki/Olaudah_Equiano)
 
 ## Art / Culture
 
