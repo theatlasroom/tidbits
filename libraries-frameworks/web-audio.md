@@ -238,3 +238,4 @@ Polyphonic instruments can be created by passing the instrument constructor to `
 * [Web audio UIs](https://www.youtube.com/watch?v=tSThM9Aw8ps)
 * [Web Midi API](https://webaudio.github.io/web-midi-api/#midiaccess-interface)
 * [glitch - tiny tone.js playpen](https://psychedelic-collision.glitch.me/)
+* [Javascript metronomes](https://meowni.ca/posts/metronomes/)
