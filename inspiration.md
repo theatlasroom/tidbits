@@ -124,6 +124,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [Roly porter boileroom](https://www.youtube.com/watch?v=hoY7VVdizA4)
 - [Nonkeen](https://www.youtube.com/watch?v=lqGKKPjptZo)
 - [Lavinia Meijer plays Philip Glass](https://www.youtube.com/watch?v=NRdBQDdEjiU&list=RDhV2-zFh3tAU&index=7)
+- [Marcus Fischer - Whitney Museum](https://www.youtube.com/watch?v=c1yFzkXZnmw)
 
 ## Content
 
