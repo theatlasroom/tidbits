@@ -94,6 +94,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [Rope](https://letterboxd.com/film/rope/)
 - [Russian Ark](http://www.imdb.com/title/tt0318034)
 - [Sicario](https://letterboxd.com/film/sicario-2015/)
+- [The killing of a sacred deer](https://www.imdb.com/title/tt5715874/)
 - [There will be blood](https://letterboxd.com/film/there-will-be-blood/)
 - [Twin Peaks: Fire walk with me](https://letterboxd.com/film/twin-peaks-fire-walk-with-me/)
 - [Under the skin](http://www.imdb.com/title/tt1441395/)
