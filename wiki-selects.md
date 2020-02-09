@@ -18,6 +18,7 @@ Some of my favourite wikipedia pages
 - [Language families](https://en.wikipedia.org/wiki/Language_family)
 - [Language isolates](https://en.wikipedia.org/wiki/Language_isolate)
 - [Mutual intelligibility](https://en.wikipedia.org/wiki/Mutual_intelligibility)
+- [Phrasal template](https://en.wikipedia.org/wiki/Phrasal_template)
 
 ## People / place
 
