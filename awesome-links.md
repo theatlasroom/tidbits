@@ -32,12 +32,14 @@ Alphabetised of course.
 * [httpie](https://httpie.org/#installation)
 * [Punks dead](https://mega.nz/#F!3wsFkKIa!m0LgHEaX5HuEViOT3XVj5g!O4kE1aYa)
 * [Lakka](http://www.lakka.tv)
+* [The deep sea](https://neal.fun/deep-sea/)
 
 ## AV / Digital Art / Cool
 * [Zach Liebermen daily sketches](https://medium.com/@zachlieberman/daily-sketches-2016-28586d8f008e#.exrkbubkj:)
 * [Hundred rabbits](https://hundredrabbits.itch.io)
 * [Disquiet junto](https://disquiet.com/)
 * [Naviar haiku](http://www.naviarrecords.com/about/naviar-haiku/)
+* [Every genre](http://everynoise.com/)
 
 ## Webhosting / infrastructure etc
 * [Digital Ocean](https://digitalocean.com)
