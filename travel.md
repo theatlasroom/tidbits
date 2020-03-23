@@ -56,11 +56,13 @@ I love travelling, visiting new places and generally just being in new locations
   - Abuja
   - Garaku
   - Kachia
+  - Kano
+  - Keffi
   - Maha
   - ?? Tsauni / Jaba LGA ??
 
 - Australia
-
+  - Lived in: Newcastle, Melbourne, Sydney
   - Adelaide
   - Bright
   - Brisbane (2x)
@@ -84,7 +86,7 @@ I love travelling, visiting new places and generally just being in new locations
   - Tamworth
   - Toowoomba (3x?)
 
-- UK
+- UK (4x)
 
   - Brighton
   - Cumbrae (great cumbrae?)

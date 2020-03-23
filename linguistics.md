@@ -11,6 +11,7 @@
   * Dative: indirect object of a verb, the noun receiving something 
    * Nominative: subject of a finite verb, the noun that is doing something
 * Clause: the smallest unit to express a complete proposition, composes of a subject and a predicate
+* Interlocuter: a participant in a conversation or discourse
 * Morpheme: smallest grammatical unit of a language, a morpheme may or may not stand on its own, but can be combined. Words are made from one or more morphemes
   * Free (root): freestanding morpheme that conveys meaning on its own and can be function as a word 
   * Bound: appear as party of a words, in conjunction with a root or other bound morphemes ie _un_, _ing_
