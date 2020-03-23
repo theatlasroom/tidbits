@@ -382,3 +382,4 @@ Math libray
 * [exercism - Learning tracks](https://exercism.io/tracks/go/learning)
   - [exercism - resources](https://exercism.io/tracks/go/resources)
 * https://research.swtch.com/
+* [Debugging simple memory leaks](https://medium.com/dm03514-tech-blog/sre-debugging-simple-memory-leaks-in-go-e0a9e6d63d4d)

@@ -406,6 +406,10 @@ end
 ThePresent.now
 ```
 
+## Debugging
+* [pry](https://github.com/pry/pry)
+* [pry cheatsheet](https://gist.github.com/lfender6445/9919357)
+
 ## stdlib
 ### Methods
 - `capitalize` capitalize the first letter of a string
