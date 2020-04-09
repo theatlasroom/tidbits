@@ -4,3 +4,6 @@ I suppose at some point I should get around to learning how to properly read RFC
 ## Streaming media
 
 ## Networking
+
+## General
+* [2119 - Key words for use in RFCs](https://www.ietf.org/rfc/rfc2119.txt)

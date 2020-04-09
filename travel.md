@@ -13,11 +13,11 @@ I love travelling, visiting new places and generally just being in new locations
   - Brisbane
   - Hobart
   - Launceston
-  - Melbourne: Tullarmarine
+  - Melbourne: Tullamarine
   - Perth
   - Sydney: Kingsford smith
 - Belgium
-  - Bruxelles
+  - Bruxelles (2x)
 - Egypt
   - Cairo
 - Germany
@@ -28,6 +28,8 @@ I love travelling, visiting new places and generally just being in new locations
   - Tokyo: Narita
 - Nigeria
   - Abuja: Nnamdi Azikiwe International Airport
+- Netherlands
+  - Amsterdam
 - Sweden
   - Stockholm
 - South Korea
@@ -46,7 +48,8 @@ I love travelling, visiting new places and generally just being in new locations
 - Atlanta: Looked kinda cool from the air
 - Dubai: just so easy to transit through, hassle free and good spaces to work / relax / eat.
 - Hong Kong: Looked super cool a bit hard getting from one end to the other i think
-- London: Heathrow is great, super convenient easy to get in and out of the city and if you have a e-passport and from an eligble country then pretty hassle free
+- London: Heathrow is great, super convenient easy to get in and out of the city and if you have a e-passport and from an eligible country then pretty hassle free
+- Qatar: feels like a dystopian future, super efficient
 
 ## Countries + cities visited
 
@@ -62,6 +65,7 @@ I love travelling, visiting new places and generally just being in new locations
   - ?? Tsauni / Jaba LGA ??
 
 - Australia
+
   - Lived in: Newcastle, Melbourne, Sydney
   - Adelaide
   - Bright
@@ -121,9 +125,11 @@ I love travelling, visiting new places and generally just being in new locations
 - Netherlands
 
   - Amsterdam
+  - Haarlem
 
 - Belgium
 
+  - Antwerp
   - Bruxelles
 
 - Germany (2x)
@@ -148,7 +154,7 @@ I love travelling, visiting new places and generally just being in new locations
 - Belgium
   - Antwerp (bus)
   - Bruges (bus) ?
-  - Brussels
+  - Brussels (2x)
   - Ghent (bus) ?
 - Czechia (bus)
   - Brno (train)
@@ -164,6 +170,8 @@ I love travelling, visiting new places and generally just being in new locations
 - Hong Kong
 - Netherlands
   - Utrecht
+- Qatar
+  - Doha
 - Sweden
   - Malmö
 - UK
@@ -269,16 +277,28 @@ I love travelling, visiting new places and generally just being in new locations
   - London
 - Nigeria
 
+### 2020: Mar - April
+
+Cut short due to [COVID-19](https://www.who.int/emergencies/diseases/novel-coronavirus-2019) 😢
+
+- Netherlands
+  - Amsterdam
+  - Haarlem
+- Belgium
+  - Antwerp
+  - Brussels
+
 ### Activities
 
 ### Food / Drink
-* Masa
-* Hiroshima-yaki
-* Gari
-* Kunu(n), Kunu(n)-gyada
-* Best of the Wurst
-* Zweibelrostbraten
-* smørrebrød
+
+- Masa
+- Hiroshima-yaki
+- Gari
+- Kunu(n), Kunu(n)-gyada
+- Best of the Wurst
+- Zweibelrostbraten
+- smørrebrød
 
 #### Beer
 

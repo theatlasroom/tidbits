@@ -35,7 +35,30 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 
 - [Fahrelnissa Zeid](https://en.wikipedia.org/wiki/Princess_Fahrelnissa_Zeid)
 
+- Wassily Kandinsky
+- Mark Rothko
+- Piet Mondrian
+- Claude Monet
+- Hieronymus Bosch
+
 ## Sound
+- John Luther Adams
+- Philip Glass
+- Steve Reich
+- Pyotr Ilyich Tchaikovsky
+- Igor Stravinsky
+- Iannis Xenakis
+- Lawrence English
+- Tim Hecker
+- Taylor Deupree
+- Marcus Fischer
+- Dorothy Ashby
+- John Coltrane
+- Miles Davis
+- Wynton Marsalis
+- Carsten Nicolai
+- Sasu Ripatti
+- Ryoji Ikeda
 
 ### Soundtracks
 
