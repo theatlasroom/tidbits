@@ -150,7 +150,7 @@ it('something' => done {
 - [vue-eslint-parser](https://github.com/mysticatea/vue-eslint-parser) - parser for the `<template>` section of .vue files
 
 ## Useful links
-
+* [Book - testing vus js applications](https://livebook.manning.com/book/testing-vue-js-applications)
 - [Renderless components](https://adamwathan.me/renderless-components-in-vuejs/)
 - [VueJS RFCs](https://github.com/vuejs/rfcs)
 - [Component tests - Matt O'Connell](https://www.youtube.com/watch?v=OIpfWTThrK8)

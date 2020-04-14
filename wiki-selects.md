@@ -32,4 +32,6 @@ Some of my favourite wikipedia pages
 ## Art / Culture
 
 - [Judith beheading Holofernes](https://en.wikipedia.org/wiki/Judith_beheading_Holofernes)
+- [Marginalia](https://en.wikipedia.org/wiki/Marginalia)
 - [Viennese Actionism](https://en.wikipedia.org/wiki/Viennese_Actionism)
+
