@@ -62,8 +62,7 @@
 | eins zwei drei vier fünf<br/> sechs sieben acht neun zehn                              | one two three four five<br/> six seven eight night ten |
 | elf, zwölf, dreizehn, vierzehn, fünfzehn,<br/> sechsehn, siebzehn, achtzehn, neunzehn  | eleven, twelve, thirteen - ninteen                     |
 | zwanzig, dreißig, vierzig, fünfzig,<br/> sechzig, seibzig, achtzig, neuzig, einhundert | twenty - one hundred                                   |
-
-| eintausend, eine Million, eine Milliarde | one thousand, one million, one billion |
+| eintausend, eine Million, eine Milliarde                                               | one thousand, one million, one billion                 |
 
 ## Temporal
 
@@ -74,9 +73,8 @@
 | heute Abend , später                                                           | tonight, later                                       |
 | bald, irgendwann                                                               | soon, sometime                                       |
 | jetzt, soeben, gerade jetzt                                                    | present, now, just now                               |
-| Eines Tages                                                                    | one day , there is                                   |
-| letzte Woche, diese Woche,nächste Woche there are                              | last week, those areek, ese                          |
-|                                                                                | with me, to me, for me, about me                     | are, t week |
+| Eines Tages                                                                    | one day                                              |
+| Letzte Woche, diese Woche, nächste Woche                                       | last week, this week, next week                      |
 | diese Moment                                                                   | this moment                                          |
 | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag / Sonnabend, Sonnstag | Monday - Sunday                                      |
 | Januar, Februar, März, April, Mai, Juni                                        | January, February, March, April, May, June           |
