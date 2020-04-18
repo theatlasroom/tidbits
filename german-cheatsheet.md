@@ -274,31 +274,31 @@ Some noun ending are almost always feminine:
   - Sind <v> sie <s> verheiratet
   - Wohnst <v> du <s> in München
 
-| German                                   | Englisch                                                |
-| ---------------------------------------- | ------------------------------------------------------- |
-| Was - Was sind sie von Beruf?            | What - What is your profession?                         |
-| Warum - Warum bist du traurig            | Why - Why are you sad?                                  |
-| Wann - Wann heiratet Ihr                 | When (mostly time) - When are you getting married?      |
-| Wer - Wer spricht gut Deutsch            | Who - Who speaks good german?                           |
-| Wen - Wen liebst du                      | Whom? - Whom do you love?                               |
-| Wie - Wie alt bist du?                   | How? - How old are you?                                 |
-| Wie - Wie alt bist du?                   | How? - How old are you?                                 |
-| Wie viel - Wiel viel kostet ein Fahrrad? | How much? - How much does a bike cost?                  |
-| Wie viele - Wiel viele kinder hast du?   | How many? - How many children do you have?              |
-| Wie oft - Wiel oft spielst du Fußball?   | How often? - How often do you play football?            |
-| Woher - Woher kommst du?                 | Where from? - Where are you from?                       |
-| Wohin - Wohin fahrt ihr im Urlaub?       | Where to / Where is? - Where are you going on vacation? |
-| Welche - Welche sprachen sprichst du?    | Which? - Which languages do you speak?                  |
-| Wozu                                     | What for?                                               |
-| Wofür                                    | For what?                                               |
-| Worüber                                  | About what?                                             |
-| Worauf                                   | On what?                                                |
+| German                                  | Englisch                                               |
+| --------------------------------------- | ------------------------------------------------------ |
+| Was: Was sind sie von Beruf?            | What: What is your profession?                         |
+| Warum: Warum bist du traurig            | Why: Why are you sad?                                  |
+| Wann: Wann heiratet Ihr                 | When (mostly time): When are you getting married?      |
+| Wer: Wer spricht gut Deutsch            | Who: Who speaks good german?                           |
+| Wen: Wen liebst du                      | Whom?: Whom do you love?                               |
+| Wie: Wie alt bist du?                   | How?: How old are you?                                 |
+| Wie: Wie alt bist du?                   | How?: How old are you?                                 |
+| Wie viel: Wiel viel kostet ein Fahrrad? | How much?: How much does a bike cost?                  |
+| Wie viele: Wiel viele kinder hast du?   | How many?: How many children do you have?              |
+| Wie oft: Wiel oft spielst du Fußball?   | How often?: How often do you play football?            |
+| Woher: Woher kommst du?                 | Where from?: Where are you from?                       |
+| Wohin: Wohin fahrt ihr im Urlaub?       | Where to / Where is?: Where are you going on vacation? |
+| Welche: Welche sprachen sprichst du?    | Which?: Which languages do you speak?                  |
+| Wozu                                    | What for?                                              |
+| Wofür                                   | For what?                                              |
+| Worüber                                 | About what?                                            |
+| Worauf                                  | On what?                                               |
 
 ### Usages
 
-- _nach_ - city names, countries without articles, continents, geographic directions |
-  - Ich gehe nach links - i am going left
-  - Gestern bin ich nach Stuttgart gefahren - Yesterday i drove to stuttgart
-- _zu_ - person, someone's house, a professional place or event
-  - Morgen muss ich zum Arzt - tomorrow i have to go to the doctor's
-  - Geht ihr zum Bäcker - Are you guys going to the bakery
+- _nach_: city names, countries without articles, continents, geographic directions |
+  - Ich gehe nach links: i am going left
+  - Gestern bin ich nach Stuttgart gefahren: Yesterday i drove to stuttgart
+- _zu_: person, someone's house, a professional place or event
+  - Morgen muss ich zum Arzt: tomorrow i have to go to the doctor's
+  - Geht ihr zum Bäcker: Are you guys going to the bakery
