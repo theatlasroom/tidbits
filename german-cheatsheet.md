@@ -25,49 +25,62 @@
 
 ## Case
 
+| Kasus     | Maskulinum | Femininum | Neutrum | Plural |
+| --------- | ---------- | --------- | ------- | ------ |
+| Nominativ | der        | die       | das     | die    |
+| Genitiv   | des        | der       | des     | der    |
+| Dativ     | dem        | der       | dem     | den    |
+| Akkusativ | den        | die       | das     | die    |
+
+| German                                   | Englisch                                    |
+| ---------------------------------------- | ------------------------------------------- |
+| diese, dass, jene, diese, Sie, Ihre      | this, that, those, these, them, their       |
+| das ist, das ist, es gibt                | this is, that is, there is                  |
+| jene sind, diese sind, es gibt           | those are, these are, there are             |
+| mein, mit mir, mir, für mich, über mich  | my, with me, to me, for me, about me        |
+| deine, mit dir, dir, für dich, über dich | yours, with you, to you, for you, about you |
+
 ## Greetings / Formalities
 
-| Word                                                           | Translation                                                 |
-| -------------------------------------------------------------- | ----------------------------------------------------------- |
-| Danke                                                          | Thanks                                                      |
-| Entschuldigung                                                 | I am sorry, excuse me, pardon me                            |
-| Es tut mir leid                                                | I am sorry (like i am sorry that happened)                  |
-| Wie gehts                                                      | Hows it going                                               |
-| Mir gehts gut                                                  | I am going well                                             |
-| Hallo, guten Morgen, guten Abend, guten Nachtmittag, guten Tag | Hello, good morning, good evening, good afternoon, good day |
-| Tschüss, Auf Wiedersehen                                       | Bye, Goodbye                                                |
-| bis bald, bis später, bis morgen                               | see you soon, see you later, see you tomorrow               |
-| Hallo, Ich heiße <name>                                        | Hello, I am called <name>                                   |
-| Ich komme aus <country>                                        | I come from <country>                                       |
+| Word                                         | Translation                                   |
+| -------------------------------------------- | --------------------------------------------- |
+| Danke, gern geschehen                        | Thanks, you're welcome                        |
+| Entschuldigung                               | I am sorry, excuse me, pardon me              |
+| Es tut mir leid                              | I am sorry (like i am sorry that happened)    |
+| Wie gehts? Wie geht es Ihnen? Mir gehts gut  | Hows it? How are you? I am going              |
+| Hallo, guten Tag                             | Hello, good day                               |
+| guten Morgen, guten Abend, guten Nachtmittag | Good morning, good evening, good afternoon    |
+| Tschüss, Auf Wiedersehen                     | Bye, Goodbye                                  |
+| bis bald, bis später, bis morgen             | see you soon, see you later, see you tomorrow |
+| Hallo, Ich heiße <name>                      | Hello, I am called <name>                     |
+| Ich komme aus <country>                      | I come from <country>                         |
 
 ## Counting
 
-| Deutsch                                              | Englisch                                          |
-| ---------------------------------------------------- | ------------------------------------------------- |
-| eins zwei drei vier fünf sechs sieben acht neun zehn | one two three four five six seven eight night ten |
+| Deutsch                                                                                | Englisch                                               |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| eins zwei drei vier fünf<br/> sechs sieben acht neun zehn                              | one two three four five<br/> six seven eight night ten |
+| elf, zwölf, dreizehn, vierzehn, fünfzehn,<br/> sechsehn, siebzehn, achtzehn, neunzehn  | eleven, twelve, thirteen - ninteen                     |
+| zwanzig, dreißig, vierzig, fünfzig,<br/> sechzig, seibzig, achtzig, neuzig, einhundert | twenty - one hundred                                   |
+
+| eintausend, eine Million, eine Milliarde | one thousand, one million, one billion |
 
 ## Temporal
 
-| German        | English        |
-| ------------- | -------------- |
-| heute         | today          |
-| gestern       | yesterday      |
-| nachmittag    | afternoon      |
-| abend         | evening        |
-| nacht         | night          |
-| morgen        | tomorrow       |
-| morgen Nacht  | tomorrow night |
-| heute Abend   | tonight        |
-| später        | later          |
-| bald          | soon           |
-| jetzet        | present, now   |
-| irgendwann    | sometime       |
-| soeben        | just now       |
-| Eines Tages   | one day        |
-| letzte Woche  | last week      |
-| diese Woche   | last week      |
-| nächste Woche | next week      |
-| diese Moment  | this moment    |
+| German                                                                         | English                                              |
+| ------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| heute, gestern, nachmittag, abend, nacht                                       | today, yesterday, afternoon, evening, night          |
+| morgen, morgen Nacht                                                           | tomorrow, tomorrow night                             |
+| heute Abend , später                                                           | tonight, later                                       |
+| bald, irgendwann                                                               | soon, sometime                                       |
+| jetzt, soeben, gerade jetzt                                                    | present, now, just now                               |
+| Eines Tages                                                                    | one day , there is                                   |
+| letzte Woche, diese Woche,nächste Woche there are                              | last week, those areek, ese                          |
+|                                                                                | with me, to me, for me, about me                     | are, t week |
+| diese Moment                                                                   | this moment                                          |
+| Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag / Sonnabend, Sonnstag | Monday - Sunday                                      |
+| Januar, Februar, März, April, Mai, Juni                                        | January, February, March, April, May, June           |
+| Juli, August, September, Oktober, November, Dezember                           | July, August, September, October, November, December |
 
 ## Verbs
 
@@ -82,8 +95,8 @@
 | sprechen, gesprochen                        | speak / speaking, spoke                      |
 | sich unterhalten / reden, reden, redete     | talk, talking, talked                        |
 | trinke, trinken, trinkt, getrunken          | drink, drinking, is drinking, drank          |
-| wohne                                       |                                              |
-| müde                                        |                                              |
+| wohne                                       | Live                                         |
+| müde                                        | Tired                                        |
 
 ### Conjugations
 
@@ -112,6 +125,22 @@
 
 ### Masculine
 
+Some noun ending are almost always masculine:
+
+| Wortenden | Substansiv / Nomen (nouns)                     |
+| --------- | ---------------------------------------------- |
+| _ant_     | der Lieferant, der Mandant, der Migrant        |
+| _ent_     | der Patient, der Student, der Präsident        |
+| _ich_     | der Teppich, der Pfirsich                      |
+| _ismus_   | der Alkoholismus, der Atheismus, der Tourismus |
+| _ist_     | der Journalist, der Polizist                   |
+| _ling_    | der Zwilling, der Schmetterling, der Feigling  |
+| _or_      | der Autor, der Direktor, der Motor             |
+
+- Directions: der Norden der Süden der Osten der Westen
+- Days of the week: der Montag, der Deinstag
+- Months: der April, der Juli
+
 | German               | English       |
 | -------------------- | ------------- |
 | der Apfel, der Äpfel | apple, apples |
@@ -119,6 +148,30 @@
 | der Tee              | tea           |
 
 ### Feminine
+
+Some noun ending are almost always feminine:
+
+| Wortenden  | Substansiv / Nomen (nouns)                         |
+| ---------- | -------------------------------------------------- |
+| _anz_      | die Distanz, die Toleranz, die Bilanz              |
+| _ei_       | die Datei, die Backerei, die Polizei               |
+| _enz_      | die Konferenz, die Existenz, die Tendenz           |
+| _(h/k)eit_ | die Freiheit, die Krankheit, die Geschwindigkeit   |
+| _ie_       | die Demokratie, die Studie, die Energie            |
+| _ik_       | die Fabrik, die Statistik, die Politik             |
+| _ion_      | die Aktion, die Information, die Region            |
+| _ität_     | die Identität, die Stabilität, die Aktivität       |
+| _schaft_   | die Freundschaft, die Gesellschaft, die Mannschaft |
+| _ung_      | die Bewegung, die Endung, die Entfernung           |
+| _ur_       | die Agentur, die Natur, die Tastatur               |
+
+Weibliche Berufsbeizeichnung (Female jobs) oder weibliche Person
+
+- Die Ärztin
+- die Studentin
+- die Türkin
+- die Amerikanerin
+- die Wienerin
 
 | German                                   | English                       |
 | ---------------------------------------- | ----------------------------- |
@@ -131,28 +184,78 @@
 
 ### Neuter
 
+Some noun ending are almost always feminine:
+
+| Wortenden | Substansiv / Nomen (nouns)                 |
+| --------- | ------------------------------------------ |
+| _ment_    | das Argument, das Dokument, das Instrument |
+| _um_      | das Datum, das Publikum, das Universum     |
+
+- Words made smaller with _chen_ or _lein_
+- Nominalised verbs: das Leben, das Schwimmen, das Lesen
+- Metals: das Silber, das Gold, das Geld
+- Verbs starting with _ge_: das Gebäude, das Gebirge, das Geschrei
+
 | German     | English |
 | ---------- | ------- |
 | das Brot   | bread   |
 | das Obst   | fruit   |
 | das Wasser | water   |
 
+## Das Wetter
+
+| German          | Englisch     |
+| --------------- | ------------ |
+| Sonnig, trocken | Sunny, dry   |
+| Regnet, nass    | raining, wet |
+| Windig          | Windy        |
+| Heiße           | Hot          |
+| Kalt            | Cold         |
+| Ruhe            | Calm         |
+| Snowing         | Schneit      |
+
 ## General words / phrases
 
-| Phrase                                       | Translation              |
-| -------------------------------------------- | ------------------------ |
-| und                                          | and                      |
-| Sprechen sie Deutsch? / Sprichst du Deutsch? | Do you speak german      |
-| Ich spiele gerne Gitarre                     | I like to play guitar    |
-| Ich bin ein Softwareentwickler               | I am a software engineer |
-| Wie viel kostet es                           | How much does it cost?   |
+| Phrase                                                             | Translation                                                                 |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| und                                                                | and                                                                         |
+| Sprechen sie Deutsch? / Sprichst du Deutsch?                       | Do you speak german                                                         |
+| Ich spiele gerne Gitarre                                           | I like to play guitar                                                       |
+| Ich bin Softwareentwickler                                         | I am a software engineer                                                    |
+| Wie viel kostet es                                                 | How much does it cost?                                                      |
+| Unbedingt, genau                                                   | Absolutely, exactly                                                         |
+| ausgezeichnet, prima, perfekt, Fantastisch, wunderbar, gut gemacht | Excellent, great, good, perfect, fantastic, wonderful, well done            |
+| zum Beispiel, wie zum beispiel                                     | For Example, such as                                                        |
+| Es gibt                                                            | There is / there are                                                        |
+| um die Ecke, an dem Ort, dort, über den Platz, unter der Brücke    | Around the corner, at the place, there, across the square, under the brdige |
+| Darf ich mit \_\_\_ Sprechen                                       | May i speak with \_\_\_                                                     |
+| Wann ist dein Geburstag                                            | When is your birthday?                                                      |
+| Was machst du für Arbeit?, Was machst du von Beruflich             | What do you do for work?                                                    |
+| Haben sie eine Frage?, Irgendwelche Fragen?                        | Do you have a question?, any questions?                                     |
+| Kann ich, Darf ich                                                 | Can i, may i                                                                |
+| Lass uns anfangen, Los gehts, fertig                               | lets begin, here we go, ready                                               |
 
 ## Prepositions
 
-| German     | English                                                   |
-| ---------- | --------------------------------------------------------- |
-| zu Hause   | at home, Ich bin zu Hause (I am at home)                  |
-| nach Hause | moving toward home, Ich gehe nach Hause (I am going home) |
+| German                                                                           | English                                                                                |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| zu Hause                                                                         | at home, Ich bin zu Hause (I am at home)                                               |
+| nach Hause                                                                       | moving toward home, Ich gehe nach Hause (I am going home)                              |
+| in - in der Kirche                                                               | in - in the church                                                                     |
+| am - am Tische                                                                   | at - at the table                                                                      |
+| auf - auf dem Tische                                                             | on - on the table                                                                      |
+| unter - unter dem Tische                                                         | under - under the table                                                                |
+| vor - vor dem Schaufenster                                                       | in front - in front of the shop window                                                 |
+| hinter - hinter dem Tisch                                                        | behind - behind the table                                                              |
+| neben - neben dem Bus                                                            | near - near the bus                                                                    |
+| zwischen - zwischen dem Tische                                                   | between - on the table                                                                 |
+| bis - Wir arbeiten von 9:00 Uhr bis 6:00 Uhr                                     | to, by, up to - We work from 9 oclock to 6 oclock                                      |
+| ohne - Ich trinke Kaffee ohne Zucker                                             | without - I drink coffee without sugar                                                 |
+| für - Diese Blumen sind für dich, Schatz!                                        | for / pro - These flowers are for you sweetheart                                       |
+| um - Der Termin ist um 15 Uhr, Da kommt sie um die Ecke                          | at / around - the appointment is at 3pm, there she comes around the corner             |
+| durch - Die Sonne scheint durch das Fenster                                      | through / by - The sun is shining through the window                                   |
+| gegen - Meine Mutter kommt gegen 14 Uhr, Heute spielt Deutschland gegen Russland | towards / against - My mother comes around 2pm, Today german is playing against russia |
+| entlang - Sie geht den Strand entlang spazieren                                  | along - She goes for a walk along the beach                                            |
 
 ## Sentences (Satzstruktur)
 
@@ -172,6 +275,26 @@
   - Haben <v> Sie <s> Kinder?
   - Sind <v> sie <s> verheiratet
   - Wohnst <v> du <s> in München
+
+| German                                   | Englisch                                                |
+| ---------------------------------------- | ------------------------------------------------------- |
+| Was - Was sind sie von Beruf?            | What - What is your profession?                         |
+| Warum - Warum bist du traurig            | Why - Why are you sad?                                  |
+| Wann - Wann heiratet Ihr                 | When (mostly time) - When are you getting married?      |
+| Wer - Wer spricht gut Deutsch            | Who - Who speaks good german?                           |
+| Wen - Wen liebst du                      | Whom? - Whom do you love?                               |
+| Wie - Wie alt bist du?                   | How? - How old are you?                                 |
+| Wie - Wie alt bist du?                   | How? - How old are you?                                 |
+| Wie viel - Wiel viel kostet ein Fahrrad? | How much? - How much does a bike cost?                  |
+| Wie viele - Wiel viele kinder hast du?   | How many? - How many children do you have?              |
+| Wie oft - Wiel oft spielst du Fußball?   | How often? - How often do you play football?            |
+| Woher - Woher kommst du?                 | Where from? - Where are you from?                       |
+| Wohin - Wohin fahrt ihr im Urlaub?       | Where to / Where is? - Where are you going on vacation? |
+| Welche - Welche sprachen sprichst du?    | Which? - Which languages do you speak?                  |
+| Wozu                                     | What for?                                               |
+| Wofür                                    | For what?                                               |
+| Worüber                                  | About what?                                             |
+| Worauf                                   | On what?                                                |
 
 ### Usages
 
