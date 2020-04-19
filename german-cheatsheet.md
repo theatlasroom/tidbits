@@ -232,47 +232,116 @@ Some noun ending are almost always feminine:
 | Haben sie eine Frage?, Irgendwelche Fragen?                        | Do you have a question?, any questions?                                     |
 | Kann ich, Darf ich                                                 | Can i, may i                                                                |
 | Lass uns anfangen, Los gehts, fertig                               | lets begin, here we go, ready                                               |
+| Wiederholen Sie bitte, langsam Bitte                               | Please repeat, slowly please                                                |
+| Ich Verstehe nicht, Ich spreche kein Deutsch                       | I dont understand, I dont speak german                                      |
+
+## Conjunctions
+
+- German makes use of Coordinating and Subordinating Conjunctions
+
+### Coordinating
+
+- Do not change the conjugated verb position, stays in the 2nd position
+- After the conjunction, the original word order is preserved
+- Denn can never start a sentence, weil can
+
+| Konjunktionen   | Englisch       |
+| --------------- | -------------- |
+| und             | and            |
+| aber            | but            |
+| denn            | because        |
+| oder            | or             |
+| sondern         | rather/instead |
+| beziehungsweise | more precisely |
+| doch            | but, however   |
+| jedoch          | but, however   |
+| allein          | unfortunately  |
+
+Two part coordinating conjunctions, similar to co-relating conjunctions
+
+-_Entweder wir gehen heute ins Kino oder wir gehen morgen._
+
+- We can either go to the cinema today or we’ll go tomorrow.
+
+- _Der Film war teils sehr schön, teils etwas langweilig_
+  — The movie was partly very beautiful, [and] partly somewhat boring.
+
+| Konjunktionen              | Englisch                              |
+| -------------------------- | ------------------------------------- |
+| entweder ... oder          | either ... or                         |
+| sowohl ... als auch        | both ... and                          |
+| weder ... noch             | neither ... nor                       |
+| einerseits ... andereseits | on the one hand ... on the other hand |
+| mal ... mal                | sometimes ... sometimes               |
+| teils ... teils            | partly ... partly                     |
+
+### Subordinating
+
+- Moves the conjugated verb to the end of the sentence
+
+| Konjunktionen         | Englisch                                        |
+| --------------------- | ----------------------------------------------- |
+| bevor, ehe            | before                                          |
+| dass                  | that                                            |
+| nachdem               | after                                           |
+| seit, seitdem         | since (since some time ago)                     |
+| während               | while, during, whereas                          |
+| als                   | when (past tense, something completed)          |
+| wenn                  | when (present / future tense, repeating events) |
+| wann                  | when (for questions)                            |
+| bis                   | until, by                                       |
+| obwohl                | although                                        |
+| als ob, als wenn, als | as if                                           |
+| sooft                 | as often as                                     |
+| sobald                | as soon as                                      |
+| solange               | as long as                                      |
+| sodass, damit         | so that                                         |
+| da, weil              | because                                         |
+| indem                 | by doing                                        |
+| ob                    | whether                                         |
+| falls                 | in case, if (something that may be possible     |
+| um ... zu             | in order to                                     |
 
 ## Prepositions
 
-| German                                                                           | English                                                                                |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| zu Hause                                                                         | at home, Ich bin zu Hause (I am at home)                                               |
-| nach Hause                                                                       | moving toward home, Ich gehe nach Hause (I am going home)                              |
-| in - in der Kirche                                                               | in - in the church                                                                     |
-| am - am Tische                                                                   | at - at the table                                                                      |
-| auf - auf dem Tische                                                             | on - on the table                                                                      |
-| unter - unter dem Tische                                                         | under - under the table                                                                |
-| vor - vor dem Schaufenster                                                       | in front - in front of the shop window                                                 |
-| hinter - hinter dem Tisch                                                        | behind - behind the table                                                              |
-| neben - neben dem Bus                                                            | near - near the bus                                                                    |
-| zwischen - zwischen dem Tische                                                   | between - on the table                                                                 |
-| bis - Wir arbeiten von 9:00 Uhr bis 6:00 Uhr                                     | to, by, up to - We work from 9 oclock to 6 oclock                                      |
-| ohne - Ich trinke Kaffee ohne Zucker                                             | without - I drink coffee without sugar                                                 |
-| für - Diese Blumen sind für dich, Schatz!                                        | for / pro - These flowers are for you sweetheart                                       |
-| um - Der Termin ist um 15 Uhr, Da kommt sie um die Ecke                          | at / around - the appointment is at 3pm, there she comes around the corner             |
-| durch - Die Sonne scheint durch das Fenster                                      | through / by - The sun is shining through the window                                   |
-| gegen - Meine Mutter kommt gegen 14 Uhr, Heute spielt Deutschland gegen Russland | towards / against - My mother comes around 2pm, Today german is playing against russia |
-| entlang - Sie geht den Strand entlang spazieren                                  | along - She goes for a walk along the beach                                            |
+| German                                                                          | English                                                                               |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| zu Hause                                                                        | at home, Ich bin zu Hause (I am at home)                                              |
+| nach Hause                                                                      | moving toward home, Ich gehe nach Hause (I am going home)                             |
+| in: in der Kirche                                                               | in: in the church                                                                     |
+| am: am Tische                                                                   | at: at the table                                                                      |
+| auf: auf dem Tische                                                             | on: on the table                                                                      |
+| unter: unter dem Tische                                                         | under: under the table                                                                |
+| vor: vor dem Schaufenster                                                       | in front: in front of the shop window                                                 |
+| hinter: hinter dem Tisch                                                        | behind: behind the table                                                              |
+| neben: neben dem Bus                                                            | near: near the bus                                                                    |
+| zwischen: zwischen dem Tische                                                   | between: on the table                                                                 |
+| bis: Wir arbeiten von 9:00 Uhr bis 6:00 Uhr                                     | to, by, up to: We work from 9 oclock to 6 oclock                                      |
+| ohne: Ich trinke Kaffee ohne Zucker                                             | without: I drink coffee without sugar                                                 |
+| für: Diese Blumen sind für dich, Schatz!                                        | for / pro: These flowers are for you sweetheart                                       |
+| um: Der Termin ist um 15 Uhr, Da kommt sie um die Ecke                          | at / around: the appointment is at 3pm, there she comes around the corner             |
+| durch: Die Sonne scheint durch das Fenster                                      | through / by: The sun is shining through the window                                   |
+| gegen: Meine Mutter kommt gegen 14 Uhr, Heute spielt Deutschland gegen Russland | towards / against: My mother comes around 2pm, Today german is playing against russia |
+| entlang: Sie geht den Strand entlang spazieren                                  | along: She goes for a walk along the beach                                            |
 
 ## Sentences (Satzstruktur)
 
-- Sentences should be in SVO order, <subject> <verb> <object>
+- Sentences should be in SVO order, _(subject)_ _(verb)_ _(object)_
 - The verb should is usually (not always) in the 2nd position
 - Asking questions the subject will be in the 3rd position
 
-* Ich <s> wohne <v> in Berlin
+* Ich _(subject)_ wohne _(verb)_ in Berlin
 
 ### Questions
 
 - W-Fragen: Wie, Welche, Was, Wo, Woher, Wie viel
-  - Wo Wohnen <v> Sie <s>
-  - Woher kommst <v> du <s>
-  - Wie heißen <v> Sie <s>
-- Ja/Nein - Fragen
-  - Haben <v> Sie <s> Kinder?
-  - Sind <v> sie <s> verheiratet
-  - Wohnst <v> du <s> in München
+  - Wo Wohnen _(verb)_ Sie _(subject)_
+  - Woher kommst _(verb)_ du _(subject)_
+  - Wie heißen _(verb)_ Sie _(subject)_
+- Ja/Nein: Fragen
+  - Haben _(verb)_ Sie _(subject)_ Kinder?
+  - Sind _(verb)_ sie _(subject)_ verheiratet
+  - Wohnst _(verb)_ du _(subject)_ in München
 
 | German                                  | Englisch                                               |
 | --------------------------------------- | ------------------------------------------------------ |
@@ -302,3 +371,7 @@ Some noun ending are almost always feminine:
 - _zu_: person, someone's house, a professional place or event
   - Morgen muss ich zum Arzt: tomorrow i have to go to the doctor's
   - Geht ihr zum Bäcker: Are you guys going to the bakery
+
+## Links
+
+- [German conjunctions](https://www.clozemaster.com/blog/german-conjunctions/)
