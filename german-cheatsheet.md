@@ -116,6 +116,39 @@
 | Haben (to have)                 | ich _habe_, du _hast_, er/sie/es _hat_, wir _haben_, ihr _habt_, Sie/sie _haben_        |
 | Werden (to become, shall, will) | ich _werde_, du _wirst_, er/sie/es _wird_, wir _werden_, ihr _werdet_, Sie/sie _werden_ |
 
+### Modal verbs
+
+- Auxiliary verbs used to help another verb, can be used to express a mood
+- All are irregular
+- Takes the 2nd position in SVO and Pushes the infinitive verb to the end of the sentence
+- In subordinate clauses, the modal verb is positioned after the infinitive
+  - _Da er die Adresse wissen möchte, fragt er die Frau_: Because he likes to konw the address, he asks the woman
+  - _Als ich krank zu Hause bleiben musste, war mir oft langweilig_: When I had to stay at home ill, I was often bored.
+
+| Modalverben | Englisch             | ich/er/sie/es | du       | ihr     | sie/Sie/wir |
+| ----------- | -------------------- | ------------- | -------- | ------- | ----------- |
+| dürfen      | May (i/he/we etc)    | darf          | darfst   | dürft   | dürfen      |
+| können      | Can (i/she/they etc) | kann          | kannst   | könnt   | können      |
+| mögen       | like                 | mag           | magst    | mögt    | mögen       |
+| möchten     | would like to        | möchte        | möchtest | möchtet | möchten     |
+| müssen      | have to              | muss          | musst    | müsst   | müssen      |
+| sollen      | should / supposed to | soll          | sollst   | sollt   | sollen      |
+| wollen      | want to              | woll          | willst   | wollt   |
+| wollen      |
+
+#### Conjugation - simple past tense
+
+| Modalverben | ich/er/sie/es | du       | ihr     | sie/Sie/wir |
+| ----------- | ------------- | -------- | ------- | ----------- |
+| dürfen      | durfte        | durftest | durftet | durften     |
+| können      | konnte        | konntest | konntet | konnten     |
+| mögen       | mochte        | mochtest | mochtet | mochten     |
+| müssen      | musste        | musstest | musstet | mussten     |
+| sollen      | sollte        | solltest | solltet | sollten     |
+| wollen      | wollte        | wolltest | wolltet | wollten     |
+
+### Separable verbs
+
 ## Nouns
 
 - Definite articles - specific things using 'the': Der (masculine), Die (feminine), Das (neuter)
@@ -259,12 +292,8 @@ Some noun ending are almost always feminine:
 
 Two part coordinating conjunctions, similar to co-relating conjunctions
 
--_Entweder wir gehen heute ins Kino oder wir gehen morgen._
-
-- We can either go to the cinema today or we’ll go tomorrow.
-
-- _Der Film war teils sehr schön, teils etwas langweilig_
-  — The movie was partly very beautiful, [and] partly somewhat boring.
+- _Entweder wir gehen heute ins Kino oder wir gehen morgen._: We can either go to the cinema today or we’ll go tomorrow.
+- _Der Film war teils sehr schön, teils etwas langweilig_: The movie was partly very beautiful, [and] partly somewhat boring.
 
 | Konjunktionen              | Englisch                              |
 | -------------------------- | ------------------------------------- |
