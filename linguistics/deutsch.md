@@ -133,7 +133,7 @@
 | möchten     | would like to        | möchte        | möchtest | möchtet | möchten     |
 | müssen      | have to              | muss          | musst    | müsst   | müssen      |
 | sollen      | should / supposed to | soll          | sollst   | sollt   | sollen      |
-| wollen      | want to              | woll          | willst   | wollt   |
+| wollen      | want to              | woll          | willst   | wollt  
 | wollen      |
 
 #### Conjugation - simple past tense
@@ -147,7 +147,7 @@
 | sollen      | sollte        | solltest | solltet | sollten     |
 | wollen      | wollte        | wolltest | wolltet | wollten     |
 
-### Separable verbs
+### Trennbare Verben - Separable verbs
 
 ## Nouns
 
