@@ -40,6 +40,20 @@
 | mein, mit mir, mir, für mich, über mich  | my, with me, to me, for me, about me        |
 | deine, mit dir, dir, für dich, über dich | yours, with you, to you, for you, about you |
 
+## Tense
+
+- 6 tenses
+- No progressive aspect (something currently happening), without additional words to explain
+
+| German          | Englisch                                                                                                                                        | zum Beispiel                                  |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Präsens         | Present tense, something happening                                                                                                              | Ich lerne, Ich sehe                           |
+| Perfekt         | Present perfect, action that took place in the past with a connection to the present<br/>Build with the present tense form of `haben` or `sein` | Ich habe gelernt (i have learnt)              |
+| Präteritum      | Simple Past, actions in the past                                                                                                                | Ich lernte (i learned)                        |
+| Plusquamperfekt | Past Perfect, something that happened before another action in the past                                                                         | Ich hatte gelernt (I had learnt)              |
+| Futur I         | Future, an intention, something in the future                                                                                                   | Ich werde lernen                              |
+| Futur II        | Future Perfect, in the future something will be completed                                                                                       | Ich werde gelernt haben (I will have learned) |
+
 ## Greetings / Formalities
 
 | Word                                         | Translation                                   |
@@ -133,7 +147,7 @@
 | möchten     | would like to        | möchte        | möchtest | möchtet | möchten     |
 | müssen      | have to              | muss          | musst    | müsst   | müssen      |
 | sollen      | should / supposed to | soll          | sollst   | sollt   | sollen      |
-| wollen      | want to              | woll          | willst   | wollt  
+| wollen      | want to              | woll          | willst   | wollt   |
 | wollen      |
 
 #### Conjugation - simple past tense

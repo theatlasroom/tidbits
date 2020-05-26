@@ -1,5 +1,6 @@
 # Rust-lang
 ## Links
+* [Rust crash course](https://www.snoyman.com/blog/2018/10/introducing-rust-crash-course)
 * [Official docs](https://doc.rust-lang.org)
 * [Rust by example](http://rustbyexample.com)
 * [Rust learning materials](https://github.com/ctjhoa/rust-learning)

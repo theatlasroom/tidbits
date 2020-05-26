@@ -35,3 +35,6 @@ Some of my favourite wikipedia pages
 - [Marginalia](https://en.wikipedia.org/wiki/Marginalia)
 - [Viennese Actionism](https://en.wikipedia.org/wiki/Viennese_Actionism)
 
+## /b/
+- [Eschatology](https://en.wikipedia.org/wiki/Eschatology)
+- [Fate of the unleared](https://en.wikipedia.org/wiki/Fate_of_the_unlearned)

@@ -1,5 +1,9 @@
 # Creative coding
 
+## APIs/Libraries
+- [Spleeter](https://github.com/deezer/spleeter) - audio source separation
+- [SOD](https://sod.pixlab.io/) - OpenCV alternvative
+
 ## Tools
 
 - [Hydra](https://github.com/ojack/hydra)
