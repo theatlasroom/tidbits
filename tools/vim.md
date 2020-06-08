@@ -10,9 +10,11 @@ Vim is a modal editor, to use the editor you need to be in the correct mode
 * `CTRL+C`: command mode
 * Normal mode default mode used to navigate around the file
 * i - insert mode
+* I - insert end of line
 * v - visual mode, used to select blocks of text from a file, click `shift+v` to enter visual line mode
   - use hjkl to move around in visual mode
 * a - append mode
+* A - append end of line
 * ctrl+ww - switch to another panel
 * ctrl+w<hjkl> - move to split left, right ...etc
 * ctrl+w| - to expand a split
@@ -44,6 +46,12 @@ From command mode
 * **zz** - set the current line as the centre of the screen
 * **m** - move line
 * **ddp** - swap 2 lines
+
+## Shortcuts
+### Find and replace all occurences
+1. Search for string `/<search-term>`
+2. `cgn` followed by `<new-string>` 
+3. `.` to repeat for other occurrences
 
 ## Other commands
 * :help option list - list all the options

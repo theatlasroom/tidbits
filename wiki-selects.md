@@ -21,6 +21,7 @@ Some of my favourite wikipedia pages
 - [Language isolates](https://en.wikipedia.org/wiki/Language_isolate)
 - [Mutual intelligibility](https://en.wikipedia.org/wiki/Mutual_intelligibility)
 - [Phrasal template](https://en.wikipedia.org/wiki/Phrasal_template)
+- [Received Pronounciation](https://en.wikipedia.org/wiki/Received_Pronunciation)
 
 ## People / place
 
