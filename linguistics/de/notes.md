@@ -108,19 +108,20 @@
 
 ## Verbs
 
-| Word                                        | Translation                                  |
-| ------------------------------------------- | -------------------------------------------- |
-| Arbeit, Arbeiten                            | work, working                                |
-| brauchen, braucht                           | need, needs                                  |
-| Essen, isst, ate                            | eat, is eating, aß                           |
-| fahrt, fahren, gefahren, werde fahren, fuhr | drive, driving, drove, will drive, did drive |
-| gehen, ging                                 | walk, walked                                 |
-| lauf, laufen, rannte                        | run, running, ran                            |
-| sprechen, gesprochen                        | speak / speaking, spoke                      |
-| sich unterhalten / reden, reden, redete     | talk, talking, talked                        |
-| trinke, trinken, trinkt, getrunken          | drink, drinking, is drinking, drank          |
-| wohne                                       | Live                                         |
-| müde                                        | Tired                                        |
+| Word                                                  | Translation                                  |
+| ----------------------------------------------------- | -------------------------------------------- |
+| Arbeit, Arbeiten                                      | work, working                                |
+| brauchen, braucht                                     | need, needs                                  |
+| Essen, isst, ate                                      | eat, is eating, aß                           |
+| fahrt, fahren, gefahren, werde fahren, fuhr           | drive, driving, drove, will drive, did drive |
+| gehen, ging                                           | walk, walked                                 |
+| lauf, laufen, rannte                                  | run, running, ran                            |
+| sprechen, gesprochen                                  | speak / speaking, spoke                      |
+| sich unterhalten / reden, reden, redete               | talk, talking, talked                        |
+| trinke, trinken, trinkt, getrunken                    | drink, drinking, is drinking, drank          |
+| wohne                                                 | Live                                         |
+| müde                                                  | Tired                                        |
+| wissen, ich weiß, du weißt, wir weiß, wisse, gewusste | to know                                      |
 
 ### Conjugations
 
@@ -159,8 +160,7 @@
 | möchten     | would like to        | möchte        | möchtest | möchtet | möchten     |
 | müssen      | have to              | muss          | musst    | müsst   | müssen      |
 | sollen      | should / supposed to | soll          | sollst   | sollt   | sollen      |
-| wollen      | want to              | woll          | willst   | wollt   |
-| wollen      |
+| wollen      | want to              | woll          | willst   | wollt   | wollen      |
 
 #### Conjugation - simple past tense
 
