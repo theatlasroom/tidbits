@@ -241,7 +241,7 @@ Weibliche Berufsbeizeichnung (Female jobs) oder weibliche Person
 
 ### Neuter
 
-Some noun ending are almost always feminine:
+Some noun ending are almost always neuter:
 
 | Wortenden | Substansiv / Nomen (nouns)                 |
 | --------- | ------------------------------------------ |
@@ -434,7 +434,44 @@ These are prepositions that take both the Akkusativ and the Dativ
 | Worüber                                 | About what?                                            |
 | Worauf                                  | On what?                                               |
 
-### Usages
+### Alphabet
+
+| Buchstabe | Aussprache des Buchstabenamens |
+| --------- | ------------------------------ |
+| A         | ah                             |
+| Ä         | ae                             |
+| B         | bay                            |
+| C         | tsay                           |
+| D         | day                            |
+| E         | ey                             |
+| F         | eff                            |
+| G         | gay                            |
+| H         | haa                            |
+| I         | eeh                            |
+| J         | yot                            |
+| K         | kah                            |
+| L         | ell                            |
+| M         | em                             |
+| N         | en                             |
+| O         | oh                             |
+| Ö         | oe                             |
+| P         | pay                            |
+| Q         | koo                            |
+| R         | er                             |
+| S         | es                             |
+| ß         | esszet                         |
+| T         | tay                            |
+| U         | ooh                            |
+| Ü         | ue                             |
+| V         | fow                            |
+| W         | vay                            |
+| X         | ix                             |
+| Y         | uep-si-lohn                    |
+| Z         | tset                           |
+
+### Interessant
+
+#### Nach vs Zu
 
 - _nach_: city names, countries without articles, continents, geographic directions |
   - Ich gehe nach links: i am going left
@@ -446,3 +483,4 @@ These are prepositions that take both the Akkusativ and the Dativ
 ## Links
 
 - [German conjunctions](https://www.clozemaster.com/blog/german-conjunctions/)
+- [Orthography](https://en.wikipedia.org/wiki/German_orthography)
