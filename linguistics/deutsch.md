@@ -40,6 +40,18 @@
 | mein, mit mir, mir, für mich, über mich  | my, with me, to me, for me, about me        |
 | deine, mit dir, dir, für dich, über dich | yours, with you, to you, for you, about you |
 
+| Nominativ | English        | Akkusativ                  | Dativ                      |
+| --------- | -------------- | -------------------------- | -------------------------- |
+| ich       | I              | mich                       | mir                        |
+| du        | you (informal) | dich                       | dir                        |
+| er        | he             | ihn                        | ihm                        |
+| sie       | she            | sie                        | ihr                        |
+| es        | it             | es (n) / ihn (m) / sie (f) | es (n) / ihm (m) / ihr (f) |
+| wir       | we             | uns                        | uns                        |
+| ihr       | you all        | euch                       | euch                       |
+| Sie       | you (formal)   | Sie                        | Ihnen                      |
+| sie       | they           | sie                        | ihnen                      |
+
 ## Tense
 
 - 6 tenses
@@ -347,25 +359,41 @@ Two part coordinating conjunctions, similar to co-relating conjunctions
 
 ## Prepositions
 
-| German                                                                          | English                                                                               |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| zu Hause                                                                        | at home, Ich bin zu Hause (I am at home)                                              |
-| nach Hause                                                                      | moving toward home, Ich gehe nach Hause (I am going home)                             |
-| in: in der Kirche                                                               | in: in the church                                                                     |
-| am: am Tische                                                                   | at: at the table                                                                      |
-| auf: auf dem Tische                                                             | on: on the table                                                                      |
-| unter: unter dem Tische                                                         | under: under the table                                                                |
-| vor: vor dem Schaufenster                                                       | in front: in front of the shop window                                                 |
-| hinter: hinter dem Tisch                                                        | behind: behind the table                                                              |
-| neben: neben dem Bus                                                            | near: near the bus                                                                    |
-| zwischen: zwischen dem Tische                                                   | between: on the table                                                                 |
-| bis: Wir arbeiten von 9:00 Uhr bis 6:00 Uhr                                     | to, by, up to: We work from 9 oclock to 6 oclock                                      |
-| ohne: Ich trinke Kaffee ohne Zucker                                             | without: I drink coffee without sugar                                                 |
-| für: Diese Blumen sind für dich, Schatz!                                        | for / pro: These flowers are for you sweetheart                                       |
-| um: Der Termin ist um 15 Uhr, Da kommt sie um die Ecke                          | at / around: the appointment is at 3pm, there she comes around the corner             |
-| durch: Die Sonne scheint durch das Fenster                                      | through / by: The sun is shining through the window                                   |
-| gegen: Meine Mutter kommt gegen 14 Uhr, Heute spielt Deutschland gegen Russland | towards / against: My mother comes around 2pm, Today german is playing against russia |
-| entlang: Sie geht den Strand entlang spazieren                                  | along: She goes for a walk along the beach                                            |
+| German                                                                          | Case      | English                                                                                |
+| ------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------- |
+| bis: Wir arbeiten von 9:00 Uhr bis 6:00 Uhr                                     | Akkusativ | until, to, by, up to: We work from 9 oclock to 6 oclock                                |
+| durch: Die Sonne scheint durch das Fenster                                      | Akkusativ | through / by: The sun is shining through the window                                    |
+| für: Diese Blumen sind für dich, Schatz!                                        | Akkusativ | for / pro: These flowers are for you sweetheart                                        |
+| gegen: Meine Mutter kommt gegen 14 Uhr, Heute spielt Deutschland gegen Russland | Akkusativ | towards / against: My mother comes around 2pm, Today germany is playing against russia |
+| ohne: Ich trinke Kaffee ohne Zucker                                             | Akkusativ | without: I drink coffee without sugar                                                  |
+| um: Der Termin ist um 15 Uhr, Da kommt sie um die Ecke                          | Akkusativ | at / around: the appointment is at 3pm, there she comes around the corner              |
+| ab: ab nächster Woche                                                           | Dativ     | from (time), starting from next week                                                   |
+| aus: Sie kommt aus der Schweiz                                                  | Dativ     | from (location): She comes from switzerland                                            |
+| außer: Sie gehen alle zur Party, außer dem Mädchen                              | Dativ     | Except for, they all go to a party expcet for the girl                                 |
+| bei: Ich bin bei meiner Oma                                                     | Dativ     | at, by, I am at my grandma's place                                                     |
+| gegenüber: Das museum ist gegenüber der Apoteke                                 | Dativ     | opposite of, the museum is opposite the pharmacy                                       |
+| mit: Ich komme mit dir                                                          | Dativ     | with, I come with you                                                                  |
+| nach (Hause), Ich gehe nach Hause, wir fliegen nach Deutschland                 | Dativ     | moving toward home, from, after, I am going home, we fly to germany                    |
+| seit: Ich lerne seit einem Monat Französisch                                    | Dativ     | since, I've been learning french for 1 month                                           |
+| von: Die Flasche ist von mir                                                    | Dativ     | from, the bottle is (from me / mine)                                                   |
+| zu (Hause): Ich bin zu Hause, Ich gehe zu dem Friesur                           | Dativ     | to, at (home), I am at home, I go to the hairdresser                                   |
+
+### Wechselpräpositionen
+
+These are prepositions that take both the Akkusativ and the Dativ
+
+| German                                                                                        | English                                    |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| an: an dem (am) Tische                                                                        | at: at the table                           |
+| auf: auf dem Tische                                                                           | on: on the table                           |
+| hinter: hinter dem Tisch                                                                      | behind: behind the table                   |
+| in: in der Kirche                                                                             | in, inside of something: in the church     |
+| neben: neben dem Bus                                                                          | near, next to: near the bus                |
+| über: über dem Tische                                                                         | over, above: above the table               |
+| unter: unter dem Tische                                                                       | under: under the table                     |
+| vor: vor dem Schaufenster                                                                     | in front: in front of the shop window      |
+| zwischen: zwischen dem Tische                                                                 | between: on the table                      |
+| entlang (Akkusativ if its at the end, otherwise Dativ): Sie geht den Strand entlang spazieren | along: She goes for a walk along the beach |
 
 ## Sentences (Satzstruktur)
 
