@@ -51,6 +51,7 @@ Just a brain dump of some of my favourite breweries
 - Stone and wood: solid line of regulars with interesting seasonals
 - [Tallboy and moose](http://www.tallboyandmoose.com/): pulling out some great NEIPAs, juicy cloudy and high ABV
 - Two Birds brewing
+- [Wildflower brewing and blending](https://wildflowerbeer.com/) - Delicious barrel aged beers using wild yeasts
 - Willie the boatman
 
 #### Belgium
@@ -69,6 +70,7 @@ Just a brain dump of some of my favourite breweries
 
 #### Denmark
 
+- [Alefarm brewing](http://alefarm.dk/)
 - Fermentoren
 - Mikkeller
 - To Øl
@@ -120,6 +122,7 @@ Just a brain dump of some of my favourite breweries
 
 - All in brewing
 - [Beerbliotek](http://beerbliotek.com/)\
+- Brekeriet
 - [Brewski](http://www.brewski.se/)
 - [Brutal brewing](http://instagram.com/BrutalBrewing)
 - [Bryggeriet Ångkvarn](http://bryggerietangkvarn.se/)
@@ -139,6 +142,7 @@ Just a brain dump of some of my favourite breweries
 - North brewing
 - [Northern monk](http://www.northernmonkbrewco.com/)
 - Shilling brewing
+- [Wylam](https://www.wylambrewery.co.uk/)
 
 #### USA
 

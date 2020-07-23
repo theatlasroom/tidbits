@@ -4,7 +4,9 @@
 
 | Mot    | Définition |
 | ------ | ---------- |
-| _café_ | coffee     |
+| _le café_ | coffee     |
+| _le chat_ | cat | 
+| _le chien_ | dog |
 
 ## G
 

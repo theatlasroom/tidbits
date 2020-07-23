@@ -42,6 +42,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - Hieronymus Bosch
 
 ## Sound
+
 - John Luther Adams
 - Philip Glass
 - Steve Reich
@@ -104,6 +105,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [12 Angry Men](https://letterboxd.com/film/12-angry-men/)
 - [2001: A space odyssey](http://www.imdb.com/title/tt0062622/)
 - [A Quiet Place](https://letterboxd.com/film/a-quiet-place-2018/)
+- [Amour](https://letterboxd.com/film/amour/)
 - [Black Swan](https://letterboxd.com/film/black-swan/)
 - [Bladerunner](http://www.imdb.com/title/tt0083658)
 - [Blow Up](https://letterboxd.com/film/blow-up/)
@@ -127,6 +129,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 
 ## AV
 
+- [The Armed - Nowhere to be found](https://www.youtube.com/watch?v=FIdUOFzSAxI)
 - [Autechre - plyPhon](https://vimeo.com/1208304)
 - [Battles - Tonto](https://www.youtube.com/watch?v=1LLAN29W-4w)
 - [Ben Frost - Threshold of faith](https://www.youtube.com/watch?v=Z1_sSbXoDH0)
@@ -147,6 +150,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 ## Performance
 
 - [Blanck Mass - Live boiler room](https://www.youtube.com/watch?v=1xqCHLXuDuA)
+- [Code Orange - End of an Era](https://www.youtube.com/watch?v=BV-jsSxDEw8)
 - [Comeback Kid - Rain city sessions](https://www.youtube.com/watch?v=frHvYvrGnNA)
 - [Conjurer - Audio Tree](https://www.youtube.com/watch?v=B4Qgn6T8-b0)
 - [Cult Leader - Audio Tree](https://www.youtube.com/watch?v=dWO9E3Xouds)

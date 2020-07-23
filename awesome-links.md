@@ -52,6 +52,7 @@ Alphabetised of course.
 * [park.io](https://park.io/)
 * [njal.la](https://njal.la/) - private domain registration
 * [zeit domain search](https://zeit.co/domains)
+* [virmach](https://virmach.com)
 
 ## APIs
 * [gyfcat](https://developers.gfycat.com/api)
