@@ -43,6 +43,9 @@
 | Ils | they |
 | Elles | they feminine only |
 
+### Demonstrative pronouns
+Was to say this that, these those
+
 ### Temporal / directional
 
 | Français | English |

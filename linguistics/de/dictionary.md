@@ -10,14 +10,17 @@
 
 ## B
 
-| Wort      | Bedeutung        |
-| --------- | ---------------- |
-| _berühmt_ | famous           |
-| _besorgt_ | anxious, worried |
-| _beste_   | best             |
-| _bewölkt_ | cloudy           |
-| _bitte_   | please           |
-| _bitter_  | bitter           |
+| Wort             | Bedeutung        |
+| ---------------- | ---------------- |
+| _berühmt_        | famous           |
+| _besorgt_        | anxious, worried |
+| _beste_          | best             |
+| _bewölkt_        | cloudy           |
+| _bezahlen_       | paying for       |
+| _beziehungen_    | Relationships    |
+| _bitte_          | please           |
+| _bitter_         | bitter           |
+| _bushaltestelle_ | Bus stop         |
 
 ## D
 
@@ -30,22 +33,32 @@
 
 | Wort      | Bedeutung    |
 | --------- | ------------ |
+| _ecken_   | corners      |
 | _einfach_ | simple, easy |
 
 ## F
 
-| Wort   | Bedeutung |
-| ------ | --------- |
-| _früh_ | early     |
+| Wort    | Bedeutung |
+| ------- | --------- |
+| _fahrt_ | trip      |
+| _früh_  | early     |
 
 ## G
 
-| Wort          | Bedeutung       |
-| ------------- | --------------- |
-| _ganz_        | all, completely |
-| _gemeinsamen_ | togethor        |
-| _groß_        | Big             |
-| _günstig_     | cheap           |
+| Wort          | Bedeutung           |
+| ------------- | ------------------- |
+| _ganz_        | all, completely     |
+| _gebäude_     | building            |
+| _gemeinsamen_ | togethor            |
+| _glücklich_   | Happily, eventually |
+| _groß_        | Big                 |
+| _günstig_     | cheap               |
+
+## H
+
+| Wort       | Bedeutung |
+| ---------- | --------- |
+| _hochzeit_ | wedding   |
 
 ## K
 
@@ -64,21 +77,28 @@
 | _lecker_     | delicious |
 | _lustig_     | funny     |
 
+## M
+
+| Wort     | Bedeutung |
+| -------- | --------- |
+| _mehren_ | more      |
+
 ## R
 
 |_ruhig_| calm|
 
 ## S
 
-| Wort        | Bedeutung |
-| ----------- | --------- |
-| _satt_      | full      |
-| _sauber_    | clean     |
-| _schlecht_  | bad       |
-| _schön_     | beautiful |
-| _schwierig_ | difficult |
-| _süß_       | cute      |
-| _strahlend_ | light     |
+| Wort        | Bedeutung  |
+| ----------- | ---------- |
+| _satt_      | full       |
+| _sauber_    | clean      |
+| _schlecht_  | bad        |
+| _schön_     | beautiful  |
+| _schwierig_ | difficult  |
+| _solange_   | as long as |
+| _süß_       | cute       |
+| _strahlend_ | light      |
 
 ## T
 
@@ -92,13 +112,24 @@
 | ------------- | ------------ |
 | _unzufrieden_ | dissatisfied |
 
+## Ü
+
+| Wort    | Bedeutung |
+| ------- | --------- |
+| _übung_ | practice  |
+
 ## V
+
+| Wort          | Bedeutung |
+| ------------- | --------- |
+| _verheiratet_ | married   |
 
 ## W
 
-| Wort   | Bedeutung |
-| ------ | --------- |
-| _weit_ | far       |
+| Wort      | Bedeutung |
+| --------- | --------- |
+| _wandert_ | wanders   |
+| _weit_    | far       |
 
 ## Z
 
