@@ -103,6 +103,21 @@ _, b := foo() // discard variable a and extract b
 * functions can be passed around like other values
   - they can be used as function arguments and return values
 * functions can be closures, allowing the function to reference values outside its body
+* Arguments are passed by value by default, they can also be passed by reference
+```go
+// Receives arguments as value
+func swapVal(x, y int) int { }
+
+// Receives arguments as reference
+func swap(x, y *int) int { }
+
+...
+// call by reference
+swap(&x, &y)
+
+// call by value
+swapVal(x, y)
+```
 
 ### Flow control
 * go only has one looping construct - for statement
@@ -383,3 +398,4 @@ Math libray
   - [exercism - resources](https://exercism.io/tracks/go/resources)
 * https://research.swtch.com/
 * [Debugging simple memory leaks](https://medium.com/dm03514-tech-blog/sre-debugging-simple-memory-leaks-in-go-e0a9e6d63d4d)
+* [Slice tricks - manipulating slices](https://github.com/golang/go/wiki/SliceTricks#reversing)
