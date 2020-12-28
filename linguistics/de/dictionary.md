@@ -62,11 +62,13 @@
 
 ## K
 
-| Wort   | Bedeutung |
-| ------ | --------- |
-| _kalt_ | cold      |
-| _kurz_ | short     |
-| _kühl_ | cool      |
+| Wort      | Bedeutung |
+| --------- | --------- |
+| _kalt_    | cold      |
+| _kasse_   | checkout  |
+| _kellner_ | waiter    |
+| _kurz_    | short     |
+| _kühl_    | cool      |
 
 ## L
 
@@ -89,16 +91,18 @@
 
 ## S
 
-| Wort        | Bedeutung  |
-| ----------- | ---------- |
-| _satt_      | full       |
-| _sauber_    | clean      |
-| _schlecht_  | bad        |
-| _schön_     | beautiful  |
-| _schwierig_ | difficult  |
-| _solange_   | as long as |
-| _süß_       | cute       |
-| _strahlend_ | light      |
+| Wort          | Bedeutung  |
+| ------------- | ---------- |
+| _satt_        | full       |
+| _sauber_      | clean      |
+| _schlecht_    | bad        |
+| _schön_       | beautiful  |
+| _schwierig_   | difficult  |
+| _solange_     | as long as |
+| _speisekarte_ | menu       |
+| _stressig_    | stressful  |
+| _strahlend_   | light      |
+| _süß_         | cute       |
 
 ## T
 
@@ -114,22 +118,27 @@
 
 ## Ü
 
-| Wort    | Bedeutung |
-| ------- | --------- |
-| _übung_ | practice  |
+| Wort           | Bedeutung |
+| -------------- | --------- |
+| _überraschung_ | surprised |
+| _übung_        | practice  |
 
 ## V
 
-| Wort          | Bedeutung |
-| ------------- | --------- |
-| _verheiratet_ | married   |
+| Wort            | Bedeutung  |
+| --------------- | ---------- |
+| _vor_           | before     |
+| _vegetarisches_ | vegetarian |
+| _verheiratet_   | married    |
 
 ## W
 
-| Wort      | Bedeutung |
-| --------- | --------- |
-| _wandert_ | wanders   |
-| _weit_    | far       |
+| Wort             | Bedeutung        |
+| ---------------- | ---------------- |
+| _während_        | during           |
+| _wandert_        | wanders          |
+| _weinachtsmarkt_ | christmas market |
+| _weit_           | far              |
 
 ## Z
 

@@ -12,6 +12,15 @@
 
 ## ECC
 
+## zk-SNARKs
+* Zero-knowledge Succinct Non-interactive Argument of knowledge
+* Mechanism to prove possession of information without revealing the information
+* https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof
+* https://consensys.net/blog/blockchain-development/introduction-to-zk-snarks/
+* https://blockgeeks.com/guides/what-is-zksnarks/
+* [zcash - what are zksnarks](https://z.cash/technology/zksnarks/)
+* [investopedia](https://www.investopedia.com/terms/z/zksnark.asp)
+
 ### Links
 
 - [A gentle introduction](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/)
@@ -31,7 +40,10 @@
 - Authorization
 - Cipher text
 - Diffie-Hellman (DH)
+- Elliptic-curve (EC)
 - Key
 - Plaintext
 - Prime numbers
+- Public key cryptography
 - Signature
+- zk-SNARK

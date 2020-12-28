@@ -21,6 +21,7 @@
 | Et vous / Et toi        | And you?               |
 | C'est vrai, Bien sûr    | Really?, Of course     |
 | Je ne comprends pas     | I dont understand      |
+| Quel est votre nom      | What is your name?     |
 
 ## Nouns
 
@@ -31,19 +32,21 @@
 | l'hôtel       | hotel         |
 
 ## Pronouns (les pronom)
-| Français      | English       |
-| ------------- | ------------- |
-| Je | I |
-| Tu | you informal |
-| Vous | you formal / you all formal + informal |
-| Il | he / it |
-| Elle | she / it |
-| On | one, one does etc / we informal |
-| Nous | we |
-| Ils | they |
-| Elles | they feminine only |
+
+| Français | English                                |
+| -------- | -------------------------------------- |
+| Je       | I                                      |
+| Tu       | you informal                           |
+| Vous     | you formal / you all formal + informal |
+| Il       | he / it                                |
+| Elle     | she / it                               |
+| On       | one, one does etc / we informal        |
+| Nous     | we                                     |
+| Ils      | they                                   |
+| Elles    | they feminine only                     |
 
 ### Demonstrative pronouns
+
 Was to say this that, these those
 
 ### Temporal / directional
@@ -83,38 +86,41 @@ Was to say this that, these those
 | jouer    | play             |
 
 ### Conjugation
-* Verbs come in 3 groups
+
+- Verbs come in 3 groups
   - `er` ending verbs: regular
   - `ir` ending verbs: regular
   - `re`, `oir` verbs: irregular
 
 #### ER verbs (regular)
-| verb | definition |
-| --- | --- |
-| _tomber_ | to fall|
-| _chanter_ | to sing|
-| _marcher_ | to walk|
-| _regarder_ |to watch|
-| _écouter_ | to listen|
+
+| verb       | definition |
+| ---------- | ---------- |
+| _tomber_   | to fall    |
+| _chanter_  | to sing    |
+| _marcher_  | to walk    |
+| _regarder_ | to watch   |
+| _écouter_  | to listen  |
 
 Exceptions: _aller_ - to go
 Minor exception: `cer` and `ger` endings
 
-| Pronoun | Le présent (present) | 
-| --- | --- |
-| je, il, elle, on | e, chante | 
-| tu | es, chantes |
-| nous | ons, chantons |
-| vous | ez, chantez |
-| ils, elles | ent, chantent |
+| Pronoun          | Le présent (present) |
+| ---------------- | -------------------- |
+| je, il, elle, on | e, chante            |
+| tu               | es, chantes          |
+| nous             | ons, chantons        |
+| vous             | ez, chantez          |
+| ils, elles       | ent, chantent        |
 
-* Mange (to eat) -> nous mangeons
-* Commencer (to begin) -> nous Commençons 
+- Mange (to eat) -> nous mangeons
+- Commencer (to begin) -> nous Commençons
 
 #### IR verbs (regular)
+
 IR verbs that end with `issant` in the present participle form (english `ing`) are regular
 | verb | definition |
-| --- | --- | 
+| --- | --- |
 | _finir_ | to finish |
 | _choisir_ | to choose |
 | _obéir_ | to obey|
@@ -122,6 +128,7 @@ IR verbs that end with `issant` in the present participle form (english `ing`) a
 Exceptions: _venir_ - to come, _dormir_ - to sleep
 
 #### RE and OIR verbs
+
 Some `ir` verbs are also irregular
 | verb | definition |
 | --- | --- |
@@ -133,27 +140,30 @@ Some `ir` verbs are also irregular
 | _prendre_ | to take |
 | _attendre_ | to wait |
 | _mettre_ | to put |
-| _croire_ | to believe| 
+| _croire_ | to believe|
 | _voir_ | to see |
 | _boire_ | to drink |
 
 ### Passé Composé (Past tense)
-#### Group 1 - ER verbs
-* Formed using <subject pronoun> + <être / avoir> + <present tense verb> + <past participle>
-  - je + avoir + manche + é -> j'ai marché = I walked / I have walked
- 
-### Le Futur (Simple future tense)
-#### Group 1 - ER verbs
-* Formed by conjugating the verb with a `r` sound 
-| Pronom | Stem |
-| --- | --- |
-| je mange | rai, mangerai |
-| tu manges | ras, mangeras |
-| il, elle, on mange | ra, mangera |
-| nous mangeons | rons, mangerons |
-| vous mangez | rez, mangerez |
-| ils, elles mangent | ront, mangeront |
 
+#### Group 1 - ER verbs
+
+- Formed using <subject pronoun> + <être / avoir> + <present tense verb> + <past participle>
+  - je + avoir + manche + é -> j'ai marché = I walked / I have walked
+
+### Le Futur (Simple future tense)
+
+#### Group 1 - ER verbs
+
+- Formed by conjugating the verb with a `r` sound
+  | Pronom | Stem |
+  | --- | --- |
+  | je mange | rai, mangerai |
+  | tu manges | ras, mangeras |
+  | il, elle, on mange | ra, mangera |
+  | nous mangeons | rons, mangerons |
+  | vous mangez | rez, mangerez |
+  | ils, elles mangent | ront, mangeront |
 
 ## Questions
 
@@ -164,3 +174,4 @@ Some `ir` verbs are also irregular
 | Où sont le toilettes                      | Where is the toilet                     |
 | Je peux utiliser (ce stylo)               | May I use (your crayon)                 |
 | Pourquoi                                  | Why?                                    |
+| Quel est votre                            | What is your                            |
