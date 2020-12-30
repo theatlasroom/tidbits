@@ -45,6 +45,50 @@
 | Ils      | they                                   |
 | Elles    | they feminine only                     |
 
+### Possessive adjectives (Adjectifs possessifs)
+
+- Placed before a noun to indicate whom / what it belongs to
+- They replace the article
+
+| Pronoun        | Masculine | Feminine | Plural |
+| -------------- | --------- | -------- | ------ |
+| my             | mon       | ma       | mes    |
+| your (tu form) | ton       | ta       | tes    |
+| his, her, its  | son       | sa       | ses    |
+
+| Pronoun          | Singular | Plural |
+| ---------------- | -------- | ------ |
+| our              | notre    | nos    |
+| your (vous form) | votre    | vos    |
+| their            | leur     | leurs  |
+
+### Possessive pronouns (Pronoms possessifs)
+
+- Replaces the noun to describe to whom or what the noun belongs
+- The gender of the pronoun must match the gender of the noun it describes ownership over
+
+#### Singular
+
+| Pronoun           | Masculine | Feminine  |
+| ----------------- | --------- | --------- |
+| mine              | le mien   | la mienne |
+| yours (tu form)   | le tien   | la tienne |
+| his, hers, its    | le sien   | la sienne |
+| ours              | le nôtre  | la nôtre  |
+| yours (vous form) | le vôtre  | la vôtre  |
+| theirs            | le leur   | la leur   |
+
+#### Plural
+
+| Pronoun           | Masculine  | Feminine    |
+| ----------------- | ---------- | ----------- |
+| mine              | les miens  | les miennes |
+| yours (tu form)   | les tiens  | les tiennes |
+| his, hers, its    | les siens  | les siennes |
+| ours              | les nôtres | les nôtres  |
+| yours (vous form) | les vôtres | les vôtres  |
+| theirs            | les leurs  | les leurs   |
+
 ### Demonstrative pronouns
 
 Was to say this that, these those
@@ -119,30 +163,32 @@ Minor exception: `cer` and `ger` endings
 #### IR verbs (regular)
 
 IR verbs that end with `issant` in the present participle form (english `ing`) are regular
-| verb | definition |
-| --- | --- |
-| _finir_ | to finish |
-| _choisir_ | to choose |
-| _obéir_ | to obey|
+
+| verb      | definition |
+| --------- | ---------- |
+| _finir_   | to finish  |
+| _choisir_ | to choose  |
+| _obéir_   | to obey    |
 
 Exceptions: _venir_ - to come, _dormir_ - to sleep
 
 #### RE and OIR verbs
 
 Some `ir` verbs are also irregular
-| verb | definition |
-| --- | --- |
-| _sortir_ | to leave |
-| _dormir_ | to sleep |
-| _savoir_ | to know|
-| _vouloir_ | to want|
-| _pouvoir_ | to be able to |
-| _prendre_ | to take |
-| _attendre_ | to wait |
-| _mettre_ | to put |
-| _croire_ | to believe|
-| _voir_ | to see |
-| _boire_ | to drink |
+
+| verb       | definition    |
+| ---------- | ------------- |
+| _sortir_   | to leave      |
+| _dormir_   | to sleep      |
+| _savoir_   | to know       |
+| _vouloir_  | to want       |
+| _pouvoir_  | to be able to |
+| _prendre_  | to take       |
+| _attendre_ | to wait       |
+| _mettre_   | to put        |
+| _croire_   | to believe    |
+| _voir_     | to see        |
+| _boire_    | to drink      |
 
 ### Passé Composé (Past tense)
 
@@ -156,13 +202,14 @@ Some `ir` verbs are also irregular
 #### Group 1 - ER verbs
 
 - Formed by conjugating the verb with a `r` sound
-  | Pronom | Stem |
-  | --- | --- |
-  | je mange | rai, mangerai |
-  | tu manges | ras, mangeras |
-  | il, elle, on mange | ra, mangera |
-  | nous mangeons | rons, mangerons |
-  | vous mangez | rez, mangerez |
+
+  | Pronom             | Stem            |
+  | ------------------ | --------------- |
+  | je mange           | rai, mangerai   |
+  | tu manges          | ras, mangeras   |
+  | il, elle, on mange | ra, mangera     |
+  | nous mangeons      | rons, mangerons |
+  | vous mangez        | rez, mangerez   |
   | ils, elles mangent | ront, mangeront |
 
 ## Questions

@@ -26,9 +26,10 @@ Some of my favourite wikipedia pages
 ## People / place
 
 - [Bijlmermeer](https://en.wikipedia.org/wiki/Bijlmermeer)
+- [Cheikh Anta Diop](https://en.wikipedia.org/wiki/Cheikh_Anta_Diop)
 - [Conurbation](https://en.wikipedia.org/wiki/Conurbation)
-- [Olaudah Equiano](https://en.wikipedia.org/wiki/Olaudah_Equiano)
 - [Jean-Jacques Dessalines](https://en.wikipedia.org/wiki/Jean-Jacques_Dessalines)
+- [Olaudah Equiano](https://en.wikipedia.org/wiki/Olaudah_Equiano)
 
 ## Art / Culture
 
@@ -37,5 +38,6 @@ Some of my favourite wikipedia pages
 - [Viennese Actionism](https://en.wikipedia.org/wiki/Viennese_Actionism)
 
 ## /b/
+
 - [Eschatology](https://en.wikipedia.org/wiki/Eschatology)
 - [Fate of the unleared](https://en.wikipedia.org/wiki/Fate_of_the_unlearned)
