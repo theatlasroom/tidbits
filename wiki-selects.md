@@ -30,6 +30,7 @@ Some of my favourite wikipedia pages
 - [Conurbation](https://en.wikipedia.org/wiki/Conurbation)
 - [Jean-Jacques Dessalines](https://en.wikipedia.org/wiki/Jean-Jacques_Dessalines)
 - [Olaudah Equiano](https://en.wikipedia.org/wiki/Olaudah_Equiano)
+- [Djamila Boupacha](https://en.wikipedia.org/wiki/Djamila_Boupacha)
 
 ## Art / Culture
 
@@ -41,3 +42,5 @@ Some of my favourite wikipedia pages
 
 - [Eschatology](https://en.wikipedia.org/wiki/Eschatology)
 - [Fate of the unleared](https://en.wikipedia.org/wiki/Fate_of_the_unlearned)
+- [Epigenetics](https://en.wikipedia.org/wiki/Epigenetics)
+- [Horizontal gene transfer](https://en.wikipedia.org/wiki/Horizontal_gene_transfer)

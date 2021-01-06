@@ -1,6 +1,10 @@
 # GO
 
 - [Go spec](https://golang.org/ref/spec)
+- [play-with-go.dev](https://play-with-go.dev/)
+- [yourbasic/golang](https://yourbasic.org/golang/)
+- [Writing an interpreter in GO](https://interpreterbook.com/)
+- [Gitlab go style guide](https://docs.gitlab.com/ee/development/go_guide/index.html)
 
 ## General
 
@@ -398,6 +402,10 @@ var s <-chan int = b // send only channel
 ```
 
 - `for <var> := range <channel> {}` is a short way to read from a channel until it closes
+
+#### Links
+
+- [Even in go, concurrency is hard](https://utcc.utoronto.ca/~cks/space/blog/programming/GoConcurrencyStillNotEasy)
 
 ## NLP
 
