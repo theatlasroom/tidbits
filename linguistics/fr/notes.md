@@ -2,26 +2,32 @@
 
 ## Basics
 
-| Français                | English                |
-| ----------------------- | ---------------------- |
-| Salut, Bonjour, Bonsoir | Hello, Good evening    |
-| Enchanté                | Nice to meet you       |
-| Au revoir, À bientôt    | Goodbye, See you soon  |
-| Merci beaucoup          | Thanks a lot           |
-| De rien                 | You are welcome        |
-| Excusez-moi, Pardon     | Excuse me              |
-| Je suis désolé          | I'm sorry              |
-| Comment vas-tu          | How are you            |
-| Je vais bien            | I'm fine               |
-| J'ai sommeil            | I'm sleepy             |
-| Je suis fatigué         | I'm tired              |
-| Je pète la forme        | I'm great, Ça va super |
-| Je me sens mal          | I'm feeling bad        |
-| Ça va pas mal           | I'm not bad / im ok    |
-| Et vous / Et toi        | And you?               |
-| C'est vrai, Bien sûr    | Really?, Of course     |
-| Je ne comprends pas     | I dont understand      |
-| Quel est votre nom      | What is your name?     |
+| Français                                 | English                |
+| ---------------------------------------- | ---------------------- |
+| Salut, Bonjour, Bonsoir                  | Hello, Good evening    |
+| Enchanté                                 | Nice to meet you       |
+| Au revoir, À bientôt                     | Goodbye, See you soon  |
+| Merci beaucoup                           | Thanks a lot           |
+| De rien                                  | You are welcome        |
+| Excusez-moi, Pardon                      | Excuse me              |
+| Je suis désolé                           | I'm sorry              |
+| Comment vas-tu                           | How are you            |
+| Je vais bien                             | I'm fine               |
+| J'ai sommeil                             | I'm sleepy             |
+| Je suis fatigué                          | I'm tired              |
+| Je pète la forme                         | I'm great, Ça va super |
+| Je me sens mal                           | I'm feeling bad        |
+| Ça va pas mal                            | I'm not bad / im ok    |
+| Et vous / Et toi                         | And you?               |
+| C'est vrai, Bien sûr                     | Really?, Of course     |
+| Je ne comprends pas                      | I dont understand      |
+| Quel est votre nom                       | What is your name?     |
+| Ou c'est trouve (polite) ... / Ou es ... | Where is...?           |
+| S'il vout plâit                          | please                 |
+| Je ne comprends pas                      | I dont understand      |
+| pour ...                                 | for ...                |
+| Vous désirez?                            | What do you want?      |
+| Je voudrais ... ?                        | I would like ... ?     |
 
 ## Nouns
 
@@ -102,32 +108,33 @@ Was to say this that, these those
 
 ## Verbs
 
-| Français | English          |
-| -------- | ---------------- |
-| avoir    | to have          |
-| être     | to be            |
-| dire     | to say           |
-| faire    | to do            |
-| voir     | to see           |
-| pouvoir  | can              |
-| louvoir  | want             |
-| devoir   | must             |
-| falloir  | need to          |
-| savoir   | know / knowledge |
-| aller    | go               |
-| venir    | come             |
-| prendre  | take             |
-| donner   | give             |
-| trouver  | find             |
-| parler   | speak / talk     |
-| mettre   | put              |
-| passer   | pass             |
-| regarder | watch            |
-| aimer    | like             |
-| croire   | believe          |
-| manger   | eat              |
-| boire    | drink            |
-| jouer    | play             |
+| Français  | English          |
+| --------- | ---------------- |
+| avoir     | to have          |
+| être      | to be            |
+| dire      | to say           |
+| faire     | to do            |
+| voir      | to see           |
+| pouvoir   | can              |
+| louvoir   | want             |
+| devoir    | must             |
+| falloir   | need to          |
+| savoir    | know / knowledge |
+| aller     | go               |
+| venir     | come             |
+| prendre   | take             |
+| donner    | give             |
+| trouver   | find             |
+| parler    | speak / talk     |
+| mettre    | put              |
+| passer    | pass             |
+| regarder  | watch            |
+| aimer     | like             |
+| croire    | believe          |
+| manger    | eat              |
+| boire     | drink            |
+| jouer     | play             |
+| comprends | understand       |
 
 ### Conjugation
 
