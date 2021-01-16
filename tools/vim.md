@@ -83,6 +83,8 @@ From command mode
 :m $ - move current line to bottom
 :m 0 - move current line to top 
 ```
+* shift + '#': Jump to previous item matching selection
+* shift + '*': Jump to next item matching selection
 
 ## Keys
 * <cr> - carriage return (enter)
@@ -104,3 +106,6 @@ config file stored at `~/.vim/plugins.vim`
   - **d** - create new dir
   - **D** - delete dir
   - `%` - new file
+
+## Links
+* [Debugging vim mappings](https://vi.stackexchange.com/questions/7722/how-to-debug-a-mapping)

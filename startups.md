@@ -1,6 +1,9 @@
 # Startups
 
 - [Notes on employee equity](https://blog.samaltman.com/employee-equity)
+- [The Surprising Truth About What Motivates Us | Dan Pink](https://www.youtube.com/watch?v=KgGhSOAtAyQ&feature=youtu.be)
+- [An elegant puzzle: systems of engineering management](https://www.amazon.com.au/Elegant-Puzzle-Systems-Engineering-Management/dp/1732265186)
+- [Radical candor](https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375)
 
 ## Incubation / Acceleration
 
