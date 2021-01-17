@@ -46,6 +46,7 @@
 ## Links
 
 - [Memrise - Teach yourself hausa](https://app.memrise.com/course/154764/teach-yourself-hausa)
+  - [Memrise - all hausa](https://app.memrise.com/courses/english/hausa/)
 - [Polymath - hausa grammar](http://polymath.org/hausa.php)
 - [Learn hausa grammar](http://mylanguages.org/learn_hausa.php)
 - [Hausa online grammar](http://aflang.humanities.ucla.edu/language-materials/chadic-languages/hausa/hausa-online-grammar/)
