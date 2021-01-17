@@ -8,10 +8,12 @@
 
 ## B
 
-| Mot        | Définition       |
-| ---------- | ---------------- |
-| _beaucoup_ | a lot            |
-| _bien_     | well / good / ok |
+| Mot              | Définition       |
+| ---------------- | ---------------- |
+| _la banque_      | bank             |
+| _beaucoup_       | a lot            |
+| _bien_           | well / good / ok |
+| _la boulangerie_ | bakery           |
 
 ## C
 
@@ -21,6 +23,12 @@
 | _comment_  | how / what |
 | _le chat_  | cat        |
 | _le chien_ | dog        |
+
+## E
+
+| Mot       | Définition |
+| --------- | ---------- |
+| _l'école_ | school     |
 
 ## F
 
@@ -40,14 +48,28 @@
 | ----- | ---------- |
 | _ici_ | here       |
 
+## J
+
+| Mot         | Définition |
+| ----------- | ---------- |
+| _le jardin_ | garden     |
+
+## P
+
+| Mot         | Définition |
+| ----------- | ---------- |
+| _park_      | park       |
+| _passeport_ | passport   |
+
 ## S
 
 | Mot      | Définition |
 | -------- | ---------- |
-| _triste_ | sad        |
+| _sympya_ | nice       |
 
 ## T
 
-| Mot    | Définition |
-| ------ | ---------- |
-| _très_ | very       |
+| Mot      | Définition |
+| -------- | ---------- |
+| _très_   | very       |
+| _triste_ | sad        |

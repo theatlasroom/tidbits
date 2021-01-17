@@ -2,24 +2,31 @@
 
 ## Common phrases
 
-| phrase               | meaning                            |
-| -------------------- | ---------------------------------- |
-| Salama alaikum       | Greeting (formal)                  |
-| Sannu                | Greeting (informal)                |
-| Suna na ...          | My name is ...                     |
-| Kana lafiya?         | How are you? (to a man)            |
-| Kina lafiya?         | How are you? (to a woman)          |
-| Lafiya lau           | Fine (health)                      |
-| Ina kwana?           | Good morning (Did you sleep well?) |
-| Na gode              | Thank you                          |
-| Madallah!            | Excellent!                         |
-| ee                   | yes                                |
-| a'a                  | no                                 |
-| ka'dan ka'dan        | small small                        |
-| Nawane?              | How much?                          |
-| Nawane gaskiya?      | Last price?                        |
-| Densay ... ?         | Can I buy ... ?                    |
-| Yau da gobe (ka iya) | Little by little... (be patient)   |
+| phrase                               | meaning                                             |
+| ------------------------------------ | --------------------------------------------------- |
+| Salama alaikum                       | Greeting (formal)                                   |
+| Sannu                                | Greeting (informal)                                 |
+| Suna na ...                          | My name is ...                                      |
+| Kana lafiya?                         | How are you? (to a man)                             |
+| Kina lafiya?                         | How are you? (to a woman)                           |
+| Lafiya lau                           | Fine (health)                                       |
+| Ina kwana? Ina yini                  | Good morning (Did you sleep well?) / Good afternoon |
+| Na gode                              | Thank you                                           |
+| Madallah!                            | Excellent!                                          |
+| Barka du zuwa                        | You're welcome                                      |
+| ee                                   | yes                                                 |
+| a'a                                  | no                                                  |
+| ka'dan ka'dan                        | small small                                         |
+| Nawane?                              | How much?                                           |
+| Nawane gaskiya?                      | Last price?                                         |
+| Densay ... ?                         | Can I buy ... ?                                     |
+| Yau da gobe (ka iya)                 | Little by little... (be patient)                    |
+| Ina zuwa / Gafara dai                | Excuse me / excuse me (to pass)                     |
+| Ban iya Hausa ba                     | I dont speak hausa                                  |
+| Ka gane                              | Do you understand?                                  |
+| Ko ka ina turanci? / Ka iya turanci? | Do you speak english?                               |
+| yi magana a hankali                  | Speak slowly                                        |
+| maimaitama                           | repeat that                                         |
 
 ## Pronouns
 

@@ -31,6 +31,9 @@
 
 ## Nouns
 
+- au = à le
+- aux = à les
+
 | Français      | English       |
 | ------------- | ------------- |
 | la gare       | train station |
@@ -108,33 +111,40 @@ Was to say this that, these those
 
 ## Verbs
 
-| Français  | English          |
-| --------- | ---------------- |
-| avoir     | to have          |
-| être      | to be            |
-| dire      | to say           |
-| faire     | to do            |
-| voir      | to see           |
-| pouvoir   | can              |
-| louvoir   | want             |
-| devoir    | must             |
-| falloir   | need to          |
-| savoir    | know / knowledge |
-| aller     | go               |
-| venir     | come             |
-| prendre   | take             |
-| donner    | give             |
-| trouver   | find             |
-| parler    | speak / talk     |
-| mettre    | put              |
-| passer    | pass             |
-| regarder  | watch            |
-| aimer     | like             |
-| croire    | believe          |
-| manger    | eat              |
-| boire     | drink            |
-| jouer     | play             |
-| comprends | understand       |
+| Français        | English             |
+| --------------- | ------------------- |
+| avoir           | to have             |
+| être            | to be               |
+| dire            | to say              |
+| faire           | to do               |
+| voir            | to see              |
+| travailles      | work                |
+| pouvoir         | can / to be able to |
+| louvoir         | want                |
+| devoir          | must                |
+| falloir         | need to             |
+| savoir          | know / knowledge    |
+| aller           | go                  |
+| venir           | come                |
+| tenir           | hold                |
+| prendre         | take                |
+| donner          | give                |
+| trouver         | find                |
+| parler          | speak / talk        |
+| mettre          | put                 |
+| passer          | pass                |
+| regarder        | watch               |
+| aimer           | like                |
+| croire          | believe             |
+| manger          | eat                 |
+| boire           | drink               |
+| jouer           | play                |
+| comprends       | understand          |
+| voudrais        | would like          |
+| demander        | to ask              |
+| rendre          | return / give back  |
+| rester          | stay                |
+| sortir / partir | leave               |
 
 ### Conjugation
 
