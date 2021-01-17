@@ -21,6 +21,19 @@
 | Densay ... ?         | Can I buy ... ?                    |
 | Yau da gobe (ka iya) | Little by little... (be patient)   |
 
+## Pronouns
+
+| word | meaning      |
+| ---- | ------------ |
+| ni   | I            |
+| kai  | you (m)      |
+| ke   | you (f)      |
+| shi  | he           |
+| ita  | she          |
+| ku   | you (plural) |
+| mu   | us           |
+| su   | them         |
+
 ## Verbs
 
 | kalma         | ma'anar        |

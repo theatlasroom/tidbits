@@ -41,6 +41,10 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - Claude Monet
 - Hieronymus Bosch
 
+### Luc Ferrari
+
+- [Composing music](https://www.youtube.com/watch?v=3-TbfYcFOes)
+
 ## Sound
 
 - John Luther Adams
@@ -60,6 +64,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - Carsten Nicolai
 - Sasu Ripatti
 - Ryoji Ikeda
+- Luc Ferrari
 
 ### Soundtracks
 
@@ -170,6 +175,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [Portrayal of Guilt](https://www.youtube.com/watch?v=_6X1vseYz9U&t=233s)
 - [Roly porter boileroom](https://www.youtube.com/watch?v=hoY7VVdizA4)
 - [Tim Hecker - Gagaku Ensemble Live](https://www.youtube.com/watch?v=ByV_0kGE-PA)
+- [Luc Ferrari & Otomo Yoshihide perform "Archives Sauvées des Eaux"]
 
 ## Content
 
