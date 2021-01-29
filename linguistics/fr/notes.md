@@ -2,32 +2,30 @@
 
 ## Basics
 
-| Français                                 | English                |
-| ---------------------------------------- | ---------------------- |
-| Salut, Bonjour, Bonsoir                  | Hello, Good evening    |
-| Enchanté                                 | Nice to meet you       |
-| Au revoir, À bientôt                     | Goodbye, See you soon  |
-| Merci beaucoup                           | Thanks a lot           |
-| De rien                                  | You are welcome        |
-| Excusez-moi, Pardon                      | Excuse me              |
-| Je suis désolé                           | I'm sorry              |
-| Comment vas-tu                           | How are you            |
-| Je vais bien                             | I'm fine               |
-| J'ai sommeil                             | I'm sleepy             |
-| Je suis fatigué                          | I'm tired              |
-| Je pète la forme                         | I'm great, Ça va super |
-| Je me sens mal                           | I'm feeling bad        |
-| Ça va pas mal                            | I'm not bad / im ok    |
-| Et vous / Et toi                         | And you?               |
-| C'est vrai, Bien sûr                     | Really?, Of course     |
-| Je ne comprends pas                      | I dont understand      |
-| Quel est votre nom                       | What is your name?     |
-| Ou c'est trouve (polite) ... / Ou es ... | Where is...?           |
-| S'il vout plâit                          | please                 |
-| Je ne comprends pas                      | I dont understand      |
-| pour ...                                 | for ...                |
-| Vous désirez?                            | What do you want?      |
-| Je voudrais ... ?                        | I would like ... ?     |
+| Français                | English                |
+| ----------------------- | ---------------------- |
+| Salut, Bonjour, Bonsoir | Hello, Good evening    |
+| Enchanté                | Nice to meet you       |
+| Au revoir, À bientôt    | Goodbye, See you soon  |
+| Merci beaucoup          | Thanks a lot           |
+| De rien                 | You are welcome        |
+| Excusez-moi, Pardon     | Excuse me              |
+| Je suis désolé          | I'm sorry              |
+| Comment vas-tu          | How are you            |
+| Je vais bien            | I'm fine               |
+| J'ai sommeil            | I'm sleepy             |
+| Je suis fatigué         | I'm tired              |
+| Je pète la forme        | I'm great, Ça va super |
+| Je me sens mal          | I'm feeling bad        |
+| Ça va pas mal           | I'm not bad / im ok    |
+| Et vous / Et toi        | And you?               |
+| C'est vrai, Bien sûr    | Really?, Of course     |
+| S'il vout plâit         | please                 |
+| Je ne comprends pas     | I dont understand      |
+| pour ...                | for ...                |
+| Je ne comprends pas     | I dont understand      |
+| un peu | a little |
+| Je parle un peu (de) francais | I speak a little french | 
 
 ## Nouns
 
@@ -118,6 +116,7 @@ Was to say this that, these those
 | dire            | to say              |
 | faire           | to do               |
 | voir            | to see              |
+| aimer           | like                |
 | travailles      | work                |
 | pouvoir         | can / to be able to |
 | louvoir         | want                |
@@ -134,7 +133,7 @@ Was to say this that, these those
 | mettre          | put                 |
 | passer          | pass                |
 | regarder        | watch               |
-| aimer           | like                |
+| lire            | read                |
 | croire          | believe             |
 | manger          | eat                 |
 | boire           | drink               |
@@ -239,3 +238,9 @@ Some `ir` verbs are also irregular
 | Je peux utiliser (ce stylo)               | May I use (your crayon)                 |
 | Pourquoi                                  | Why?                                    |
 | Quel est votre                            | What is your                            |
+| Quel est votre nom                        | What is your name?                      |
+| Ou c'est trouve (polite) ... / Ou es ...  | Where is...?                            |
+| Vous désirez?                             | What do you want?                       |
+| Je voudrais ... ?                         | I would like ... ?                      |
+| Pouvez-vous m’aider                       | Can you help me?                        |
+| Combien ça coûte?                         | How much is this                        |
