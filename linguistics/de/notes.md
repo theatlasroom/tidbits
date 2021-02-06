@@ -386,6 +386,8 @@ Note: There are many more...
 | Lass uns anfangen, Los gehts, fertig                               | lets begin, here we go, ready                                               |
 | Wiederholen Sie bitte, langsam Bitte                               | Please repeat, slowly please                                                |
 | Ich Verstehe nicht, Ich spreche kein Deutsch                       | I dont understand, I dont speak german                                      |
+| Wie gewöhnlich                                                     | As usual                                                                    |
+| Ganz genau                                                         | I completely agree / exactly                                                |
 
 ## Conjunctions
 
@@ -561,6 +563,18 @@ These are prepositions that take both the Akkusativ and the Dativ
 | X         | ix                             |
 | Y         | uep-si-lohn                    |
 | Z         | tset                           |
+
+### Qualifiers
+
+| Wort            | Bedetung                           |
+| --------------- | ---------------------------------- |
+| sehr            | very                               |
+| eher            | rather - i like my soup rather hot |
+| gewÖhnlich      | usually                            |
+| normalerweise   | normally                           |
+| ganz            | exactly                            |
+| ziemlich        | quite                              |
+| bessere / beste | better / best                      |
 
 ### Interessant
 
