@@ -12,15 +12,18 @@
 - Typical role / skills
   - Collaboration + communication (the secret sauce)
   - Application architecture
-    - SPAs
     - Managing application state
     - Async communication / events
+    - Data fetching
   - Responsive web design
 - Tools and technologies
   - The triforce: HTML + CSS + JS
   - APIs (data sources)
   - Languages, frameworks and runtimes
   - Build tools
+  - SPAs
+    - hybrid (loading an applcation on a specific DOM node)
+    - server rendered
 - Challenges
   - Performance
   - Accessibility
@@ -59,9 +62,106 @@
 ### Typical types of FE?
 
 - UI focused
-- Application / data focused
+- Application focused
+- DX
+
+<details>
+<summary>Notes</summary>
+In a typically medium to large development team, it is likely there will be frontend engineers that work across various different aspects.
+
+Depending on the company / team size / stage of the product some roles will focus more one area over the others, but generally these are all the types of roles frontend engineers will typically be expected to be able to work across.
+
+Across any of these types of roles, a good understanding HTML, CSS and JS is vital to be able to work effectively.
+
+</details>
+
+#### UI focused
+
+> Image of storybook + CSS + JS + HTML
+
+<details>
+<summary>Notes</summary
+Some frontend engineer role are more focused on the user side, this might require tasks such as development of reuseable components like buttons, form fields and layouts that adhere to the branding and style guidelines for the company.
+
+Often in these kind of scenarios, the engieenrs will work closely with UX researchers and designers to develop components. These components provide an important framework for other engineers to quickly prototype and build new interfaces, without having to worry if the interfaces they are building are consistent with other parts of the website or application.
+
+Some other key responsibilities might include ensure adhereance to web accessibility guidelines, as well as making sure the code behind the components is semantic and well structured.
+
+</details>
+
+#### Application focused
+
+> Image of a UI + graphql + REST + AJAX
+
+<details>
+<summary>Notes</summary
+Other frontend engineers focus on the application layer, this usually entails building out user interfaces, connecting to backend APIs or other data sources, performing transformations or calculations on the frontend to prepare data for display and implementing features.
+
+Often these engineers will make use of the common, or shared components that have been developed, composing them togethor on the screen to complete a specific feature, while also working closely with backend engineers to ensure the relevant API endpoints and data is available for the features to work correctly, this is closer to the kind of role I perform at gitlab.
+
+</details>
+
+#### DX - Developer experience
+
+> Image of a webpack + eslint + prettier + nodejs
+
+<details>
+<summary>Notes</summary>
+While not a strictly frontend role, there is often a need in any medium to large team to have frontend engineers working on tooling and infrastructre to help other engineers efficiently and effectively build features or components.
+
+This can often involve a wide range of tasks such as implementing linters to ensure the codebase largely adheres to common standards and automate some of this process, it can also involve building out templates or starters to easily allow new applications to be developed and it can also include configuring build systems to bundle, minify and split all the code to reduce the size of code that is shipped to the user.
+
+While these tasks do not directly impact the user, they can help ensure the development team is able to ship features, consistently and efficiently.
+
+</details>
 
 ## Typical role / skills
+
+### Collaboration + communication (the secret sauce)
+
+- Often overlooked as a key skill
+- Most Frontend roles will require some collaboration with UX / designers + backend engineers
+- The ability to understand requirements and effectifvely articulate constraints will always help avoid misunderstandings
+
+### Application architecture
+
+- SPAs
+- Application state
+- Asynchronous (async) communication / events
+
+<details>
+<summary>Notes</summary>
+One key area of concern for frontend engineers building an application of any considerable size, is ensuring a sound and 
+</details>
+
+#### Application state
+
+<details>
+<summary>Notes</summary>
+Managing application state for complex frontends has its own set of challenges, typically the state of a frontend refers to the configuration of UI elements currently visible on the screen, any data that has been loaded into memory and as well as actions to support the flow from one state to another.
+
+There are many approaches to managing application state, often new approaches will result in a framework or library providing common patterns, for example the flux pattern as implemented by redux or vuex, which borrows ideas from functional programming, relying on a separations between actions and functions that mutate or change data.
+
+</details>
+
+#### Data fetching
+
+<details>
+<summary>Notes</summary>
+</details>
+
+#### Asynchronous (async) communication / events
+
+<details>
+<summary>Notes</summary>
+</details>
+
+### Responsive web design
+
+- Increasingly applications / websites need to be accessible and performant on multiple devices
+- Directly impacts the functionality available and how the designs are implemented
+- This also starts to crossover with more performance related issues like bundle size
+- While not always the case, we are in a situation where it is _safer_ to assume the presence of JS and a more modern browser, but this can still be a major limitation in some industries
 
 ### Collaboration + communication (The secret sauce)
 
@@ -79,6 +179,11 @@
   - The existing application architecture (if there is one)
 - This requires lots of communication and collaboration with other disciplines to ensure the end result works as expected, or the correct compromises can be made based on any constraints
 
+#### SPAs
+
+<details>
+<summary>Notes</summary>
+</details>
 ## Tools and technologies
 
 ### Languages, frameworks and runtimes

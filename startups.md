@@ -15,6 +15,7 @@
 - _Exercising_: executing the buy / sell of options
   - _Cashless_: A single transaction by an employee to exercise and sell options, by using a short term loan
   - _Early_: Exercising before the expiration date of the options
+- _Overhang (preferred)_ 
 - _Stock option_: tradeable derivates of an asset that give the option to buy / sell at a future date, unlike futures there is no obligation to transact the asset
 
 ## Links
@@ -22,3 +23,4 @@
 - [acquired](https://www.acquired.fm/)
 - [Aellacast](https://linktr.ee/AellaAppHQ)
 - [36 questions to fall in love](http://36questionsinlove.com/)
+- [startup valuations and the liquidation preference overhang](https://www.wework.com/ideas/growth-innovation/glitters-isnt-gold-startup-valuations-liquidation-preference-overhang)
