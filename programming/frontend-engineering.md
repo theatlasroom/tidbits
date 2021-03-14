@@ -18,12 +18,11 @@
   - Responsive web design
 - Tools and technologies
   - The triforce: HTML + CSS + JS
-  - APIs (data sources)
   - Languages, frameworks and runtimes
   - Build tools
   - SPAs
-    - hybrid (loading an applcation on a specific DOM node)
-    - server rendered
+    - Application root node
+    - Server side hydration
 - Challenges
   - Performance
   - Accessibility
@@ -109,7 +108,7 @@ Often these engineers will make use of the common, or shared components that hav
 <summary>Notes</summary>
 While not a strictly frontend role, there is often a need in any medium to large team to have frontend engineers working on tooling and infrastructre to help other engineers efficiently and effectively build features or components.
 
-This can often involve a wide range of tasks such as implementing linters to ensure the codebase largely adheres to common standards and automate some of this process, it can also involve building out templates or starters to easily allow new applications to be developed and it can also include configuring build systems to bundle, minify and split all the code to reduce the size of code that is shipped to the user.
+This can often involve a wide range of tasks such as implementing linters to ensure the codebase largely adheres to common standards and automate some of this process, it can also involve building out templates or starters to easily allow new applications to be developed, polyfilling features that might not be supported in all browsers and it can also include configuring build systems to bundle, minify and split all the code to reduce the size of code that is shipped to the user.
 
 While these tasks do not directly impact the user, they can help ensure the development team is able to ship features, consistently and efficiently.
 
@@ -125,13 +124,13 @@ While these tasks do not directly impact the user, they can help ensure the deve
 
 ### Application architecture
 
-- SPAs
 - Application state
+- Data fetching
 - Asynchronous (async) communication / events
 
 <details>
 <summary>Notes</summary>
-One key area of concern for frontend engineers building an application of any considerable size, is ensuring a sound and 
+One key area of concern for frontend engineers building an application of any considerable size, is ensuring a sound and extensible application structure.
 </details>
 
 #### Application state
@@ -146,11 +145,26 @@ There are many approaches to managing application state, often new approaches wi
 
 #### Data fetching
 
+- AJAX (Asynchronous JavaScript and XML)
+- GraphQL
+
 <details>
 <summary>Notes</summary>
+Fetching data from data sources is a key aspect of frontend engineering. Typically for performance and security, business logic, user data and any sensitive information will be contained in backends with specific APIs to expose the exact data that can be displayed, or to initiate actions on the backend.
+
+AJAX uses a combination of technologies to provide a consistent way to update user interfaces without requiring the full page to be reloaded. Early approaches made use directly of the XMLHttpRequest API with XML providing a description of the query response. Modern approaches make use of the Fetch API and the JSON data format.
+
+GraphQL is a newer approach to data fetching, while traditional APIs return data in a specific format, often requiring some transformation on the frontend to make it useful, GraphQL use a specific query language allowing clients to query for the exact data they require, in the format they require it provided the backend has a way to _resolve_ where the data should come from.
+
+This provides a layer of abstraction that provides flexibility and additional control to frontend engineers, and helps to allow for changes to the backend and frontend to be made independently of each other.
+
 </details>
 
 #### Asynchronous (async) communication / events
+
+- User interaction (clicks, mouse over, touch events, scrolling)
+- Passive events (screen orientation change, media start playing, network disconnects)
+- Data loading
 
 <details>
 <summary>Notes</summary>
@@ -184,7 +198,15 @@ There are many approaches to managing application state, often new approaches wi
 <details>
 <summary>Notes</summary>
 </details>
+
 ## Tools and technologies
+
+### The triforce: HTML + CSS + JS
+
+<details>
+<summary>Notes</summary>
+At the core of all frontend languages or frameworks is the ability to manipulate, HTML CSS and javascript, these core technologies are how we describe content to a web browser and allow users to accomplish tasks.
+</details>
 
 ### Languages, frameworks and runtimes
 
