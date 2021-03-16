@@ -79,10 +79,10 @@ Across any of these types of roles, a good understanding HTML, CSS and JS is vit
 > Image of storybook + CSS + JS + HTML
 
 <details>
-<summary>Notes</summary
-Some frontend engineer role are more focused on the user side, this might require tasks such as development of reuseable components like buttons, form fields and layouts that adhere to the branding and style guidelines for the company.
+<summary>Notes</summary>
+Some frontend engineer roles e are more focused on the user side, this might require tasks such as development of reuseable components like buttons, form fields and layouts that adhere to the branding and style guidelines for the company.
 
-Often in these kind of scenarios, the engieenrs will work closely with UX researchers and designers to develop components. These components provide an important framework for other engineers to quickly prototype and build new interfaces, without having to worry if the interfaces they are building are consistent with other parts of the website or application.
+Often in these kind of scenarios, the engineers will work closely with UX researchers and designers to develop components. These components provide an important framework for other engineers to quickly prototype and build new interfaces, without having to worry if the interfaces they are building are consistent with other parts of the website or application.
 
 Some other key responsibilities might include ensure adhereance to web accessibility guidelines, as well as making sure the code behind the components is semantic and well structured.
 
@@ -131,6 +131,13 @@ While these tasks do not directly impact the user, they can help ensure the deve
 <details>
 <summary>Notes</summary>
 One key area of concern for frontend engineers building an application of any considerable size, is ensuring a sound and extensible application structure.
+
+The architecture of an application can have drastic effects on how maintainable it is, how easy it is to bring on new team mates into the project to contribute and also how well the application performs.
+
+There are lots of areas related to frontend architecture, but managing application state, fetching data and handling asynchronous effects are all key aspects a frontend engineer at any stage needs to consider when building a web page or application.
+
+There are a myriad of approaches to all of the above, with varying pros and cons, so its good to have a deep understanding of these key concepts.
+
 </details>
 
 #### Application state
@@ -170,12 +177,25 @@ This provides a layer of abstraction that provides flexibility and additional co
 <summary>Notes</summary>
 </details>
 
-### Responsive web design
+### Accessibiliy + Responsive web design
 
-- Increasingly applications / websites need to be accessible and performant on multiple devices
-- Directly impacts the functionality available and how the designs are implemented
-- This also starts to crossover with more performance related issues like bundle size
-- While not always the case, we are in a situation where it is _safer_ to assume the presence of JS and a more modern browser, but this can still be a major limitation in some industries
+- Increasingly applications and pages need to be accessible and performant on multiple devices with different capabilities
+- Use of media queries allows targeting specific device capabilities
+- Not everyone is on a modern phone with a 4G connection
+- Web applications need to be accessible for all types of users
+
+<details>
+<summary>Notes</summary>
+
+In the past web pages were designed to be used on desktop or laptop computers, typically with a fairly generous screen size and access to a mouse and keyboard. With the explosion of mobile phones, tablets and wearables, websites and web applications need to function for a wide range of types of users. Additionally, there are better tools availble for users with different abilities particularly users with poor eyesight, or those that might struggle with more common input devices.
+
+With this increase in the use of multiple devices, with different screen sizes, browsers orientations and capabilities, it has become ever more challenging to design and develop web applications and pages that are performant, functional and look good across all devices.
+
+Progress has also been made in cross-browser compatability, with a lot of modern web browsers sharing the same rendering engines, while not always the case, for the most part this has made it easier to ensure developers have the confidence their content looks the same (or close enough) for different users.
+
+It's also _safer_ to now assume the presence of javascript, this was not always the case previously and required lots of workarounds to ensure a webpage still functions, while diminshed now, this can still be a major limitation in some industries particuarly government and financial institutions.
+
+</details>
 
 ### Collaboration + communication (The secret sauce)
 
@@ -233,6 +253,9 @@ At the core of all frontend languages or frameworks is the ability to manipulate
 - [MDN](https://developer.mozilla.org/en-US/)
 - [syntax fm](https://syntax.fm/)
 - [JS party](https://changelog.com/jsparty)
+- [A list apart - Responsive web design](https://alistapart.com/article/responsive-web-design/)
+- [Mediaqueri.es - Examples of responisive web design](https://mediaqueri.es/)
+- [a11y - accessibility](https://www.a11yproject.com/)
 - https://soundcloud.com/thenewstackmakers/
 - https://twitter.com/mouneer/status/1342559926611271681
 - [The changelog](https://changelog.com/podcast)
