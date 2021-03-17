@@ -286,6 +286,7 @@ The dominant frameworks at the moment would have to be React, VueJS and Angular.
 <details>
 <summary>Notes</summary>
 Splitting files is great for developers maintaining a project, but leads to multiple requests on the user end, slowing down the time to load a page
+</details>
 
 ### Common challenges
 
