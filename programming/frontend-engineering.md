@@ -12,25 +12,23 @@
   - Understanding users + understanding the business
   - Types of FE?
 
-- Typical role / skills
+- Overview of role + skills
 
   - Collaboration + communication (the secret sauce)
   - Application architecture
-    - Managing application state
     - Async communication / events
     - Data fetching
+    - Managing application state
     - SPAs
-      - Application root node
-      - Server side hydration
   - Responsive web design
 
 - Key tools and technologies
 
   - HTML + CSS + JS
-  - Frameworks
-  - Build tools
+  - Frameworks and libraries
+  - Build tools / Bundlers / Task Runners
 
-- Challenges
+- Common challenges
 
   - Performance
   - Framework / language churn
@@ -122,7 +120,7 @@ While these tasks do not directly impact the user, they can help ensure the deve
 
 </details>
 
-## Typical role / skills
+## Overview of role + skills
 
 ### Collaboration + communication (the secret sauce)
 
@@ -169,9 +167,9 @@ It's also _safer_ to now assume the presence of javascript, this was not always 
 
 ### Application architecture
 
-- Managing application state
 - Data fetching
 - Asynchronous (async) communication / events
+- Managing application state
 
 <details>
 <summary>Notes</summary>
@@ -182,16 +180,6 @@ The architecture of an application can have drastic effects on how maintainable 
 There are lots of areas related to frontend architecture, but managing application state, fetching data and handling asynchronous effects are all key aspects a frontend engineer at any stage needs to consider when building a web page or application.
 
 There are a myriad of approaches to all of the above, with varying pros and cons, so its good to have a deep understanding of these key concepts.
-
-</details>
-
-#### Managing application state
-
-<details>
-<summary>Notes</summary>
-Managing application state for complex frontends has its own set of challenges, typically the state of a frontend refers to the configuration of UI elements currently visible on the screen, any data that has been loaded into memory and as well as actions to support the flow from one state to another.
-
-There are many approaches to managing application state, often new approaches will result in a framework or library providing common patterns, for example the flux pattern as implemented by redux or vuex, which borrows ideas from functional programming, relying on a separations between actions and functions that mutate or change data.
 
 </details>
 
@@ -226,15 +214,37 @@ The types of events that can occur depend on the device and the content availabl
 
 </details>
 
-#### SPAs
+#### Managing application state
 
 <details>
 <summary>Notes</summary>
+Managing application state for complex frontends has its own set of challenges, typically the state of a frontend refers to the configuration of UI elements currently visible on the screen, any data that has been loaded into memory and as well as actions to support the flow from one state to another.
+
+There are many approaches to managing application state, often new approaches will result in a framework or library providing common patterns, for example the flux pattern as implemented by redux or vuex, which borrows ideas from functional programming, relying on a separations between actions and functions that mutate or change data.
+
+</details>
+
+#### SPAs
+
+- The application loads at once, with dynamic updates made to segments of the page as the user interacts with it
+- Provides a more seamless interaction for the users and can appear to be faster than multi page applications
+- Common examples: google maps, facebook, trello
+- Harder to "deep link" into, or to optimize for SEO
+
+<details>
+<summary>Notes</summary>
+....
+
+There are a few common approaches to SPAs
+
+- Application root node: rendering a single HTML element that the entire application loads into
+- Server side hydration:
+- Finally another approach can be to make use of specific target HTML elements where we load smaller applications into, similar to the root node approach but can be useful in situations where a mixture of server and client side rendered content makes sense
 </details>
 
 ## Key tools and technologies
 
-### HTML + CSS + JS
+### HTML + CSS + Javascript
 
 > Image of the triforce with the 3 elements connected
 
@@ -242,11 +252,15 @@ The types of events that can occur depend on the device and the content availabl
 <summary>Notes</summary>
 No matter which specific framework, or tool frontend engineers choose, at the heart of it will be HTML, CSS and javascript.
 
-HTML allows us to describe the structure of a
+HTML is the backbone of any webpage, providing a succinct and portable way to describe the structure of a webpage and mark the content for a web browser to display.
+
+CSS provides a powerful way to specifiy how documents are presented, this can include the fonts used, the colors and visual layout of all the elements in the document. It can also be used for more complex presentation logic like animations.
+
+Javascript is the final piece of the puzzle, adding interactivity to web pages, it provides the means to manipulate the HTML document or CSS styling, react to user interactions, initiate actions or requests to fetch additional data.
 
 </details>
 
-### Frameworks
+### Frameworks and libraries
 
 - Abstracts away some of the common boilerplate and gives a clear structure to the application
 - Often great for teams and collaboration
@@ -258,11 +272,11 @@ There are many approaches to structuring and building frontend websites and appl
 
 At the core, we are still manipulating HTML, CSS and javascript but the approaches and tradeoffs can differ dramatically.
 
-The dominant frameworks at the moment would have to be React, VueJS and Angular, a few years ago jQuery, Backbone, KnockoutJS and Mootools were also popular, so its not uncommon to come across older products built in these frameworks.
+The dominant frameworks at the moment would have to be React, VueJS and Angular. These frameworks have been popularized for building single page applications that perform and scale well. Not long ago jQuery, Backbone, KnockoutJS and Mootools were also popular frameworks, so its not uncommon to come across older products built in these frameworks.
 
 </details>
 
-### Build tools
+### Build tools / Bundlers / Task Runners
 
 - Concatentate + minify
 - Transpiling + polyfilling
@@ -272,9 +286,9 @@ The dominant frameworks at the moment would have to be React, VueJS and Angular,
 <summary>Notes</summary>
 Splitting files is great for developers maintaining a project, but leads to multiple requests on the user end, slowing down the time to load a page
 
-### Challenges
+### Common challenges
 
-- Performance challenges
+- Performance
 - Framework / language churn
 - Reliability and safety
 
@@ -283,7 +297,6 @@ Splitting files is great for developers maintaining a project, but leads to mult
 - PWAs
 - JAMStack + SSG
 - Compile to JS tools + Webassembly
-- Serverless
 
 ## Useful resources
 
@@ -293,6 +306,7 @@ Splitting files is great for developers maintaining a project, but leads to mult
 - [Mediaqueri.es - Examples of responsive web design](https://mediaqueri.es/)
 - [TodoMVC - Todolist implementation in multiple frameworks](https://todomvc.com/)
 - [PWAs introduction](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction)
+- [SurviveJS - comparison of build tools](https://survivejs.com/webpack/appendices/comparison/)
 
 ### Exercise
 
