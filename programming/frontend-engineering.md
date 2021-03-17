@@ -262,7 +262,8 @@ Javascript is the final piece of the puzzle, adding interactivity to web pages, 
 
 ### Frameworks and libraries
 
-- Abstracts away some of the common boilerplate and gives a clear structure to the application
+- Provide a clear and consistent structure to the application
+- Help to abstract away some of the common boilerplate for web applications
 - Often great for teams and collaboration
 - Popular frameworks: React, VueJS and Angular
 
