@@ -15,14 +15,14 @@
     - Managing application state
     - Async communication / events
     - Data fetching
+    - SPAs
+      - Application root node
+      - Server side hydration
   - Responsive web design
-- Tools and technologies
+- Key tools and technologies
   - The triforce: HTML + CSS + JS
-  - Languages, frameworks and runtimes
+  - Frameworks
   - Build tools
-  - SPAs
-    - Application root node
-    - Server side hydration
 - Challenges
   - Performance
   - Accessibility
@@ -100,13 +100,13 @@ Often these engineers will make use of the common, or shared components that hav
 
 </details>
 
-#### DX - Developer experience
+#### Frontend Architect
 
 > Image of a webpack + eslint + prettier + nodejs
 
 <details>
 <summary>Notes</summary>
-While not a strictly frontend role, there is often a need in any medium to large team to have frontend engineers working on tooling and infrastructre to help other engineers efficiently and effectively build features or components.
+While not a strictly separate role, there is often a need in any medium to large team to have frontend engineers focused on tooling and infrastructure to help other engineers efficiently and effectively build features or components.
 
 This can often involve a wide range of tasks such as implementing linters to ensure the codebase largely adheres to common standards and automate some of this process, it can also involve building out templates or starters to easily allow new applications to be developed, polyfilling features that might not be supported in all browsers and it can also include configuring build systems to bundle, minify and split all the code to reduce the size of code that is shipped to the user.
 
@@ -122,9 +122,46 @@ While these tasks do not directly impact the user, they can help ensure the deve
 - Most Frontend roles will require some collaboration with UX / designers + backend engineers
 - The ability to understand requirements and effectifvely articulate constraints will always help avoid misunderstandings
 
+<details>
+<summary>Notes</summary>
+- Overarching goals
+  - Ensures that users are able to complete goals with a product
+  - Ensures that the product adheres to the companys vision, brand and design philosophies
+- In a typical cross functional team (design + FE + BE)
+  - Designers will develop prototypes for a user flow, detailing a process / service / product that has been designed based on the needs of a user
+  - BE implement the business logic to execute the tasks (interacting with a databse, sending email notifications, retrieving the latest readings from the Hubble telescope)
+  - FE are there to glue these things togethor on the screen, ensuring the end result is consistent, performs well and is robust enough to withstanding changing conditions (internet disconnects, server crashes and stops responding)
+- To achieve these goals, FEs require knowledge of:
+  - The goals of the user, what should this interface enable a user to achieve?
+  - ~~Boundaries of their chosen tools, current architecture (if there is one), or the design system~~
+  - Boundaries of the BE services and processes, what are the edge cases? How much data do we get? How often is the data refreshed
+  - The existing application architecture (if there is one)
+- This requires lots of communication and collaboration with other disciplines to ensure the end result works as expected, or the correct compromises can be made based on any constraints
+</details>
+
+### Accessibiliy + Responsive web design
+
+- Increasingly applications and pages need to be accessible and performant on multiple devices with different capabilities
+- Use of media queries allows targeting specific device capabilities
+- Not everyone is on a modern phone with a 4G connection
+- Web applications need to be accessible for all types of users
+
+<details>
+<summary>Notes</summary>
+
+In the past web pages were designed to be used on desktop or laptop computers, typically with a fairly generous screen size and access to a mouse and keyboard. With the explosion of mobile phones, tablets and wearables, websites and web applications need to function for a wide range of types of users. Additionally, there are better tools availble for users with different abilities particularly users with poor eyesight, or those that might struggle with more common input devices.
+
+With this increase in the use of multiple devices, with different screen sizes, browsers orientations and capabilities, it has become ever more challenging to design and develop web applications and pages that are performant, functional and look good across all devices.
+
+Progress has also been made in cross-browser compatability, with a lot of modern web browsers sharing the same rendering engines, while not always the case, for the most part this has made it easier to ensure developers have the confidence their content looks the same (or close enough) for different users.
+
+It's also _safer_ to now assume the presence of javascript, this was not always the case previously and required lots of workarounds to ensure a webpage still functions, while diminshed now, this can still be a major limitation in some industries particuarly government and financial institutions.
+
+</details>
+
 ### Application architecture
 
-- Application state
+- Managing application state
 - Data fetching
 - Asynchronous (async) communication / events
 
@@ -140,7 +177,7 @@ There are a myriad of approaches to all of the above, with varying pros and cons
 
 </details>
 
-#### Application state
+#### Managing application state
 
 <details>
 <summary>Notes</summary>
@@ -177,62 +214,41 @@ This provides a layer of abstraction that provides flexibility and additional co
 <summary>Notes</summary>
 </details>
 
-### Accessibiliy + Responsive web design
-
-- Increasingly applications and pages need to be accessible and performant on multiple devices with different capabilities
-- Use of media queries allows targeting specific device capabilities
-- Not everyone is on a modern phone with a 4G connection
-- Web applications need to be accessible for all types of users
-
-<details>
-<summary>Notes</summary>
-
-In the past web pages were designed to be used on desktop or laptop computers, typically with a fairly generous screen size and access to a mouse and keyboard. With the explosion of mobile phones, tablets and wearables, websites and web applications need to function for a wide range of types of users. Additionally, there are better tools availble for users with different abilities particularly users with poor eyesight, or those that might struggle with more common input devices.
-
-With this increase in the use of multiple devices, with different screen sizes, browsers orientations and capabilities, it has become ever more challenging to design and develop web applications and pages that are performant, functional and look good across all devices.
-
-Progress has also been made in cross-browser compatability, with a lot of modern web browsers sharing the same rendering engines, while not always the case, for the most part this has made it easier to ensure developers have the confidence their content looks the same (or close enough) for different users.
-
-It's also _safer_ to now assume the presence of javascript, this was not always the case previously and required lots of workarounds to ensure a webpage still functions, while diminshed now, this can still be a major limitation in some industries particuarly government and financial institutions.
-
-</details>
-
-### Collaboration + communication (The secret sauce)
-
-- Overarching goals
-  - Ensures that users are able to complete goals with a product
-  - Ensures that the product adheres to the companys vision, brand and design philosophies
-- In a typical cross functional team (design + FE + BE)
-  - Designers will develop prototypes for a user flow, detailing a process / service / product that has been designed based on the needs of a user
-  - BE implement the business logic to execute the tasks (interacting with a databse, sending email notifications, retrieving the latest readings from the Hubble telescope)
-  - FE are there to glue these things togethor on the screen, ensuring the end result is consistent, performs well and is robust enough to withstanding changing conditions (internet disconnects, server crashes and stops responding)
-- To achieve these goals, FEs require knowledge of:
-  - The goals of the user, what should this interface enable a user to achieve?
-  - ~~Boundaries of their chosen tools, current architecture (if there is one), or the design system~~
-  - Boundaries of the BE services and processes, what are the edge cases? How much data do we get? How often is the data refreshed
-  - The existing application architecture (if there is one)
-- This requires lots of communication and collaboration with other disciplines to ensure the end result works as expected, or the correct compromises can be made based on any constraints
-
 #### SPAs
 
 <details>
 <summary>Notes</summary>
 </details>
 
-## Tools and technologies
+## Key tools and technologies
 
 ### The triforce: HTML + CSS + JS
 
 <details>
 <summary>Notes</summary>
-At the core of all frontend languages or frameworks is the ability to manipulate, HTML CSS and javascript, these core technologies are how we describe content to a web browser and allow users to accomplish tasks.
+No matter which specific framework, or tool frontend engineers choose, at the heart of it will be HTML, CSS and javascript.
+
+HTML allows us to describe the structure of a
+
 </details>
 
-### Languages, frameworks and runtimes
+### Frameworks
+
+- Abstracts away some of the common boilerplate and gives a clear structure to the application
+- Often great for teams and collaboration
+- Popular frameworks React, VueJS and Angular
+
+<details>
+<summary>Notes</summary>
+There are many approaches to structuring and building frontend websites and applications, which has led to an explosion of frameworks and languages to abstract away some of the boilerplate and give frontend engineers more robust tools to build applications.
+
+At the core, we are still manipulating HTML, CSS and javascript but the approaches and tradeoffs can differ dramatically.
+
+The dominant frameworks at the moment would have to be React, VueJS and Angular, a few years ago jQuery, Backbone and mootools were also popular, so its not uncommon to come across older products built in these frameworks.
+
+</details>
 
 ### Build tools
-
-### Monitoring??
 
 ### Challenges
 
