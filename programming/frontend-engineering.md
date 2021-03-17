@@ -5,11 +5,15 @@
 ## Overview
 
 - About me 👋
+
 - What is Frontend Engineering
+
   - History + Why
   - Understanding users + understanding the business
   - Types of FE?
+
 - Typical role / skills
+
   - Collaboration + communication (the secret sauce)
   - Application architecture
     - Managing application state
@@ -19,17 +23,21 @@
       - Application root node
       - Server side hydration
   - Responsive web design
+
 - Key tools and technologies
-  - The triforce: HTML + CSS + JS
+
+  - HTML + CSS + JS
   - Frameworks
   - Build tools
+
 - Challenges
+
   - Performance
-  - Accessibility
-    - Framework / language churn
-    - Server side rendering
+  - Framework / language churn
   - Reliability and safety
     - JS time / date / number rounding pain
+
+- Emerging trends
 
 ## Introduction
 
@@ -62,7 +70,7 @@
 
 - UI focused
 - Application focused
-- DX
+- Frontend architect
 
 <details>
 <summary>Notes</summary>
@@ -70,7 +78,7 @@ In a typically medium to large development team, it is likely there will be fron
 
 Depending on the company / team size / stage of the product some roles will focus more one area over the others, but generally these are all the types of roles frontend engineers will typically be expected to be able to work across.
 
-Across any of these types of roles, a good understanding HTML, CSS and JS is vital to be able to work effectively.
+Across any of these types of roles, a solid understanding of HTML, CSS and Javascript is vital to be able to work effectively.
 
 </details>
 
@@ -120,7 +128,7 @@ While these tasks do not directly impact the user, they can help ensure the deve
 
 - Often overlooked as a key skill
 - Most Frontend roles will require some collaboration with UX / designers + backend engineers
-- The ability to understand requirements and effectifvely articulate constraints will always help avoid misunderstandings
+- The ability to understand requirements and effectively articulate constraints will always help avoid misunderstandings
 
 <details>
 <summary>Notes</summary>
@@ -141,7 +149,7 @@ While these tasks do not directly impact the user, they can help ensure the deve
 
 ### Accessibiliy + Responsive web design
 
-- Increasingly applications and pages need to be accessible and performant on multiple devices with different capabilities
+- Increasingly, applications and pages need to be accessible and performant on multiple devices with different capabilities
 - Use of media queries allows targeting specific device capabilities
 - Not everyone is on a modern phone with a 4G connection
 - Web applications need to be accessible for all types of users
@@ -194,24 +202,28 @@ There are many approaches to managing application state, often new approaches wi
 
 <details>
 <summary>Notes</summary>
-Fetching data from data sources is a key aspect of frontend engineering. Typically for performance and security, business logic, user data and any sensitive information will be contained in backends with specific APIs to expose the exact data that can be displayed, or to initiate actions on the backend.
+Fetching data from data sources is a key aspect of frontend engineering. Typically for performance and security, business logic, user data and any sensitive information will be contained in backends with specific APIs to expose the exact data that can be displayed, or to initiate actions on the backend. This can be a mixture of internal or also external 3rd party backends.
 
-AJAX uses a combination of technologies to provide a consistent way to update user interfaces without requiring the full page to be reloaded. Early approaches made use directly of the XMLHttpRequest API with XML providing a description of the query response. Modern approaches make use of the Fetch API and the JSON data format.
+AJAX uses a combination of technologies to provide a consistent way to update user interfaces without requiring the full page to be reloaded. Early approaches made use directly of the XMLHttpRequest API which was useful for transferring data between a server without needing a full bwe page refresh, along with the XML format providing a description of any request data and query response, all sequenced by javascript. Modern approaches make use of the Fetch API and the JSON data format to achieve the same goals.
 
 GraphQL is a newer approach to data fetching, while traditional APIs return data in a specific format, often requiring some transformation on the frontend to make it useful, GraphQL use a specific query language allowing clients to query for the exact data they require, in the format they require it provided the backend has a way to _resolve_ where the data should come from.
 
-This provides a layer of abstraction that provides flexibility and additional control to frontend engineers, and helps to allow for changes to the backend and frontend to be made independently of each other.
+GraphQL provides a layer of abstraction that provides flexibility and additional control to frontend engineers, and helps to allow for changes to the backend and frontend to be made independently of each other.
 
 </details>
 
-#### Asynchronous (async) communication / events
+#### Asynchronous (async) events
 
-- User interaction (clicks, mouse over, touch events, scrolling)
-- Passive events (screen orientation change, media start playing, network disconnects)
-- Data loading
+- User interactions: clicks, mouse over, touch events, scrolling
+- Device events: screen orientation change, switching to full screen, network disconnects
+- Content related events: all images have loaded, media starts playing, network disconnects
 
 <details>
 <summary>Notes</summary>
+It's impossible to predict the exact sequence of interactions a user will have with a web applications, therefore its important that web applications can respond to events that could occur at any point in time.
+
+The types of events that can occur depend on the device and the content available on the page, but could be roughly grouped into user interactions and passive events.
+
 </details>
 
 #### SPAs
@@ -222,7 +234,9 @@ This provides a layer of abstraction that provides flexibility and additional co
 
 ## Key tools and technologies
 
-### The triforce: HTML + CSS + JS
+### HTML + CSS + JS
+
+> Image of the triforce with the 3 elements connected
 
 <details>
 <summary>Notes</summary>
@@ -236,42 +250,65 @@ HTML allows us to describe the structure of a
 
 - Abstracts away some of the common boilerplate and gives a clear structure to the application
 - Often great for teams and collaboration
-- Popular frameworks React, VueJS and Angular
+- Popular frameworks: React, VueJS and Angular
 
 <details>
 <summary>Notes</summary>
-There are many approaches to structuring and building frontend websites and applications, which has led to an explosion of frameworks and languages to abstract away some of the boilerplate and give frontend engineers more robust tools to build applications.
+There are many approaches to structuring and building frontend websites and applications, which has led to an explosion of frameworks and languages to abstract away some of the boilerplate and give frontend engineers more robust tools to build applications that perform well at scale and are relatively easy to maintain.
 
 At the core, we are still manipulating HTML, CSS and javascript but the approaches and tradeoffs can differ dramatically.
 
-The dominant frameworks at the moment would have to be React, VueJS and Angular, a few years ago jQuery, Backbone and mootools were also popular, so its not uncommon to come across older products built in these frameworks.
+The dominant frameworks at the moment would have to be React, VueJS and Angular, a few years ago jQuery, Backbone, KnockoutJS and Mootools were also popular, so its not uncommon to come across older products built in these frameworks.
 
 </details>
 
 ### Build tools
 
+- Concatentate + minify
+- Transpiling + polyfilling
+- Linting and static analysis
+
+<details>
+<summary>Notes</summary>
+Splitting files is great for developers maintaining a project, but leads to multiple requests on the user end, slowing down the time to load a page
+
 ### Challenges
 
 - Performance challenges
 - Framework / language churn
-- Server side rendering
 - Reliability and safety
 
 ## Emerging trends
 
 - PWAs
-- Compile to JS tools
-- Functional JS
+- JAMStack + SSG
+- Compile to JS tools + Webassembly
 - Serverless
 
 ## Useful resources
 
+### Reading materials
+
+- [A list apart - Responsive web design](https://alistapart.com/article/responsive-web-design/)
+- [Mediaqueri.es - Examples of responsive web design](https://mediaqueri.es/)
+- [TodoMVC - Todolist implementation in multiple frameworks](https://todomvc.com/)
+- [PWAs introduction](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction)
+
+### Exercise
+
+- Work through this quick list of a11y tips, does the site meet all these requirements?
+  - Full checklist available[a11yproject checklist](https://www.a11yproject.com/checklist)
+- Pick a website you like, or choose from this list
+  - If you have another device available spend some time interacting with the website or application through that (phone, tablet, different computer)
+  - For firefox users - use [responsive design mode](https://www.youtube.com/watch?v=qGI27bpCZK4) to test
+  - For chrome users - use the [device mode simulator](https://www.youtube.com/watch?v=x8ofsJiELQ0)
+
+### Additional resources
+
 - [MDN](https://developer.mozilla.org/en-US/)
+- [Firefox responsive design mode](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
+- [Chrome device simulator](https://developers.google.com/web/tools/chrome-devtools/device-mode)
 - [syntax fm](https://syntax.fm/)
 - [JS party](https://changelog.com/jsparty)
-- [A list apart - Responsive web design](https://alistapart.com/article/responsive-web-design/)
-- [Mediaqueri.es - Examples of responisive web design](https://mediaqueri.es/)
-- [a11y - accessibility](https://www.a11yproject.com/)
 - https://soundcloud.com/thenewstackmakers/
-- https://twitter.com/mouneer/status/1342559926611271681
 - [The changelog](https://changelog.com/podcast)
