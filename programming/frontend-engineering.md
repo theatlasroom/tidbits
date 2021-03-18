@@ -12,17 +12,17 @@
   - Understanding users + understanding the business
   - Types of FE?
 
-- Overview of role + skills
+- Key skills
 
   - Collaboration + communication (the secret sauce)
+  - Accessibility + Responsive web design
   - Application architecture
     - Async communication / events
     - Data fetching
     - Managing application state
     - SPAs
-  - Responsive web design
 
-- Key tools and technologies
+- Tools and technologies
 
   - HTML + CSS + JS
   - Frameworks and libraries
@@ -86,7 +86,9 @@ Across any of these types of roles, a solid understanding of HTML, CSS and Javas
 
 <details>
 <summary>Notes</summary>
-Some frontend engineer roles e are more focused on the user side, this might require tasks such as development of reuseable components like buttons, form fields and layouts that adhere to the branding and style guidelines for the company.
+This is the typical kind of frontend engineer most people think of, if theyve come across the discipline before.
+
+These frontend engineers are more focused on the user side, this might require tasks such as development of reuseable components like buttons, form fields and layouts that adhere to the branding and style guidelines for the company.
 
 Often in these kind of scenarios, the engineers will work closely with UX researchers and designers to develop components. These components provide an important framework for other engineers to quickly prototype and build new interfaces, without having to worry if the interfaces they are building are consistent with other parts of the website or application.
 
@@ -99,10 +101,12 @@ Some other key responsibilities might include ensure adhereance to web accessibi
 > Image of a UI + graphql + REST + AJAX
 
 <details>
-<summary>Notes</summary
+<summary>Notes</summary>
 Other frontend engineers focus on the application layer, this usually entails building out user interfaces, connecting to backend APIs or other data sources, performing transformations or calculations on the frontend to prepare data for display and implementing features.
 
 Often these engineers will make use of the common, or shared components that have been developed, composing them togethor on the screen to complete a specific feature, while also working closely with backend engineers to ensure the relevant API endpoints and data is available for the features to work correctly, this is closer to the kind of role I perform at gitlab.
+
+Sometimes this type of Frontend engineer might also be called a JavaScript engineer
 
 </details>
 
@@ -120,7 +124,7 @@ While these tasks do not directly impact the user, they can help ensure the deve
 
 </details>
 
-## Overview of role + skills
+## Key skills
 
 ### Collaboration + communication (the secret sauce)
 
@@ -151,13 +155,20 @@ While these tasks do not directly impact the user, they can help ensure the deve
 - Use of media queries allows targeting specific device capabilities
 - Not everyone is on a modern phone with a 4G connection
 - Web applications need to be accessible for all types of users
+- Often harder to retrofit into a project
 
 <details>
 <summary>Notes</summary>
 
 In the past web pages were designed to be used on desktop or laptop computers, typically with a fairly generous screen size and access to a mouse and keyboard. With the explosion of mobile phones, tablets and wearables, websites and web applications need to function for a wide range of types of users. Additionally, there are better tools availble for users with different abilities particularly users with poor eyesight, or those that might struggle with more common input devices.
 
-With this increase in the use of multiple devices, with different screen sizes, browsers orientations and capabilities, it has become ever more challenging to design and develop web applications and pages that are performant, functional and look good across all devices.
+Accessibility is often mis-represented as something that only matters for users with different physical abilities, but the principles of web accessibility help ensure access for all types of users, such as:
+
+- users with a temporary disability (broken arm)
+- users with dyslexia or other reading disorders
+- users who may not speak the langauge the site was designed in
+
+With the increase in the use of multiple devices, with different screen sizes, browsers orientations and capabilities, it has become ever more challenging to design and develop web applications and pages that are performant, functional and look good across all devices.
 
 Progress has also been made in cross-browser compatability, with a lot of modern web browsers sharing the same rendering engines, while not always the case, for the most part this has made it easier to ensure developers have the confidence their content looks the same (or close enough) for different users.
 
@@ -192,7 +203,7 @@ There are a myriad of approaches to all of the above, with varying pros and cons
 <summary>Notes</summary>
 Fetching data from data sources is a key aspect of frontend engineering. Typically for performance and security, business logic, user data and any sensitive information will be contained in backends with specific APIs to expose the exact data that can be displayed, or to initiate actions on the backend. This can be a mixture of internal or also external 3rd party backends.
 
-AJAX uses a combination of technologies to provide a consistent way to update user interfaces without requiring the full page to be reloaded. Early approaches made use directly of the XMLHttpRequest API which was useful for transferring data between a server without needing a full bwe page refresh, along with the XML format providing a description of any request data and query response, all sequenced by javascript. Modern approaches make use of the Fetch API and the JSON data format to achieve the same goals.
+AJAX uses a combination of technologies to provide a consistent way to update user interfaces without requiring the full page to be reloaded. Early approaches made use directly of the XMLHttpRequest API which was useful for transferring data between a server without needing a full page refresh, along with the XML format providing a description of any request data and query response, all sequenced by javascript. Modern approaches make use of the Fetch API and the JSON data format to achieve the same goals.
 
 GraphQL is a newer approach to data fetching, while traditional APIs return data in a specific format, often requiring some transformation on the frontend to make it useful, GraphQL use a specific query language allowing clients to query for the exact data they require, in the format they require it provided the backend has a way to _resolve_ where the data should come from.
 
@@ -210,7 +221,9 @@ GraphQL provides a layer of abstraction that provides flexibility and additional
 <summary>Notes</summary>
 It's impossible to predict the exact sequence of interactions a user will have with a web applications, therefore its important that web applications can respond to events that could occur at any point in time.
 
-The types of events that can occur depend on the device and the content available on the page, but could be roughly grouped into user interactions and passive events.
+The types of events that can occur depend on the device and the content available on the page, but could be roughly grouped into user interactions, device events and content related events.
+
+Correctly handling and or triggering events is a vital part of any web application, events provide the opportunity for users to signal intent to perform a specific action, or an opportunity for engineers to present some a change of data or state to the user in a meaningful way.
 
 </details>
 
@@ -242,7 +255,7 @@ There are a few common approaches to SPAs
 - Finally another approach can be to make use of specific target HTML elements where we load smaller applications into, similar to the root node approach but can be useful in situations where a mixture of server and client side rendered content makes sense
 </details>
 
-## Key tools and technologies
+## Tools and technologies
 
 ### HTML + CSS + Javascript
 
@@ -309,6 +322,7 @@ Splitting a frontend project across multiple files, organized in a logical struc
 - [A list apart - Responsive web design](https://alistapart.com/article/responsive-web-design/)
 - [Mediaqueri.es - Examples of responsive web design](https://mediaqueri.es/)
 - [TodoMVC - Todolist implementation in multiple frameworks](https://todomvc.com/)
+- [Spotify engineering - building spotifys new web player](https://engineering.atspotify.com/2019/03/25/building-spotifys-new-web-player/)
 - [PWAs introduction](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction)
 - [SurviveJS - comparison of build tools](https://survivejs.com/webpack/appendices/comparison/)
 
