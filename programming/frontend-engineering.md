@@ -282,10 +282,12 @@ The dominant frameworks at the moment would have to be React, VueJS and Angular.
 - Concatentate + minify
 - Transpiling + polyfilling
 - Linting and static analysis
+- Webpack, rollup and parceljs are popular options
 
 <details>
 <summary>Notes</summary>
-Splitting files is great for developers maintaining a project, but leads to multiple requests on the user end, slowing down the time to load a page
+Splitting a frontend project across multiple files, organized in a logical structure is great for developers maintaining a project, it allows developers to focus on smaller segments of the code base, helps with separating work that needs to be done and  but leads to multiple requests on the user end, slowing down the time for the page to load.
+
 </details>
 
 ### Common challenges
