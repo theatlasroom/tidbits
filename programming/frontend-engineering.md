@@ -335,6 +335,21 @@ Splitting a frontend project across multiple files, organized in a logical struc
   - For firefox users - use [responsive design mode](https://www.youtube.com/watch?v=qGI27bpCZK4) to test
   - For chrome users - use the [device mode simulator](https://www.youtube.com/watch?v=x8ofsJiELQ0)
 
+### Homework
+
+1. Read through the information and [accessibility checklist](https://www.a11yproject.com/checklist) from a11yproject, to get a general idea of some of the areas websites might fail to be accessible
+1. Read through [Responsive web design](https://alistapart.com/article/responsive-web-design/) from, A list apart
+1. Spend some time looking through the example web pages on [Mediaqueri.es](https://mediaqueri.es/) and compare some of the tradeoffs that have been made at different sizes
+1. Think of 3 websites you regularly visit, explore how each one performs on different browsers, at different sizes and maybe even on different devices if you have another device available
+   1. Did the websites meet your expectations on different devices? (Performance, layout and functionality)
+   1. Were there any areas you think could be improved?
+1. [TodoMVC](https://todomvc.com/) compares different frontend frameworks by building the same simple TODO app
+   1. Try the [VueJS version](https://todomvc.com/examples/vue/)
+   1. Try the [React](https://todomvc.com/examples/react/#/)
+   1. Browse the source code for the [VueJS implementation](https://github.com/tastejs/todomvc/blob/gh-pages/examples/vue)
+   1. Browse the source fode for the [React implementation](https://github.com/tastejs/todomvc/blob/gh-pages/examples/react)
+   1. Compare the 2 implementations, are there any things that standout to you? Or anything you find interesting?
+
 ### Additional resources
 
 - [MDN](https://developer.mozilla.org/en-US/)
