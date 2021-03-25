@@ -134,19 +134,20 @@ While these tasks do not directly impact the user, they can help ensure the deve
 
 <details>
 <summary>Notes</summary>
-- Overarching goals
-  - Ensures that users are able to complete goals with a product
-  - Ensures that the product adheres to the companys vision, brand and design philosophies
-- In a typical cross functional team (design + FE + BE)
-  - Designers will develop prototypes for a user flow, detailing a process / service / product that has been designed based on the needs of a user
-  - BE implement the business logic to execute the tasks (interacting with a databse, sending email notifications, retrieving the latest readings from the Hubble telescope)
-  - FE are there to glue these things togethor on the screen, ensuring the end result is consistent, performs well and is robust enough to withstanding changing conditions (internet disconnects, server crashes and stops responding)
-- To achieve these goals, FEs require knowledge of:
-  - The goals of the user, what should this interface enable a user to achieve?
-  - ~~Boundaries of their chosen tools, current architecture (if there is one), or the design system~~
-  - Boundaries of the BE services and processes, what are the edge cases? How much data do we get? How often is the data refreshed
-  - The existing application architecture (if there is one)
-- This requires lots of communication and collaboration with other disciplines to ensure the end result works as expected, or the correct compromises can be made based on any constraints
+
+At a high level, the role of a frontend engineer is to:
+
+- ensure that users are able to complete goals with a product
+- ensure that the product adheres to the companys vision, brand and design philosophies
+
+Typical in a sufficiently large cross functional team, a team that crosses over design, frontend and backend development, the workflow might look something like this:
+
+- Designers will develop prototypes for a user flow, detailing a process / service / product that has been designed based on the needs of a user
+- Backend engineers implement the business logic to execute the tasks (interacting with a databse, sending email notifications, retrieving the latest readings from the Hubble telescope)
+- Frontend engineers are there to glue these things togethor on the screen, ensuring the end result is consistent, performs well and is robust enough to withstanding changing conditions (internet disconnects, server crashes and stops responding)
+
+This type of workflow requires lots of communication and collaboration with other disciplines to ensure the end result works as expected, or the correct compromises can be made during development, based on any constraints or challenges that may be encountered
+
 </details>
 
 ### Accessibiliy + Responsive web design
