@@ -31,6 +31,9 @@
 - no classes or type inheritance
   - ad hoc type relationships via interfaces
   - any type that implements all the methods of an interface, automatically implements the interface
+- Strong and statically typed
+  - Strong typing: A variables types can't change over time
+  - Static: A variables type must be defined at compile time
 
 ## Tools
 
