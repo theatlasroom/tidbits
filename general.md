@@ -72,3 +72,93 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
   - `\l` - list databases
   - `\c` -
   - `\d` -
+
+## Mentoring
+* Preparation for each meeting is key
+    * Regular plan for action items
+    * Bring a movie clip of your ideal scenario for mentoring
+    * Reflect on what went well / what to do better next time
+* Not a monogamous relationship 😂
+* Building chemistry is important for a lasting and effective relationship
+  * Establish surface level similarities, what do we have in common at a glance?
+  * Use a relationhip development plan
+* Self disclosure: Making yourself vulnerable and known to others through revealing your experiences, feelings and wants
+  * Being vulnerable can mke the relationship stronger
+  * Communicate if the information is to be shared or not
+  * Use matching and reciprocity - match levels of risk and detail
+  * Be attentive to verbal and non-verbal cues
+  * Make sure the self-disclosure is work related and / or relevant 
+* Active listening is about listening to feelings as well as facts
+  * Watch for non-verbal cues
+  * Paraphrase what you think you heard + adding in potential non-verbal cues that might be relevant, ie 'Your face lit up when...'
+  * Check in to ensure understanding, ie 'Did i hear you correctly when...'
+* Use open and close questions to help with conversation flow
+  * Use closed yes/no questions to ensure understanding and keep a conversation on track
+  * Use open questions to gain more insight and expand the dialogue
+* Being a great mentor is about asking the right questions, not knowing all the answers
+* Keep feedback as an act of kindness, make sure its constructive
+   * Ask if the protege would like feedback
+   * Is it true, is it necessary, is it kind?
+   * Ask your protege to reflect, then brainstorm solutions
+   * Leave your protege with positve feedback
+* Developing trust is vital for a good relationship
+   * "Trust is the gap between hope and evidence, and expectation and fulfillment"
+* Set SMART goals
+   *  Specific: set specific goals
+   *  Measurable: ensure you can measure the goals you have set
+   *  Actionable: you should be able to take actions towards the goal
+   *  Realistic: difficult but not impossible to achieve
+   *  Time bound: we need to understand how much we want to achieve and by when
+   *  Identify your protege's core values and align goals with them
+* EQ: emotional intelligence, awareness of our emotional responses and how they guide our behaviour
+   * Self-awareness: being able to clearly see your strengths and weaknesses, not just from your perspective but from others 
+      * Reflect on past incidents and think about, what would others say about you handled these situations, what feedback would others give you?
+   * Self-management: the ability to regulate yourself and your emotions
+      * Review your goals, and develop rewards to reinforce desired behaviours
+      * Celebrate small wins
+   * Empathy: putting yourself in someone elses shoes
+      * Mirroring: matching another persons non-verbal messages
+* Discernment: Guiding a protege to make decisions on their own 
+   * First step is to pause and avoid making big decisions in situations of extreme emotion
+   * Be indifferent to your protege's decision, be a neutral guide, not a judge
+   * Reflect on different realities, within a time limit
+* Be the person to encourage your protege to keep going, help to build their grit and resilience
+   * Reflect on past times of resilience and working through adversity
+* Overcoming obstacles requires effort from both
+   * Have a conversation about communication preferences
+      * Make it the protege's duty to schedule sessions
+   * Use varied communication methods depending on the richness of information needed
+      * Is this situation better worked out in person?
+   * Disengagement can happen if deadlines arent met, or communication is broken
+      * Be curious about why the relationship might not be working, listen and clarify expectations
+   * Make the protege responsible for tasks, set deadlines and follow up on progress
+   * Bully mentors can beget bully proteges
+   * Always consider costs / benefits of staying in the relationship, is it valuable to both parties?
+   * Ask you protege to reflect on the relationship, is it working for them? what could be better?
+
+## Transitioning to managing
+* 2 mental shifts need to be made
+  * Focus on the big picture
+  * Shift from 'me' to 'we'
+* Management is the development of people, not the creation of things
+  * How can you help your whole team perform better
+  * Focus on how your group adds value 
+* Preparation can be helpful
+  * Document your current role, what is your day to day look like in a typical week
+  * Clarify our new role, understand the tasks you will continue to do from your old role and any gaps you have for your new role
+  * Plan the transistion, schedule any training / check-ins
+  * Transfer responsibilities and relationships, over-communicate what is happening, document as much as you can
+* Delegation is a good opportunity to work effectively and also empower your team
+  * Build accountability with delegated tasks, schedule key milestones and check-ins
+  * Take time to train people well
+* Use DIME to work through difficult situations
+  * Describe: say what you see and its impact
+  * Inquire: find out what is causing it
+  * Manage: help the employee change to a more appropriate behaviour
+  * Encourage: provide motivation for the change
+* Assume good intent in all situations
+* Show empathy, make sure to always walk in your employees shoes
+* Think long term, help build employees self-efficacy, ensure they know they can learn and take on new challenges
+* Be ruthless about taking and organising notes, note down everything
+
+## Leadership

@@ -2,6 +2,8 @@
 ## The standard model
 
 ## Quantum physics principles
+* Wave function: a mathematical description of everything we know about a Quantum system, labelled with psi. Closely linked to the systems probability distribution
+* Quantum system: something being studied using QM ie a particular electron moving, or a bunch of particles
 ## Superposition
 ## Entanglement
 ## Quantum fields

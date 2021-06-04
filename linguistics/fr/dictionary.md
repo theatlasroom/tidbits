@@ -5,6 +5,7 @@
 | Mot                   | Définition |
 | --------------------- | ---------- |
 | _animal de compagnie_ | pet        |
+| _amusants_            | funny      |
 
 ## B
 
@@ -17,12 +18,13 @@
 
 ## C
 
-| Mot        | Définition |
-| ---------- | ---------- |
-| _le café_  | coffee     |
-| _comment_  | how / what |
-| _le chat_  | cat        |
-| _le chien_ | dog        |
+| Mot         | Définition     |
+| ----------- | -------------- |
+| _le chat_   | cat            |
+| _le chien_  | dog            |
+| _le café_   | coffee         |
+| _comment_   | how / what     |
+| _contentes_ | happy, content |
 
 ## E
 

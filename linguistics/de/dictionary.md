@@ -2,11 +2,13 @@
 
 ## A
 
-| Wort        | Bedeutung |
-| ----------- | --------- |
-| _anders_    | different |
-| _aufgeregt_ | excited   |
-| _aufregend_ | exciting  |
+| Wort          | Bedeutung                  |
+| ------------- | -------------------------- |
+| _allgemein_   | general, common, generally |
+| _anders_      | different                  |
+| _aufgeregt_   | excited                    |
+| _aufregend_   | exciting                   |
+| _automatisch_ | Automatic                  |
 
 ## B
 
@@ -31,10 +33,12 @@
 
 ## E
 
-| Wort      | Bedeutung    |
-| --------- | ------------ |
-| _ecken_   | corners      |
-| _einfach_ | simple, easy |
+| Wort      | Bedeutung                            |
+| --------- | ------------------------------------ |
+| _echt_    | Real / really                        |
+| _ecken_   | corners                              |
+| _egal_    | constantly, identical, insignificant |
+| _einfach_ | simple, easy                         |
 
 ## F
 
@@ -62,13 +66,14 @@
 
 ## K
 
-| Wort      | Bedeutung |
-| --------- | --------- |
-| _kalt_    | cold      |
-| _kasse_   | checkout  |
-| _kellner_ | waiter    |
-| _kurz_    | short     |
-| _kühl_    | cool      |
+| Wort      | Bedeutung                       |
+| --------- | ------------------------------- |
+| _kalt_    | cold                            |
+| _kasse_   | checkout                        |
+| _kellner_ | waiter                          |
+| _komisch_ | strange, funny in a strange way |
+| _kurz_    | short                           |
+| _kühl_    | cool                            |
 
 ## L
 
@@ -85,24 +90,32 @@
 | -------- | --------- |
 | _mehren_ | more      |
 
+## P
+
+| Wort        | Bedeutung               |
+| ----------- | ----------------------- |
+| _plötzlich_ | suddenly, sudden, short |
+
 ## R
 
 |_ruhig_| calm|
 
 ## S
 
-| Wort          | Bedeutung  |
-| ------------- | ---------- |
-| _satt_        | full       |
-| _sauber_      | clean      |
-| _schlecht_    | bad        |
-| _schön_       | beautiful  |
-| _schwierig_   | difficult  |
-| _solange_     | as long as |
-| _speisekarte_ | menu       |
-| _stressig_    | stressful  |
-| _strahlend_   | light      |
-| _süß_         | cute       |
+| Wort          | Bedeutung              |
+| ------------- | ---------------------- |
+| _satt_        | full                   |
+| _sauber_      | clean                  |
+| _schlecht_    | bad                    |
+| _schön_       | beautiful              |
+| _schwierig_   | difficult              |
+| _seltsam_     | strange, odd, peculiar |
+| _sinnvoll_    | meaningful, reasonable |
+| _solange_     | as long as             |
+| _speisekarte_ | menu                   |
+| _stressig_    | stressful              |
+| _strahlend_   | light                  |
+| _süß_         | cute                   |
 
 ## T
 
@@ -125,11 +138,12 @@
 
 ## V
 
-| Wort            | Bedeutung  |
-| --------------- | ---------- |
-| _vor_           | before     |
-| _vegetarisches_ | vegetarian |
-| _verheiratet_   | married    |
+| Wort             | Bedeutung   |
+| ---------------- | ----------- |
+| _vor_            | before      |
+| _vegetarisches_  | vegetarian  |
+| _verantwortlich_ | responsible |
+| _verheiratet_    | married     |
 
 ## W
 
@@ -139,9 +153,11 @@
 | _wandert_        | wanders          |
 | _weinachtsmarkt_ | christmas market |
 | _weit_           | far              |
+| _wert_           | worth            |
 
 ## Z
 
-| Wort       | Bedeutung |
-| ---------- | --------- |
-| _zusammen_ | togethor  |
+| Wort        | Bedeutung    |
+| ----------- | ------------ |
+| _zusammen_  | togethor     |
+| _zuständig_ | responsisble |

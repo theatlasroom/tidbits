@@ -32,6 +32,7 @@ From command mode
 * `$` - end of the line
 * **x** - remove char
 * **y** - yank (copy) text, its not copied to the clipboard though
+* **"*y** - yank to clipboard
 * **yy** - copy the line
 * **p** - paste
 * **d** - cut/delete

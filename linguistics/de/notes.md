@@ -388,6 +388,8 @@ Note: There are many more...
 | Ich Verstehe nicht, Ich spreche kein Deutsch                       | I dont understand, I dont speak german                                      |
 | Wie gewöhnlich                                                     | As usual                                                                    |
 | Ganz genau                                                         | I completely agree / exactly                                                |
+| auf jeden Fall | definitely |
+| (Nett/Freut mich), Sie kennen zu lernen | Nict to meet you |
 
 ## Conjunctions
 
@@ -588,6 +590,8 @@ These are prepositions that take both the Akkusativ and the Dativ
   - Geht ihr zum Bäcker: Are you guys going to the bakery
 
 ## Links
-
+- [Unofficial duolingo - deutsch](https://duome.eu/tips/en/de)
 - [German conjunctions](https://www.clozemaster.com/blog/german-conjunctions/)
 - [Orthography](https://en.wikipedia.org/wiki/German_orthography)
+- [The awful german language](https://faculty.georgetown.edu/jod/texts/twain.german.html)
+- [Wienerisch](https://www.janko.at/Wienerisch/Artikel/eignungstest.htm)
