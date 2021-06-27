@@ -11,6 +11,7 @@
 - [Rewritten in rust](https://zaiste.net/posts/shell-commands-rust/)
 - [Aiming for correctness](https://fasterthanli.me/articles/aiming-for-correctness-with-types)
 - [Working with strings](https://fasterthanli.me/articles/aiming-for-correctness-with-types)
+- [Build your own X with rust](https://github.com/osynavets/build-your-own-x-in-rust)
 
 ## Quick overview
 

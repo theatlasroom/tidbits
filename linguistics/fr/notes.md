@@ -2,30 +2,34 @@
 
 ## Basics
 
-| Français                | English                |
-| ----------------------- | ---------------------- |
-| Salut, Bonjour, Bonsoir | Hello, Good evening    |
-| Enchanté                | Nice to meet you       |
-| Au revoir, À bientôt    | Goodbye, See you soon  |
-| Merci beaucoup          | Thanks a lot           |
-| De rien                 | You are welcome        |
-| Excusez-moi, Pardon     | Excuse me              |
-| Je suis désolé          | I'm sorry              |
-| Comment vas-tu          | How are you            |
-| Je vais bien            | I'm fine               |
-| J'ai sommeil            | I'm sleepy             |
-| Je suis fatigué         | I'm tired              |
-| Je pète la forme        | I'm great, Ça va super |
-| Je me sens mal          | I'm feeling bad        |
-| Ça va pas mal           | I'm not bad / im ok    |
-| Et vous / Et toi        | And you?               |
-| C'est vrai, Bien sûr    | Really?, Of course     |
-| S'il vout plâit         | please                 |
-| Je ne comprends pas     | I dont understand      |
-| pour ...                | for ...                |
-| Je ne comprends pas     | I dont understand      |
-| un peu | a little |
-| Je parle un peu (de) francais | I speak a little french | 
+| Français                      | English                 |
+| ----------------------------- | ----------------------- |
+| Salut, Bonjour, Bonsoir       | Hello, Good evening     |
+| Enchanté                      | Nice to meet you        |
+| Au revoir, À bientôt          | Goodbye, See you soon   |
+| Merci beaucoup                | Thanks a lot            |
+| De rien                       | You are welcome         |
+| Excusez-moi, Pardon           | Excuse me               |
+| Je suis désolé                | I'm sorry               |
+| Comment vas-tu                | How are you             |
+| Je vais bien                  | I'm fine                |
+| J'ai sommeil                  | I'm sleepy              |
+| Je suis fatigué               | I'm tired               |
+| Je pète la forme              | I'm great, Ça va super  |
+| Je me sens mal                | I'm feeling bad         |
+| Ça va pas mal                 | I'm not bad / im ok     |
+| Et vous / Et toi              | And you?                |
+| C'est vrai, Bien sûr          | Really?, Of course      |
+| S'il vout plâit               | please                  |
+| Je ne comprends pas           | I dont understand       |
+| pour ...                      | for ...                 |
+| Je ne comprends pas           | I dont understand       |
+| un peu                        | a little                |
+| Je parle un peu (de) francais | I speak a little french |
+| J'ai besoin de vous           | I need you              |
+| Il n'est pas                  | it is not               |
+| Je paye où                    | where do i pay          |
+| Je ne sais pas                | I don't know            |
 
 ## Nouns
 
@@ -109,41 +113,42 @@ Was to say this that, these those
 
 ## Verbs
 
-| Français        | English             |
-| --------------- | ------------------- |
-| avoir           | to have             |
-| être            | to be               |
-| dire            | to say              |
-| faire           | to do               |
-| voir            | to see              |
-| aimer           | like                |
-| travailles      | work                |
-| pouvoir         | can / to be able to |
-| louvoir         | want                |
-| devoir          | must                |
-| falloir         | need to             |
-| savoir          | know / knowledge    |
-| aller           | go                  |
-| venir           | come                |
-| tenir           | hold                |
-| prendre         | take                |
-| donner          | give                |
-| trouver         | find                |
-| parler          | speak / talk        |
-| mettre          | put                 |
-| passer          | pass                |
-| regarder        | watch               |
-| lire            | read                |
-| croire          | believe             |
-| manger          | eat                 |
-| boire           | drink               |
-| jouer           | play                |
-| comprends       | understand          |
-| voudrais        | would like          |
-| demander        | to ask              |
-| rendre          | return / give back  |
-| rester          | stay                |
-| sortir / partir | leave               |
+| Français            | English              |
+| ------------------- | -------------------- |
+| avoir               | to have              |
+| être                | to be                |
+| dire                | to say               |
+| faire               | to do                |
+| voir                | to see               |
+| aimer               | like                 |
+| travailles          | work                 |
+| pouvoir             | can / to be able to  |
+| louvoir             | want                 |
+| devoir              | must                 |
+| falloir             | need to              |
+| savoir              | know / knowledge     |
+| aller               | go                   |
+| venir               | come                 |
+| tenir               | hold                 |
+| prendre             | take                 |
+| donner              | give                 |
+| trouver             | find                 |
+| parler              | speak / talk         |
+| mettre              | put                  |
+| passer              | pass                 |
+| regarder            | watch                |
+| lire                | read                 |
+| croire              | believe              |
+| manger              | eat                  |
+| boire               | drink                |
+| jouer               | play                 |
+| comprends           | understand           |
+| voudrais            | would like           |
+| demander            | to ask               |
+| rendre              | return / give back   |
+| rester              | stay                 |
+| sortir / partir     | leave                |
+| avoir besoin de ... | has/have need of ... |
 
 ### Conjugation
 
@@ -244,3 +249,101 @@ Some `ir` verbs are also irregular
 | Je voudrais ... ?                         | I would like ... ?                      |
 | Pouvez-vous m’aider                       | Can you help me?                        |
 | Combien ça coûte?                         | How much is this                        |
+
+## Counting
+
+### Simple
+
+| Français              | English   |
+| --------------------- | --------- |
+| un                    | one       |
+| deux                  | two       |
+| trois                 | three     |
+| quatre (kah-trah)     | four      |
+| cinq (sank)           | five      |
+| six (seez)            | six       |
+| sept (set)            | seven     |
+| huit (wheet)          | eight     |
+| neuf                  | nine      |
+| dix (deez)            | ten       |
+| onze                  | eleven    |
+| douze (dooze)         | twelve    |
+| treize (treh-z)       | thirteen  |
+| quatorze (kah-torze)  | fourteen  |
+| quinz (kah-nz)        | fifteen   |
+| seize (seh-z)         | sixteen   |
+| dix-sept (dee-set)    | seventeen |
+| dix-huit (deez-wheet) | eighteen  |
+| dix-neuf              | nineteen  |
+| vingt (van)           | twenty    |
+
+### 20 - 69
+
+| Français             | English      |
+| -------------------- | ------------ |
+| vingt                | twenty       |
+| vingt et un          | twenty one   |
+| vingt-deux           | twenty two   |
+| vingt-trois          | twenty three |
+| vingt-quatre         | twenty four  |
+| vingt-cinq           | twenty five  |
+| vingt-six            | twenty six   |
+| vingt-sept           | twenty seven |
+| vingt-huit           | twenty eight |
+| vingt-neuf           | twenty nine  |
+| trente               | thirty       |
+| ...                  |              |
+| quarante (kah-ront)  | forty        |
+| ...                  |              |
+| cinquante (sank-ont) | fifty        |
+| ...                  |              |
+| soixante (swa-sont)  | sixty        |
+
+### 70 soixante-dix (sixty-ten) - 79
+
+| Français          | English       |
+| ----------------- | ------------- |
+| soixante-dix      | seventy       |
+| soixante et onze  | seventy one   |
+| soixante-douze    | seventy two   |
+| soixante-treize   | seventy three |
+| soixante-quatorze | seventy four  |
+| soixante-quinze   | seventy five  |
+| soixante-seize    | seventy six   |
+| soixante-dix-sept | seventy seven |
+| soixante-dix-huit | seventy eight |
+| soixante-dix-neuf | seventy nine  |
+
+### 80 quatre-vingts (four-twenty) - 100
+
+| Français              | English      |
+| --------------------- | ------------ |
+| quatre-vingts         | eighty one   |
+| quatre-vingt-un       | eighty one   |
+| quatre-vingt-deux     | eighty two   |
+| quatre-vingt-trois    | eighty three |
+| quatre-vingt-quatre   | eighty four  |
+| quatre-vingt-cinq     | eighty five  |
+| quatre-vingt-six      | eighty six   |
+| quatre-vingt-sept     | eighty seven |
+| quatre-vingt-huit     | eighty eight |
+| quatre-vingt-neuf     | eighty nine  |
+| quatre-vingt-dix      | ninety       |
+| quatre-vingt-onze     | ninety one   |
+| quatre-vingt-douze    | ninety two   |
+| quatre-vingt-troeize  | ninety three |
+| quatre-vingt-quatorze | ninety four  |
+| quatre-vingt-quinze   | ninety five  |
+| quatre-vingt-seize    | ninety six   |
+| quatre-vingt-dix-sept | ninety seven |
+| quatre-vingt-dix-huit | ninety eight |
+| quatre-vingt-dix-neuf | ninety nine  |
+| cent                  | one hundred  |
+
+## Colours
+
+| Français | English |
+| -------- | ------- |
+| rouge    | red     |
+| blanc    | white   |
+| noir     | black   |
