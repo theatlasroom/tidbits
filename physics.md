@@ -12,3 +12,6 @@
 ### Particles
 * Not absolute, they might appear for one observer in a particular frame of reference based on their speed
 ## String theory
+
+## Links
+* [Quantum computing explained in multiple levels](https://www.youtube.com/watch?v=OWJCfOvochA)

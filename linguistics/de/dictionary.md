@@ -39,12 +39,14 @@
 | _ecken_   | corners                              |
 | _egal_    | constantly, identical, insignificant |
 | _einfach_ | simple, easy                         |
+| _einziehen_ | collect                            |
 
 ## F
 
 | Wort    | Bedeutung |
 | ------- | --------- |
 | _fahrt_ | trip      |
+| _fast_ | nearly |
 | _früh_  | early     |
 
 ## G
@@ -72,6 +74,7 @@
 | _kasse_   | checkout                        |
 | _kellner_ | waiter                          |
 | _komisch_ | strange, funny in a strange way |
+| _krass_ | awesome |
 | _kurz_    | short                           |
 | _kühl_    | cool                            |
 
@@ -112,6 +115,7 @@
 | _seltsam_     | strange, odd, peculiar |
 | _sinnvoll_    | meaningful, reasonable |
 | _solange_     | as long as             |
+| _spannend_ | exciting |
 | _speisekarte_ | menu                   |
 | _stressig_    | stressful              |
 | _strahlend_   | light                  |
@@ -121,6 +125,7 @@
 
 | Wort    | Bedeutung |
 | ------- | --------- |
+| _tatsächliche_ | actual, actually | 
 | _teuer_ | expensive |
 
 ## U
@@ -144,6 +149,7 @@
 | _vegetarisches_  | vegetarian  |
 | _verantwortlich_ | responsible |
 | _verheiratet_    | married     |
+| _verschiedene_   | different   |
 
 ## W
 
@@ -159,5 +165,7 @@
 
 | Wort        | Bedeutung    |
 | ----------- | ------------ |
+| _zubereitungsart_ | type of preparation |
 | _zusammen_  | togethor     |
 | _zuständig_ | responsisble |
+
