@@ -34,6 +34,28 @@
 - Strong and statically typed
   - Strong typing: A variables types can't change over time
   - Static: A variables type must be defined at compile time
+- Constants need to be assignable at compile time, can't assign to anything that needs run time evaluation such as flags or a function call
+  - Any primitive type can be a constant
+  - Collection types (arrays/slices etc) are mutable, so cannot be constant
+  - Constants can be shadowed (redefined in a inner scope), both the value and type can be changed
+  - Avoid reusing constants for different purposes
+  - Untyped constants can be implicitly converted by the compiler
+- Go has 4 collection types: arrays, slices, maps and structs
+- Arrays are by value
+  - Copying an array will copy the entire contents
+  - Using `&` allows access to a reference to an array ie:
+  - arrays need both the same datatype and size to be evaluated as the equal
+
+```go
+a := []int{1,2,3}
+b := &a // b is a pointer to a
+```
+
+- Slices are reference types
+  - multple slices pointing to the same array can cause unintended side effects 
+  - Slices dont need a fixed size over their lifetime
+  - Go generally resizes a slice by double its previous slice, knowing roughly how much space you need can be beneficial to saving memory
+- The increment operator `++` is an statement not an expression, so it can't be used in combination with other expressions
 
 ## Tools
 
@@ -146,9 +168,14 @@ swapVal(x, y)
 ### Flow control
 
 - go only has one looping construct - for statement
+  - there are 3 syntaxes for `for` loops
+    - `for <initializer>; <boolean result>; <incrementer> { }`
+    - `for <boolean> {}`
+    - `for {}` - loop indefinitely until a `break` is reached
+  - `break` can be used to break out of the for loop early
+    - nested loops break the nearest for loop
+  - `continue` moves onto the next iteration of the loop
 - flow control blocks have their own scope, they do not share variables in the outer scope they are defined in
-- `for <init>;<condition>;<post>`
-
   - no braces around the statements
   - stops once the condition returns false
   - brackets are required
@@ -172,6 +199,14 @@ swapVal(x, y)
   - case body's break automatically unless they end with a `fallthrough` statement
   - default handles the default case
   - Switch can be used without a condition, this defaults to true, this can be useful for long if/then/else chains
+  - each test case must be unique
+  - multiple conditions can be used in each case
+  - tagless switch statements allow the use of full comparisions in our cases
+    - tagless switch statements can have overlapping cases
+    - the first matching case will be executed
+  - break statements are implicit, so do not have to be specified
+  - `fallthrough` can force a switch to fall through to the next case
+  - "Implicit breaks, explicit fallthrough"
 
 ```
 t := time.Now()
@@ -209,6 +244,54 @@ default: ...
     - recover must be called directly in a deferred call
     - for the recover to execute it must be deferred before the panic occurs
     - by default a the function enclosing recover will return _0_ we can use **implicit** return to set the value returned by a recover
+    - returns `nil` if the application is NOT panicking
+  - `panic` makes the most sense for "unrecoverable errors"
+    - if you can recover from the situation return the error and handle it
+    - a missing file may not be a panic situation, perhaps the file simply hasnt been created yet
+
+### Enumerated constants
+
+- Can be defined using the `iota` keyword
+- Useful for grouping related items
+
+```go
+const (
+  a = iota
+  b
+  c
+)
+
+const (
+  a2 = iota
+  b2 = iota
+)
+
+...
+fmt.Printf("%v\n", a) // 0
+fmt.Printf("%v\n", b) // 1
+fmt.Printf("%v\n", c) // 2
+```
+
+- The initial value for iota is the 0 value of an integer, this is also used when a value has not been initialized
+- Using the 0 value as an error value is a common approach
+- If we don't care about the 0 value, its common to use `_` instead
+
+```go
+
+const (
+  errorValue = iota
+  cat
+  dog
+  snake
+)
+
+const (
+  _ = iota
+  car
+  plane  
+)
+
+```
 
 ### Pointers
 
@@ -253,7 +336,7 @@ type Vertex struct {
   - slices can contains other slices
   - `make(type, length, capacity)` allocates a zeroed array and returns a slice that refers to the array
 
-```
+```go
 length := 10
 a := make([]int, length)
 ```
@@ -261,6 +344,19 @@ a := make([]int, length)
     * useful for dynamically sized arrays
 
 - `.append(slice, values .... )` appends the values onto the slice provided and returns a new slice (with the appended values)
+
+Some useful slice operations
+```go
+a := []int{1, 2, 3, 4, 5}
+
+b := a[1:] // pop (or shift) operation to remove the first element, returns elements from index 2 onwards
+b := a[:len(a)-1] // return all but the last element
+
+// remove the element in position 2
+// note: slice operations point to the same array, if we need to preserve the original array loop over / copy the array instead
+b := append(a[:2], a[3:]...)
+
+```
 
 ### Maps
 
