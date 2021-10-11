@@ -2,10 +2,12 @@
 
 ## A
 
-| Mot                   | Définition |
-| --------------------- | ---------- |
-| _animal de compagnie_ | pet        |
-| _amusants_            | funny      |
+| Mot                   | Définition      |
+| --------------------- | --------------- |
+| _l'aînée_             | the oldest      |
+| _alors_               | well /then / so |
+| _amusants_            | funny           |
+| _animal de compagnie_ | pet             |
 
 ## B
 
