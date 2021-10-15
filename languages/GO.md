@@ -568,3 +568,4 @@ Math libray
 - https://research.swtch.com/
 - [Debugging simple memory leaks](https://medium.com/dm03514-tech-blog/sre-debugging-simple-memory-leaks-in-go-e0a9e6d63d4d)
 - [Slice tricks - manipulating slices](https://github.com/golang/go/wiki/SliceTricks#reversing)
+- [Type-Unsafe pointers](https://go101.org/article/unsafe.html)

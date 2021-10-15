@@ -185,7 +185,34 @@ func main() {
  defer fmt.Println(a)
  a = "end"
 }
-```
 
 // prints "start"
+```
+
+## Memory
+* the asterix `*` operator can be used to
+	- _Create a pointer_ to a variable of type T `var b *int`
+	- _Dereference_ the value of a pointer `fmt.Println(*b)`
+* pointer arithmetic is not allowed outside of the [unsafe](https://pkg.go.dev/unsafe) package
+* Uninitialized pointers take the `nil` value
+* the dereference `*` operator has a lower precedence than the `.` operator
+
+```go
+...
+var ms *myStruct
+ms = new(myStruct)
+(*ms).foo = 42 // dereference `ms`
+*ms.foo = 42 // dereference `ms.foo` object
+// A sneaky point to note
+ms.foo = 42 // Here the compiler will still correctly dereference `ms`
+```
+
+* functions can safely return a pointer, the compiler move the value to the heap
+
+```go
+func sum(...) *int {
+	var result *int
+	...
+	return &result
+}
 ```
