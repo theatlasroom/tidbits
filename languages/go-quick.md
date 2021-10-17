@@ -189,7 +189,7 @@ func main() {
 // prints "start"
 ```
 
-## Memory
+## Memory, structs, pointers and interfaces
 * the asterix `*` operator can be used to
 	- _Create a pointer_ to a variable of type T `var b *int`
 	- _Dereference_ the value of a pointer `fmt.Println(*b)`
@@ -216,3 +216,36 @@ func sum(...) *int {
 	return &result
 }
 ```
+
+* By convention single method interfaces should be named after the method + `er`
+
+```go
+type Writer interface {
+	Write([]bytes) int
+}
+```
+
+* Variables declared using a concrete type only have access to the value receiver methods, pointer variables have access to all pointer receiver methods and value receiver methods
+
+```go
+type WriterCloser interface {
+	Write([]byte) (int, error)
+	Close() int
+}
+
+type myWriter struct {}
+
+func (mw *myWriter) Write(data []byte) (int, error) { ... }
+func (mw myWriter) Close() int { ... }
+
+func main() {
+	mwConcrete := myWriter{} // Can only access Close, no access to Write
+	mwPointer := &myWriter{} // Can access Write and Close
+}
+```
+
+* Prefer many, small interfaces over any large ones
+* Prefer to export a concrete type instead of interfaces, this will simplify mocking for tests
+	* Don't assume you know how consumers will use your type
+* If you're pulling in a value, accept an interface instead of a concrete type
+* Design functions and methods to receive interfaces wherever possible

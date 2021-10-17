@@ -420,10 +420,13 @@ func (f MyFloat) Abs(float64) { ... }
 - interfaces are implemented implicitly
 - `interface{}` is the empty interface
   - used to handle values of an unknown type such as `fmt.Print`
+  - anything can be cast to an empty interface
 - type assertions provide access to the concrete value in an interface
   - `t := i.(T) // given interface i` - assert that i holds the concrete type T, assign T to the variable t
   - if it doenst a panic will occur
   - `t, ok := i.(T)` can be used to test whether an interface value holds a specific type
+- The method set of a **value** is all methods with value _receivers_
+- The method set of a **pointer** is all methods, regardless fo receiver type
 
 ### Errors
 
