@@ -481,7 +481,7 @@ v := <-ch // receive data from ch and assign the value to v
 - `select` lets a goroutine wait on multiple operations
   - the `default` case can be used to try a send or receive without blocking
 
-```
+```go
 func f(c, quit chan int) {
   select {
     case c <- x:
@@ -497,7 +497,7 @@ func f(c, quit chan int) {
 
 - single direction channels can be created (receive/send only)
 
-```
+```go
 b := make(chan int)
 var r chan<- int = b // receive only channel
 var s <-chan int = b // send only channel
@@ -505,6 +505,16 @@ var s <-chan int = b // send only channel
 
 - `for <var> := range <channel> {}` is a short way to read from a channel until it closes
 
+- writing to a closed channel will panic
+  - we can recover from the panic if we need to detect if a channel is closed
+- reading from a channel can be checked, an `ok` is returned if the channel is open
+```go
+if i, ok := <- ch; ok {
+  // channel is open and we read from it
+} else {
+  // channel is closed
+}
+```
 #### Links
 
 - [Even in go, concurrency is hard](https://utcc.utoronto.ca/~cks/space/blog/programming/GoConcurrencyStillNotEasy)
