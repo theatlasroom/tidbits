@@ -162,3 +162,25 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
 * Be ruthless about taking and organising notes, note down everything
 
 ## Leadership
+
+## Psychological safety
+* "A shared belief by members of a team that the team is safe for interpersonal risk taking"
+	- Being comfortable to admit mistakes
+	- Being comfortable to challenge each other for the better
+* Traits of psychological danger: 
+	- Fear of admitting mistakes 
+	- blaming others, 
+	- "common knowledge effect", 
+	- narrow / non diverse viewpoints explored
+* Punishment culture - if we don't allow reasonable failures to happen we stifle iteration and ingrain a culture of "we have always done it this way"
+* Blame culture - reduces trust between team members and stifles creativity  
+* Not embracing feedback - missed opportunities for improvement, easy for misunderstanding / mixed messages
+* Perception vs Intent - be mindful of psychological safety in all actions, how can what you mean be perceived, how do you perceive others intent?
+* Higher intent - using your confidence to encourage others to be involved
+* Moral courage - being courageous to do what is morally right, even when there is a risk to yourself
+* As a leader
+	- Different team members provide different strengths, avoid contrasting and comparing team members when evaluating performance
+	- Ensure you are a participant of the team identity, there should not be a separate identity for leaders within the team	
+	- Give negative feedback 1:1, avoid blaming and shaming
+	- Ensure people have an opportunity to reasonably fail
+

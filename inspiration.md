@@ -134,6 +134,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 
 ## AV
 
+- [Alpha Wolf - Akudama](https://www.youtube.com/watch?v=3ENMe1rlA0M)
 - [The Armed - Nowhere to be found](https://www.youtube.com/watch?v=FIdUOFzSAxI)
 - [Autechre - plyPhon](https://vimeo.com/1208304)
 - [Battles - Tonto](https://www.youtube.com/watch?v=1LLAN29W-4w)
@@ -142,6 +143,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [Code Orange - Swallowing the rabbit whole](https://www.youtube.com/watch?v=Ctn14oYz0qA)
 - [Converge - Concubine / Fault & Fracture](https://www.youtube.com/watch?v=kZIcTqYTjFY)
 - [Flying Lotus • ‘Until The Quiet Comes’ — short film by Kahlil Joseph](https://www.youtube.com/watch?v=-pVHC1DXQ7U)
+- [HEALTH x Full Of Hell - Full Of HEALTH](https://www.youtube.com/watch?v=LVfBAHB_2hwi)
 - [The (International) Noise Conspiracy - Smash it up](https://www.youtube.com/watch?v=FyjmCg_VMU0)
 - [Jamie xx - Gosh](https://www.youtube.com/watch?v=hTGJfRPLe08)
 - [J Dilla - Nothing like this](https://www.youtube.com/watch?v=_ncSt5xC8Uk)
@@ -151,6 +153,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [Mouse on the Keys - Earache live](https://www.youtube.com/watch?v=f8oqhlT37VY)
 - [My Disco - Turn](https://vimeo.com/35336545)
 - [Plebeian Grandstand - Eros Culture](https://www.youtube.com/watch?v=opbmzhbLIT4)
+- [Rolo Tomassi - Drip](https://www.youtube.com/watch?v=yL4VHwXI7_I)
 
 ## Performance
 
@@ -165,6 +168,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [HEALTH - We are water](https://www.youtube.com/watch?v=tiO4Tvba800)
 - [La Dispute - Audio Tree](https://www.youtube.com/watch?v=5NtUbkp8ZCc)
 - [Lavinia Meijer plays Philip Glass](https://www.youtube.com/watch?v=NRdBQDdEjiU&list=RDhV2-zFh3tAU&index=7)
+- [LOATHE - Gored : Live at the heavy music awards 2019](https://www.youtube.com/watch?v=tDmeXEzhQrI)
 - [Marcus Fischer - Whitney Museum](https://www.youtube.com/watch?v=c1yFzkXZnmw)
 - [Misery signals - Malice 😱](https://www.youtube.com/watch?v=pHVCqiNNkCk)
 - [Mouse on the keys - "RaumKranKheit" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=YEaXNVlZgVg)
