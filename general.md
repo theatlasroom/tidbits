@@ -184,3 +184,27 @@ Loose routine for nights, need more time devoted to music. **Bold items** are re
 	- Give negative feedback 1:1, avoid blaming and shaming
 	- Ensure people have an opportunity to reasonably fail
 
+## Systems thinking
+* Mapping points of interaction and interconnectivity within a system
+* Thinking about the impacts of your interventions on the wider system
+* "Where can i best target this change for maximum impact?"
+* Power, complexity and interconnectivity
+* Triple loop thinking - ??
+* Biases: 
+  - Attribution 
+  - Confirmation
+  - Affinity
+  - Status quo
+  - Self servicing
+  - Belief bias
+  - Framing
+  - Hindsight
+  - Anchoring
+  - Unconscious
+  - Overconfidence
+- Triple loop learning: Outcome control, understanding, value and meaning
+- Question formulation technique - https://rightquestion.org
+- The five whys
+- Are you measuring the impacts of your actions and looking at both good and bad outcomes or only looking for reasons you are 'right'?
+- Are you listening to prove yourself right?
+- Are you asking enough questions, are they open / closed?

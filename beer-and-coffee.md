@@ -167,6 +167,7 @@ The real black gold, the magic productivity hack, my best friend in the morning 
 - Aeropress
 - Batch brewed
 - Pour over filter
+  - [4:6 method](https://en.philocoffea.com/blogs/blog/coffee-brewing-method)
 
 ### Processing
 
@@ -181,6 +182,7 @@ The real black gold, the magic productivity hack, my best friend in the morning 
 - Dukes
 - Everyday coffee
 - Industry beans
+- Maker
 - Mecca
 - Padre
 - Paramount coffee project
@@ -189,5 +191,5 @@ The real black gold, the magic productivity hack, my best friend in the morning 
 - Sample
 - Seven Seeds
 - Single O
-- St Ali
+- Small Batch
 - Wide open road

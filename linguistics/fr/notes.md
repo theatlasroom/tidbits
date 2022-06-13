@@ -30,6 +30,7 @@
 | Il n'est pas                  | it is not               |
 | Je paye où                    | where do i pay          |
 | Je ne sais pas                | I don't know            |
+| Peut-être                     | Maybe                   |
 
 ## Nouns
 
@@ -41,6 +42,19 @@
 | la gare       | train station |
 | les toilettes | toilets       |
 | l'hôtel       | hotel         |
+
+### Articles
+
+All nouns use an article
+
+| Français | English                        |
+| -------- | ------------------------------ |
+| un       | Singular, indefinite masculine |
+| une      | Singular, indefinite feminine  |
+| des      | Plural, indefinite (some cats) |
+| le       | Singular, definite masculine   |
+| la       | Singular, definite feminine    |
+| les      | Plural definite (the cats)     |
 
 ## Pronouns (les pronom)
 
@@ -244,7 +258,7 @@ Some `ir` verbs are also irregular
 | Pourquoi                                  | Why?                                    |
 | Quel est votre                            | What is your                            |
 | Quel est votre nom                        | What is your name?                      |
-| Ou c'est trouve (polite) ... / Ou es ...  | Where is...?                            |
+| Où se trouve (polite) ... / Ou es ...     | Where is...?                            |
 | Vous désirez?                             | What do you want?                       |
 | Je voudrais ... ?                         | I would like ... ?                      |
 | Pouvez-vous m’aider                       | Can you help me?                        |
@@ -347,3 +361,7 @@ Some `ir` verbs are also irregular
 | rouge    | red     |
 | blanc    | white   |
 | noir     | black   |
+
+## Resources
+
+- [French news - RFI Savoirs](https://savoirs.rfi.fr/fr/apprendre-enseigner/langue-fran%C3%87aise/journal-en-fran%C3%87ais-facile)
