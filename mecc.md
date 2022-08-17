@@ -1,5 +1,7 @@
 # MECC - Managing so everyone can contribute
+
 ## General
+
 * [MECC overview](https://about.gitlab.com/handbook/mecc/)
 * [Manager of One](https://about.gitlab.com/handbook/leadership/#managers-of-one)
 * [Low level of shame](https://about.gitlab.com/handbook/values/#low-level-of-shame)
@@ -14,6 +16,7 @@
 * [Disagree, commit and disagree](https://about.gitlab.com/handbook/values/#disagree-commit-and-disagree)
 
 ## Overview
+
 * Management philosophy aiming to create an environment for better decision making and execution
 * Aim for everyone being empowered to lead in your organization
 * Decentralized: empowered individuals make decisions without needing centralized approval
@@ -26,7 +29,8 @@
 	* Focus on results: measure output instead of input, clear transparent goals allow individuals to take ownership of how their work contributes
 	* Culture of belonging: cultivate an inclusive environment, creating a non-judgemental culture that welcomes diverse contributions
 
-## Informed Decisions
+## [Informed Decisions](https://about.gitlab.com/handbook/mecc/informed-decisions/)
+
 * How does the organization ensure any staff can consume information (self-serve) and contribute
 * Designed to scale across timezones, functions, levels, personality types and consumption preferences
 * Information should be public by default and optimized for maximum contritbution
@@ -42,7 +46,8 @@
 * The best ideas should win, not the loudest
 * MECC defaults to written, asynchronous information sharing
 
-## Fast Decisions
+## [Fast Decisions](https://about.gitlab.com/handbook/mecc/fast-decisions/)
+
 * Optimize for speed of knowledge retrieval
 * Iteration with a low level of shame is a key aspect of MECC
 * Iteration enables faster execution, shorter feedback loops and the ability to course correct sooner
@@ -56,7 +61,8 @@
 * Prioritize two way door decisions (easily reversible), this empowers DRIs to make decisions quicker
 * Irreversible decisions are the only time more thorough decision making should be used
 
-## Many Decisions
+## [Many Decisions](https://about.gitlab.com/handbook/mecc/many-decisions/)
+
 * Focus on quantity of decisions in a stretch of time and the results from the fast progress
 * Conventional approaches strive for consensus and avoiding risk
 * Focus on a bias for action
@@ -69,7 +75,8 @@
 * Boring solutions help reduce complexity in the organization 
 * Resisting unhealthy constraints ("this is how companies mature" mindset) helps organizations to continue operating agile and efficiently while scaling
 
-## Executing Decisions
+## [Executing Decisions](https://about.gitlab.com/handbook/mecc/executing-decisions/)
+
 * Execution is about establishing a baseline for future iterations, not a point in time solution
 * No matrix organization means you should only have one manager, this is essential to decision making
 * Agency and bias for action come with a need for a tolerance for mistakes and appreciation for two way door decision
