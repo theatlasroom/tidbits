@@ -560,6 +560,147 @@ Math libray
 - `http.Handler(http.HandlerFunc)` - a type used to handle http requests, implements `http.ServeHTTP`
 - `http.HandlerFunc(fn)` - an adapter to use ordinary functions as http handlers
 
+## Design patterns
+
+### Builder pattern
+
+- Encapsulates an objects construction process allowing specification of parts of a complex API
+- Flexible creation of an object that has lots of different representations
+- Great for objects with a complex API or multiple constructor options
+- The "Director" object creates an instance of the "Builder" object that sets various properties and returns an instance of the finished object
+- You need to create a builder for each type of object you want to represent
+- Error checking should happen at the build stage
+```go
+type NotificationBuilder struct {
+  Title string
+  Message string
+  Priority int
+}
+
+func newNotificationBuilder() *NotificationBuilder {
+  return &NotificationBuilder{}
+}
+
+func (nb *NotificationBuilder) SetTitle(title string) {
+  nb.Title = title
+}
+
+func (nb *NotificationBuilder) SetMessage(message string) {
+  nb.Message = message
+}
+
+func (nb *NotificationBuilder) SetPriority(priority string) {
+  nb.Priority = priority
+}
+
+func (nb *NotificationBuilder) Build() (*Notification, error) {
+  if nb.Title == "" {
+    return nil, fmt.Errorf("Need to specify a title")
+  }
+
+  if nb.Priority > 5 {
+    return nil, fmt.Errorf("Priority must be 0 - 4")
+  }
+
+  return &Notification{
+    title: nb.Title,
+    message: nb.Message,
+    priority: nb.Priority,
+  }, nil 
+}
+
+func main() {
+  var bldr = newNotificationBuilder()
+
+  bldr.SetTitle("New notification")
+  bldr.Message("Great message")
+  bldr.Priority(10)
+  
+  n, err := bldr.Build()
+  if err != nil {
+    fmt.Println("Error creating: ", err)
+  }
+
+  fmt.Printf("Notification: %+v", n)
+}
+```
+
+### Factory pattern
+
+- Allows construction of objects without knowing the types at runtime
+- Great when object creation needs to be flexible and cannot be known beforehand
+- A `Creator` interface defines a factoryMethod, the `ConcreteCreator` implements the Creator interface and specifies how the concrete object should be created
+- Usually implemented with subclasses, but in go we use structs and interfaces to implement
+
+```go
+type Publishable interface {
+  setName(name string)
+  setPages(pages int)
+  getName() string
+  getPages() int
+}
+
+type Publication struct {
+  name string
+  pages int
+}
+
+type Newspaper struct {
+  Publication // embeds the publication type
+}
+
+func createNewspaper(name string, pages int) Publishable {
+  return &Newspaper {
+    Publication: Publication{
+      name: name, 
+      pages: pages,
+    },
+  }
+}
+
+func createMagazine(name string, pages int) Publishable {
+  return &Magazine {
+    Publication: Publication{
+      name: name, 
+      pages: pages,
+    },
+  }
+}
+
+type Magazine struct {
+  Publication // embeds the publication type
+}
+
+func (p *Publication) setName(name string) {
+  p.name = name
+}
+
+func (p *Publication) getName() string {
+  return p.name
+}
+
+func (p *Publication) setPages(pages string) {
+  p.pages = pages
+}
+
+func (p *Publication) getPages() int {
+  return p.pages
+}
+
+
+func newPublication(pubType string, name string, pages int) (Publishable, error) {
+  if pubType == "newspaper" {
+    return createNewspaper(name, pages), nil
+  }
+
+  if pubType == "magazine" {
+    return createMagazine(name, pages), nil
+  }
+
+  return nil, fmt.Errorf("No such publication type")
+}
+```
+
 ## Glossary
 
 - import - import go packages. By convention use the factored style `import ("fmt" "math" ...)`
