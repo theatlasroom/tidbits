@@ -20,6 +20,7 @@
 
 ## Links
 
+- [Open source VC](https://www.airtree.vc/open-source-vc)
 - [acquired](https://www.acquired.fm/)
 - [Aellacast](https://linktr.ee/AellaAppHQ)
 - [36 questions to fall in love](http://36questionsinlove.com/)

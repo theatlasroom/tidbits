@@ -12,6 +12,7 @@
 - [Aiming for correctness](https://fasterthanli.me/articles/aiming-for-correctness-with-types)
 - [Working with strings](https://fasterthanli.me/articles/aiming-for-correctness-with-types)
 - [Build your own X with rust](https://github.com/osynavets/build-your-own-x-in-rust)
+- [zero to nix](https://zero-to-nix.com)
 
 ## Quick overview
 
@@ -940,3 +941,4 @@ Filesystem io
 ## General Notes
 
 - [Rust + node](https://blog.risingstack.com/how-to-use-rust-with-node-when-performance-matters/)
+- [Rust scripting](https://rust-script.org/)

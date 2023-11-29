@@ -45,6 +45,10 @@
 * Focus on meaning and purpose
 * Start when you're NOT ready
 
+## The Staff Engineer's Path - Notes
+### Chapter 1
+### General
+
 ## Links
 * [A life engineered](https://www.youtube.com/@ALifeEngineered)
 * [10 tps for mastering time management at work](https://www.lucidchart.com/blog/time-management-at-work)
@@ -52,3 +56,4 @@
 ## Reading list
 Books / audio books I should finally get to
 * [ ] [First Things First - Stephen Covey](https://www.amazon.com.au/First-Things-Covey/dp/0684802031)
+* [ ] [The Staff Engineer's Path]()
