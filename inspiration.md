@@ -143,6 +143,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [Code Orange - Swallowing the rabbit whole](https://www.youtube.com/watch?v=Ctn14oYz0qA)
 - [Converge - Concubine / Fault & Fracture](https://www.youtube.com/watch?v=kZIcTqYTjFY)
 - [Flying Lotus • ‘Until The Quiet Comes’ — short film by Kahlil Joseph](https://www.youtube.com/watch?v=-pVHC1DXQ7U)
+- [Goat - Joy In Fear](https://vimeo.com/1010858768)
 - [HEALTH x Full Of Hell - Full Of HEALTH](https://www.youtube.com/watch?v=LVfBAHB_2hwi)
 - [The (International) Noise Conspiracy - Smash it up](https://www.youtube.com/watch?v=FyjmCg_VMU0)
 - [Jamie xx - Gosh](https://www.youtube.com/watch?v=hTGJfRPLe08)
@@ -157,11 +158,13 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 
 ## Performance
 
+- [Balance and Composure - The Thing We Think We're Missing (Live at Studio 4)](https://www.youtube.com/watch?v=hP4ZSRbYx58)
 - [Blanck Mass - Live boiler room](https://www.youtube.com/watch?v=1xqCHLXuDuA)
 - [Code Orange - End of an Era](https://www.youtube.com/watch?v=BV-jsSxDEw8)
 - [Comeback Kid - Rain city sessions](https://www.youtube.com/watch?v=frHvYvrGnNA)
 - [Conjurer - Audio Tree](https://www.youtube.com/watch?v=B4Qgn6T8-b0)
 - [Cult Leader - Audio Tree](https://www.youtube.com/watch?v=dWO9E3Xouds)
+- [Cult of Luna w/ Julie Christmas - Mariner live](https://www.youtube.com/watch?v=d62KkKVnrqg)
 - [Floating points - KEXP](https://www.youtube.com/watch?v=yYqu5NdFMf8)
 - [Fourtet - live boiler room London](https://www.youtube.com/watch?v=Ca6pjR2TLns)
 - [Full of hell - Live at Saint Vitus bar](https://www.youtube.com/watch?v=H_ZunjMC1Z4)
@@ -169,6 +172,7 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [La Dispute - Audio Tree](https://www.youtube.com/watch?v=5NtUbkp8ZCc)
 - [Lavinia Meijer plays Philip Glass](https://www.youtube.com/watch?v=NRdBQDdEjiU&list=RDhV2-zFh3tAU&index=7)
 - [LOATHE - Gored : Live at the heavy music awards 2019](https://www.youtube.com/watch?v=tDmeXEzhQrI)
+- [Luc Ferrari & Otomo Yoshihide perform "Archives Sauvées des Eaux"]
 - [Marcus Fischer - Whitney Museum](https://www.youtube.com/watch?v=c1yFzkXZnmw)
 - [Misery signals - Malice 😱](https://www.youtube.com/watch?v=pHVCqiNNkCk)
 - [Mouse on the keys - "RaumKranKheit" : LIVE AT SHIBUYA O-EAST](https://www.youtube.com/watch?v=YEaXNVlZgVg)
@@ -177,9 +181,9 @@ In 1966 he had his first solo exhibition at Gallery A, Melbourne from which a wo
 - [Nonkeen](https://www.youtube.com/watch?v=lqGKKPjptZo)
 - [Portishead - Live New York](https://www.youtube.com/watch?v=ZFwnlCudeC0)
 - [Portrayal of Guilt](https://www.youtube.com/watch?v=_6X1vseYz9U&t=233s)
+- [Rolo Tomassi - Live at Electric Ballroom](https://www.youtube.com/watch?v=vQtXVkRWjGw)
 - [Roly porter boileroom](https://www.youtube.com/watch?v=hoY7VVdizA4)
 - [Tim Hecker - Gagaku Ensemble Live](https://www.youtube.com/watch?v=ByV_0kGE-PA)
-- [Luc Ferrari & Otomo Yoshihide perform "Archives Sauvées des Eaux"]
 
 ## Content
 
